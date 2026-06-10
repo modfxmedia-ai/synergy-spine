@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { POSTS, CATEGORIES, categorySlug } from "@/lib/blog-posts";
 
 const BASE_URL = "https://synergyspineandnerve.com";
 
@@ -38,7 +39,11 @@ const PRIORITY_0_7 = [
   "/resources/improve-your-sha-score",
   "/resources/essential-nutrients-supplements",
   "/resources/videos",
+  "/resources/videos/spinal-hygiene-videos",
   "/resources/calendar",
+  "/workshop-videos",
+  "/promo-videos",
+  "/other-videos",
 ];
 
 const PRIORITY_0_6 = [
@@ -71,11 +76,25 @@ function buildEntries(paths: string[], priority: number, lastModified: Date): En
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
+  const blogPostEntries: Entry[] = POSTS.map((p) => ({
+    url: `${BASE_URL}/blog/${p.slug}`,
+    lastModified: new Date(p.isoDate),
+    changeFrequency: "yearly",
+    priority: 0.5,
+  }));
+  const categoryEntries: Entry[] = CATEGORIES.map((c) => ({
+    url: `${BASE_URL}/category/${categorySlug(c)}`,
+    lastModified,
+    changeFrequency: "monthly",
+    priority: 0.5,
+  }));
   return [
     ...buildEntries(PRIORITY_1_0, 1.0, lastModified),
     ...buildEntries(PRIORITY_0_9, 0.9, lastModified),
     ...buildEntries(PRIORITY_0_8, 0.8, lastModified),
     ...buildEntries(PRIORITY_0_7, 0.7, lastModified),
     ...buildEntries(PRIORITY_0_6, 0.6, lastModified),
+    ...categoryEntries,
+    ...blogPostEntries,
   ];
 }

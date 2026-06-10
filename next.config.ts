@@ -10,7 +10,23 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "www.straightchiro.com",
+      },
+      {
+        protocol: "https",
+        hostname: "straightchiro.com",
+      },
+      {
+        protocol: "https",
         hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "i.ytimg.com",
+      },
+      {
+        protocol: "https",
+        hostname: "img.youtube.com",
       },
     ],
   },
