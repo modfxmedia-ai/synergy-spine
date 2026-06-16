@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -29,7 +30,8 @@ type VideoCat = {
   title: string;
   href: string;
   desc: string;
-  accent: "blue" | "navy" | "gold" | "blueLight";
+  accent: "blue" | "navy" | "gold" | "blueLight" | "navyLight" | "goldDeep";
+  thumbId: string;
 };
 
 const CATEGORIES: VideoCat[] = [
@@ -38,24 +40,42 @@ const CATEGORIES: VideoCat[] = [
     href: "/resources/videos/spinal-hygiene-videos/",
     desc: "What you can do at home — every day — to take better care of your spine and nerve system.",
     accent: "blue",
+    thumbId: "9wPYA3RWAwI",
   },
   {
     title: "Workshop Videos",
-    href: "/workshop-videos/",
+    href: "/resources/videos/workshop-videos/",
     desc: "Our most-recent 30-minute workshops — informative and educational. Folks usually find them very valuable.",
     accent: "navy",
+    thumbId: "fX2yQ5rJVi4",
+  },
+  {
+    title: "Workshop Videos of the Past",
+    href: "/resources/videos/workshop-videos-of-the-past/",
+    desc: "Educational workshops from earlier years — habits people changed to overcome significant health challenges.",
+    accent: "navyLight",
+    thumbId: "uKrWp84qU4c",
   },
   {
     title: "Promo Videos",
-    href: "/promo-videos/",
+    href: "/resources/videos/promo-videos/",
     desc: "Short promotional and educational clips — quick ways to learn what we do and why it works.",
     accent: "gold",
+    thumbId: "UAuYYnLuh6U",
+  },
+  {
+    title: "Humorous Promo Videos of the Past",
+    href: "/resources/videos/humorous-promo-videos-of-the-past/",
+    desc: "A creative, funny family making short videos to promote past workshops — go back and have a laugh.",
+    accent: "goldDeep",
+    thumbId: "DmyGPDNkPpQ",
   },
   {
     title: "Other Videos",
-    href: "/other-videos/",
+    href: "/resources/videos/other-videos/",
     desc: "Healthy chocolate recipes, glimpses of Dr. Brad&apos;s personal life, and more odds-and-ends content.",
     accent: "blueLight",
+    thumbId: "Ou3xjc5c7LA",
   },
 ];
 
@@ -63,7 +83,9 @@ const ACCENT_BG: Record<VideoCat["accent"], string> = {
   blue: "from-brand-blue to-brand-blueLight",
   blueLight: "from-brand-blueLight to-brand-blue",
   navy: "from-brand-navy to-brand-navyDark",
+  navyLight: "from-brand-navyLight to-brand-navy",
   gold: "from-brand-gold to-brand-goldSoft",
+  goldDeep: "from-brand-gold to-brand-blue",
 };
 
 const breadcrumbJsonLd = {
@@ -161,7 +183,7 @@ export default function VideosHubPage() {
             </Reveal>
 
             <Reveal delay={150}>
-              <div className="mt-10 relative">
+              <div className="mt-10 relative mx-auto max-w-2xl">
                 <span
                   className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-brand-blue/30 blur-3xl animate-drift pointer-events-none -z-10"
                   aria-hidden="true"
@@ -196,9 +218,9 @@ export default function VideosHubPage() {
               </div>
             </Reveal>
 
-            <ul className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <ul className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {CATEGORIES.map((c, i) => (
-                <Reveal as="li" key={c.href} delay={(i % 4) * 80}>
+                <Reveal as="li" key={c.href} delay={(i % 3) * 80}>
                   <Link
                     href={c.href}
                     className="group block h-full bg-white rounded-3xl ring-1 ring-black/5 overflow-hidden shadow-[0_2px_10px_rgba(13,35,64,0.04)] hover:shadow-[0_30px_60px_-20px_rgba(13,35,64,0.25)] hover:-translate-y-1 transition-all duration-500"
@@ -206,6 +228,18 @@ export default function VideosHubPage() {
                     <div
                       className={`relative aspect-video bg-gradient-to-br ${ACCENT_BG[c.accent]} overflow-hidden`}
                     >
+                      <Image
+                        src={`https://i.ytimg.com/vi/${c.thumbId}/hqdefault.jpg`}
+                        alt={c.title}
+                        fill
+                        sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw"
+                        className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                        unoptimized
+                      />
+                      <span
+                        className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"
+                        aria-hidden="true"
+                      />
                       <span
                         className="absolute -top-8 -right-8 w-28 h-28 rounded-full bg-white/15 blur-2xl"
                         aria-hidden="true"

@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 type Props = {
   /** 11-character YouTube video id. */
@@ -10,20 +13,39 @@ type Props = {
 };
 
 /**
- * Lightweight YouTube embed: shows the official thumbnail with a play overlay
- * and links out to youtube.com/watch?v={id}. Avoids the heavy YouTube iframe
- * on initial page load and keeps the layout fast.
+ * Click-to-play YouTube embed. Renders the official thumbnail with a play
+ * overlay; on click, swaps in the privacy-friendly youtube-nocookie iframe so
+ * the video plays inline without leaving the page.
  */
 export default function YouTubeEmbed({ id, title, aspect = "aspect-video" }: Props) {
-  const watchUrl = `https://www.youtube.com/watch?v=${id}`;
+  const [playing, setPlaying] = useState(false);
   const thumb = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+  const embedUrl = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+
+  if (playing) {
+    return (
+      <div
+        className={`relative ${aspect} w-full overflow-hidden rounded-2xl bg-black ring-1 ring-black/5 shadow-lg`}
+      >
+        <iframe
+          src={embedUrl}
+          title={title}
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          referrerPolicy="strict-origin-when-cross-origin"
+          className="absolute inset-0 h-full w-full border-0"
+        />
+      </div>
+    );
+  }
+
   return (
-    <a
-      href={watchUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={`Watch ${title} on YouTube`}
-      className={`group relative block ${aspect} w-full overflow-hidden rounded-2xl bg-brand-navyDark ring-1 ring-black/5 shadow-lg`}
+    <button
+      type="button"
+      onClick={() => setPlaying(true)}
+      aria-label={`Play ${title}`}
+      className={`group relative block ${aspect} w-full overflow-hidden rounded-2xl bg-brand-navyDark ring-1 ring-black/5 shadow-lg cursor-pointer text-left`}
     >
       <Image
         src={thumb}
@@ -52,8 +74,8 @@ export default function YouTubeEmbed({ id, title, aspect = "aspect-video" }: Pro
       </span>
       <span className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-[10px] uppercase tracking-[0.2em] font-bold text-white/85">
         <span>YouTube</span>
-        <span className="opacity-0 group-hover:opacity-100 transition">Watch →</span>
+        <span className="opacity-0 group-hover:opacity-100 transition">Play →</span>
       </span>
-    </a>
+    </button>
   );
 }
