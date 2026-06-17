@@ -4,6 +4,17 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
+import { SERVICES } from "@/lib/programmatic/services";
+import { CITIES as PSEO_CITIES } from "@/lib/programmatic/cities";
+
+const RESERVED_PROGRAMMATIC_SLUGS = new Set<string>([
+  "chiropractor-albuquerque-nm",
+  "chiropractor-bernalillo-nm",
+  "chiropractor-casa-colorada-nm",
+  "chiropractor-chilili-nm",
+  "chiropractor-corrales-nm",
+  "chiropractor-ponderosa-nm",
+]);
 
 const CANONICAL = "https://synergyspineandnerve.com/area-we-serve/";
 
@@ -113,7 +124,7 @@ export default function AreaWeServePage() {
         ]}
       />
 
-      <main>
+      <main id="top">
         {/* HERO (clean, no motion) */}
         <section className="relative bg-brand-navyDark text-white overflow-hidden">
           <div
@@ -257,6 +268,171 @@ export default function AreaWeServePage() {
                 — we likely serve your area too.
               </p>
             </Reveal>
+          </div>
+        </section>
+
+        {/* SERVICES BY CITY (programmatic hub) */}
+        <section className="bg-white py-20 lg:py-24">
+          <div className="mx-auto max-w-7xl px-6">
+            {/* Header */}
+            <Reveal>
+              <div className="text-center max-w-3xl mx-auto">
+                <div className="inline-flex items-center gap-3">
+                  <span className="h-px w-10 bg-brand-blue" />
+                  <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-blue">
+                    Complete service-area directory
+                  </p>
+                  <span className="h-px w-10 bg-brand-blue" />
+                </div>
+                <h2 className="section-title mt-4 text-3xl md:text-5xl text-brand-navyDark font-semibold leading-[1.05]">
+                  Every{" "}
+                  <span className="italic text-brand-blue">service</span>,
+                  every{" "}
+                  <span className="italic text-brand-blue">city</span>.
+                </h2>
+                <p className="mt-5 text-brand-textLight text-base md:text-lg leading-relaxed">
+                  We publish a dedicated, locally-tailored page for each
+                  service we offer in each community we serve.{" "}
+                  {SERVICES.length} services × {PSEO_CITIES.length}{" "}
+                  communities — find the one that matches you.
+                </p>
+              </div>
+            </Reveal>
+
+            {/* Sticky service jump-nav */}
+            <nav
+              aria-label="Service directory navigation"
+              className="sticky top-0 z-30 -mx-6 mt-12 mb-14 bg-white/85 backdrop-blur-md border-y border-black/5"
+            >
+              <ul className="mx-auto max-w-7xl px-6 flex gap-2 overflow-x-auto py-3 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                {SERVICES.map((s) => (
+                  <li key={s.slug} className="shrink-0">
+                    <a
+                      href={`#service-${s.slug}`}
+                      className="inline-flex items-center gap-2 rounded-full bg-brand-bg ring-1 ring-black/5 hover:ring-brand-blue/30 hover:bg-white px-4 py-2 text-xs font-semibold text-brand-navyDark transition"
+                    >
+                      <span
+                        className={`h-1.5 w-1.5 rounded-full ${s.category === "service" ? "bg-brand-blue" : "bg-brand-gold"}`}
+                        aria-hidden="true"
+                      />
+                      {s.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+            {/* Service sections */}
+            <div className="space-y-20">
+              {SERVICES.map((service, sIdx) => {
+                const accent =
+                  service.category === "service"
+                    ? {
+                        chip: "bg-brand-blue/10 text-brand-blue",
+                        rule: "bg-brand-blue",
+                        dot: "bg-brand-blue",
+                        ring: "hover:ring-brand-blue/30",
+                      }
+                    : {
+                        chip: "bg-brand-gold/15 text-brand-navyDark",
+                        rule: "bg-brand-gold",
+                        dot: "bg-brand-gold",
+                        ring: "hover:ring-brand-gold/40",
+                      };
+
+                return (
+                  <article
+                    key={service.slug}
+                    id={`service-${service.slug}`}
+                    className="scroll-mt-32"
+                  >
+                    {/* Section header card */}
+                    <Reveal>
+                      <header className="rounded-3xl bg-gradient-to-br from-brand-bg to-white ring-1 ring-black/5 p-6 md:p-8 shadow-[0_2px_10px_rgba(13,35,64,0.04)]">
+                        <div className="flex flex-wrap items-center gap-3">
+                          <span
+                            className={`inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] ${accent.chip}`}
+                          >
+                            {String(sIdx + 1).padStart(2, "0")} ·{" "}
+                            {service.category === "service"
+                              ? "Service"
+                              : "Condition"}
+                          </span>
+                          <span
+                            className={`h-px w-10 ${accent.rule}`}
+                            aria-hidden="true"
+                          />
+                        </div>
+                        <h3 className="section-title mt-4 text-2xl md:text-3xl text-brand-navyDark font-semibold leading-tight">
+                          {service.name} —{" "}
+                          <span className="text-brand-textLight font-normal italic">
+                            by city
+                          </span>
+                        </h3>
+                        <p className="mt-3 max-w-3xl text-sm md:text-base text-brand-textLight leading-relaxed">
+                          {service.whatItIs.split(". ").slice(0, 2).join(". ")}
+                          .
+                        </p>
+                        <div className="mt-5">
+                          <Link
+                            href={`/${service.slug}-rio-rancho-nm/`}
+                            className="inline-flex items-center gap-2 text-sm font-semibold text-brand-blue hover:underline underline-offset-4"
+                          >
+                            Visit the {service.name} hub page
+                            <span aria-hidden="true">→</span>
+                          </Link>
+                        </div>
+                      </header>
+                    </Reveal>
+
+                    {/* City grid */}
+                    <ul className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                      {PSEO_CITIES.map((city, cIdx) => {
+                        const slug = `${service.slug}-${city.slug}-nm`;
+                        if (RESERVED_PROGRAMMATIC_SLUGS.has(slug)) return null;
+                        return (
+                          <Reveal
+                            as="li"
+                            key={city.slug}
+                            delay={(cIdx % 5) * 30}
+                          >
+                            <Link
+                              href={`/${slug}/`}
+                              className={`group flex items-center gap-2 h-full rounded-xl bg-white ring-1 ring-black/5 ${accent.ring} hover:shadow-[0_12px_24px_-12px_rgba(13,35,64,0.18)] hover:-translate-y-0.5 px-3 py-2.5 transition-all duration-300`}
+                            >
+                              <span
+                                className={`h-1.5 w-1.5 rounded-full ${accent.dot} shrink-0`}
+                                aria-hidden="true"
+                              />
+                              <span className="flex-1 min-w-0 text-[13px] font-semibold text-brand-navyDark truncate group-hover:text-brand-blue transition-colors">
+                                {city.name}
+                              </span>
+                              <span
+                                className="text-brand-textLight group-hover:text-brand-blue group-hover:translate-x-0.5 transition-all text-xs shrink-0"
+                                aria-hidden="true"
+                              >
+                                →
+                              </span>
+                            </Link>
+                          </Reveal>
+                        );
+                      })}
+                    </ul>
+                  </article>
+                );
+              })}
+            </div>
+
+            {/* Back to top */}
+            <div className="mt-16 text-center">
+              <a
+                href="#top"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-brand-blue hover:underline underline-offset-4"
+              >
+                <span aria-hidden="true">↑</span>
+                Back to top
+              </a>
+            </div>
           </div>
         </section>
 

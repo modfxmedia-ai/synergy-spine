@@ -105,9 +105,34 @@ export default function HumorousPromoVideosOfThePastPage() {
             <Reveal delay={220}>
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
                 We have a creative and funny family. Back in the day we used to shoot
-                short videos to promote upcoming workshops — and we had a lot of fun
-                doing it. Sometimes we still go back and watch them for a family fun
-                night. We hope you enjoy them too.
+                short videos to promote our upcoming{" "}
+                <Link
+                  href="/resources/videos/workshop-videos/"
+                  className="text-brand-gold underline-offset-4 hover:underline"
+                >
+                  workshops
+                </Link>
+                . We had a lot of fun doing it and sometimes we even go back and watch
+                them for a family fun night. We hope you enjoy them too.
+              </p>
+            </Reveal>
+            <Reveal delay={300}>
+              <p className="mt-4 max-w-3xl text-white/70 text-base leading-relaxed">
+                Looking for something more serious? Check out the{" "}
+                <Link
+                  href="/resources/videos/workshop-videos-of-the-past/"
+                  className="text-brand-gold underline-offset-4 hover:underline"
+                >
+                  Workshop Videos of the Past
+                </Link>{" "}
+                or our most recent{" "}
+                <Link
+                  href="/resources/videos/promo-videos/"
+                  className="text-brand-gold underline-offset-4 hover:underline"
+                >
+                  Promo Videos
+                </Link>
+                .
               </p>
             </Reveal>
           </div>
@@ -134,7 +159,7 @@ export default function HumorousPromoVideosOfThePastPage() {
               </p>
               <h2 className="section-title mt-3 text-center text-3xl md:text-4xl text-brand-navyDark font-semibold leading-tight">
                 Tap any thumbnail to{" "}
-                <span className="italic text-brand-blue">watch on YouTube</span>.
+                <span className="italic text-brand-blue">watch right here</span>.
               </h2>
             </Reveal>
 

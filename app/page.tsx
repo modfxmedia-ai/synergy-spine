@@ -8,6 +8,8 @@ import FeaturesBar from "@/components/home/FeaturesBar";
 import VideoSection from "@/components/home/VideoSection";
 import HealCTASection from "@/components/home/HealCTASection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
+import LatestBlogSection from "@/components/home/LatestBlogSection";
+import MapSection from "@/components/home/MapSection";
 import CTASection from "@/components/home/CTASection";
 
 export const metadata: Metadata = {
@@ -56,7 +58,9 @@ export default function Home() {
         <VideoSection />
         <HealCTASection />
         <TestimonialsSection />
+        <LatestBlogSection />
         <CTASection />
+        <MapSection />
       </main>
       <Footer />
     </>

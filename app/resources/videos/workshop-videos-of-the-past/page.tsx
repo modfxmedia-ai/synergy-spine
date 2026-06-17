@@ -105,15 +105,55 @@ export default function WorkshopVideosOfThePastPage() {
             </Reveal>
             <Reveal delay={220}>
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
-                Browse some of our educational workshops from earlier years. Each was
-                designed to empower folks with information that can change a life —
-                and as you&apos;ll see, people have overcome significant health
-                challenges by simply changing some of their habits.
+                Feel free to browse through some of our educational{" "}
+                <Link
+                  href="/resources/videos/workshop-videos/"
+                  className="text-brand-gold underline-offset-4 hover:underline"
+                >
+                  workshops
+                </Link>{" "}
+                of the past. Each of these workshops were designed to empower those
+                present and those who watch with information that will change their
+                life. As you will see from some of the videos, people have been able
+                to overcome significant{" "}
+                <Link
+                  href="/common-conditions/"
+                  className="text-brand-gold underline-offset-4 hover:underline"
+                >
+                  health challenges
+                </Link>{" "}
+                by simply changing some of their habits — including practicing daily{" "}
+                <Link
+                  href="/resources/all-about-spinal-hygiene/"
+                  className="text-brand-gold underline-offset-4 hover:underline"
+                >
+                  spinal hygiene
+                </Link>
+                .
               </p>
             </Reveal>
             <Reveal delay={300}>
               <p className="mt-6 max-w-3xl text-brand-gold text-lg md:text-xl leading-snug font-semibold italic">
                 What habits are you willing to change in order to have a better life?
+              </p>
+            </Reveal>
+            <Reveal delay={360}>
+              <p className="mt-6 max-w-3xl text-white/70 text-base leading-relaxed">
+                Ready to put what you learn into action?{" "}
+                <Link
+                  href="/schedule/"
+                  className="text-brand-gold underline-offset-4 hover:underline"
+                >
+                  Schedule a visit
+                </Link>{" "}
+                or{" "}
+                <Link
+                  href="/contact-us/"
+                  className="text-brand-gold underline-offset-4 hover:underline"
+                >
+                  contact us
+                </Link>{" "}
+                with any questions.
               </p>
             </Reveal>
           </div>
@@ -140,7 +180,7 @@ export default function WorkshopVideosOfThePastPage() {
               </p>
               <h2 className="section-title mt-3 text-center text-3xl md:text-4xl text-brand-navyDark font-semibold leading-tight">
                 Tap any thumbnail to{" "}
-                <span className="italic text-brand-blue">watch on YouTube</span>.
+                <span className="italic text-brand-blue">watch right here</span>.
               </h2>
             </Reveal>
 

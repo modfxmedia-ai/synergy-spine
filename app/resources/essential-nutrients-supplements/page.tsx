@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 const CANONICAL =
   "https://synergyspineandnerve.com/resources/essential-nutrients-supplements/";
@@ -219,37 +220,30 @@ export default function EssentialNutrientsSupplementsPage() {
               <div className="rounded-3xl bg-gradient-to-br from-brand-navyDark via-brand-navy to-brand-navyDark text-white p-8 lg:p-10 shadow-[0_30px_60px_-20px_rgba(13,35,64,0.45)] relative overflow-hidden">
                 <span className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-brand-blue/30 blur-3xl animate-drift pointer-events-none" aria-hidden="true" />
                 <span className="absolute -bottom-10 -left-10 w-40 h-40 rounded-full bg-brand-gold/15 blur-3xl animate-drift pointer-events-none" style={{ animationDelay: "-6s" }} aria-hidden="true" />
-                <div className="relative">
-                  <p className="text-[11px] uppercase tracking-[0.22em] font-bold text-brand-gold">
-                    The brand we trust
-                  </p>
-                  <h2 className="section-title mt-2 text-2xl md:text-3xl font-semibold leading-snug">
-                    We carry{" "}
-                    <span className="italic text-brand-gold">
-                      Innate Choice
-                    </span>{" "}
-                    supplements at the office.
-                  </h2>
-                  <p className="mt-4 text-white/90 leading-relaxed max-w-2xl">
-                    After years of vetting suppliers, Innate Choice is the
-                    line we put our name behind. Whole-food sourcing, no
-                    fillers, third-party tested, and formulated by clinicians
-                    who care about results — not retail margins.
-                  </p>
-                  <div className="mt-6">
-                    <a
-                      href="https://www.youtube.com/watch?v=sT1Xx1DWs_c"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-3 rounded-full bg-brand-gold text-brand-navyDark px-5 py-2 text-sm font-semibold hover:bg-white transition-colors"
-                    >
-                      <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand-navyDark text-brand-gold">
-                        <svg className="w-3.5 h-3.5 translate-x-px" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
-                      </span>
-                      <span>Watch the Innate Choice video</span>
-                    </a>
+                <div className="relative grid lg:grid-cols-12 gap-8 items-center">
+                  <div className="lg:col-span-6">
+                    <p className="text-[11px] uppercase tracking-[0.22em] font-bold text-brand-gold">
+                      The brand we trust
+                    </p>
+                    <h2 className="section-title mt-2 text-2xl md:text-3xl font-semibold leading-snug">
+                      We carry{" "}
+                      <span className="italic text-brand-gold">
+                        Innate Choice
+                      </span>{" "}
+                      supplements at the office.
+                    </h2>
+                    <p className="mt-4 text-white/90 leading-relaxed">
+                      After years of vetting suppliers, Innate Choice is the
+                      line we put our name behind. Whole-food sourcing, no
+                      fillers, third-party tested, and formulated by clinicians
+                      who care about results — not retail margins.
+                    </p>
+                  </div>
+                  <div className="lg:col-span-6">
+                    <YouTubeEmbed
+                      id="sT1Xx1DWs_c"
+                      title="Innate Choice supplements"
+                    />
                   </div>
                 </div>
               </div>
@@ -306,6 +300,47 @@ export default function EssentialNutrientsSupplementsPage() {
                 </Reveal>
               ))}
             </ul>
+          </div>
+        </section>
+
+        {/* VIDEOS: D + Omega-3 */}
+        <section className="bg-white py-16 lg:py-20">
+          <div className="mx-auto max-w-6xl px-6">
+            <Reveal>
+              <div className="text-center max-w-2xl mx-auto">
+                <p className="text-[12px] font-bold uppercase tracking-[0.22em] text-brand-blue">
+                  Watch · Daily essentials
+                </p>
+                <h2 className="section-title mt-3 text-2xl md:text-3xl text-brand-navyDark font-semibold leading-tight">
+                  Two supplements{" "}
+                  <span className="italic text-brand-blue">we recommend daily</span>
+                </h2>
+              </div>
+            </Reveal>
+            <div className="mt-12 grid md:grid-cols-2 gap-8">
+              <Reveal delay={120}>
+                <article>
+                  <YouTubeEmbed
+                    id="n_qKsJ5jaLU"
+                    title="Why you should take Vitamin D every day"
+                  />
+                  <h3 className="section-title mt-4 text-lg text-brand-navyDark font-semibold">
+                    Why you should take Vitamin D every day
+                  </h3>
+                </article>
+              </Reveal>
+              <Reveal delay={200}>
+                <article>
+                  <YouTubeEmbed
+                    id="Q5IQ9Pcs928"
+                    title="Which Fish Oil should I take?"
+                  />
+                  <h3 className="section-title mt-4 text-lg text-brand-navyDark font-semibold">
+                    Which fish oil should I take?
+                  </h3>
+                </article>
+              </Reveal>
+            </div>
           </div>
         </section>
 

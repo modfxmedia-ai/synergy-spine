@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 const CANONICAL = "https://synergyspineandnerve.com/helpful-stretches/";
 
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
 type Stretch = {
   title: string;
   desc: string;
+  videoId?: string;
 };
 
 type StretchGroup = {
@@ -45,14 +47,17 @@ const GROUPS: StretchGroup[] = [
       {
         title: "Stretching the Sternocleidomastoid Muscle for Neck Pain",
         desc: "A focused stretch for the SCM — a common source of neck pain and tension headaches.",
+        videoId: "q_Wdobp3DdQ",
       },
       {
         title: "Stretches to Improve Forward Head Posture",
         desc: "Reverse the rounded-shoulder, head-forward pattern that comes from desk work and screens.",
+        videoId: "Th42qqU_RDc",
       },
       {
         title: "Lateral Neck Stretch to Prevent Headaches and Neck Pain",
         desc: "A gentle side-to-side stretch that releases the upper trapezius and levator scapulae.",
+        videoId: "OJuakKPXc_s",
       },
     ],
   },
@@ -64,30 +69,37 @@ const GROUPS: StretchGroup[] = [
       {
         title: "Stretches on the Floor for Generalized Lower Back Pain",
         desc: "Foundational floor-based stretches to loosen up the lumbar spine.",
+        videoId: "q_Wdobp3DdQ",
       },
       {
         title: "Twist Stretch for Generalized Lower Back Pain",
         desc: "A spinal rotation that relieves tension along the entire lower back.",
+        videoId: "Th42qqU_RDc",
       },
       {
         title: "Stretching Hamstrings for Lower Back Pain",
         desc: "Tight hamstrings pull on the pelvis — open them up to give your lower back room to move.",
+        videoId: "OJuakKPXc_s",
       },
       {
         title: "Stretches to Prevent Sciatic Nerve Pain (On the Floor)",
         desc: "Targeted lying-down stretches that calm sciatic nerve irritation.",
+        videoId: "rS8JTPQ84A",
       },
       {
         title: "Stretches to Prevent Sciatic Nerve Pain (Seated)",
         desc: "Office-friendly versions you can do at your desk during the workday.",
+        videoId: "_B2dclAUVzg",
       },
       {
         title: "Stretching Hip Flexors for Lower Back Pain",
         desc: "Hip flexor tightness is a hidden driver of low-back pain. Here&apos;s how to address it.",
+        videoId: "m98QsR62OlM",
       },
       {
         title: "Stretching Pecs to Prevent Forward Head Posture",
         desc: "Open the chest to take the load off your neck and upper back.",
+        videoId: "PAXcPHm0Ce4",
       },
     ],
   },
@@ -99,18 +111,22 @@ const GROUPS: StretchGroup[] = [
       {
         title: "Stretching the Iliotibial Tract Band for Knee Pain",
         desc: "A simple stretch for IT band tightness — a common cause of lateral knee pain.",
+        videoId: "elgTTuQJYYY",
       },
       {
         title: "Stretching that Improves Calf Pain",
         desc: "Calf flexibility supports your ankles, knees, and lower back.",
+        videoId: "fulAuFkhTeA",
       },
       {
         title: "Stretching the Quad to Prevent Knee Pain",
         desc: "Tight quads pull on the kneecap. This stretch keeps your patellar tracking healthy.",
+        videoId: "rVvY0Ns0Hr4",
       },
       {
         title: "Stretching the Iliotibial Band with a Foam Roller",
         desc: "Foam-roller progression for the IT band — once a basic stretch isn&apos;t enough.",
+        videoId: "zQpq6AvNnd4",
       },
     ],
   },
@@ -225,27 +241,35 @@ export default function HelpfulStretchesPage() {
                   <Reveal key={s.title} as="li" delay={i * 60}>
                     <article className="group relative h-full overflow-hidden rounded-2xl bg-white ring-1 ring-black/5 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
                       <div
-                        className={`absolute top-0 left-6 right-6 h-[3px] rounded-b bg-gradient-to-r ${ACCENT_BG[group.accent]} scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500`}
+                        className={`absolute top-0 left-6 right-6 h-[3px] rounded-b bg-gradient-to-r ${ACCENT_BG[group.accent]} scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 z-10`}
                         aria-hidden="true"
                       />
-                      <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-br from-brand-navy via-brand-navyDark to-brand-blue">
-                        <div className="absolute inset-0 opacity-30 mix-blend-overlay">
-                          <div className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-brand-gold/40 blur-2xl animate-drift" />
-                          <div className="absolute -bottom-12 -left-10 h-44 w-44 rounded-full bg-white/30 blur-2xl animate-drift" />
+                      {s.videoId ? (
+                        <YouTubeEmbed
+                          id={s.videoId}
+                          title={s.title.replace(/&apos;/g, "'")}
+                          aspect="aspect-video rounded-none rounded-t-2xl"
+                        />
+                      ) : (
+                        <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-br from-brand-navy via-brand-navyDark to-brand-blue">
+                          <div className="absolute inset-0 opacity-30 mix-blend-overlay">
+                            <div className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-brand-gold/40 blur-2xl animate-drift" />
+                            <div className="absolute -bottom-12 -left-10 h-44 w-44 rounded-full bg-white/30 blur-2xl animate-drift" />
+                          </div>
+                          <div className="relative z-10 flex h-full items-center justify-center">
+                            <span className="flex h-14 w-14 items-center justify-center rounded-full bg-white/95 text-brand-navyDark shadow-lg group-hover:bg-brand-gold transition">
+                              <svg
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                className="h-6 w-6 ml-1"
+                                aria-hidden="true"
+                              >
+                                <path d="M8 5v14l11-7z" />
+                              </svg>
+                            </span>
+                          </div>
                         </div>
-                        <div className="relative z-10 flex h-full items-center justify-center">
-                          <span className="flex h-14 w-14 items-center justify-center rounded-full bg-white/95 text-brand-navyDark shadow-lg group-hover:bg-brand-gold transition">
-                            <svg
-                              viewBox="0 0 24 24"
-                              fill="currentColor"
-                              className="h-6 w-6 ml-1"
-                              aria-hidden="true"
-                            >
-                              <path d="M8 5v14l11-7z" />
-                            </svg>
-                          </span>
-                        </div>
-                      </div>
+                      )}
                       <div className="p-5">
                         <h3
                           className="text-base font-semibold leading-snug text-brand-navyDark"

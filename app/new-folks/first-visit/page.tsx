@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 import SpineGraphic from "@/components/motion/SpineGraphic";
 import PulseWave from "@/components/motion/PulseWave";
 
@@ -410,6 +411,35 @@ export default function FirstVisitPage() {
                 </Reveal>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* VIDEO: How frequently should you get adjusted */}
+        <section className="bg-white py-16 lg:py-20">
+          <div className="mx-auto max-w-4xl px-6">
+            <Reveal>
+              <div className="text-center max-w-2xl mx-auto">
+                <p className="text-[12px] font-bold uppercase tracking-[0.22em] text-brand-blue">
+                  Common question
+                </p>
+                <h2 className="section-title mt-3 text-2xl md:text-3xl text-brand-navyDark font-semibold leading-tight">
+                  How frequently should you{" "}
+                  <span className="italic text-brand-blue">get adjusted</span>?
+                </h2>
+                <p className="mt-3 text-brand-text">
+                  Spoiler: it&apos;s less about a magic number and more
+                  about your specific spine. Dr. Brad explains.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={150}>
+              <div className="mt-10">
+                <YouTubeEmbed
+                  id="ZKSzbG2Wc8M"
+                  title="How frequently should you get adjusted?"
+                />
+              </div>
+            </Reveal>
           </div>
         </section>
 

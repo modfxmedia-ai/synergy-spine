@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 const CANONICAL = "https://synergyspineandnerve.com/the-truth-about-neuropathy/";
 
@@ -202,6 +203,31 @@ export default function TruthAboutNeuropathyPage() {
                 </Reveal>
               ))}
             </ul>
+          </div>
+        </section>
+
+        {/* VIDEO */}
+        <section className="bg-white py-16 lg:py-20">
+          <div className="mx-auto max-w-4xl px-6">
+            <Reveal>
+              <div className="text-center max-w-2xl mx-auto">
+                <p className="text-[12px] font-bold uppercase tracking-[0.22em] text-brand-blue">
+                  Watch · Dr. Brad
+                </p>
+                <h2 className="section-title mt-3 text-2xl md:text-3xl text-brand-navyDark font-semibold leading-tight">
+                  Are you choosing{" "}
+                  <span className="italic text-brand-blue">numbness or functional restoration</span>?
+                </h2>
+              </div>
+            </Reveal>
+            <Reveal delay={150}>
+              <div className="mt-10">
+                <YouTubeEmbed
+                  id="K-4zcZpPU0g"
+                  title="Are you choosing numbness or functional restoration?"
+                />
+              </div>
+            </Reveal>
           </div>
         </section>
 

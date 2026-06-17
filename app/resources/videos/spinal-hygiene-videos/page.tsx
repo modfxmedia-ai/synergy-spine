@@ -104,24 +104,65 @@ export default function SpinalHygieneVideosPage() {
             </Reveal>
             <Reveal delay={220}>
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
-                The research is clear that the joints of your spine and the rest of your
+                The research is clear that the joints of your spine and the rest of the
                 body must move freely. If they don&apos;t, there are negative effects
-                that can become permanent. Start with the{" "}
-                <strong className="text-white">Spinal Hygiene Video</strong> to
-                understand what happens in your brain when motion is restricted, then
-                work through the practical demonstrations below.
+                that can become permanent. The first step is to understand what
+                happens in your brain when motion is restricted by watching the{" "}
+                <Link
+                  href="/spinal-hygiene-video/"
+                  className="text-brand-gold underline-offset-4 hover:underline"
+                >
+                  Spinal Hygiene Video
+                </Link>
+                .
               </p>
             </Reveal>
             <Reveal delay={300}>
-              <p className="mt-4 max-w-3xl text-white/70 text-base leading-relaxed">
-                You may also want to check out our{" "}
+              <p className="mt-4 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
+                Then it would be a good idea to see some examples of things you can do
+                to improve your spinal motion by watching the{" "}
+                <Link
+                  href="/use-your-head-video/"
+                  className="text-brand-gold underline-offset-4 hover:underline"
+                >
+                  Use Your Head video
+                </Link>
+                , the{" "}
+                <Link
+                  href="/6-way-strap/"
+                  className="text-brand-gold underline-offset-4 hover:underline"
+                >
+                  6-Way Strap video
+                </Link>
+                , the{" "}
+                <Link
+                  href="/thoracic-roller/"
+                  className="text-brand-gold underline-offset-4 hover:underline"
+                >
+                  Thoracic Roller video
+                </Link>{" "}
+                or the{" "}
+                <Link
+                  href="/over-the-door-traction/"
+                  className="text-brand-gold underline-offset-4 hover:underline"
+                >
+                  Over-the-Door video
+                </Link>
+                . You also may want to check out the{" "}
                 <Link
                   href="/helpful-stretches/"
                   className="text-brand-gold underline-offset-4 hover:underline"
                 >
                   Helpful Stretches
                 </Link>{" "}
-                page.
+                page in our resources section, as well as the{" "}
+                <Link
+                  href="/mobility-disk-for-lower-back/"
+                  className="text-brand-gold underline-offset-4 hover:underline"
+                >
+                  Lumbar Mobility Disc
+                </Link>
+                .
               </p>
             </Reveal>
           </div>
@@ -149,7 +190,7 @@ export default function SpinalHygieneVideosPage() {
               </p>
               <h2 className="section-title mt-3 text-center text-3xl md:text-4xl text-brand-navyDark font-semibold leading-tight">
                 Tap any thumbnail to{" "}
-                <span className="italic text-brand-blue">watch on YouTube</span>.
+                <span className="italic text-brand-blue">watch right here</span>.
               </h2>
             </Reveal>
 

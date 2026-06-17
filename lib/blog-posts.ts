@@ -106,7 +106,7 @@ export const POSTS: BlogPost[] = [
     date: "February 27, 2019",
     isoDate: "2019-02-27",
     readTime: "2 min read",
-    featureImage: null,
+    featureImage: "/blog-images/how-to-reduce-the-risk-of-cancer-and-heart-disease-but-not-stroke.jpg",
   },
   {
     slug: "five-reasons-to-quit-sugar-now-2",
@@ -116,7 +116,7 @@ export const POSTS: BlogPost[] = [
     date: "November 26, 2018",
     isoDate: "2018-11-26",
     readTime: "3 min read",
-    featureImage: null,
+    featureImage: "/blog-images/five-reasons-to-quit-sugar-now.jpg",
   },
   {
     slug: "3-keys-to-reducing-inflammation",
@@ -136,7 +136,7 @@ export const POSTS: BlogPost[] = [
     date: "April 2, 2018",
     isoDate: "2018-04-02",
     readTime: "2 min read",
-    featureImage: null,
+    featureImage: "/blog-images/3-habits-to-improve-your-core-strength.avif",
   },
   {
     slug: "so-you-want-to-feel-better",
@@ -166,7 +166,7 @@ export const POSTS: BlogPost[] = [
     date: "March 1, 2018",
     isoDate: "2018-03-01",
     readTime: "2 min read",
-    featureImage: null,
+    featureImage: "/blog-images/please-dont-make-this-same-mistake.webp",
   },
   {
     slug: "8-ways-to-improve-your-sha-score",
@@ -176,7 +176,7 @@ export const POSTS: BlogPost[] = [
     date: "February 26, 2018",
     isoDate: "2018-02-26",
     readTime: "2 min read",
-    featureImage: null,
+    featureImage: "/blog-images/8-ways-to-improve-your-sha-score.webp",
   },
   {
     slug: "why-you-should-do-spinal-hygiene",
@@ -186,7 +186,7 @@ export const POSTS: BlogPost[] = [
     date: "February 26, 2018",
     isoDate: "2018-02-26",
     readTime: "2 min read",
-    featureImage: null,
+    featureImage: "/blog-images/why-you-should-do-spinal-hygiene.avif",
   },
   {
     slug: "the-healthiest-chocolates-ever",

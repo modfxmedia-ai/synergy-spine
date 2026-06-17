@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 const CANONICAL =
   "https://synergyspineandnerve.com/resources/all-about-spinal-hygiene/";
@@ -23,57 +24,70 @@ export const metadata: Metadata = {
   },
 };
 
-const HYGIENE_VIDEOS = [
+const HYGIENE_VIDEOS: {
+  videoId?: string;
+  href: string;
+  title: string;
+  desc: string;
+}[] = [
   {
-    href: "https://synergyspineandnerve.com/backpack-analogy/",
+    videoId: "z_iICcjcmjs",
+    href: "/backpack-analogy/",
     title: "The Backpack Analogy",
     desc:
       "It's important to understand that as long as your backpack is filled with the heaviness of stress, it'll always alter your posture. Your spine and nerve system depend on it being lightened.",
   },
   {
-    href: "https://synergyspineandnerve.com/spinal-hygiene-video/",
+    videoId: "9wPYA3RWAwI",
+    href: "/spinal-hygiene-video/",
     title: "Spinal Hygiene Video",
     desc:
       "All about spinal hygiene — what it is, why it matters, and the daily routine that keeps your spine healthy.",
   },
   {
-    href: "https://synergyspineandnerve.com/use-your-head-video/",
+    videoId: "uEtdfzxle2c",
+    href: "/use-your-head-video/",
     title: "Use Your Head Video",
     desc:
       "There is so much wisdom in the simple phrase use your head — see why posture and head position drive your overall health.",
   },
   {
-    href: "https://synergyspineandnerve.com/30-second-spinal-hygiene-report-card/",
+    videoId: "UAuYYnLuh6U",
+    href: "/30-second-spinal-hygiene-report-card/",
     title: "30-Second Spinal Hygiene Report Card",
     desc:
       "A quick self-test you can run at home to grade the current condition of your spinal hygiene.",
   },
   {
-    href: "https://synergyspineandnerve.com/helpful-stretches/",
+    href: "/helpful-stretches/",
     title: "Helpful Stretches",
     desc:
       "Targeted stretches we recommend for the most common areas where motion gets locked up.",
   },
   {
-    href: "https://synergyspineandnerve.com/6-way-strap/",
+    videoId: "RsgxFYDSmJs",
+    href: "/6-way-strap/",
     title: "6-Way Strap",
     desc:
       "How to use the 6-way strap to restore range of motion you may not be able to access on your own.",
   },
   {
-    href: "https://synergyspineandnerve.com/thoracic-roller/",
+    videoId: "sR1DmFFsQsQ",
+    href: "/thoracic-roller/",
     title: "Thoracic Roller",
     desc:
       "The thoracic roller is one of our favorite tools for restoring extension to the mid-back.",
   },
   {
-    href: "https://synergyspineandnerve.com/over-the-door-traction/",
+    videoId: "TbbI9zyWeKE",
+    href: "/over-the-door-traction/",
     title: "Over-The-Door Traction",
     desc:
       "Simple home traction setup to decompress and rehydrate the cervical spine while you relax.",
   },
   {
-    href: "https://synergyspineandnerve.com/mobility-disk-for-lower-back/",
+    videoId: "qQ2S4UZTR_s",
+    href: "/mobility-disk-for-lower-back/",
     title: "Mobility Disk for Lower Back",
     desc:
       "Add gentle motion to the lumbar spine in a way that's safe to do every day.",
@@ -242,38 +256,69 @@ export default function AllAboutSpinalHygienePage() {
             <ul className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {HYGIENE_VIDEOS.map((v, i) => (
                 <Reveal as="li" key={v.href} delay={(i % 3) * 80}>
-                  <a
-                    href={v.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group block h-full bg-white rounded-3xl ring-1 ring-black/5 overflow-hidden shadow-[0_2px_10px_rgba(13,35,64,0.04)] hover:shadow-[0_30px_60px_-20px_rgba(13,35,64,0.25)] hover:-translate-y-1 transition-all duration-500"
-                  >
-                    <div className="relative aspect-video bg-gradient-to-br from-brand-navy to-brand-navyDark overflow-hidden">
-                      <span
-                        className="absolute -top-8 -right-8 w-28 h-28 rounded-full bg-brand-blue/30 blur-2xl group-hover:bg-brand-gold/30 transition-colors"
-                        aria-hidden="true"
-                      />
-                      <span className="absolute inset-0 flex items-center justify-center">
-                        <span className="relative inline-flex h-16 w-16 items-center justify-center rounded-full bg-white text-brand-navyDark shadow-xl group-hover:scale-110 transition-transform">
-                          <svg className="w-7 h-7 translate-x-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M8 5v14l11-7z" />
-                          </svg>
-                          <span className="absolute inset-0 rounded-full ring-2 ring-white/40 animate-pulseRing" />
+                  <article className="flex h-full flex-col bg-white rounded-3xl ring-1 ring-black/5 overflow-hidden shadow-[0_2px_10px_rgba(13,35,64,0.04)] hover:shadow-[0_30px_60px_-20px_rgba(13,35,64,0.18)] transition-shadow duration-500">
+                    {v.videoId ? (
+                      <YouTubeEmbed id={v.videoId} title={v.title} />
+                    ) : (
+                      <Link
+                        href={v.href}
+                        className="group relative block aspect-video bg-gradient-to-br from-brand-navy to-brand-navyDark overflow-hidden"
+                      >
+                        <span
+                          className="absolute -top-8 -right-8 w-28 h-28 rounded-full bg-brand-blue/30 blur-2xl group-hover:bg-brand-gold/30 transition-colors"
+                          aria-hidden="true"
+                        />
+                        <span className="absolute inset-0 flex items-center justify-center">
+                          <span className="relative inline-flex h-16 w-16 items-center justify-center rounded-full bg-white text-brand-navyDark shadow-xl group-hover:scale-110 transition-transform">
+                            <svg
+                              className="w-7 h-7"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              aria-hidden="true"
+                            >
+                              <line x1="5" y1="12" x2="19" y2="12" />
+                              <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                            <span className="absolute inset-0 rounded-full ring-2 ring-white/40 animate-pulseRing" />
+                          </span>
                         </span>
-                      </span>
-                      <span className="absolute bottom-3 left-4 text-[10px] uppercase tracking-[0.22em] font-bold text-white/80">
-                        Watch · {String(i + 1).padStart(2, "0")}
-                      </span>
-                    </div>
-                    <div className="p-6">
-                      <h3 className="section-title text-lg text-brand-navyDark font-semibold group-hover:text-brand-blue transition-colors">
+                      </Link>
+                    )}
+                    <div className="flex flex-1 flex-col p-6">
+                      <p className="text-[11px] uppercase tracking-[0.22em] font-bold text-brand-blue">
+                        {v.videoId ? `Watch · ${String(i + 1).padStart(2, "0")}` : "Guide"}
+                      </p>
+                      <h3 className="section-title mt-2 text-lg text-brand-navyDark font-semibold">
                         {v.title}
                       </h3>
                       <p className="mt-2 text-sm text-brand-textLight leading-relaxed">
                         {v.desc}
                       </p>
+                      <Link
+                        href={v.href}
+                        className="mt-4 inline-flex items-center gap-2 text-[12px] font-bold uppercase tracking-[0.18em] text-brand-blue hover:text-brand-navyDark transition-colors"
+                      >
+                        <span>Open page</span>
+                        <svg
+                          className="w-3.5 h-3.5"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          aria-hidden="true"
+                        >
+                          <line x1="5" y1="12" x2="19" y2="12" />
+                          <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                      </Link>
                     </div>
-                  </a>
+                  </article>
                 </Reveal>
               ))}
             </ul>
@@ -308,6 +353,41 @@ export default function AllAboutSpinalHygienePage() {
                 </div>
               </Link>
             </Reveal>
+          </div>
+        </section>
+
+        {/* VIDEOS: Why hygiene matters */}
+        <section className="bg-white py-16 lg:py-20">
+          <div className="mx-auto max-w-6xl px-6">
+            <Reveal>
+              <div className="text-center max-w-2xl mx-auto">
+                <p className="text-[12px] font-bold uppercase tracking-[0.22em] text-brand-blue">
+                  Why daily hygiene matters
+                </p>
+                <h2 className="section-title mt-3 text-2xl md:text-3xl text-brand-navyDark font-semibold leading-tight">
+                  The two things{" "}
+                  <span className="italic text-brand-blue">wrecking your spine</span>
+                </h2>
+              </div>
+            </Reveal>
+            <div className="mt-12 grid md:grid-cols-2 gap-8">
+              <Reveal delay={120}>
+                <article>
+                  <YouTubeEmbed id="bjJphC9lwU0" title="How Stress is Killing You" />
+                  <h3 className="section-title mt-4 text-lg text-brand-navyDark font-semibold">
+                    How stress is killing you
+                  </h3>
+                </article>
+              </Reveal>
+              <Reveal delay={200}>
+                <article>
+                  <YouTubeEmbed id="d1Pyq28ld30" title="How bad is sitting for me?" />
+                  <h3 className="section-title mt-4 text-lg text-brand-navyDark font-semibold">
+                    How bad is sitting for me?
+                  </h3>
+                </article>
+              </Reveal>
+            </div>
           </div>
         </section>
 

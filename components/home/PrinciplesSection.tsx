@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 
 type Principle = {
@@ -5,44 +6,74 @@ type Principle = {
   title: string;
   body: string;
   accent: "blue" | "gold" | "navy";
+  image: string;
+  imageAlt: string;
 };
 
 const PRINCIPLES: Principle[] = [
   {
     number: "01",
     title: "We believe everyone matters",
-    body: "Every patient deserves to be seen, heard, and treated as a whole person — not a symptom. We meet you exactly where you are, and walk with you toward better health.",
+    body: "Every patient deserves to be seen, heard, and treated as a whole person — not a symptom. We meet you where you are and walk with you toward better health.",
     accent: "blue",
+    image:
+      "https://synergyspineandnerve.com/wp-content/uploads/2020/04/AdobeStock_131905531_5728daf376e95dbd68bb771b46885093.jpg",
+    imageAlt:
+      "Compassionate chiropractic team welcoming a patient at Synergy Spine and Nerve Center.",
   },
   {
     number: "02",
     title: "We discover the cause",
     body: "We don't chase symptoms. We illuminate the root cause of your problem so we can liberate you from pain — and keep it from coming back.",
     accent: "gold",
+    image:
+      "https://synergyspineandnerve.com/wp-content/uploads/2020/04/AdobeStock_170696498.jpg",
+    imageAlt:
+      "Chiropractor evaluating a spinal model to identify the underlying cause of pain.",
   },
   {
     number: "03",
     title: "We use evidence-based protocols",
     body: "Modern chiropractic care, grounded in published research and proven outcomes. Care that improves your quality of life — measurably.",
     accent: "navy",
+    image:
+      "https://synergyspineandnerve.com/wp-content/uploads/2020/04/AdobeStock_221694274_9210ad7af9e5f7b776c84ac6f0276f49.jpg",
+    imageAlt:
+      "Modern, evidence-based chiropractic protocols at Synergy Spine and Nerve Center.",
   },
 ];
 
-const ACCENTS: Record<Principle["accent"], { bar: string; num: string; dot: string }> = {
-  blue: { bar: "from-brand-blue to-brand-blueLight", num: "text-brand-blue", dot: "bg-brand-blue" },
-  gold: { bar: "from-brand-gold to-brand-goldSoft", num: "text-brand-gold", dot: "bg-brand-gold" },
-  navy: { bar: "from-brand-navyDark to-brand-navy", num: "text-brand-navyDark", dot: "bg-brand-navyDark" },
+const ACCENTS: Record<
+  Principle["accent"],
+  { numText: string; rule: string; chip: string }
+> = {
+  blue: {
+    numText: "text-brand-blue",
+    rule: "bg-brand-blue",
+    chip: "text-brand-blue",
+  },
+  gold: {
+    numText: "text-brand-gold",
+    rule: "bg-brand-gold",
+    chip: "text-brand-gold",
+  },
+  navy: {
+    numText: "text-brand-navyDark",
+    rule: "bg-brand-navyDark",
+    chip: "text-brand-navyDark",
+  },
 };
 
 export default function PrinciplesSection() {
   return (
-    <section className="relative bg-white py-24 lg:py-32 overflow-hidden">
+    <section className="relative bg-white py-20 lg:py-28 overflow-hidden">
       <div
-        className="absolute -top-32 right-0 w-[500px] h-[500px] rounded-full bg-brand-blue/5 blur-3xl pointer-events-none animate-drift"
+        className="absolute -top-40 right-0 w-[420px] h-[420px] rounded-full bg-brand-blue/5 blur-3xl pointer-events-none animate-drift"
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div className="relative mx-auto max-w-6xl px-6">
+        {/* Header */}
         <Reveal className="max-w-3xl">
           <div className="inline-flex items-center gap-3">
             <span className="h-px w-10 bg-brand-blue" />
@@ -50,56 +81,89 @@ export default function PrinciplesSection() {
               Our Philosophy
             </p>
           </div>
-          <h2 className="section-title mt-5 text-4xl md:text-5xl lg:text-6xl text-brand-navyDark font-semibold leading-[1.05]">
+          <h2 className="section-title mt-5 text-3xl md:text-4xl lg:text-5xl text-brand-navyDark font-semibold leading-[1.05]">
             A practice built on{" "}
             <span className="italic text-brand-blue">three commitments</span>.
           </h2>
+          <p className="mt-5 max-w-2xl text-base md:text-lg text-brand-textLight leading-relaxed">
+            The principles that guide every visit, every protocol, and every
+            relationship at Synergy Spine and Nerve Center.
+          </p>
         </Reveal>
 
-        <ul className="mt-16 space-y-3">
+        {/* Editorial list */}
+        <div className="mt-16 lg:mt-20">
           {PRINCIPLES.map((p, i) => {
             const a = ACCENTS[p.accent];
+            const isReversed = i % 2 === 1;
             return (
-              <Reveal as="li" key={p.number} delay={i * 120}>
-                <article className="group relative overflow-hidden rounded-3xl bg-white ring-1 ring-black/5 hover:ring-transparent shadow-[0_2px_10px_rgba(13,35,64,0.04)] hover:shadow-[0_30px_60px_-20px_rgba(13,35,64,0.25)] transition-all duration-500">
-                  {/* Gradient hover background */}
+              <Reveal key={p.number} delay={i * 100}>
+                <div
+                  className={`grid grid-cols-12 gap-x-6 lg:gap-x-12 gap-y-8 items-center py-12 lg:py-16 ${
+                    i > 0 ? "border-t border-black/10" : ""
+                  }`}
+                >
+                  {/* Outline number */}
                   <div
-                    className={`absolute inset-0 bg-gradient-to-br ${a.bar} opacity-0 group-hover:opacity-[0.04] transition-opacity duration-500 pointer-events-none`}
-                    aria-hidden="true"
-                  />
-                  {/* Left accent bar */}
+                    className={`col-span-12 md:col-span-2 flex md:block ${
+                      isReversed ? "md:order-3" : ""
+                    }`}
+                  >
+                    <span
+                      className={`section-title text-7xl md:text-8xl lg:text-[120px] font-semibold leading-none ${a.numText}`}
+                      style={{
+                        WebkitTextStroke: "1px currentColor",
+                        WebkitTextFillColor: "transparent",
+                      }}
+                      aria-hidden="true"
+                    >
+                      {p.number}
+                    </span>
+                  </div>
+
+                  {/* Copy */}
                   <div
-                    className={`absolute left-0 top-0 bottom-0 w-[3px] bg-gradient-to-b ${a.bar} scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-500`}
-                    aria-hidden="true"
-                  />
-
-                  <div className="relative grid md:grid-cols-12 gap-6 md:gap-10 p-8 md:p-12 items-start">
-                    <div className="md:col-span-2 flex md:block items-center gap-4">
-                      <span className={`section-title text-5xl md:text-7xl font-semibold ${a.num} opacity-30 group-hover:opacity-100 transition-opacity duration-500`}>
-                        {p.number}
-                      </span>
-                      <span className={`md:hidden h-1.5 w-1.5 rounded-full ${a.dot}`} />
-                    </div>
-
-                    <div className="md:col-span-5">
-                      <h3 className="section-title text-2xl md:text-3xl text-brand-navyDark font-semibold leading-tight">
-                        {p.title}
-                      </h3>
-                    </div>
-
-                    <div className="md:col-span-5 flex flex-col">
-                      <p className="text-brand-textLight leading-relaxed">{p.body}</p>
-                      <div className="mt-5 inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.18em] text-brand-textLight group-hover:text-brand-blue transition-colors">
-                        <span className={`inline-block h-1.5 w-1.5 rounded-full ${a.dot}`} />
+                    className={`col-span-12 md:col-span-5 ${
+                      isReversed ? "md:order-2" : ""
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className={`h-px w-8 ${a.rule}`} aria-hidden="true" />
+                      <span
+                        className={`text-[10px] font-bold uppercase tracking-[0.22em] ${a.chip}`}
+                      >
                         Principle {p.number}
-                      </div>
+                      </span>
+                    </div>
+                    <h3 className="section-title mt-4 text-2xl md:text-3xl lg:text-4xl text-brand-navyDark font-semibold leading-[1.15]">
+                      {p.title}
+                    </h3>
+                    <p className="mt-5 text-base md:text-lg text-brand-textLight leading-relaxed max-w-xl">
+                      {p.body}
+                    </p>
+                  </div>
+
+                  {/* Image — frameless, just rounded corners */}
+                  <div
+                    className={`col-span-12 md:col-span-5 ${
+                      isReversed ? "md:order-1" : ""
+                    }`}
+                  >
+                    <div className="relative aspect-[5/4] overflow-hidden rounded-[28px]">
+                      <Image
+                        src={p.image}
+                        alt={p.imageAlt}
+                        fill
+                        sizes="(min-width: 1024px) 480px, (min-width: 768px) 42vw, 100vw"
+                        className="object-cover"
+                      />
                     </div>
                   </div>
-                </article>
+                </div>
               </Reveal>
             );
           })}
-        </ul>
+        </div>
       </div>
     </section>
   );

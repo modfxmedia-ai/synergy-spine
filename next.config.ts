@@ -2,6 +2,25 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   trailingSlash: true,
+  async redirects() {
+    return [
+      {
+        source: "/other-videos",
+        destination: "/resources/videos/other-videos/",
+        permanent: true,
+      },
+      {
+        source: "/promo-videos",
+        destination: "/resources/videos/promo-videos/",
+        permanent: true,
+      },
+      {
+        source: "/workshop-videos",
+        destination: "/resources/videos/workshop-videos/",
+        permanent: true,
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {

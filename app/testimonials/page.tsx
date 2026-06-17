@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 const CANONICAL = "https://synergyspineandnerve.com/testimonials/";
 
@@ -83,21 +84,31 @@ const REVIEWS: Review[] = [
   },
 ];
 
-const VIDEO_TESTIMONIALS = [
+const VIDEO_TESTIMONIALS: { id: string; name: string; subtitle: string }[] = [
   {
-    title: "Patient story · Lower-back relief",
-    label: "Watch on synergyspineandnerve.com",
-    accent: "from-brand-blue to-brand-blueLight",
+    id: "6X1GPGHNy9M",
+    name: "Boyd",
+    subtitle: "Straight Chiropractic patient story",
   },
   {
-    title: "Patient story · Migraine recovery",
-    label: "Watch on synergyspineandnerve.com",
-    accent: "from-brand-navy to-brand-navyDark",
+    id: "CuZb-RV5C84",
+    name: "Jessica",
+    subtitle: "Straight Chiropractic patient story",
   },
   {
-    title: "Patient story · Neuropathy turnaround",
-    label: "Watch on synergyspineandnerve.com",
-    accent: "from-brand-blueLight to-brand-blue",
+    id: "EZUnB5iK678",
+    name: "Barbara",
+    subtitle: "Straight Chiropractic patient story",
+  },
+  {
+    id: "QwkzdR5mMbE",
+    name: "Marybeth",
+    subtitle: "Straight Chiropractic patient story",
+  },
+  {
+    id: "Sr1y7RpBMJM",
+    name: "Jose",
+    subtitle: "Straight Chiropractic patient story",
   },
 ];
 
@@ -286,36 +297,21 @@ export default function TestimonialsPage() {
 
             <ul className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {VIDEO_TESTIMONIALS.map((v, i) => (
-                <Reveal as="li" key={v.title} delay={(i % 3) * 80}>
-                  <a
-                    href="https://synergyspineandnerve.com/testimonials/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group block h-full bg-white rounded-3xl ring-1 ring-black/5 overflow-hidden shadow-[0_2px_10px_rgba(13,35,64,0.04)] hover:shadow-[0_30px_60px_-20px_rgba(13,35,64,0.25)] hover:-translate-y-1 transition-all duration-500"
-                  >
-                    <div className={`relative aspect-video bg-gradient-to-br ${v.accent} overflow-hidden`}>
-                      <span
-                        className="absolute -top-8 -right-8 w-28 h-28 rounded-full bg-white/15 blur-2xl"
-                        aria-hidden="true"
-                      />
-                      <span className="absolute inset-0 flex items-center justify-center">
-                        <span className="relative inline-flex h-16 w-16 items-center justify-center rounded-full bg-white text-brand-navyDark shadow-xl group-hover:scale-110 transition-transform">
-                          <svg className="w-7 h-7 translate-x-0.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M8 5v14l11-7z" />
-                          </svg>
-                          <span className="absolute inset-0 rounded-full ring-2 ring-white/40 animate-pulseRing" />
-                        </span>
-                      </span>
-                    </div>
+                <Reveal as="li" key={v.id} delay={(i % 3) * 80}>
+                  <article className="h-full bg-white rounded-3xl ring-1 ring-black/5 overflow-hidden shadow-[0_2px_10px_rgba(13,35,64,0.04)] hover:shadow-[0_30px_60px_-20px_rgba(13,35,64,0.25)] transition-all duration-500">
+                    <YouTubeEmbed
+                      id={v.id}
+                      title={`${v.name} — ${v.subtitle}`}
+                    />
                     <div className="p-6">
-                      <h3 className="section-title text-lg text-brand-navyDark font-semibold group-hover:text-brand-blue transition-colors">
-                        {v.title}
+                      <h3 className="section-title text-lg text-brand-navyDark font-semibold">
+                        {v.name}
                       </h3>
                       <p className="mt-2 text-[12px] uppercase tracking-[0.18em] font-semibold text-brand-blue">
-                        {v.label}
+                        {v.subtitle}
                       </p>
                     </div>
-                  </a>
+                  </article>
                 </Reveal>
               ))}
             </ul>

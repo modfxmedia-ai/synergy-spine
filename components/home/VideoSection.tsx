@@ -1,4 +1,5 @@
 import Reveal from "@/components/Reveal";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 export default function VideoSection() {
   return (
@@ -45,38 +46,34 @@ export default function VideoSection() {
         </div>
 
         <Reveal delay={200} variant="fade">
-          <div className="mt-14 relative group">
+          <div className="mt-14 mx-auto max-w-3xl relative group">
             {/* Tilted backplates */}
             <div
-              className="absolute -inset-4 rounded-[36px] bg-brand-gold/20 -rotate-2 transition-transform duration-700 group-hover:-rotate-3"
+              className="absolute -inset-3 rounded-[28px] bg-brand-gold/20 -rotate-2 transition-transform duration-700 group-hover:-rotate-3"
               aria-hidden="true"
             />
             <div
-              className="absolute -inset-2 rounded-[32px] bg-brand-blue/30 rotate-1 transition-transform duration-700 group-hover:rotate-2"
+              className="absolute -inset-1.5 rounded-[24px] bg-brand-blue/30 rotate-1 transition-transform duration-700 group-hover:rotate-2"
               aria-hidden="true"
             />
 
             {/* Video card */}
-            <div className="relative rounded-[28px] overflow-hidden ring-1 ring-white/10 shadow-[0_40px_100px_-30px_rgba(0,0,0,0.8)] bg-black">
-              <video
-                src="https://synergyspineandnerve.com/wp-content/uploads/2021/04/home-video.mp4"
-                poster="/video-thumbnail.jpg"
-                preload="none"
-                controls
-                playsInline
-                className="w-full aspect-video focus:outline-none bg-black"
+            <div className="relative rounded-[22px] overflow-hidden ring-1 ring-white/10 shadow-[0_30px_80px_-25px_rgba(0,0,0,0.8)] bg-black">
+              <YouTubeEmbed
+                id="Sod3VjIEKOA"
+                title="Welcome to Synergy Spine and Nerve Center"
               />
 
               {/* Corner badges (over video, but pointer-events-none so don't block controls) */}
               <div
-                className="absolute top-5 left-5 inline-flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full pl-2 pr-3.5 py-1 ring-1 ring-white/20 pointer-events-none"
+                className="absolute top-4 left-4 inline-flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full pl-2 pr-3 py-1 ring-1 ring-white/20 pointer-events-none"
                 aria-hidden="true"
               >
-                <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-brand-gold">
-                  <span className="h-1.5 w-1.5 rounded-full bg-brand-navyDark animate-pulseSoft" />
+                <span className="inline-flex h-4 w-4 items-center justify-center rounded-full bg-brand-gold">
+                  <span className="h-1 w-1 rounded-full bg-brand-navyDark animate-pulseSoft" />
                 </span>
-                <span className="text-[11px] font-semibold uppercase tracking-wider text-white">
-                  Synergy · 2:34
+                <span className="text-[10px] font-semibold uppercase tracking-wider text-white">
+                  Synergy · Welcome
                 </span>
               </div>
             </div>

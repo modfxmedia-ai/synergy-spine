@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 import SpineGraphic from "@/components/motion/SpineGraphic";
 
 const CANONICAL = "https://synergyspineandnerve.com/what-is-a-subluxation/";
@@ -310,14 +311,12 @@ export default function WhatIsASubluxationPage() {
                 movement stimulates a different signal called{" "}
                 <strong>nociception</strong> (negative). There is a great
                 video called{" "}
-                <a
-                  href="https://www.youtube.com/watch?v=9wPYA3RWAwI"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/spinal-hygiene-video/"
                   className="text-brand-blue underline-offset-4 hover:underline font-semibold"
                 >
                   Spinal Hygiene
-                </a>{" "}
+                </Link>{" "}
                 that discusses how movement in your spine affects the
                 cerebellum of your brain. The bottom line: movement is
                 necessary for your brain to work properly.
@@ -487,6 +486,35 @@ export default function WhatIsASubluxationPage() {
                 </Reveal>
               ))}
             </ul>
+          </div>
+        </section>
+
+        {/* VIDEO: Why you are getting adjusted */}
+        <section className="bg-white py-16 lg:py-20">
+          <div className="mx-auto max-w-4xl px-6">
+            <Reveal>
+              <div className="text-center max-w-2xl mx-auto">
+                <p className="text-[12px] font-bold uppercase tracking-[0.22em] text-brand-blue">
+                  In Dr. Brad's words
+                </p>
+                <h2 className="section-title mt-3 text-2xl md:text-3xl text-brand-navyDark font-semibold leading-tight">
+                  Why you are{" "}
+                  <span className="italic text-brand-blue">getting adjusted</span>
+                </h2>
+                <p className="mt-3 text-brand-text">
+                  A short explainer on what an adjustment really does — and
+                  why we focus on the nerve system, not just the bones.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={150}>
+              <div className="mt-10">
+                <YouTubeEmbed
+                  id="KjVsTFgxEzg"
+                  title="Why you are getting adjusted"
+                />
+              </div>
+            </Reveal>
           </div>
         </section>
 

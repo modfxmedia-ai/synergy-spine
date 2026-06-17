@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 const CANONICAL = "https://synergyspineandnerve.com/common-conditions/";
 
@@ -66,8 +67,7 @@ const CONDITIONS: Cond[] = [
     title: "Amyotrophic Lateral Sclerosis (ALS)",
     desc:
       "We've had the privilege of supporting ALS patients with chiropractic care alongside their medical team. Read more about our experience.",
-    href: "https://synergyspineandnerve.com/common-conditions/amyotrophic-lateral-sclerosis-als/",
-    external: true,
+    href: "/common-conditions/amyotrophic-lateral-sclerosis-als/",
   },
   {
     title: "Peripheral Neuropathy",
@@ -284,6 +284,49 @@ export default function CommonConditionsPage() {
                 </div>
               </div>
             </Reveal>
+          </div>
+        </section>
+
+        {/* VIDEOS: Auto injuries */}
+        <section className="bg-white py-16 lg:py-20">
+          <div className="mx-auto max-w-6xl px-6">
+            <Reveal>
+              <div className="text-center max-w-2xl mx-auto">
+                <p className="text-[12px] font-bold uppercase tracking-[0.22em] text-brand-blue">
+                  Watch · Auto-injury essentials
+                </p>
+                <h2 className="section-title mt-3 text-2xl md:text-3xl text-brand-navyDark font-semibold leading-tight">
+                  Whiplash &amp; low-speed{" "}
+                  <span className="italic text-brand-blue">collisions</span>
+                </h2>
+                <p className="mt-3 text-brand-text">
+                  The injuries you can&apos;t see often cause the biggest
+                  long-term issues. Here&apos;s what Dr. Brad wants every
+                  patient to know.
+                </p>
+              </div>
+            </Reveal>
+            <div className="mt-12 grid md:grid-cols-2 gap-8">
+              <Reveal delay={120}>
+                <article>
+                  <YouTubeEmbed id="1UxU4FRdkWc" title="Don't ignore whiplash" />
+                  <h3 className="section-title mt-4 text-lg text-brand-navyDark font-semibold">
+                    Don&apos;t ignore whiplash
+                  </h3>
+                </article>
+              </Reveal>
+              <Reveal delay={200}>
+                <article>
+                  <YouTubeEmbed
+                    id="bX-W5wbO-KQ"
+                    title="Are you having pain after a low-speed car accident?"
+                  />
+                  <h3 className="section-title mt-4 text-lg text-brand-navyDark font-semibold">
+                    Pain after a low-speed accident?
+                  </h3>
+                </article>
+              </Reveal>
+            </div>
           </div>
         </section>
 

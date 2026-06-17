@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 import SpineGraphic from "@/components/motion/SpineGraphic";
 import PulseWave from "@/components/motion/PulseWave";
 import OrbitGraphic from "@/components/motion/OrbitGraphic";
@@ -569,6 +570,34 @@ export default function AboutUsPage() {
                 );
               })}
             </ul>
+          </div>
+        </section>
+
+        {/* VIDEO: How chiropractic will make you healthier */}
+        <section className="bg-brand-bg py-16 lg:py-20">
+          <div className="mx-auto max-w-4xl px-6">
+            <Reveal>
+              <div className="text-center max-w-2xl mx-auto">
+                <p className="text-[12px] font-bold uppercase tracking-[0.22em] text-brand-blue">
+                  Watch · Why we do this
+                </p>
+                <h2 className="section-title mt-3 text-2xl md:text-3xl text-brand-navyDark font-semibold leading-tight">
+                  How chiropractic will{" "}
+                  <span className="italic text-brand-blue">make you healthier</span>
+                </h2>
+                <p className="mt-3 text-brand-text">
+                  The two-minute version of our entire philosophy of care.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={150}>
+              <div className="mt-10">
+                <YouTubeEmbed
+                  id="EIwr96ukKrw"
+                  title="How Chiropractic will make you healthier"
+                />
+              </div>
+            </Reveal>
           </div>
         </section>
 

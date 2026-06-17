@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 const CANONICAL =
   "https://synergyspineandnerve.com/resources/improve-your-sha-score/";
@@ -270,20 +271,6 @@ export default function ImproveSHAScorePage() {
                 </Reveal>
               ))}
             </ul>
-
-            <Reveal delay={400} className="mt-10 text-center">
-              <a
-                href="https://synergyspineandnerve.com/8-ways-to-improve-your-sha-score/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-brand-navyDark text-white px-6 py-3 text-sm font-semibold hover:bg-brand-blue transition-colors shadow-[0_10px_30px_-10px_rgba(13,35,64,0.5)]"
-              >
-                <span>See the full guide</span>
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M7 17 17 7M17 7H8M17 7v9" />
-                </svg>
-              </a>
-            </Reveal>
           </div>
         </section>
 
@@ -314,6 +301,31 @@ export default function ImproveSHAScorePage() {
                   </span>
                 </div>
               </Link>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* VIDEO: Exercise saves money */}
+        <section className="bg-white py-16 lg:py-20">
+          <div className="mx-auto max-w-4xl px-6">
+            <Reveal>
+              <div className="text-center max-w-2xl mx-auto">
+                <p className="text-[12px] font-bold uppercase tracking-[0.22em] text-brand-blue">
+                  Watch · The economics of exercise
+                </p>
+                <h2 className="section-title mt-3 text-2xl md:text-3xl text-brand-navyDark font-semibold leading-tight">
+                  How exercise will{" "}
+                  <span className="italic text-brand-blue">save you money</span>
+                </h2>
+              </div>
+            </Reveal>
+            <Reveal delay={150}>
+              <div className="mt-10">
+                <YouTubeEmbed
+                  id="qhWTYDfn4A4"
+                  title="How exercise will help you save money"
+                />
+              </div>
             </Reveal>
           </div>
         </section>

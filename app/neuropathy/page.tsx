@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 const CANONICAL = "https://synergyspineandnerve.com/neuropathy/";
 
@@ -190,8 +191,21 @@ export default function NeuropathyPage() {
               <p className="mt-4 text-brand-text leading-relaxed">
                 We take a different look. The same nerves that misfire in
                 your hands and feet exit through your spine. If those exit
-                points are restricted — by a subluxation, a degenerated disc,
-                or stenosis — the nerve has problems long before it reaches
+                points are restricted — by a{" "}
+                <Link
+                  href="/what-is-a-subluxation/"
+                  className="text-brand-blue underline-offset-4 hover:underline"
+                >
+                  subluxation
+                </Link>
+                , a{" "}
+                <Link
+                  href="/degeneration/"
+                  className="text-brand-blue underline-offset-4 hover:underline"
+                >
+                  degenerated disc
+                </Link>
+                , or stenosis — the nerve has problems long before it reaches
                 the symptom.
               </p>
             </Reveal>
@@ -324,6 +338,36 @@ export default function NeuropathyPage() {
                   and, more importantly, their underlying nerve health
                   improves.
                 </p>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* VIDEO: Numbness vs functional restoration */}
+        <section className="bg-white py-16 lg:py-20">
+          <div className="mx-auto max-w-4xl px-6">
+            <Reveal>
+              <div className="text-center max-w-2xl mx-auto">
+                <p className="text-[12px] font-bold uppercase tracking-[0.22em] text-brand-blue">
+                  Watch · Dr. Brad explains
+                </p>
+                <h2 className="section-title mt-3 text-2xl md:text-3xl text-brand-navyDark font-semibold leading-tight">
+                  Are you choosing{" "}
+                  <span className="italic text-brand-blue">numbness or functional restoration</span>?
+                </h2>
+                <p className="mt-3 text-brand-text">
+                  The biggest decision in neuropathy care isn&apos;t which
+                  pill — it&apos;s whether you want symptoms muted or nerves
+                  actually working again.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={150}>
+              <div className="mt-10">
+                <YouTubeEmbed
+                  id="K-4zcZpPU0g"
+                  title="Are you choosing numbness or functional restoration?"
+                />
               </div>
             </Reveal>
           </div>

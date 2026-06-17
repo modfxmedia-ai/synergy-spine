@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 import SpineGraphic from "@/components/motion/SpineGraphic";
 import PulseWave from "@/components/motion/PulseWave";
 import AnimatedCounter from "@/components/motion/AnimatedCounter";
@@ -533,6 +534,35 @@ export default function MeetDrBradPage() {
                   </div>
                   <PulseWave className="w-full max-w-md justify-self-end" accent="#3B9BDB" />
                 </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* VIDEO: Survivor 47 */}
+        <section className="bg-white py-16 lg:py-20">
+          <div className="mx-auto max-w-4xl px-6">
+            <Reveal>
+              <div className="text-center max-w-2xl mx-auto">
+                <p className="text-[12px] font-bold uppercase tracking-[0.22em] text-brand-blue">
+                  Outside the office
+                </p>
+                <h2 className="section-title mt-3 text-2xl md:text-3xl text-brand-navyDark font-semibold leading-tight">
+                  Dr. Brad on{" "}
+                  <span className="italic text-brand-blue">Survivor 47</span>
+                </h2>
+                <p className="mt-3 text-brand-text">
+                  Resilience, strategy, and a whole lot of grit — the same
+                  qualities Dr. Brad brings to your care.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={150}>
+              <div className="mt-10">
+                <YouTubeEmbed
+                  id="QbQP6OTlFlI"
+                  title="Survivor 47 — Brad Fackrell"
+                />
               </div>
             </Reveal>
           </div>

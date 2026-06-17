@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 const CANONICAL = "https://synergyspineandnerve.com/triune-of-care/";
 
@@ -230,6 +231,35 @@ export default function TriuneOfCarePage() {
                   nutrition, the rest — that let your body do what it&apos;s
                   designed to do. That partnership is the Triune of Care.
                 </p>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* VIDEO: Triune of Care Exercise */}
+        <section className="bg-white py-16 lg:py-20">
+          <div className="mx-auto max-w-4xl px-6">
+            <Reveal>
+              <div className="text-center max-w-2xl mx-auto">
+                <p className="text-[12px] font-bold uppercase tracking-[0.22em] text-brand-blue">
+                  Watch · 60 seconds
+                </p>
+                <h2 className="section-title mt-3 text-2xl md:text-3xl text-brand-navyDark font-semibold leading-tight">
+                  Triune of Care{" "}
+                  <span className="italic text-brand-blue">exercise</span>
+                </h2>
+                <p className="mt-3 text-brand-text">
+                  Dr. Brad walks through a quick at-home exercise that brings
+                  all three pillars together.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={150}>
+              <div className="mt-10">
+                <YouTubeEmbed
+                  id="xkRHJBF10zM"
+                  title="Triune of Care Exercise"
+                />
               </div>
             </Reveal>
           </div>

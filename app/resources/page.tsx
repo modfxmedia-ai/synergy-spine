@@ -34,8 +34,7 @@ type Resource = {
 const RESOURCES: Resource[] = [
   {
     title: "Videos",
-    href: "https://synergyspineandnerve.com/videos/",
-    external: true,
+    href: "/resources/videos/",
     desc: "Years of chiropractic experience captured in helpful tips and explainer videos. Have a look!",
     accent: "blue",
     icon: (
@@ -95,8 +94,7 @@ const RESOURCES: Resource[] = [
   },
   {
     title: "Get Notified",
-    href: "https://synergyspineandnerve.com/resources/get-notified/",
-    external: true,
+    href: "/resources/get-notified/",
     desc: "Stay in touch with text message notifications — sent right to your phone.",
     accent: "navy",
     icon: (
@@ -166,6 +164,19 @@ export default function ResourcesPage() {
                 current patient, curious about the field, or considering
                 chiropractic care — we have the resources you need to stay
                 informed.
+              </p>
+            </Reveal>
+            <Reveal delay={300}>
+              <p className="mt-4 max-w-3xl text-white/70 text-base leading-relaxed">
+                If you cannot find the information you are looking for or if
+                you have any questions, feel free to{" "}
+                <Link
+                  href="/contact-us/"
+                  className="text-brand-gold underline-offset-4 hover:underline"
+                >
+                  reach out to us directly
+                </Link>
+                .
               </p>
             </Reveal>
           </div>
