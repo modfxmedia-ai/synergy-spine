@@ -445,7 +445,7 @@ export default function DegenerationPage() {
                       href="/new-folks/np-schedule/"
                       className="mt-5 inline-flex items-center gap-2 rounded-full bg-brand-gold text-brand-navyDark px-6 py-2.5 text-sm font-bold hover:bg-white transition-colors"
                     >
-                      <span>$67 Spinal Health Assessment</span>
+                      <span>$37 Spinal Health Assessment</span>
                       <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <polyline points="12 5 19 12 12 19" />

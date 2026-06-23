@@ -126,7 +126,7 @@ const FAQS = [
   },
   {
     q: "Do you take insurance?",
-    a: "Many insurance plans cover chiropractic care. We will help you understand your benefits, and we offer a simple $67 New Patient Special if you'd rather skip the insurance maze.",
+    a: "Many insurance plans cover chiropractic care. We will help you understand your benefits, and we offer a simple $37 New Patient Special if you'd rather skip the insurance maze.",
   },
 ];
 
@@ -480,7 +480,7 @@ export default function FirstVisitPage() {
                 href="/new-folks/np-schedule/"
                 className="text-sm font-semibold text-white/85 hover:text-brand-gold transition-colors"
               >
-                Or grab the $67 New Patient Special →
+                Or grab the $37 New Patient Special →
               </Link>
             </Reveal>
           </div>

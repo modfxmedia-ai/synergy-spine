@@ -3,7 +3,7 @@ import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 export default function VideoSection() {
   return (
-    <section className="relative bg-brand-navyDark text-white py-24 lg:py-32 overflow-hidden">
+    <section id="watch-our-story" className="relative bg-brand-navyDark text-white py-24 lg:py-32 overflow-hidden scroll-mt-24">
       {/* Background motion */}
       <div
         className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-brand-blue/20 blur-3xl pointer-events-none animate-drift"

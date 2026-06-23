@@ -16,12 +16,12 @@ const CANONICAL = "https://synergyspineandnerve.com/about-us/";
 export const metadata: Metadata = {
   title: "About Us – Synergy Spine and Nerve Center",
   description:
-    "Looking for a chiropractor near Rio Rancho, New Mexico? Synergy Spine and Nerve Center is New Mexico's Premier Chiropractic and neuropathy care center.",
+    "Looking for a chiropractor near Rio Rancho, New Mexico? Synergy Spine and Nerve Center is New Mexico's Premier Chiropractic care center.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "About Us – Synergy Spine and Nerve Center",
     description:
-      "New Mexico's Premier Chiropractic and neuropathy care center. Meet the team committed to helping you achieve your health goals.",
+      "New Mexico's Premier Chiropractic care center. Meet the team committed to helping you achieve your health goals.",
     url: CANONICAL,
     type: "website",
     siteName: "Synergy Spine and Nerve Center",
@@ -47,34 +47,11 @@ const TEAM: TeamMember[] = [
     accent: "blue",
   },
   {
-    name: "JESS BIGGS",
-    role: "MS, Exercise Physiologist",
-    image: "/team/jess-biggs.jpg",
-    alt: "Jess Biggs, Exercise Physiologist at Synergy Spine and Nerve Center",
-    href: "/about-us/meet-jess/",
-    accent: "gold",
-  },
-  {
     name: "AUSTIN HUBER",
     role: "Massage Therapist since 2017",
     image: "/team/austin-vidonn-huber.jpg",
     alt: "Austin Huber, Massage Therapist at Synergy Spine and Nerve Center",
     href: "/about-us/meet-austin/",
-    accent: "navy",
-  },
-  {
-    name: "BERT JARAMILLO-GARCIA",
-    role: "Office Manager since 2019",
-    image: "/team/bert-jaramillo-garcia.jpg",
-    alt: "Bert Jaramillo-Garcia, Office Manager at Synergy Spine and Nerve Center",
-    href: "/about-us/meet-bert/",
-    accent: "blue",
-  },
-  {
-    name: "MADELINE FACKRELL",
-    role: "Chiropractic Assistant since 2018",
-    image: "/team/madeline-fackrell.jpg",
-    alt: "Madeline Fackrell, Chiropractic Assistant at Synergy Spine and Nerve Center",
     accent: "gold",
   },
 ];
@@ -207,7 +184,7 @@ export default function AboutUsPage() {
                   <span className="italic normal-case text-brand-gold">
                     Trusted
                   </span>{" "}
-                  Chiropractic and Neuropathy Care in Rio Rancho
+                  Chiropractic Care in Rio Rancho
                 </h1>
               </Reveal>
 
@@ -327,7 +304,7 @@ export default function AboutUsPage() {
                 <p className="mt-8 text-brand-text text-lg leading-relaxed">
                   Looking for a solution to your pain and health problems near Rio
                   Rancho, New Mexico? Synergy Spine and Nerve Center is New
-                  Mexico&apos;s Premier Chiropractic and neuropathy care center.
+                  Mexico&apos;s Premier Chiropractic care center.
                 </p>
               </Reveal>
 
@@ -497,7 +474,7 @@ export default function AboutUsPage() {
               </h2>
             </Reveal>
 
-            <ul className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <ul className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
               {TEAM.map((member, i) => {
                 const accent = ACCENT[member.accent];
                 const Tile = (
@@ -616,7 +593,7 @@ export default function AboutUsPage() {
             <Reveal>
               <p className="text-brand-text text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
                 Synergy Spine and Nerve Center is the premier family
-                chiropractic and neuropathy treatment center in Rio Rancho, New
+                chiropractic treatment center in Rio Rancho, New
                 Mexico.
               </p>
             </Reveal>

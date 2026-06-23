@@ -12,14 +12,14 @@ const BOOKING_URL =
   "https://www.atlaschirosys.com/booking/#/login?s=13323023";
 
 export const metadata: Metadata = {
-  title: "$67 Online New Patient Special – Synergy Spine and Nerve Center",
+  title: "$37 Online New Patient Special – Synergy Spine and Nerve Center",
   description:
-    "Get our $67 online New Patient Special — a comprehensive Spinal Health Assessment with Dr. Brad and Austin (normally $250) at Synergy Spine and Nerve Center.",
+    "Get our $37 online New Patient Special — a one-on-one consultation, complete Spinal Health Assessment, any necessary X-rays, your first treatment, and a care plan with Dr. Brad and Austin (normally $250) at Synergy Spine and Nerve Center.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "$67 Online New Patient Special – Synergy Spine and Nerve Center",
+    title: "$37 Online New Patient Special – Synergy Spine and Nerve Center",
     description:
-      "Spinal Health Assessment normally $250 — yours for just $67 when you book online.",
+      "New Patient Special normally $250 — yours for just $37 when you book online.",
     url: CANONICAL,
     type: "article",
     siteName: "Synergy Spine and Nerve Center",
@@ -37,8 +37,8 @@ const INCLUDED = [
     ),
   },
   {
-    title: "Targeted neuro-spinal exam",
-    body: "We pinpoint how spinal stress is affecting your nervous system — the master controller of every cell in your body.",
+    title: "Complete Spinal Health Assessment",
+    body: "A thorough neuro-spinal evaluation that objectively scores how spinal stress is affecting your nervous system — the master controller of every cell in your body.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <circle cx="11" cy="11" r="7" />
@@ -47,8 +47,8 @@ const INCLUDED = [
     ),
   },
   {
-    title: "Digital X-ray studies (if indicated)",
-    body: "Low-dose, high-detail imaging so we can see exactly what is happening in your spine — no guesswork.",
+    title: "Any necessary X-rays",
+    body: "Low-dose, high-detail digital imaging when indicated, so we can see exactly what is happening in your spine — no guesswork.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="3" y="3" width="18" height="18" rx="2" />
@@ -57,8 +57,18 @@ const INCLUDED = [
     ),
   },
   {
-    title: "Plain-English report of findings",
-    body: "We sit down again and explain everything we found — what's going on, what we recommend, and why.",
+    title: "Your first treatment",
+    body: "We don't just assess — we get to work. Your first adjustment is included so you can start feeling the difference right away.",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M12 21s-7-4.35-7-10a7 7 0 0 1 14 0c0 5.65-7 10-7 10z" />
+        <circle cx="12" cy="11" r="2.5" />
+      </svg>
+    ),
+  },
+  {
+    title: "A personalized care plan",
+    body: "We sit down and explain everything we found — what's going on, what we recommend, and a clear, plain-English plan to move forward.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M9 11h6M9 7h6M9 15h4" />
@@ -127,7 +137,7 @@ export default function NPSchedulePage() {
               <Reveal delay={100}>
                 <div className="mt-5 inline-flex items-center gap-3 rounded-full bg-brand-gold/10 ring-1 ring-brand-gold/30 backdrop-blur pl-2 pr-4 py-1.5">
                   <span className="inline-flex h-6 px-2 items-center justify-center rounded-full bg-brand-gold text-brand-navyDark text-[10px] font-extrabold uppercase tracking-[0.18em]">
-                    Save $183
+                    Save $213
                   </span>
                   <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-white/85">
                     Limited online offer
@@ -139,7 +149,7 @@ export default function NPSchedulePage() {
                 <h1 className="section-title mt-5 text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.05] uppercase">
                   Our{" "}
                   <span className="italic normal-case text-brand-gold">
-                    $67 online
+                    $37 online
                   </span>{" "}
                   new patient special
                 </h1>
@@ -147,11 +157,12 @@ export default function NPSchedulePage() {
 
               <Reveal delay={260}>
                 <p className="mt-6 max-w-xl text-white/75 text-base md:text-lg leading-relaxed">
-                  A comprehensive Spinal Health Assessment with Dr. Brad or
-                  Austin — normally{" "}
+                  A one-on-one consultation, complete Spinal Health Assessment,
+                  any necessary X-rays, your first treatment, and a care plan
+                  with Dr. Brad or Austin — normally{" "}
                   <span className="line-through text-white/55">$250</span>{" "}
                   <span className="text-brand-gold font-semibold">
-                    just $67
+                    just $37
                   </span>{" "}
                   when you book online.
                 </p>
@@ -164,7 +175,7 @@ export default function NPSchedulePage() {
                   rel="noopener noreferrer"
                   className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-6 pr-2 py-2 text-sm font-bold hover:bg-white transition-colors shadow-[0_10px_30px_-10px_rgba(245,197,24,0.6)]"
                 >
-                  <span>Claim My $67 Visit</span>
+                  <span>Claim My $37 Visit</span>
                   <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand-navyDark text-brand-gold group-hover/cta:bg-brand-blue group-hover/cta:text-white transition-colors">
                     <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M7 17 17 7M17 7H8M17 7v9" />
@@ -202,22 +213,23 @@ export default function NPSchedulePage() {
 
                   <div className="mt-6 flex items-end gap-3">
                     <span className="section-title text-6xl font-semibold leading-none">
-                      $67
+                      $37
                     </span>
                     <span className="pb-2 text-base font-semibold text-brand-textLight line-through">
                       $250
                     </span>
                   </div>
                   <p className="mt-1 text-sm text-brand-textLight">
-                    Comprehensive Spinal Health Assessment
+                    Consult, assessment, X-rays, first treatment &amp; plan
                   </p>
 
                   <ul className="mt-6 space-y-2.5">
                     {[
                       "One-on-one consultation",
-                      "Targeted neuro-spinal exam",
-                      "Digital X-rays (if indicated)",
-                      "Plain-English report of findings",
+                      "Complete Spinal Health Assessment",
+                      "Any necessary X-rays",
+                      "Your first treatment",
+                      "A personalized care plan",
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-2.5 text-[14px] text-brand-text">
                         <span className="mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-blue text-white">
@@ -270,7 +282,7 @@ export default function NPSchedulePage() {
                 <div className="inline-flex items-center gap-3">
                   <span className="h-px w-10 bg-brand-blue" />
                   <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-blue">
-                    Why $67?
+                    Why $37?
                   </p>
                 </div>
                 <h2 className="section-title mt-4 text-3xl md:text-4xl text-brand-navyDark font-semibold leading-tight">
@@ -283,7 +295,7 @@ export default function NPSchedulePage() {
                 <p className="mt-6 text-brand-text text-lg leading-relaxed">
                   When folks are hurting, the last thing they need is a price
                   tag that gets in the way of finding answers. So we made it
-                  simple: $67 gets you in the door, in front of Dr. Brad or
+                  simple: $37 gets you in the door, in front of Dr. Brad or
                   Austin, and on a clear path forward.
                 </p>
               </Reveal>
@@ -461,7 +473,7 @@ export default function NPSchedulePage() {
                 rel="noopener noreferrer"
                 className="group/cta inline-flex items-center gap-2 bg-brand-navyDark text-white rounded-full pl-7 pr-2 py-2 text-sm font-semibold hover:bg-brand-blue transition-colors"
               >
-                <span>Book $67 New Patient Visit</span>
+                <span>Book $37 New Patient Visit</span>
                 <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand-gold text-brand-navyDark group-hover/cta:bg-white group-hover/cta:text-brand-blue transition-colors">
                   <svg className="w-4 h-4 group-hover/cta:translate-x-0.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <line x1="5" y1="12" x2="19" y2="12" />

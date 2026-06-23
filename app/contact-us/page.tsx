@@ -380,7 +380,7 @@ export default function ContactUsPage() {
                 href="/new-folks/np-schedule/"
                 className="text-sm font-semibold text-white/90 hover:text-brand-gold transition-colors"
               >
-                $67 New Patient Special →
+                $37 New Patient Special →
               </Link>
             </Reveal>
           </div>

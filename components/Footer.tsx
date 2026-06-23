@@ -6,8 +6,6 @@ const PHONE_TEL = "+15058912280";
 const ADDRESS = "1453 Rio Rancho Blvd-Suite 2, Rio Rancho, NM 87124";
 const LOGO_SRC =
   "https://synergyspineandnerve.com/wp-content/uploads/2020/04/logo-80h-1_4002b319900d17494ef2eacd346a20e2.png";
-const CTA_BG =
-  "https://synergyspineandnerve.com/wp-content/uploads/2020/04/AdobeStock_131905531_5728daf376e95dbd68bb771b46885093.jpg";
 
 const SITE_LINKS = [
   { label: "About Us", href: "/about-us/" },
@@ -60,58 +58,6 @@ export default function Footer() {
 
   return (
     <footer>
-      <section
-        className="relative bg-cover bg-center"
-        style={{ backgroundImage: `url(${CTA_BG})` }}
-      >
-        <div className="absolute inset-0 bg-brand-blue/85" aria-hidden="true" />
-        <div className="relative mx-auto max-w-3xl px-6 py-20 text-center text-white">
-          <p className="eyebrow !text-white/90">FREE RESOURCE</p>
-          <h2 className="section-title mt-3 text-3xl md:text-4xl font-semibold">
-            Do You Want to Feel Better Right Away?
-          </h2>
-          <p className="mt-4 text-white/90 text-base md:text-lg">
-            Enter your info below and get our FREE e-book, 12 Ways to Naturally
-            Heal Your Body
-          </p>
-
-          <form
-            className="mt-8 flex flex-col sm:flex-row items-stretch gap-3 max-w-2xl mx-auto"
-            action="#"
-            method="post"
-          >
-            <label htmlFor="footer-name" className="sr-only">
-              Name
-            </label>
-            <input
-              id="footer-name"
-              name="name"
-              type="text"
-              placeholder="Name"
-              required
-              className="flex-1 rounded-full bg-white text-brand-text placeholder:text-brand-textLight px-5 py-3 outline-none focus:ring-2 focus:ring-white/70"
-            />
-            <label htmlFor="footer-email" className="sr-only">
-              Email
-            </label>
-            <input
-              id="footer-email"
-              name="email"
-              type="email"
-              placeholder="Email"
-              required
-              className="flex-1 rounded-full bg-white text-brand-text placeholder:text-brand-textLight px-5 py-3 outline-none focus:ring-2 focus:ring-white/70"
-            />
-            <button
-              type="submit"
-              className="rounded-full bg-brand-navyDark text-white font-semibold px-6 py-3 hover:bg-brand-navy transition-colors"
-            >
-              Send
-            </button>
-          </form>
-        </div>
-      </section>
-
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-6 py-16 grid gap-12 md:grid-cols-3">
           <div>

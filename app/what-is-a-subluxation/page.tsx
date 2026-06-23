@@ -554,7 +554,7 @@ export default function WhatIsASubluxationPage() {
                 href="/new-folks/np-schedule/"
                 className="text-sm font-semibold text-white/85 hover:text-brand-gold transition-colors"
               >
-                Book the $67 New Patient Special →
+                Book the $37 New Patient Special →
               </Link>
             </Reveal>
           </div>

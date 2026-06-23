@@ -341,7 +341,7 @@ export default function ImproveSHAScorePage() {
                 <span className="italic text-brand-gold">number</span>?
               </p>
               <p className="mt-4 text-white/80">
-                The $67 New Patient Special includes the full SHA — your
+                The $37 New Patient Special includes the full SHA — your
                 17-page printed report and an honest plan.
               </p>
             </Reveal>

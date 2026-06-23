@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
-import PulseWave from "@/components/motion/PulseWave";
 import OrbitGraphic from "@/components/motion/OrbitGraphic";
 
 const CANONICAL = "https://synergyspineandnerve.com/new-folks/";
@@ -72,7 +71,7 @@ const CARDS: Card[] = [
   },
   {
     title: "Book Appointment",
-    desc: "Get our $67 New Patient Special — a comprehensive Spinal Health Assessment, normally $250.",
+    desc: "Get our $37 New Patient Special — a consultation, complete Spinal Health Assessment, any necessary X-rays, your first treatment, and a care plan, normally $250.",
     href: "/new-folks/np-schedule/",
     accent: "blueLight",
     icon: (
@@ -191,7 +190,7 @@ export default function NewFolksPage() {
                 href="/new-folks/np-schedule/"
                 className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-6 pr-2 py-2 text-sm font-bold hover:bg-white transition-colors shadow-[0_10px_30px_-10px_rgba(245,197,24,0.6)]"
               >
-                <span>$67 New Patient Special</span>
+                <span>$37 New Patient Special</span>
                 <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand-navyDark text-brand-gold group-hover/cta:bg-brand-blue group-hover/cta:text-white transition-colors">
                   <svg className="w-4 h-4 group-hover/cta:translate-x-0.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <line x1="5" y1="12" x2="19" y2="12" />
@@ -369,54 +368,6 @@ export default function NewFolksPage() {
                 </Reveal>
               ))}
             </ul>
-          </div>
-        </section>
-
-        {/* PULSE BANNER */}
-        <section className="bg-white py-12 lg:py-16">
-          <div className="mx-auto max-w-5xl px-6">
-            <Reveal>
-              <div className="relative rounded-3xl bg-gradient-to-r from-brand-navyDark via-brand-navy to-brand-navyDark p-8 lg:p-10 overflow-hidden ring-1 ring-black/5">
-                <div
-                  className="absolute inset-0 opacity-[0.06] pointer-events-none"
-                  style={{
-                    backgroundImage:
-                      "radial-gradient(circle, #ffffff 1px, transparent 1px)",
-                    backgroundSize: "20px 20px",
-                  }}
-                  aria-hidden="true"
-                />
-                <div className="relative grid md:grid-cols-2 items-center gap-6">
-                  <div>
-                    <p className="text-[11px] uppercase tracking-[0.22em] font-bold text-brand-gold">
-                      Want to feel better right away?
-                    </p>
-                    <h3 className="section-title mt-2 text-2xl md:text-3xl text-white font-semibold leading-snug">
-                      Get our free e-book{" "}
-                      <span className="italic text-brand-gold">
-                        12 Ways to Naturally Heal Your Body
-                      </span>
-                      .
-                    </h3>
-                    <p className="mt-3 text-white/70">
-                      Tap below to grab the e-book and start with simple,
-                      proven steps.
-                    </p>
-                    <Link
-                      href="/contact-us/"
-                      className="mt-5 inline-flex items-center gap-2 rounded-full bg-brand-gold text-brand-navyDark px-6 py-2.5 text-sm font-bold hover:bg-white transition-colors"
-                    >
-                      <span>Get the e-book</span>
-                      <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <line x1="5" y1="12" x2="19" y2="12" />
-                        <polyline points="12 5 19 12 12 19" />
-                      </svg>
-                    </Link>
-                  </div>
-                  <PulseWave className="w-full max-w-md justify-self-end" accent="#3B9BDB" />
-                </div>
-              </div>
-            </Reveal>
           </div>
         </section>
 

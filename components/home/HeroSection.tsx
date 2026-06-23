@@ -204,7 +204,7 @@ export default function HeroSection() {
                 </Link>
 
                 <Link
-                  href="/new-folks/our-vision/"
+                  href="#watch-our-story"
                   className="group inline-flex items-center gap-3 text-sm font-semibold text-white hover:text-brand-goldSoft transition-colors"
                 >
                   <span className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/20 backdrop-blur group-hover:bg-white group-hover:ring-white transition-all">

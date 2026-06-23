@@ -311,7 +311,7 @@ export default function VideosHubPage() {
                 <span className="italic text-brand-gold">next step</span>?
               </p>
               <p className="mt-4 text-white/80">
-                Watch a video, then book your $67 New Patient Special — and see what 20+
+                Watch a video, then book your $37 New Patient Special — and see what 20+
                 years of practice can do for you.
               </p>
             </Reveal>
@@ -323,7 +323,7 @@ export default function VideosHubPage() {
                 href="/new-folks/np-schedule/"
                 className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-7 pr-2 py-2 text-sm font-semibold hover:bg-white transition-colors"
               >
-                <span>Book $67 New Patient Visit</span>
+                <span>Book $37 New Patient Visit</span>
                 <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand-navyDark text-brand-gold group-hover/cta:bg-brand-blue group-hover/cta:text-white transition-colors">
                   <svg
                     className="w-4 h-4"

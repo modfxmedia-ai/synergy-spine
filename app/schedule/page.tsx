@@ -345,13 +345,14 @@ export default function SchedulePage() {
               <p className="section-title text-2xl md:text-3xl font-semibold leading-snug">
                 New to our office?{" "}
                 <span className="italic text-brand-gold">
-                  Start with $67
+                  Start with $37
                 </span>
                 .
               </p>
               <p className="mt-4 text-white/80">
-                Thorough exam, full Spinal Health Assessment, and an honest
-                plan — all for $67.
+                One-on-one consultation, complete Spinal Health Assessment, any
+                necessary X-rays, your first treatment, and a care plan — all
+                for $37.
               </p>
             </Reveal>
             <Reveal delay={150} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -359,7 +360,7 @@ export default function SchedulePage() {
                 href="/new-folks/np-schedule/"
                 className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-7 pr-2 py-2 text-sm font-semibold hover:bg-white transition-colors"
               >
-                <span>Book $67 New Patient Visit</span>
+                <span>Book $37 New Patient Visit</span>
                 <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand-navyDark text-brand-gold group-hover/cta:bg-brand-blue group-hover/cta:text-white transition-colors">
                   <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <line x1="5" y1="12" x2="19" y2="12" />

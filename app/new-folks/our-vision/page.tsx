@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 import SpineGraphic from "@/components/motion/SpineGraphic";
 import PulseWave from "@/components/motion/PulseWave";
 import AnimatedCounter from "@/components/motion/AnimatedCounter";
@@ -217,46 +218,98 @@ export default function OurVisionPage() {
         </section>
 
         {/* THE STORY */}
-        <section className="bg-white py-20 lg:py-24">
-          <div className="mx-auto max-w-4xl px-6">
-            <Reveal>
-              <div className="inline-flex items-center gap-3">
-                <span className="h-px w-10 bg-brand-blue" />
-                <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-blue">
-                  Our story
-                </p>
-              </div>
-              <h2 className="section-title mt-4 text-3xl md:text-4xl text-brand-navyDark font-semibold leading-tight">
-                Serving the Rio Rancho &amp; Albuquerque area —{" "}
-                <span className="italic text-brand-blue">and beyond</span>.
-              </h2>
-            </Reveal>
+        <section className="relative bg-white py-20 lg:py-28 overflow-hidden">
+          <div
+            className="absolute -top-24 -left-32 w-[480px] h-[480px] rounded-full bg-brand-blue/[0.06] blur-3xl pointer-events-none"
+            aria-hidden="true"
+          />
+          <div
+            className="absolute -bottom-32 -right-32 w-[520px] h-[520px] rounded-full bg-brand-gold/[0.07] blur-3xl pointer-events-none"
+            aria-hidden="true"
+          />
 
-            <div className="mt-8 prose prose-lg max-w-none text-brand-text">
-              <Reveal delay={120}>
-                <p>
-                  Our office is located in the heart of Rio Rancho, but we are
-                  blessed to serve the Albuquerque area. Many of our patients
-                  travel from East-Albuquerque, the South Valley, and the
-                  surrounding mountain communities. We even have folks who
-                  come to us from Tucumcari, Gallup, and Taos.
-                </p>
+          <div className="relative mx-auto max-w-7xl px-6">
+            <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 lg:items-center">
+              {/* Left — video */}
+              <Reveal className="lg:col-span-6" variant="fade">
+                <div className="relative">
+                  <div
+                    className="absolute -inset-3 rounded-[32px] bg-gradient-to-br from-brand-blue/10 via-transparent to-brand-gold/15 pointer-events-none"
+                    aria-hidden="true"
+                  />
+                  <div className="relative rounded-[28px] p-2 bg-white ring-1 ring-black/[0.06] shadow-[0_30px_60px_-25px_rgba(13,35,64,0.35)]">
+                    <YouTubeEmbed
+                      id="Sod3VjIEKOA"
+                      title="Watch our story — Synergy Spine and Nerve Center"
+                      aspect="aspect-[4/3]"
+                    />
+                  </div>
+                  <div className="absolute -bottom-5 left-6 inline-flex items-center gap-2 rounded-full bg-brand-navyDark px-4 py-2 shadow-lg ring-1 ring-white/10">
+                    <span className="relative flex h-2.5 w-2.5">
+                      <span className="absolute inline-flex h-full w-full rounded-full bg-brand-gold opacity-75 animate-ping" />
+                      <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-brand-gold" />
+                    </span>
+                    <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white">
+                      Watch our story
+                    </span>
+                  </div>
+                </div>
               </Reveal>
-              <Reveal delay={200}>
-                <p>
-                  Why do they make the trip? Because the changes are real —
-                  long-standing migraines fading, blood pressure and
-                  cholesterol numbers improving, immune systems bouncing back,
-                  and families finally getting a good night&apos;s sleep.
-                </p>
-              </Reveal>
-              <Reveal delay={280}>
-                <p>
-                  Our purpose is simple: educate and adjust as many families
-                  as we possibly can on the road to optimal health. That is
-                  the work, and it is what gets us out of bed every day.
-                </p>
-              </Reveal>
+
+              {/* Right — copy */}
+              <div className="lg:col-span-6">
+                <Reveal>
+                  <div className="inline-flex items-center gap-3">
+                    <span className="h-px w-10 bg-brand-blue" />
+                    <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-blue">
+                      Our story
+                    </p>
+                  </div>
+                  <h2 className="section-title mt-4 text-3xl md:text-4xl lg:text-[2.6rem] text-brand-navyDark font-semibold leading-[1.1]">
+                    Serving the Rio Rancho &amp; Albuquerque area —{" "}
+                    <span className="italic text-brand-blue">and beyond</span>.
+                  </h2>
+                </Reveal>
+
+                <Reveal delay={140}>
+                  <p className="mt-6 text-brand-text text-base md:text-lg leading-relaxed">
+                    Our office is located in the heart of Rio Rancho, but we are
+                    blessed to serve the Albuquerque area. Many of our patients
+                    travel from East-Albuquerque, the South Valley, and the
+                    surrounding mountain communities — we even have folks who
+                    come to us from Tucumcari, Gallup, and Taos.
+                  </p>
+                </Reveal>
+
+                <Reveal delay={220}>
+                  <div className="mt-7 flex gap-4 rounded-2xl bg-brand-bg/70 ring-1 ring-black/[0.05] p-5">
+                    <span className="mt-0.5 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-blue/10 text-brand-blue">
+                      <svg className="w-4.5 h-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M12 21s-7-4.35-7-10a7 7 0 0 1 14 0c0 5.65-7 10-7 10z" />
+                        <circle cx="12" cy="11" r="2.5" />
+                      </svg>
+                    </span>
+                    <p className="text-brand-text text-[15px] md:text-base leading-relaxed">
+                      Why do they make the trip? Because the changes are real —
+                      long-standing migraines fading, blood pressure and
+                      cholesterol numbers improving, immune systems bouncing
+                      back, and families finally getting a good night&apos;s
+                      sleep.
+                    </p>
+                  </div>
+                </Reveal>
+
+                <Reveal delay={300}>
+                  <p className="mt-7 text-brand-navyDark text-lg md:text-xl font-medium leading-relaxed">
+                    Our purpose is simple:{" "}
+                    <span className="text-brand-blue">
+                      educate and adjust as many families as we possibly can
+                    </span>{" "}
+                    on the road to optimal health. That is the work, and it is
+                    what gets us out of bed every day.
+                  </p>
+                </Reveal>
+              </div>
             </div>
           </div>
         </section>
@@ -466,7 +519,7 @@ export default function OurVisionPage() {
                 href="/new-folks/np-schedule/"
                 className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-7 pr-2 py-2 text-sm font-bold hover:bg-white transition-colors"
               >
-                <span>$67 New Patient Special</span>
+                <span>$37 New Patient Special</span>
                 <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand-navyDark text-brand-gold group-hover/cta:bg-brand-blue group-hover/cta:text-white transition-colors">
                   <svg className="w-4 h-4 group-hover/cta:translate-x-0.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <line x1="5" y1="12" x2="19" y2="12" />

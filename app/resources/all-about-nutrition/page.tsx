@@ -403,7 +403,7 @@ export default function AllAboutNutritionPage() {
                 href="/new-folks/np-schedule/"
                 className="text-sm font-semibold text-brand-navyDark hover:text-brand-blue transition-colors"
               >
-                $67 New Patient Special →
+                $37 New Patient Special →
               </Link>
             </Reveal>
           </div>
