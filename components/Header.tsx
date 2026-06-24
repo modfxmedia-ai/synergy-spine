@@ -30,10 +30,10 @@ const NAV_ITEMS: NavItem[] = [
     href: "/new-folks/",
     children: [
       { label: "What to Expect on Your First Visit", href: "/new-folks/first-visit/" },
+      { label: "Book a New Patient Appointment", href: "/new-folks/np-schedule/" },
       { label: "Intake Forms", href: "/new-folks/intake-forms/" },
       { label: "Our Vision", href: "/new-folks/our-vision/" },
       { label: "Testimonials", href: "/testimonials/" },
-      { label: "Book a New Patient Appointment", href: "/new-folks/np-schedule/" },
     ],
   },
   {
