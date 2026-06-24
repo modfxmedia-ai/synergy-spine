@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const ITEMS = [
   "Now Welcoming New Patients",
   "Established Patients · Click to Schedule",
@@ -29,17 +27,6 @@ export default function AnnouncementBar() {
           <span className="text-white/85">{ITEMS[2]}</span>
         </div>
         <div className="md:hidden text-white/90">{ITEMS[0]}</div>
-
-        <Link
-          href="/schedule/"
-          className="group inline-flex items-center gap-1.5 rounded-full bg-brand-gold/15 ring-1 ring-brand-gold/40 px-3 py-0.5 text-[12px] font-semibold text-brand-gold hover:bg-brand-gold hover:text-brand-navyDark transition-colors"
-        >
-          <span>Book Now</span>
-          <svg className="w-3 h-3 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            <line x1="5" y1="12" x2="19" y2="12" />
-            <polyline points="12 5 19 12 12 19" />
-          </svg>
-        </Link>
       </div>
     </div>
   );
