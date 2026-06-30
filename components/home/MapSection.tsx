@@ -12,11 +12,11 @@ const MAP_EMBED =
   "https://www.google.com/maps?q=Synergy+Spine+and+Nerve+Center,+1453+Rio+Rancho+Blvd,+Rio+Rancho,+NM+87124&z=15&output=embed";
 
 const HOURS = [
-  { day: "Mon", time: "8:00 AM – 6:00 PM" },
-  { day: "Tue", time: "8:00 AM – 6:00 PM" },
-  { day: "Wed", time: "8:00 AM – 6:00 PM" },
-  { day: "Thu", time: "8:00 AM – 6:00 PM" },
-  { day: "Fri", time: "8:00 AM – 12:00 PM" },
+  { day: "Mon", time: "9:00 AM – 5:30 PM" },
+  { day: "Tue", time: "3:00 – 5:00 PM" },
+  { day: "Wed", time: "10:00 AM – 5:30 PM" },
+  { day: "Thu", time: "3:00 – 5:30 PM" },
+  { day: "Fri", time: "Closed" },
   { day: "Sat", time: "Closed" },
   { day: "Sun", time: "Closed" },
 ];

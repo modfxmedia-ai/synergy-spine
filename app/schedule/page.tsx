@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 };
 
 const HOURS = [
-  { day: "Monday", hours: "8:00 – 10:00 AM & 3:00 – 5:30 PM" },
+  { day: "Monday", hours: "9:00 AM – 5:30 PM" },
   { day: "Tuesday", hours: "3:00 – 5:00 PM" },
   { day: "Wednesday", hours: "10:00 AM – 5:30 PM" },
   { day: "Thursday", hours: "3:00 – 5:30 PM" },
@@ -63,13 +63,7 @@ const SCHEMA = {
     {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: "Monday",
-      opens: "08:00",
-      closes: "10:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: "Monday",
-      opens: "15:00",
+      opens: "09:00",
       closes: "17:30",
     },
     {
