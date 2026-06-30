@@ -11,12 +11,12 @@ const CANONICAL =
 export const metadata: Metadata = {
   title: "Order Supplements – Synergy Spine and Nerve Center",
   description:
-    "Order Innate Choice supplements through Synergy Spine and Nerve Center — superior quality, 100% natural, never synthetic. Free shipping in 48 states.",
+    "Order Innate Choice supplements through Synergy Spine and Nerve Center, superior quality, 100% natural, never synthetic. Free shipping in 48 states.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Order Innate Choice Supplements",
     description:
-      "Innate Choice supplements — superior quality, 100% natural, free shipping in 48 states.",
+      "Innate Choice supplements, superior quality, 100% natural, free shipping in 48 states.",
     url: CANONICAL,
     type: "website",
     siteName: "Synergy Spine and Nerve Center",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const PRODUCTS = [
   {
     name: "Omega A&D Liquid",
-    body: "Concentrated, pharmaceutical-grade omega-3 fish oil with vitamins A and D — the way nature pairs them.",
+    body: "Concentrated, pharmaceutical-grade omega-3 fish oil with vitamins A and D, the way nature pairs them.",
   },
   {
     name: "Omega A&D Concentrated Capsules",
@@ -85,7 +85,7 @@ export default function OrderSupplementsPage() {
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
                 We offer Innate Choice Supplements due to their superior quality.
                 Innate Choice supplements are delivered to you just how nature
-                created them — they have not been chemically altered in any way,
+                created them, they have not been chemically altered in any way,
                 there is never anything synthetic, and they are always 100%
                 natural. We encourage you to{" "}
                 <Link
@@ -155,7 +155,7 @@ export default function OrderSupplementsPage() {
                 <p className="mt-3 text-lg leading-relaxed">
                   We do not currently offer online ordering. Email us with what
                   you&apos;d like and we&apos;ll have it ready for you on your
-                  next visit — or ship it directly to you anywhere in the 48
+                  next visit, or ship it directly to you anywhere in the 48
                   contiguous states with{" "}
                   <span className="text-brand-gold font-semibold">
                     no shipping costs

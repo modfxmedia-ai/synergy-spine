@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title:
       "Chiropractic Solutions for Neuropathy – Synergy Spine and Nerve Center",
     description:
-      "A four-pillar approach to peripheral neuropathy in Rio Rancho, NM — adjustments, spinal health, diet, and lifestyle.",
+      "A four-pillar approach to peripheral neuropathy in Rio Rancho, NM, adjustments, spinal health, diet, and lifestyle.",
     url: CANONICAL,
     type: "article",
     siteName: "Synergy Spine and Nerve Center",
@@ -57,7 +57,7 @@ const PILLARS = [
     n: "01",
     title: "Specific Adjustments",
     body:
-      "Restoring motion to subluxated joints clears nerve interference at the source — letting peripheral nerves communicate normally again.",
+      "Restoring motion to subluxated joints clears nerve interference at the source, letting peripheral nerves communicate normally again.",
   },
   {
     n: "02",
@@ -69,7 +69,7 @@ const PILLARS = [
     n: "03",
     title: "Diet",
     body:
-      "Anti-inflammatory eating reduces the systemic inflammation that fuels nerve pain — especially critical for diabetic and pre-diabetic neuropathy.",
+      "Anti-inflammatory eating reduces the systemic inflammation that fuels nerve pain, especially critical for diabetic and pre-diabetic neuropathy.",
   },
   {
     n: "04",
@@ -140,7 +140,7 @@ export default function NeuropathyPage() {
                 <Reveal delay={220}>
                   <p className="mt-5 text-white/80 text-base md:text-lg leading-relaxed">
                     A four-lesson video series and a real, multi-pillar plan
-                    for relief — because neuropathy is rarely fixed by
+                    for relief, because neuropathy is rarely fixed by
                     medication alone.
                   </p>
                 </Reveal>
@@ -185,13 +185,13 @@ export default function NeuropathyPage() {
                 Peripheral neuropathy is damage or dysfunction of the nerves
                 that travel out from your spinal cord to your hands, feet,
                 arms, and legs. Traditional medicine has historically
-                approached it with medication only — masking the symptom
+                approached it with medication only, masking the symptom
                 without addressing where the nerves come from.
               </p>
               <p className="mt-4 text-brand-text leading-relaxed">
                 We take a different look. The same nerves that misfire in
                 your hands and feet exit through your spine. If those exit
-                points are restricted — by a{" "}
+                points are restricted, by a{" "}
                 <Link
                   href="/what-is-a-subluxation/"
                   className="text-brand-blue underline-offset-4 hover:underline"
@@ -205,7 +205,7 @@ export default function NeuropathyPage() {
                 >
                   degenerated disc
                 </Link>
-                , or stenosis — the nerve has problems long before it reaches
+                , or stenosis, the nerve has problems long before it reaches
                 the symptom.
               </p>
             </Reveal>
@@ -223,7 +223,7 @@ export default function NeuropathyPage() {
                   we hear in the office.
                 </h2>
                 <p className="mt-4 text-brand-text">
-                  Any combination of the following is worth an evaluation —
+                  Any combination of the following is worth an evaluation, 
                   the earlier you address it, the better the outcome.
                 </p>
               </div>
@@ -334,7 +334,7 @@ export default function NeuropathyPage() {
                   Adjustments restore motion to the spinal segments where
                   peripheral nerves originate. Combined with spinal hygiene,
                   anti-inflammatory eating, and the right lifestyle inputs,
-                  many of our patients see meaningful symptom reduction —
+                  many of our patients see meaningful symptom reduction, 
                   and, more importantly, their underlying nerve health
                   improves.
                 </p>
@@ -357,7 +357,7 @@ export default function NeuropathyPage() {
                 </h2>
                 <p className="mt-3 text-brand-text">
                   The biggest decision in neuropathy care isn&apos;t which
-                  pill — it&apos;s whether you want symptoms muted or nerves
+                  pill, it&apos;s whether you want symptoms muted or nerves
                   actually working again.
                 </p>
               </div>
@@ -384,7 +384,7 @@ export default function NeuropathyPage() {
                 <span className="italic text-brand-gold">neuropathy</span>?
               </p>
               <p className="mt-4 text-white/80">
-                Schedule a thorough evaluation — we&apos;ll map out a real plan,
+                Schedule a thorough evaluation, we&apos;ll map out a real plan,
                 not just another prescription.
               </p>
             </Reveal>

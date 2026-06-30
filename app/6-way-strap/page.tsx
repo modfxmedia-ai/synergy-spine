@@ -7,7 +7,7 @@ const VIDEO_ID = "RsgxFYDSmJs";
 export const metadata: Metadata = {
   title: "6 Way Strap – Synergy Spine and Nerve Center",
   description:
-    "Watch the 6-way strap demonstration — improve neck mobility and decrease neck pain and headaches with the Pettibon System of Spinal Hygiene.",
+    "Watch the 6-way strap demonstration, improve neck mobility and decrease neck pain and headaches with the Pettibon System of Spinal Hygiene.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "6 Way Strap | Pettibon Spinal Hygiene",
@@ -25,7 +25,7 @@ export default function SixWayStrapPage() {
       title="6-Way Strap"
       emphasis="Strap"
       eyebrow="Spinal hygiene · Pettibon System"
-      lead="Watch this video for instructions on how to use the 6-way strap to improve neck mobility and decrease neck pain and headaches — part of the Pettibon System of Spinal Hygiene."
+      lead="Watch this video for instructions on how to use the 6-way strap to improve neck mobility and decrease neck pain and headaches, part of the Pettibon System of Spinal Hygiene."
       videoId={VIDEO_ID}
       videoTitle="6-Way Strap Demonstration"
       breadcrumbs={[

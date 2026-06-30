@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title:
     "Dr. Brad’s Full Story – Synergy Spine and Nerve Center",
   description:
-    "Dr. Brad Fackrell shares the full story of how chiropractic transformed his health from severe asthma and daily medication to a drug-free life — and why he became a chiropractor.",
+    "Dr. Brad Fackrell shares the full story of how chiropractic transformed his health from severe asthma and daily medication to a drug-free life, and why he became a chiropractor.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Dr. Brad Fackrell’s Full Story",
     description:
-      "From wrestling injuries to severe asthma to drug-free — the full story of how chiropractic changed Dr. Brad's life.",
+      "From wrestling injuries to severe asthma to drug-free, the full story of how chiropractic changed Dr. Brad's life.",
     url: CANONICAL,
     type: "article",
     siteName: "Synergy Spine and Nerve Center",
@@ -71,7 +71,7 @@ export default function DrBradsFullStoryPage() {
             </Reveal>
             <Reveal delay={300}>
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
-                From wrestling injuries to severe asthma to a drug-free life —
+                From wrestling injuries to severe asthma to a drug-free life, 
                 here&apos;s the full story of how chiropractic changed
                 everything.
               </p>
@@ -173,7 +173,7 @@ export default function DrBradsFullStoryPage() {
                   At Synergy Spine and Nerve Center, we believe that everyone
                   matters and that everyone can take their next step toward
                   better health. We take pride in discovering the cause of your
-                  problem — whether it be neck or back pain, neuropathy, or you
+                  problem, whether it be neck or back pain, neuropathy, or you
                   just want to be healthy. We illuminate the possibilities and
                   then liberate you from your pain.
                 </p>

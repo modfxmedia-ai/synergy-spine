@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title:
     "Spinal Hygiene Videos – What You Can Do at Home | Synergy Spine and Nerve Center",
   description:
-    "Daily things you can do to take better care of your spine and nerve system — from the Spinal Hygiene Video to Use Your Head, 6-Way Strap, Thoracic Roller, and more.",
+    "Daily things you can do to take better care of your spine and nerve system, from the Spinal Hygiene Video to Use Your Head, 6-Way Strap, Thoracic Roller, and more.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Spinal Hygiene Videos | Synergy Spine and Nerve Center",

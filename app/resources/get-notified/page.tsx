@@ -65,7 +65,7 @@ export default function GetNotifiedPage() {
             <Reveal delay={220}>
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
                 Occasionally, our office runs special events or closes for
-                vacation. Stay in the know with quick text updates — straight
+                vacation. Stay in the know with quick text updates, straight
                 to your phone, only when it matters.
               </p>
             </Reveal>
@@ -137,7 +137,7 @@ export default function GetNotifiedPage() {
                     <p className="mt-2 text-brand-text leading-relaxed">
                       In the message body, send{" "}
                       <span className="font-mono font-bold">STRAIGHT</span>.
-                      You&apos;ll get a welcome text right away — and after that,
+                      You&apos;ll get a welcome text right away, and after that,
                       messages only when there&apos;s an important schedule
                       update.
                     </p>

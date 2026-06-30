@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title:
       "Client Testimonials – Synergy Spine and Nerve Center",
     description:
-      "Patient stories of relief from pain, sickness, and disease — using evidence-based chiropractic care in Rio Rancho, NM.",
+      "Patient stories of relief from pain, sickness, and disease, using evidence-based chiropractic care in Rio Rancho, NM.",
     url: CANONICAL,
     type: "website",
     siteName: "Synergy Spine and Nerve Center",
@@ -54,7 +54,7 @@ const REVIEWS: Review[] = [
     name: "Linda K.",
     city: "Rio Rancho, NM",
     quote:
-      "Austin and Dr. Brad are the most patient, knowledgeable team I've ever met. They actually listen — and they don't sell you anything you don't need. Honest care.",
+      "Austin and Dr. Brad are the most patient, knowledgeable team I've ever met. They actually listen, and they don't sell you anything you don't need. Honest care.",
     condition: "Neck pain & posture",
     rating: 5,
   },
@@ -78,7 +78,7 @@ const REVIEWS: Review[] = [
     name: "Robert S.",
     city: "Placitas, NM",
     quote:
-      "I was skeptical of all the assessments and the SHA score thing — until I saw the data. Then I bought in. My score has gone from 64 to 92 in a year, and I feel it.",
+      "I was skeptical of all the assessments and the SHA score thing, until I saw the data. Then I bought in. My score has gone from 64 to 92 in a year, and I feel it.",
     condition: "General wellness",
     rating: 5,
   },
@@ -192,7 +192,7 @@ export default function TestimonialsPage() {
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
                 We believe that everyone matters and that everyone can take
                 their next step toward better health. We make no claim to
-                cure pain, sickness or disease — we simply cannot do that.
+                cure pain, sickness or disease, we simply cannot do that.
                 What we can promise is that we will do everything in our
                 power to help your body heal.
               </p>
@@ -301,7 +301,7 @@ export default function TestimonialsPage() {
                   <article className="h-full bg-white rounded-3xl ring-1 ring-black/5 overflow-hidden shadow-[0_2px_10px_rgba(13,35,64,0.04)] hover:shadow-[0_30px_60px_-20px_rgba(13,35,64,0.25)] transition-all duration-500">
                     <YouTubeEmbed
                       id={v.id}
-                      title={`${v.name} — ${v.subtitle}`}
+                      title={`${v.name}, ${v.subtitle}`}
                     />
                     <div className="p-6">
                       <h3 className="section-title text-lg text-brand-navyDark font-semibold">
@@ -373,7 +373,7 @@ export default function TestimonialsPage() {
                 <span className="italic text-brand-gold">next</span>.
               </p>
               <p className="mt-4 text-white/80">
-                Start with a thorough exam and a real plan — the $37 New
+                Start with a thorough exam and a real plan, the $37 New
                 Patient Special.
               </p>
             </Reveal>

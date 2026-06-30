@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   title:
     "Humorous Promo Videos of the Past – Family Workshop Promos | Synergy Spine and Nerve Center",
   description:
-    "Short, funny family-made videos we used to shoot to promote our upcoming workshops — Eating Raw, Subluxation, Boy Likes Girl, Captain Chiro and more.",
+    "Short, funny family-made videos we used to shoot to promote our upcoming workshops, Eating Raw, Subluxation, Boy Likes Girl, Captain Chiro and more.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Humorous Promo Videos of the Past | Synergy Spine and Nerve Center",
     description:
-      "Family-made promo videos that used to advertise our workshops — fun, light, and educational.",
+      "Family-made promo videos that used to advertise our workshops, fun, light, and educational.",
     url: CANONICAL,
     type: "website",
     siteName: "Synergy Spine and Nerve Center",
@@ -234,7 +234,7 @@ export default function HumorousPromoVideosOfThePastPage() {
                 <span className="italic text-brand-gold">this</span>?
               </p>
               <p className="mt-4 text-white/80">
-                Come visit us in the office — and bring your sense of humor.
+                Come visit us in the office, and bring your sense of humor.
               </p>
             </Reveal>
             <Reveal

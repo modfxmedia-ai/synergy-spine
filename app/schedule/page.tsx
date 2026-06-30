@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title:
     "Schedule Your Chiropractic Appointment – Synergy Spine and Nerve Center",
   description:
-    "Book your visit with Dr. Brad or Austin in Rio Rancho, NM. Online scheduling available — or call (505) 891-2280.",
+    "Book your visit with Dr. Brad or Austin in Rio Rancho, NM. Online scheduling available, or call (505) 891-2280.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title:
@@ -139,7 +139,7 @@ export default function SchedulePage() {
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
                 Dr. Brad and Austin are happy to serve you at 1453 Rio
                 Rancho Blvd-Suite #2 in Rio Rancho. Pick a time that works
-                — we&apos;ll do the rest.
+, we&apos;ll do the rest.
               </p>
             </Reveal>
           </div>
@@ -246,7 +246,7 @@ export default function SchedulePage() {
                   <span className="italic text-brand-blue">hours</span>.
                 </h2>
                 <p className="mt-4 text-brand-text">
-                  By appointment Monday through Thursday — closed Friday
+                  By appointment Monday through Thursday, closed Friday
                   through Sunday so we can rest, recover, and serve you
                   better next week.
                 </p>
@@ -345,7 +345,7 @@ export default function SchedulePage() {
               </p>
               <p className="mt-4 text-white/80">
                 One-on-one consultation, complete Spinal Health Assessment, any
-                necessary X-rays, your first treatment, and a care plan — all
+                necessary X-rays, your first treatment, and a care plan, all
                 for $37.
               </p>
             </Reveal>

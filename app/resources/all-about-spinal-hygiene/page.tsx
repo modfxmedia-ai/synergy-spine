@@ -42,14 +42,14 @@ const HYGIENE_VIDEOS: {
     href: "/spinal-hygiene-video/",
     title: "Spinal Hygiene Video",
     desc:
-      "All about spinal hygiene — what it is, why it matters, and the daily routine that keeps your spine healthy.",
+      "All about spinal hygiene, what it is, why it matters, and the daily routine that keeps your spine healthy.",
   },
   {
     videoId: "uEtdfzxle2c",
     href: "/use-your-head-video/",
     title: "Use Your Head Video",
     desc:
-      "There is so much wisdom in the simple phrase use your head — see why posture and head position drive your overall health.",
+      "There is so much wisdom in the simple phrase use your head, see why posture and head position drive your overall health.",
   },
   {
     videoId: "UAuYYnLuh6U",
@@ -164,7 +164,7 @@ export default function AllAboutSpinalHygienePage() {
                 </p>
                 <p className="mt-3 section-title text-2xl md:text-3xl font-semibold leading-snug">
                   Every joint in your body must go through its full range of
-                  motion every 24 hours — or arthritis is developing.
+                  motion every 24 hours, or arthritis is developing.
                 </p>
                 <p className="mt-4 text-white/90 leading-relaxed">
                   That&apos;s the foundational principle of spinal hygiene. Daily

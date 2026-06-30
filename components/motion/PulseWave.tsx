@@ -6,7 +6,7 @@ type Props = {
 };
 
 /**
- * Animated nervous system "wave" — concentric pulse rings and a sine
+ * Animated nervous system "wave", concentric pulse rings and a sine
  * wave that travels across, evoking energy flow.
  */
 export default function PulseWave({

@@ -14,7 +14,7 @@ const BOOK_URL = "https://www.atlaschirosys.com/apps/#/form?form=2210&clinic=153
 export const metadata: Metadata = {
   title: "What to Expect on Your First Visit – Synergy Spine and Nerve Center",
   description:
-    "Wondering what to expect on your first chiropractic visit? Walk through every step — intake forms, consultation, examination, digital X-rays, and your report of findings.",
+    "Wondering what to expect on your first chiropractic visit? Walk through every step, intake forms, consultation, examination, digital X-rays, and your report of findings.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "What to Expect on Your First Visit – Synergy Spine and Nerve Center",
@@ -38,7 +38,7 @@ const STEPS: Step[] = [
     num: "01",
     title: "Intake Forms",
     body:
-      "We have quality online forms ready to go. Please fill these out before you arrive — your wait at the office will be very short. We aim to be a paperless office.",
+      "We have quality online forms ready to go. Please fill these out before you arrive, your wait at the office will be very short. We aim to be a paperless office.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -50,7 +50,7 @@ const STEPS: Step[] = [
     num: "02",
     title: "Consultation",
     body:
-      "Sit down with us for a clear, honest conversation about your health goals and concerns. We listen first — understanding your story comes before any plan.",
+      "Sit down with us for a clear, honest conversation about your health goals and concerns. We listen first, understanding your story comes before any plan.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
@@ -62,7 +62,7 @@ const STEPS: Step[] = [
     num: "03",
     title: "Examination",
     body:
-      "Our targeted neurological and structural exam pinpoints how spinal stress is affecting your nervous system — the master controller of every cell in your body.",
+      "Our targeted neurological and structural exam pinpoints how spinal stress is affecting your nervous system, the master controller of every cell in your body.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <circle cx="11" cy="11" r="7" />
@@ -74,7 +74,7 @@ const STEPS: Step[] = [
     num: "04",
     title: "Digital X-Ray Studies",
     body:
-      "If clinically indicated, low-dose digital X-rays let us see exactly what is happening in your spine — no guesswork, just precise structural insight.",
+      "If clinically indicated, low-dose digital X-rays let us see exactly what is happening in your spine, no guesswork, just precise structural insight.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="3" y="3" width="18" height="18" rx="2" />
@@ -86,7 +86,7 @@ const STEPS: Step[] = [
     num: "05",
     title: "Report of Findings",
     body:
-      "We sit down again and walk you through everything we found — in plain language. You will know exactly what is going on, what we recommend, and why.",
+      "We sit down again and walk you through everything we found, in plain language. You will know exactly what is going on, what we recommend, and why.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M9 11h6M9 7h6M9 15h4" />
@@ -98,7 +98,7 @@ const STEPS: Step[] = [
     num: "06",
     title: "What's Next",
     body:
-      "Together we choose a care path that fits your goals, your schedule, and your budget. No pressure, no surprises — just clear next steps toward feeling better.",
+      "Together we choose a care path that fits your goals, your schedule, and your budget. No pressure, no surprises, just clear next steps toward feeling better.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M5 12h14M13 5l7 7-7 7" />
@@ -114,7 +114,7 @@ const FAQS = [
   },
   {
     q: "Do I need a referral?",
-    a: "Not at all. You can book directly with us — chiropractic care does not require a physician referral.",
+    a: "Not at all. You can book directly with us, chiropractic care does not require a physician referral.",
   },
   {
     q: "What should I wear?",

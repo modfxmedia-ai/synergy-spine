@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title:
     "Helpful Stretches for Neck and Lower Back Pain | Synergy Spine & Nerve Center",
   description:
-    "Effective stretches to relieve neck pain, lower back pain, sciatic nerve pain, and forward head posture — taught by Synergy Spine and Nerve Center in Rio Rancho, NM.",
+    "Effective stretches to relieve neck pain, lower back pain, sciatic nerve pain, and forward head posture, taught by Synergy Spine and Nerve Center in Rio Rancho, NM.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title:
@@ -46,7 +46,7 @@ const GROUPS: StretchGroup[] = [
     stretches: [
       {
         title: "Stretching the Sternocleidomastoid Muscle for Neck Pain",
-        desc: "A focused stretch for the SCM — a common source of neck pain and tension headaches.",
+        desc: "A focused stretch for the SCM, a common source of neck pain and tension headaches.",
         videoId: "q_Wdobp3DdQ",
       },
       {
@@ -78,7 +78,7 @@ const GROUPS: StretchGroup[] = [
       },
       {
         title: "Stretching Hamstrings for Lower Back Pain",
-        desc: "Tight hamstrings pull on the pelvis — open them up to give your lower back room to move.",
+        desc: "Tight hamstrings pull on the pelvis, open them up to give your lower back room to move.",
         videoId: "OJuakKPXc_s",
       },
       {
@@ -110,7 +110,7 @@ const GROUPS: StretchGroup[] = [
     stretches: [
       {
         title: "Stretching the Iliotibial Tract Band for Knee Pain",
-        desc: "A simple stretch for IT band tightness — a common cause of lateral knee pain.",
+        desc: "A simple stretch for IT band tightness, a common cause of lateral knee pain.",
         videoId: "elgTTuQJYYY",
       },
       {
@@ -125,7 +125,7 @@ const GROUPS: StretchGroup[] = [
       },
       {
         title: "Stretching the Iliotibial Band with a Foam Roller",
-        desc: "Foam-roller progression for the IT band — once a basic stretch isn&apos;t enough.",
+        desc: "Foam-roller progression for the IT band, once a basic stretch isn&apos;t enough.",
         videoId: "zQpq6AvNnd4",
       },
     ],
@@ -192,7 +192,7 @@ export default function HelpfulStretchesPage() {
             <Reveal delay={220}>
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
                 A growing video library of stretches Dr. Brad recommends every
-                day in the office — for neck pain, lower back pain, sciatica,
+                day in the office, for neck pain, lower back pain, sciatica,
                 forward head posture, and more. Bookmark this page and revisit
                 often.
               </p>
@@ -294,7 +294,7 @@ export default function HelpfulStretchesPage() {
           <div className="absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-brand-gold/20 blur-3xl animate-drift" />
           <div className="relative mx-auto max-w-4xl px-6 text-center">
             <h2 className="section-title text-3xl md:text-4xl font-semibold leading-tight">
-              Stretches help — but they aren&apos;t the{" "}
+              Stretches help, but they aren&apos;t the{" "}
               <span className="italic text-brand-goldSoft">whole story</span>.
             </h2>
             <p className="mt-4 text-white/80">

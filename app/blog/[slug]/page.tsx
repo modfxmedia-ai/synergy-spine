@@ -185,7 +185,7 @@ export default async function BlogPostPage({
                       <p className="mt-2 text-sm text-brand-text leading-relaxed">
                         Dr. Brad and the Synergy team are committed to gentle, principled
                         chiropractic care that supports your body&apos;s natural ability to heal.
-                        Have a question about an article? Bring it up at your next visit — we
+                        Have a question about an article? Bring it up at your next visit, we
                         love the conversation.
                       </p>
                     </div>

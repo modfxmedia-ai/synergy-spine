@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const PERKS = [
   {
     title: "Skip the wait",
-    desc: "No clipboard, no lobby paperwork — your check-in moves fast.",
+    desc: "No clipboard, no lobby paperwork, your check-in moves fast.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <circle cx="12" cy="12" r="10" />
@@ -47,7 +47,7 @@ const PERKS = [
   },
   {
     title: "Paperless office",
-    desc: "We are committed to a paperless workflow — better for you and the planet.",
+    desc: "We are committed to a paperless workflow, better for you and the planet.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -70,7 +70,7 @@ const PREP = [
   "Name, date of birth, and contact info",
   "A brief summary of your main concern (when it started, what makes it worse / better)",
   "Current medications and any past surgeries or major conditions",
-  "Insurance details (optional — only if you plan to use coverage)",
+  "Insurance details (optional, only if you plan to use coverage)",
 ];
 
 export default function IntakeFormsPage() {
@@ -133,7 +133,7 @@ export default function IntakeFormsPage() {
               <Reveal delay={220}>
                 <p className="mt-6 max-w-xl text-white/75 text-base md:text-lg leading-relaxed">
                   We have quality online forms ready to go. Please fill these
-                  out before you arrive — your wait at the office will be very
+                  out before you arrive, your wait at the office will be very
                   short. We aim to be a paperless office.
                 </p>
               </Reveal>
@@ -351,7 +351,7 @@ export default function IntakeFormsPage() {
           <div className="relative mx-auto max-w-4xl px-6 text-center">
             <Reveal>
               <p className="section-title text-2xl md:text-3xl font-semibold leading-snug">
-                Ready when you are —{" "}
+                Ready when you are, {" "}
                 <span className="italic text-brand-gold">forms first</span>,
                 handshake second.
               </p>

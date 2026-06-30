@@ -14,7 +14,7 @@ const PRINCIPLES: Principle[] = [
   {
     number: "01",
     title: "We believe everyone matters",
-    body: "Every patient deserves to be seen, heard, and treated as a whole person — not a symptom. We meet you where you are and walk with you toward better health.",
+    body: "Every patient deserves to be seen, heard, and treated as a whole person, not a symptom. We meet you where you are and walk with you toward better health.",
     accent: "blue",
     image:
       "https://synergyspineandnerve.com/wp-content/uploads/2020/04/AdobeStock_131905531_5728daf376e95dbd68bb771b46885093.jpg",
@@ -24,7 +24,7 @@ const PRINCIPLES: Principle[] = [
   {
     number: "02",
     title: "We discover the cause",
-    body: "We don't chase symptoms. We illuminate the root cause of your problem so we can liberate you from pain — and keep it from coming back.",
+    body: "We don't chase symptoms. We illuminate the root cause of your problem so we can liberate you from pain, and keep it from coming back.",
     accent: "gold",
     image:
       "https://synergyspineandnerve.com/wp-content/uploads/2020/04/AdobeStock_170696498.jpg",
@@ -34,7 +34,7 @@ const PRINCIPLES: Principle[] = [
   {
     number: "03",
     title: "We use evidence-based protocols",
-    body: "Modern chiropractic care, grounded in published research and proven outcomes. Care that improves your quality of life — measurably.",
+    body: "Modern chiropractic care, grounded in published research and proven outcomes. Care that improves your quality of life, measurably.",
     accent: "navy",
     image:
       "https://synergyspineandnerve.com/wp-content/uploads/2020/04/AdobeStock_221694274_9210ad7af9e5f7b776c84ac6f0276f49.jpg",
@@ -143,7 +143,7 @@ export default function PrinciplesSection() {
                     </p>
                   </div>
 
-                  {/* Image — frameless, just rounded corners */}
+                  {/* Image, frameless, just rounded corners */}
                   <div
                     className={`col-span-12 md:col-span-5 ${
                       isReversed ? "md:order-1" : ""

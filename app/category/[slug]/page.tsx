@@ -145,7 +145,7 @@ export default async function CategoryPage({
               <Reveal>
                 <div className="rounded-2xl bg-white p-12 text-center ring-1 ring-black/5 shadow-sm">
                   <p className="text-brand-textLight">
-                    No articles yet in this category. Check back soon — or browse all{" "}
+                    No articles yet in this category. Check back soon, or browse all{" "}
                     <Link href="/blog/" className="font-semibold text-brand-blue hover:underline">
                       articles
                     </Link>

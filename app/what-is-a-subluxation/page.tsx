@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "What is a Subluxation? – Synergy Spine and Nerve Center",
     description:
-      "Understand chiropractic care: its role in health and wellness — what subluxation is, how it affects the nervous system, and how it is corrected.",
+      "Understand chiropractic care: its role in health and wellness, what subluxation is, how it affects the nervous system, and how it is corrected.",
     url: CANONICAL,
     type: "article",
     siteName: "Synergy Spine and Nerve Center",
@@ -61,7 +61,7 @@ const CAUSES = [
   {
     title: "Physical trauma",
     body:
-      "Falls, sports impacts, car accidents, or sustained poor posture — even the birth process itself can introduce subluxation.",
+      "Falls, sports impacts, car accidents, or sustained poor posture, even the birth process itself can introduce subluxation.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="m13 2-3 7h5l-3 7" />
@@ -83,7 +83,7 @@ const CAUSES = [
   {
     title: "Emotional stress",
     body:
-      "Chronic stress contracts muscles around the spine — over time those tensions translate into joint restriction.",
+      "Chronic stress contracts muscles around the spine, over time those tensions translate into joint restriction.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M3 12s2-7 9-7 9 7 9 7-2 7-9 7-9-7-9-7z" />
@@ -169,7 +169,7 @@ export default function WhatIsASubluxationPage() {
             <Reveal delay={220}>
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
                 Without proper care, subluxation can cause permanent nerve
-                damage — but the good news is that chiropractic adjustment is
+                damage, but the good news is that chiropractic adjustment is
                 designed to reduce or remove it.
               </p>
             </Reveal>
@@ -202,8 +202,8 @@ export default function WhatIsASubluxationPage() {
               </div>
               <h2 className="section-title mt-4 text-3xl md:text-4xl text-brand-navyDark font-semibold leading-tight">
                 A joint{" "}
-                <span className="italic text-brand-blue">out of position</span>{" "}
-                — or stuck.
+                <span className="italic text-brand-blue">out of position</span>
+, or stuck.
               </h2>
 
               <p className="mt-6 text-brand-text text-lg leading-relaxed">
@@ -301,7 +301,7 @@ export default function WhatIsASubluxationPage() {
                 people without them even knowing it. Just because you have
                 subluxation does not mean that you will have pain. This is one
                 reason why most chiropractors recommend getting checked for
-                subluxation regularly — just like most dentists recommend
+                subluxation regularly, just like most dentists recommend
                 regular dental check-ups.
               </p>
 
@@ -393,7 +393,7 @@ export default function WhatIsASubluxationPage() {
 
               <p className="mt-6 text-brand-text text-lg leading-relaxed">
                 Nociceptors can fire and you may have decreased function of
-                some of the vital organs and processes of your body — even
+                some of the vital organs and processes of your body, even
                 without feeling pain. This is why many chiropractors use the{" "}
                 <Link
                   href="/nerve-chart/"
@@ -403,8 +403,8 @@ export default function WhatIsASubluxationPage() {
                 </Link>{" "}
                 to demonstrate that if a subluxation is present at a certain
                 level it could result in malfunction of the organs at the end
-                of those nerves. For example, a subluxation at C6 — the 6th
-                vertebrae below the head — can result in thyroid problems.
+                of those nerves. For example, a subluxation at C6, the 6th
+                vertebrae below the head, can result in thyroid problems.
               </p>
 
               <p className="mt-5 text-brand-text text-lg leading-relaxed">
@@ -412,7 +412,7 @@ export default function WhatIsASubluxationPage() {
                 subluxation is captured in the concepts of proprioception and
                 nociception above. With subluxation present, complete health
                 of the body cannot be present. Adjustments are centered around
-                reducing or removing it so proper nerve function can return —
+                reducing or removing it so proper nerve function can return, 
                 often allowing conditions or symptoms to disappear.
               </p>
             </Reveal>
@@ -502,7 +502,7 @@ export default function WhatIsASubluxationPage() {
                   <span className="italic text-brand-blue">getting adjusted</span>
                 </h2>
                 <p className="mt-3 text-brand-text">
-                  A short explainer on what an adjustment really does — and
+                  A short explainer on what an adjustment really does, and
                   why we focus on the nerve system, not just the bones.
                 </p>
               </div>

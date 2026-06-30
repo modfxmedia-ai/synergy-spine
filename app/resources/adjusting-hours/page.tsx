@@ -182,8 +182,8 @@ export default function AdjustingHoursPage() {
                   Get notified about hour changes &amp; closures.
                 </h2>
                 <p className="mt-4 text-brand-text leading-relaxed">
-                  When office hours change — for holidays, training, or any
-                  short-term reason — we send a quick email so you&apos;re never
+                  When office hours change, for holidays, training, or any
+                  short-term reason, we send a quick email so you&apos;re never
                   caught by surprise. Sign up to get those updates straight to
                   your inbox.
                 </p>
@@ -218,7 +218,7 @@ export default function AdjustingHoursPage() {
               <span className="italic text-brand-goldSoft">reschedule?</span>
             </h2>
             <p className="mt-4 text-white/80">
-              Give us a call — we&apos;ll find a time that works for you.
+              Give us a call, we&apos;ll find a time that works for you.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <Link

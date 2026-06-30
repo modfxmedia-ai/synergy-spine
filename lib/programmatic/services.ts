@@ -10,7 +10,7 @@ export type ServiceCopy = {
   titleTemplate: string;
   descriptionTemplate: string;
   h1Template: string;
-  // Long-form, service-specific content (shared across cities — authoritative content)
+  // Long-form, service-specific content (shared across cities, authoritative content)
   whatItIs: string;
   howItWorks: string[];
   helpsWith: string[];
@@ -33,7 +33,7 @@ export const SERVICES: ServiceCopy[] = [
       "Looking for a trusted chiropractor near {city}, NM? Synergy Spine and Nerve Center delivers honest, evidence-based chiropractic care to {city} families. Call (505) 891-2280.",
     h1Template: "Chiropractor in {city}, NM",
     whatItIs:
-      "Chiropractic care is a hands-on, drug-free approach focused on the relationship between your spine and your nervous system. When small spinal joints lose proper motion or alignment — what we call subluxation — they can interfere with the nerve signals controlling muscles, organs, and overall health. A chiropractor restores that motion through specific, gentle adjustments so the body can heal the way it was designed to.",
+      "Chiropractic care is a hands-on, drug-free approach focused on the relationship between your spine and your nervous system. When small spinal joints lose proper motion or alignment, what we call subluxation, they can interfere with the nerve signals controlling muscles, organs, and overall health. A chiropractor restores that motion through specific, gentle adjustments so the body can heal the way it was designed to.",
     howItWorks: [
       "Comprehensive history and posture intake on your first visit.",
       "A 17-page Spinal Health Assessment (SHA) to objectively score where your spine stands today.",
@@ -52,7 +52,7 @@ export const SERVICES: ServiceCopy[] = [
       "Pediatric posture and growth concerns",
     ],
     whoItsFor:
-      "Anyone who wants to take care of their spine the same way they take care of their teeth — proactively. We treat children through retirees, athletes through office workers, and post-injury patients who never want a recurrence.",
+      "Anyone who wants to take care of their spine the same way they take care of their teeth, proactively. We treat children through retirees, athletes through office workers, and post-injury patients who never want a recurrence.",
     expect: [
       "About 45–60 minutes for your first visit",
       "An honest conversation about whether chiropractic is the right fit",
@@ -62,7 +62,7 @@ export const SERVICES: ServiceCopy[] = [
     faqs: [
       {
         q: "How do I find the best chiropractor near {city}, NM?",
-        a: "Look for a chiropractor with measurable, objective metrics — not just feel-good adjustments. Ask whether they perform a Spinal Health Assessment, whether they teach you home spinal hygiene, and whether they're willing to refer you out if you're not the right fit. Synergy Spine and Nerve Center serves {city} from our Rio Rancho office and grades every spine on a 0–100 scale so you know exactly what's improving.",
+        a: "Look for a chiropractor with measurable, objective metrics, not just feel-good adjustments. Ask whether they perform a Spinal Health Assessment, whether they teach you home spinal hygiene, and whether they're willing to refer you out if you're not the right fit. Synergy Spine and Nerve Center serves {city} from our Rio Rancho office and grades every spine on a 0–100 scale so you know exactly what's improving.",
       },
       {
         q: "Is chiropractic care safe?",
@@ -107,21 +107,21 @@ export const SERVICES: ServiceCopy[] = [
       "Failed back surgery syndrome (case dependent)",
     ],
     whoItsFor:
-      "Adults with imaging-confirmed disc problems, chronic low back pain that hasn't responded to typical care, or sciatica that flares with sitting and driving. We screen carefully — decompression isn't for everyone, and we'll tell you up front if you're not a candidate.",
+      "Adults with imaging-confirmed disc problems, chronic low back pain that hasn't responded to typical care, or sciatica that flares with sitting and driving. We screen carefully, decompression isn't for everyone, and we'll tell you up front if you're not a candidate.",
     expect: [
       "30-minute sessions, fully clothed, no needles or medication",
       "A schedule of 3–5 visits a week tapering down as you improve",
       "Home stretches and core stability work between sessions",
-      "Clear progress checkpoints — we measure, we don't guess",
+      "Clear progress checkpoints, we measure, we don't guess",
     ],
     faqs: [
       {
         q: "Does spinal decompression really work for herniated discs in {city} patients?",
-        a: "Yes — for the right candidate. Multiple peer-reviewed studies show non-surgical decompression can reduce intra-discal pressure to negative levels, which is the mechanism that helps a herniation retract. We've helped many {city}-area patients avoid surgery this way, but we're up-front when imaging shows decompression isn't the right tool.",
+        a: "Yes, for the right candidate. Multiple peer-reviewed studies show non-surgical decompression can reduce intra-discal pressure to negative levels, which is the mechanism that helps a herniation retract. We've helped many {city}-area patients avoid surgery this way, but we're up-front when imaging shows decompression isn't the right tool.",
       },
       {
         q: "Is spinal decompression painful?",
-        a: "It shouldn't be. Most patients find sessions relaxing — many even fall asleep on the table. If you feel pinching or sharp pain we adjust the protocol or stop the session.",
+        a: "It shouldn't be. Most patients find sessions relaxing, many even fall asleep on the table. If you feel pinching or sharp pain we adjust the protocol or stop the session.",
       },
       {
         q: "How many decompression sessions will I need?",
@@ -145,7 +145,7 @@ export const SERVICES: ServiceCopy[] = [
       "Drug-free sciatica relief for {city}, NM. Synergy Spine and Nerve Center treats the root cause of leg pain, numbness, and tingling. Call (505) 891-2280.",
     h1Template: "Sciatica Relief in {city}, NM",
     whatItIs:
-      "Sciatica is the name we give to symptoms — pain, numbness, burning, or weakness running down one leg — that come from irritation or compression of the sciatic nerve. The nerve itself is rarely the problem. The problem is almost always at the spine: a disc bulge, a tight piriformis, a stuck SI joint, or a degenerated lumbar segment squeezing the nerve root. Treat the cause and the leg quiets down.",
+      "Sciatica is the name we give to symptoms, pain, numbness, burning, or weakness running down one leg, that come from irritation or compression of the sciatic nerve. The nerve itself is rarely the problem. The problem is almost always at the spine: a disc bulge, a tight piriformis, a stuck SI joint, or a degenerated lumbar segment squeezing the nerve root. Treat the cause and the leg quiets down.",
     howItWorks: [
       "A neurologic and orthopedic exam to confirm true sciatica vs. a copycat.",
       "Imaging review (or referral) to identify the lumbar level driving symptoms.",
@@ -178,11 +178,11 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "Are injections or surgery better than chiropractic for sciatica?",
-        a: "Injections quiet symptoms but rarely fix the cause. Surgery has its place — but only after conservative care has been given a fair trial. The published evidence supports conservative care first for the vast majority of sciatica cases.",
+        a: "Injections quiet symptoms but rarely fix the cause. Surgery has its place, but only after conservative care has been given a fair trial. The published evidence supports conservative care first for the vast majority of sciatica cases.",
       },
       {
         q: "Can I keep working out with sciatica?",
-        a: "Usually yes — we modify around it. Stopping all activity is rarely the answer; the goal is to keep moving in ways that don't aggravate the nerve. We give you a list on day one.",
+        a: "Usually yes, we modify around it. Stopping all activity is rarely the answer; the goal is to keep moving in ways that don't aggravate the nerve. We give you a list on day one.",
       },
     ],
     related: ["spinal-decompression", "back-pain-relief", "herniated-disc-treatment"],
@@ -198,12 +198,12 @@ export const SERVICES: ServiceCopy[] = [
       "Drug-free neuropathy treatment for {city}, NM. Reduce numbness, burning, and tingling in feet and hands at Synergy Spine and Nerve Center.",
     h1Template: "Neuropathy Treatment in {city}, NM",
     whatItIs:
-      "Peripheral neuropathy is what happens when the small nerves in your hands and feet stop getting the blood flow, oxygen, and nerve signal they need. The result is numbness, burning, tingling, sharp shooting pain, or balance loss. Most patients are told there's nothing to be done. That's not true — for the right candidate, restoring blood flow and nerve signal can produce real, measurable change.",
+      "Peripheral neuropathy is what happens when the small nerves in your hands and feet stop getting the blood flow, oxygen, and nerve signal they need. The result is numbness, burning, tingling, sharp shooting pain, or balance loss. Most patients are told there's nothing to be done. That's not true, for the right candidate, restoring blood flow and nerve signal can produce real, measurable change.",
     howItWorks: [
       "A consultation to grade your neuropathy on a 0–10 severity scale.",
       "A vascular and neurologic exam to confirm whether you're a candidate.",
       "A combined protocol: nerve re-education, blood-flow stimulation, and spinal correction.",
-      "Home protocols you do daily — this is non-negotiable for results.",
+      "Home protocols you do daily, this is non-negotiable for results.",
     ],
     helpsWith: [
       "Burning or tingling in the feet or hands",
@@ -216,26 +216,26 @@ export const SERVICES: ServiceCopy[] = [
       "Adults with peripheral neuropathy who haven't lost too much nerve function yet. The earlier you start, the more nerve you can save. We grade your nerve damage objectively and tell you up front whether our protocol is likely to help.",
     expect: [
       "A 30-minute consultation to determine candidacy",
-      "An honest yes or no — we don't take patients we can't help",
+      "An honest yes or no, we don't take patients we can't help",
       "Twice-weekly in-office visits paired with a daily home protocol",
       "Re-grading at 12 weeks to measure the shift",
     ],
     faqs: [
       {
         q: "Is neuropathy reversible?",
-        a: "It depends on the cause and how long it's been progressing. If we catch it early — before nerve cells die — significant reversal is possible. Late-stage neuropathy is more about stabilizing what you have left. {city} patients should not assume it's hopeless until they've been examined.",
+        a: "It depends on the cause and how long it's been progressing. If we catch it early, before nerve cells die, significant reversal is possible. Late-stage neuropathy is more about stabilizing what you have left. {city} patients should not assume it's hopeless until they've been examined.",
       },
       {
         q: "Can chiropractic care help neuropathy?",
-        a: "When the neuropathy is being driven or worsened by spinal nerve root compression, yes — chiropractic care is part of the answer. When it's purely metabolic (e.g., diabetic), chiropractic supports the broader protocol of vascular work and home stimulation.",
+        a: "When the neuropathy is being driven or worsened by spinal nerve root compression, yes, chiropractic care is part of the answer. When it's purely metabolic (e.g., diabetic), chiropractic supports the broader protocol of vascular work and home stimulation.",
       },
       {
         q: "Do I need to stop my medications?",
-        a: "No. We coordinate with your primary care doctor and never ask you to stop a medication on our recommendation. Many {city} patients reduce medication naturally as symptoms quiet down — that's a conversation between you and your prescriber.",
+        a: "No. We coordinate with your primary care doctor and never ask you to stop a medication on our recommendation. Many {city} patients reduce medication naturally as symptoms quiet down, that's a conversation between you and your prescriber.",
       },
       {
         q: "How fast will I notice change?",
-        a: "Most candidates feel a shift in burning or tingling within 4–6 weeks. Numbness and balance take longer because nerve regrowth is slow — 12 weeks is the realistic window to evaluate change.",
+        a: "Most candidates feel a shift in burning or tingling within 4–6 weeks. Numbness and balance take longer because nerve regrowth is slow, 12 weeks is the realistic window to evaluate change.",
       },
     ],
     related: ["chiropractor", "back-pain-relief"],
@@ -248,12 +248,12 @@ export const SERVICES: ServiceCopy[] = [
     titleTemplate:
       "Back Pain Relief in {city}, NM | Synergy Spine and Nerve Center",
     descriptionTemplate:
-      "Lasting back pain relief for {city}, NM. Drug-free chiropractic care that finds and fixes the cause — not just the symptom. Call (505) 891-2280.",
+      "Lasting back pain relief for {city}, NM. Drug-free chiropractic care that finds and fixes the cause, not just the symptom. Call (505) 891-2280.",
     h1Template: "Back Pain Relief in {city}, NM",
     whatItIs:
-      "Back pain is the most common reason adults visit a chiropractor, and it has dozens of possible drivers — disc, joint, muscle, nerve, or postural. The reason most back pain comes back is that the original cause was never identified. We separate the symptom from the source so the relief sticks.",
+      "Back pain is the most common reason adults visit a chiropractor, and it has dozens of possible drivers, disc, joint, muscle, nerve, or postural. The reason most back pain comes back is that the original cause was never identified. We separate the symptom from the source so the relief sticks.",
     howItWorks: [
-      "A focused exam to identify the structural driver — disc, joint, or soft tissue.",
+      "A focused exam to identify the structural driver, disc, joint, or soft tissue.",
       "A care plan matched to the driver, not a one-size-fits-all approach.",
       "Adjustments, soft-tissue work, and decompression where appropriate.",
       "A home program so you stop re-injuring the same area.",
@@ -280,7 +280,7 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "Will an adjustment make my back pain worse?",
-        a: "A correctly applied adjustment shouldn't increase pain. Some patients notice 24–48 hours of mild soreness as the body re-adapts — like the day after a good workout. We modify the approach for sensitive cases.",
+        a: "A correctly applied adjustment shouldn't increase pain. Some patients notice 24–48 hours of mild soreness as the body re-adapts, like the day after a good workout. We modify the approach for sensitive cases.",
       },
       {
         q: "What's the difference between back pain from a muscle vs. a disc?",
@@ -288,7 +288,7 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "Do you offer same-week appointments for {city} patients?",
-        a: "Yes. Call (505) 891-2280 and ask for first-available — we leave intentional gaps for new acute cases.",
+        a: "Yes. Call (505) 891-2280 and ask for first-available, we leave intentional gaps for new acute cases.",
       },
     ],
     related: ["spinal-decompression", "sciatica-relief", "herniated-disc-treatment"],
@@ -304,7 +304,7 @@ export const SERVICES: ServiceCopy[] = [
       "Drug-free neck pain relief for {city}, NM. Tech neck, stiffness, and headaches resolved at the source. Call (505) 891-2280.",
     h1Template: "Neck Pain Relief in {city}, NM",
     whatItIs:
-      "Most modern neck pain is mechanical — too many hours looking down at a phone, sleeping on the wrong pillow, or carrying old whiplash that never fully resolved. The neck is a small, busy stretch of spine carrying a lot of nerves to the head, jaw, and arms. When it's stuck, headaches, jaw tension, and arm tingling often come along for the ride.",
+      "Most modern neck pain is mechanical, too many hours looking down at a phone, sleeping on the wrong pillow, or carrying old whiplash that never fully resolved. The neck is a small, busy stretch of spine carrying a lot of nerves to the head, jaw, and arms. When it's stuck, headaches, jaw tension, and arm tingling often come along for the ride.",
     howItWorks: [
       "A posture and motion exam to find the stuck or unstable segments.",
       "Specific cervical adjustments matched to your build and tolerance.",
@@ -321,7 +321,7 @@ export const SERVICES: ServiceCopy[] = [
     whoItsFor:
       "Anyone in {city} who works at a screen, drives a lot, sleeps poorly, or has a history of whiplash. Teens with phone posture and adults with desk-driven stiffness both benefit.",
     expect: [
-      "A gentle approach — adjustments matched to your comfort level",
+      "A gentle approach, adjustments matched to your comfort level",
       "Most acute cases resolve in 4–6 visits",
       "A pillow and ergonomic recommendation customized to you",
       "A clear plan to keep the pain from coming back",
@@ -336,12 +336,12 @@ export const SERVICES: ServiceCopy[] = [
         a: "Often yes. The vast majority of tension headaches start from upper-neck joint and muscle tension. We measure neck range of motion at every re-exam so you can see the change.",
       },
       {
-        q: "I have a herniated cervical disc — can you still help?",
+        q: "I have a herniated cervical disc, can you still help?",
         a: "Often yes, with care matched to imaging. Cervical decompression and gentle, low-force adjustments are usually a better first step than injections or surgery for the right candidate.",
       },
       {
         q: "How fast will my neck feel better?",
-        a: "Most {city} patients feel a shift after 1–3 visits. Lasting change takes a full care plan plus home posture work — most cases resolve within 4–8 weeks.",
+        a: "Most {city} patients feel a shift after 1–3 visits. Lasting change takes a full care plan plus home posture work, most cases resolve within 4–8 weeks.",
       },
     ],
     related: ["headache-migraine-relief", "auto-accident-chiropractor", "posture-correction"],
@@ -357,12 +357,12 @@ export const SERVICES: ServiceCopy[] = [
       "Drug-free headache and migraine relief for {city}, NM. Find and fix the cervical and lifestyle drivers behind your headaches. (505) 891-2280.",
     h1Template: "Headache & Migraine Relief in {city}, NM",
     whatItIs:
-      "Headaches are a symptom — never a diagnosis. The pain you feel above the eyes, behind the head, or wrapping the temples almost always traces back to upper-neck mechanics, hydration and food triggers, sleep posture, or hormonal cycles. Treat the driver, the headache fades.",
+      "Headaches are a symptom, never a diagnosis. The pain you feel above the eyes, behind the head, or wrapping the temples almost always traces back to upper-neck mechanics, hydration and food triggers, sleep posture, or hormonal cycles. Treat the driver, the headache fades.",
     howItWorks: [
       "We classify your headache pattern (cervicogenic, tension, migraine, cluster).",
       "A focused upper-cervical and TMJ exam to find joint and muscle drivers.",
       "Adjustments and soft-tissue work matched to the pattern.",
-      "Trigger logging — food, sleep, screen time — so we can fix what's repeatable.",
+      "Trigger logging, food, sleep, screen time, so we can fix what's repeatable.",
     ],
     helpsWith: [
       "Daily tension headaches",
@@ -377,21 +377,21 @@ export const SERVICES: ServiceCopy[] = [
     expect: [
       "A clear classification of your headache type",
       "A 4–8 week care window for most cervicogenic and tension headaches",
-      "Migraine response varies — we measure frequency and intensity",
+      "Migraine response varies, we measure frequency and intensity",
       "Honest referral to neurology if the pattern warrants it",
     ],
     faqs: [
       {
         q: "Can a chiropractor really help migraines?",
-        a: "For migraines with a cervical or postural driver, yes — published research supports chiropractic care for reducing migraine frequency and intensity. For purely vascular or hormonal migraines, our role is supportive alongside your primary care plan.",
+        a: "For migraines with a cervical or postural driver, yes, published research supports chiropractic care for reducing migraine frequency and intensity. For purely vascular or hormonal migraines, our role is supportive alongside your primary care plan.",
       },
       {
         q: "How long until my headaches improve?",
-        a: "Most cervicogenic and tension headache patients in {city} feel meaningful change within 2–4 weeks. Migraine patterns shift more slowly — we evaluate at week 8.",
+        a: "Most cervicogenic and tension headache patients in {city} feel meaningful change within 2–4 weeks. Migraine patterns shift more slowly, we evaluate at week 8.",
       },
       {
         q: "Do I have to come forever?",
-        a: "No. Once your headaches are under control we taper to maintenance — for most patients that's once a month or less.",
+        a: "No. Once your headaches are under control we taper to maintenance, for most patients that's once a month or less.",
       },
       {
         q: "Are pediatric headaches treated differently?",
@@ -406,16 +406,16 @@ export const SERVICES: ServiceCopy[] = [
     short: "auto-accident and whiplash care",
     category: "service",
     titleTemplate:
-      "Auto Accident Chiropractor {city}, NM | Whiplash Recovery — Synergy Spine",
+      "Auto Accident Chiropractor {city}, NM | Whiplash Recovery, Synergy Spine",
     descriptionTemplate:
-      "After a car accident in {city}, NM, fast chiropractic evaluation matters. Whiplash, neck pain, headaches — call Synergy Spine at (505) 891-2280.",
+      "After a car accident in {city}, NM, fast chiropractic evaluation matters. Whiplash, neck pain, headaches, call Synergy Spine at (505) 891-2280.",
     h1Template: "Auto Accident & Whiplash Chiropractor in {city}, NM",
     whatItIs:
-      "Whiplash is a soft-tissue and joint injury caused by a rapid back-and-forth motion of the head — most commonly in a rear-end collision. The classic mistake is to skip evaluation because 'nothing feels broken.' Whiplash symptoms often appear 24–72 hours later, and untreated whiplash is the single biggest predictor of chronic neck pain a decade later.",
+      "Whiplash is a soft-tissue and joint injury caused by a rapid back-and-forth motion of the head, most commonly in a rear-end collision. The classic mistake is to skip evaluation because 'nothing feels broken.' Whiplash symptoms often appear 24–72 hours later, and untreated whiplash is the single biggest predictor of chronic neck pain a decade later.",
     howItWorks: [
-      "A same-week post-accident exam — we hold spots open.",
+      "A same-week post-accident exam, we hold spots open.",
       "Imaging when warranted (or referral if findings suggest it).",
-      "Documentation that satisfies attorneys and insurers — we know the paperwork.",
+      "Documentation that satisfies attorneys and insurers, we know the paperwork.",
       "A graded care plan from acute to recovery to function.",
     ],
     helpsWith: [
@@ -426,7 +426,7 @@ export const SERVICES: ServiceCopy[] = [
       "Low back pain from seat-belt or impact mechanics",
     ],
     whoItsFor:
-      "Any {city}-area driver or passenger involved in a recent collision — even low-speed. Don't wait for symptoms to set in before getting documented.",
+      "Any {city}-area driver or passenger involved in a recent collision, even low-speed. Don't wait for symptoms to set in before getting documented.",
     expect: [
       "Same-week appointment after a collision",
       "Documentation suitable for insurance or legal counsel",
@@ -440,7 +440,7 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "Will my auto insurance cover chiropractic after the accident?",
-        a: "In most cases yes — New Mexico PIP and med-pay coverage typically pay for chiropractic post-collision. We verify benefits and bill correctly so you don't have to chase paperwork.",
+        a: "In most cases yes, New Mexico PIP and med-pay coverage typically pay for chiropractic post-collision. We verify benefits and bill correctly so you don't have to chase paperwork.",
       },
       {
         q: "I feel fine. Do I really need an exam?",
@@ -448,7 +448,7 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "Do you work with personal-injury attorneys?",
-        a: "We do. Bring your attorney's contact info — we coordinate documentation and don't make you the middleman.",
+        a: "We do. Bring your attorney's contact info, we coordinate documentation and don't make you the middleman.",
       },
     ],
     related: ["neck-pain-relief", "back-pain-relief", "headache-migraine-relief"],
@@ -466,7 +466,7 @@ export const SERVICES: ServiceCopy[] = [
     whatItIs:
       "Softwave is a focused acoustic-wave technology that triggers the body's own repair process. Unlike laser, ultrasound, or steroid injections, Softwave activates resident stem cells and restarts healing in tissues the body had given up on. It's non-invasive, drug-free, and supported by a growing body of clinical evidence.",
     howItWorks: [
-      "We map the painful and reflexive zones — Softwave often treats areas that don't hurt locally but refer to the area that does.",
+      "We map the painful and reflexive zones, Softwave often treats areas that don't hurt locally but refer to the area that does.",
       "A 10–20 minute applicator session over the target tissue.",
       "Most plans run 4–8 sessions, twice a week, then taper.",
       "Combine with adjustments and soft-tissue work for the best result.",
@@ -482,8 +482,8 @@ export const SERVICES: ServiceCopy[] = [
     whoItsFor:
       "Adults in {city} with chronic tendon, joint, or fascia pain that hasn't resolved with rest, stretching, or anti-inflammatories. Softwave is for the patients who've been told to 'live with it' and aren't willing to.",
     expect: [
-      "Sessions feel like a strong tapping — not painful",
-      "First-visit candidacy screen — not everyone is a fit",
+      "Sessions feel like a strong tapping, not painful",
+      "First-visit candidacy screen, not everyone is a fit",
       "A typical course runs 4–8 weeks",
       "Pricing transparent up front, no contracts",
     ],
@@ -502,7 +502,7 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "Can Softwave replace surgery?",
-        a: "For some patients, yes — particularly partial-thickness rotator cuff tears and chronic plantar fasciitis. We're honest when surgery is the better path.",
+        a: "For some patients, yes, particularly partial-thickness rotator cuff tears and chronic plantar fasciitis. We're honest when surgery is the better path.",
       },
     ],
     related: ["chiropractor", "sports-injury-chiropractor", "spinal-decompression"],
@@ -518,12 +518,12 @@ export const SERVICES: ServiceCopy[] = [
       "Measurable posture correction for {city}, NM. Reverse forward-head posture, rounded shoulders, and screen-driven postural strain. (505) 891-2280.",
     h1Template: "Posture Correction in {city}, NM",
     whatItIs:
-      "Posture is the visible signature of the spine underneath. Forward-head posture, rounded shoulders, and a flattened low back aren't just cosmetic — they double the load on the spine, choke off lung capacity, and fatigue the nervous system. Posture correction is a measurable, structured process — not a 'sit up straight' lecture.",
+      "Posture is the visible signature of the spine underneath. Forward-head posture, rounded shoulders, and a flattened low back aren't just cosmetic, they double the load on the spine, choke off lung capacity, and fatigue the nervous system. Posture correction is a measurable, structured process, not a 'sit up straight' lecture.",
     howItWorks: [
       "Postural photos and a digital posture score on day one.",
       "A combination of corrective adjustments, soft-tissue work, and rehab.",
       "Daily home posture drills (10 minutes, no equipment for most).",
-      "Re-photos every 12 visits so progress is visible — not just felt.",
+      "Re-photos every 12 visits so progress is visible, not just felt.",
     ],
     helpsWith: [
       "Forward-head and tech-neck posture",
@@ -538,7 +538,7 @@ export const SERVICES: ServiceCopy[] = [
       "A measurable posture score, not a vague impression",
       "A 12-week starter program with photo check-ins",
       "Home work that takes under 10 minutes a day",
-      "Lasting change — posture is built, not lectured",
+      "Lasting change, posture is built, not lectured",
     ],
     faqs: [
       {
@@ -551,7 +551,7 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "Is posture correction the same as a posture brace?",
-        a: "No. Posture braces remind your shoulders to pull back but don't change the underlying spine. We adjust the spine, train the muscles, and let posture re-organize itself — the change holds without a brace.",
+        a: "No. Posture braces remind your shoulders to pull back but don't change the underlying spine. We adjust the spine, train the muscles, and let posture re-organize itself, the change holds without a brace.",
       },
       {
         q: "Should I correct my child's posture or wait?",
@@ -586,7 +586,7 @@ export const SERVICES: ServiceCopy[] = [
       "Recurrent disc problems after past surgery",
     ],
     whoItsFor:
-      "Adults with imaging-confirmed disc herniation who want to avoid surgery and aren't satisfied with injection-only management. We screen carefully — we won't take cases that need surgical management.",
+      "Adults with imaging-confirmed disc herniation who want to avoid surgery and aren't satisfied with injection-only management. We screen carefully, we won't take cases that need surgical management.",
     expect: [
       "A 30-minute consult with imaging review",
       "An honest yes/no on candidacy",
@@ -596,11 +596,11 @@ export const SERVICES: ServiceCopy[] = [
     faqs: [
       {
         q: "Can a herniated disc heal without surgery?",
-        a: "In the majority of cases, yes — particularly when caught in the first 6 months. The disc can re-absorb, the inflammation settles, and the nerve calms down. The prerequisite is a real protocol — not just rest and Advil.",
+        a: "In the majority of cases, yes, particularly when caught in the first 6 months. The disc can re-absorb, the inflammation settles, and the nerve calms down. The prerequisite is a real protocol, not just rest and Advil.",
       },
       {
         q: "Is decompression safe with a herniated disc?",
-        a: "When the case has been screened correctly, yes — decompression is one of the most evidence-supported non-surgical options for herniation. We screen out unstable injuries, fractures, and severe stenosis.",
+        a: "When the case has been screened correctly, yes, decompression is one of the most evidence-supported non-surgical options for herniation. We screen out unstable injuries, fractures, and severe stenosis.",
       },
       {
         q: "When should I just get the surgery?",
@@ -608,7 +608,7 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "Will I be able to lift weights again?",
-        a: "Almost always — with smart progression. We rehab the core and hips to protect the disc, and most {city} patients return to lifting within 12 weeks of completing care.",
+        a: "Almost always, with smart progression. We rehab the core and hips to protect the disc, and most {city} patients return to lifting within 12 weeks of completing care.",
       },
     ],
     related: ["spinal-decompression", "sciatica-relief", "back-pain-relief"],
@@ -624,9 +624,9 @@ export const SERVICES: ServiceCopy[] = [
       "Gentle pediatric and family chiropractic care for {city}, NM. Posture, sports, and growth-stage care for kids of all ages. (505) 891-2280.",
     h1Template: "Pediatric Chiropractor in {city}, NM",
     whatItIs:
-      "Kids' spines are growing through enormous physical change — falls, sports, and now hours of screen time every day. Pediatric chiropractic is gentle, low-force, and focused on the patterns that, if caught early, save kids from carrying postural and pain problems into adulthood.",
+      "Kids' spines are growing through enormous physical change, falls, sports, and now hours of screen time every day. Pediatric chiropractic is gentle, low-force, and focused on the patterns that, if caught early, save kids from carrying postural and pain problems into adulthood.",
     howItWorks: [
-      "An age-appropriate exam — we talk to the kid, not just the parent.",
+      "An age-appropriate exam, we talk to the kid, not just the parent.",
       "Very low-force adjustments matched to a child's body and tolerance.",
       "Posture and screen-time coaching for the whole family.",
       "A short, simple home routine the child actually does.",
@@ -641,7 +641,7 @@ export const SERVICES: ServiceCopy[] = [
     whoItsFor:
       "Families in {city} who want to start their kids on the same proactive spinal health they take in their teeth. We see kids from infancy through high school graduation.",
     expect: [
-      "A child-friendly visit — short, calm, and not scary",
+      "A child-friendly visit, short, calm, and not scary",
       "Adjustments scaled to a child's pressure tolerance",
       "Honest conversations about what kids need and what they don't",
       "Family pricing for siblings",
@@ -653,7 +653,7 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "Is it safe to adjust a child?",
-        a: "Yes — when performed by a chiropractor trained in pediatric care, with technique scaled to the child. The pressures we use on a 5-year-old are a fraction of what we'd use on an adult.",
+        a: "Yes, when performed by a chiropractor trained in pediatric care, with technique scaled to the child. The pressures we use on a 5-year-old are a fraction of what we'd use on an adult.",
       },
       {
         q: "Does pediatric chiropractic help with sports performance?",
@@ -661,7 +661,7 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "Can you help with my child's posture?",
-        a: "Yes — and we'll involve the whole household. Pediatric posture is shaped by the chairs, screens, and habits at home, so the parents become part of the plan.",
+        a: "Yes, and we'll involve the whole household. Pediatric posture is shaped by the chairs, screens, and habits at home, so the parents become part of the plan.",
       },
     ],
     related: ["posture-correction", "sports-injury-chiropractor", "chiropractor"],
@@ -674,12 +674,12 @@ export const SERVICES: ServiceCopy[] = [
     titleTemplate:
       "Sports Injury Chiropractor in {city}, NM | Synergy Spine and Nerve",
     descriptionTemplate:
-      "Sports chiropractic care for {city}, NM athletes. Injury recovery, performance, and prevention — drug-free. Call (505) 891-2280.",
+      "Sports chiropractic care for {city}, NM athletes. Injury recovery, performance, and prevention, drug-free. Call (505) 891-2280.",
     h1Template: "Sports Injury Chiropractor in {city}, NM",
     whatItIs:
       "Sports chiropractic is built around two goals: get you back to play faster after an injury, and reduce the chance you'll have the same injury twice. Adjustments, soft-tissue work, and Softwave for chronic tendon issues form the core of the toolkit.",
     howItWorks: [
-      "A sport-specific exam — we test the movements your sport actually demands.",
+      "A sport-specific exam, we test the movements your sport actually demands.",
       "A combined plan: adjustments, mobility work, soft-tissue, and Softwave when warranted.",
       "Return-to-play criteria so you don't return too soon.",
       "Maintenance during your in-season schedule.",
@@ -692,7 +692,7 @@ export const SERVICES: ServiceCopy[] = [
       "Concussion-related neck and balance work (co-managed)",
     ],
     whoItsFor:
-      "{city} athletes — youth, high school, collegiate, and weekend warriors — who want to extend their athletic life and reduce time on the bench.",
+      "{city} athletes, youth, high school, collegiate, and weekend warriors, who want to extend their athletic life and reduce time on the bench.",
     expect: [
       "A sport-specific evaluation, not a generic exam",
       "An honest timeline back to play",
@@ -706,15 +706,15 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "Should I see a chiropractor or a physical therapist?",
-        a: "Often both — and we collaborate. Chiropractic excels at restoring joint motion; PT excels at progressive loading. The smartest athletes use both.",
+        a: "Often both, and we collaborate. Chiropractic excels at restoring joint motion; PT excels at progressive loading. The smartest athletes use both.",
       },
       {
         q: "Do you treat youth athletes?",
-        a: "Yes — we love working with growing athletes. Catching mechanical issues early can prevent the chronic injuries that derail college and adult athletic careers.",
+        a: "Yes, we love working with growing athletes. Catching mechanical issues early can prevent the chronic injuries that derail college and adult athletic careers.",
       },
       {
         q: "Can chiropractic improve performance, not just fix injuries?",
-        a: "Yes. Restoring full spinal motion improves rotation, recoil, and reaction time — measurable gains for golfers, runners, and rotation-sport athletes.",
+        a: "Yes. Restoring full spinal motion improves rotation, recoil, and reaction time, measurable gains for golfers, runners, and rotation-sport athletes.",
       },
     ],
     related: ["softwave-therapy", "chiropractor", "back-pain-relief"],
@@ -725,12 +725,12 @@ export const SERVICES: ServiceCopy[] = [
     short: "prenatal and pregnancy chiropractic",
     category: "service",
     titleTemplate:
-      "Prenatal Chiropractor in {city}, NM | Pregnancy Care — Synergy Spine",
+      "Prenatal Chiropractor in {city}, NM | Pregnancy Care, Synergy Spine",
     descriptionTemplate:
       "Gentle prenatal chiropractic for {city}, NM moms-to-be. Reduce back pain, sciatica, and pelvic discomfort throughout pregnancy. (505) 891-2280.",
     h1Template: "Prenatal Chiropractor in {city}, NM",
     whatItIs:
-      "Pregnancy reshapes the spine and pelvis in a few short months — relaxin softens ligaments, the center of gravity shifts forward, and the low back, hips, and SI joints take on new load. Prenatal chiropractic is gentle, drug-free care designed around those changes.",
+      "Pregnancy reshapes the spine and pelvis in a few short months, relaxin softens ligaments, the center of gravity shifts forward, and the low back, hips, and SI joints take on new load. Prenatal chiropractic is gentle, drug-free care designed around those changes.",
     howItWorks: [
       "Gentle adjustments using pregnancy-appropriate technique and pillow systems.",
       "Specific pelvic balancing to support optimal fetal positioning.",
@@ -755,11 +755,11 @@ export const SERVICES: ServiceCopy[] = [
     faqs: [
       {
         q: "Is chiropractic safe during pregnancy?",
-        a: "Yes — when performed by a chiropractor trained in pregnancy technique. Many OBs and midwives in the {city} area refer patients for pregnancy-related back and pelvic pain.",
+        a: "Yes, when performed by a chiropractor trained in pregnancy technique. Many OBs and midwives in the {city} area refer patients for pregnancy-related back and pelvic pain.",
       },
       {
         q: "When in pregnancy can I start care?",
-        a: "Any trimester. The earlier we start, the more proactively we can manage the changes — but late-pregnancy care is also very common and very helpful.",
+        a: "Any trimester. The earlier we start, the more proactively we can manage the changes, but late-pregnancy care is also very common and very helpful.",
       },
       {
         q: "What is the Webster Technique?",
@@ -767,7 +767,7 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "Will you continue care postpartum?",
-        a: "Yes — postpartum care is when many of the long-term back and pelvic-floor patterns are set. We follow patients through the first year of postpartum and beyond.",
+        a: "Yes, postpartum care is when many of the long-term back and pelvic-floor patterns are set. We follow patients through the first year of postpartum and beyond.",
       },
     ],
     related: ["chiropractor", "back-pain-relief", "pediatric-chiropractor"],

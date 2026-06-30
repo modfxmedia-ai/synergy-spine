@@ -12,7 +12,7 @@ const CANONICAL =
 export const metadata: Metadata = {
   title: "Essential Nutrients & Supplements – Synergy Spine and Nerve Center",
   description:
-    "The three supplements most people are deficient in — Vitamin A&D fish oil, probiotics, and a quality multi-vitamin. Why we recommend Innate Choice.",
+    "The three supplements most people are deficient in, Vitamin A&D fish oil, probiotics, and a quality multi-vitamin. Why we recommend Innate Choice.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Essential Nutrients & Supplements – Synergy Spine and Nerve Center",
@@ -28,7 +28,7 @@ const QUALIFICATIONS = [
   {
     title: "First, fix the diet",
     body:
-      "Supplements are not a substitute for whole food. We do not recommend supplements as a way to keep eating poorly — we recommend them on top of the cleanest diet you can sustain.",
+      "Supplements are not a substitute for whole food. We do not recommend supplements as a way to keep eating poorly, we recommend them on top of the cleanest diet you can sustain.",
   },
   {
     title: "Quality matters",
@@ -42,14 +42,14 @@ const SUPPLEMENTS = [
     title: "Vitamin A & D Fish Oil",
     pillar: "Anti-inflammatory",
     body:
-      "Omega-3 fatty acids from a clean fish source, paired with naturally occurring Vitamins A and D. Supports brain, joint, immune, and cardiovascular health — the foundational supplement we recommend for nearly every patient.",
+      "Omega-3 fatty acids from a clean fish source, paired with naturally occurring Vitamins A and D. Supports brain, joint, immune, and cardiovascular health, the foundational supplement we recommend for nearly every patient.",
     accent: "from-brand-blue to-brand-blueLight",
   },
   {
     title: "Probiotics",
     pillar: "Digestion · Immunity",
     body:
-      "More than 70% of your immune system lives in your gut. A high-quality, multi-strain probiotic helps re-establish a healthy gut microbiome — especially important after antibiotics, stress, or a standard processed diet.",
+      "More than 70% of your immune system lives in your gut. A high-quality, multi-strain probiotic helps re-establish a healthy gut microbiome, especially important after antibiotics, stress, or a standard processed diet.",
     accent: "from-brand-navy to-brand-navyDark",
   },
   {
@@ -105,7 +105,7 @@ export default function EssentialNutrientsSupplementsPage() {
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
                 Looking for effective nutrients or supplements to relieve your
                 symptoms and support overall health? Start with the three
-                most-deficient nutrients in the modern diet — and a brand we
+                most-deficient nutrients in the modern diet, and a brand we
                 actually trust.
               </p>
             </Reveal>
@@ -165,14 +165,14 @@ export default function EssentialNutrientsSupplementsPage() {
                   An example
                 </p>
                 <p className="mt-3 section-title text-xl md:text-2xl text-brand-navyDark font-semibold leading-snug">
-                  Take Vitamin C — most over-the-counter brands are isolated
+                  Take Vitamin C, most over-the-counter brands are isolated
                   ascorbic acid.
                 </p>
                 <p className="mt-4 text-brand-text leading-relaxed">
                   In nature, Vitamin C never shows up alone. It comes packaged
                   with bioflavonoids, rutin, and other co-factors that make it
                   useable to your cells. A whole-food source delivers the full
-                  complex — the way your body was designed to receive it.
+                  complex, the way your body was designed to receive it.
                 </p>
               </div>
             </Reveal>
@@ -236,7 +236,7 @@ export default function EssentialNutrientsSupplementsPage() {
                       After years of vetting suppliers, Innate Choice is the
                       line we put our name behind. Whole-food sourcing, no
                       fillers, third-party tested, and formulated by clinicians
-                      who care about results — not retail margins.
+                      who care about results, not retail margins.
                     </p>
                   </div>
                   <div className="lg:col-span-6">
@@ -353,7 +353,7 @@ export default function EssentialNutrientsSupplementsPage() {
                 <span className="italic text-brand-blue">next visit</span>.
               </p>
               <p className="mt-4 text-brand-text">
-                We&apos;ll match the right supplements to your goals — no upsell,
+                We&apos;ll match the right supplements to your goals, no upsell,
                 no guesswork.
               </p>
             </Reveal>

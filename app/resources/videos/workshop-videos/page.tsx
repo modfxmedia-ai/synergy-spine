@@ -123,7 +123,7 @@ export default function WorkshopVideosPage() {
             <Reveal delay={220}>
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
                 Pick a topic that interests you and dig in. Each workshop is roughly
-                30 minutes — informative, evidence-based, and grounded in 20+ years of
+                30 minutes, informative, evidence-based, and grounded in 20+ years of
                 practice. Folks usually find them very valuable.
               </p>
             </Reveal>
@@ -228,7 +228,7 @@ export default function WorkshopVideosPage() {
                 <span className="italic text-brand-gold">watched</span>?
               </p>
               <p className="mt-4 text-white/80">
-                Bring it up at your next visit — we love the conversation.
+                Bring it up at your next visit, we love the conversation.
               </p>
             </Reveal>
             <Reveal

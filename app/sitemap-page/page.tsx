@@ -11,7 +11,7 @@ const CANONICAL = "https://synergyspineandnerve.com/sitemap/";
 export const metadata: Metadata = {
   title: "Sitemap | Synergy Spine & Nerve Center",
   description:
-    "Browse the complete sitemap for Synergy Spine and Nerve Center — every page on the site, organized by section.",
+    "Browse the complete sitemap for Synergy Spine and Nerve Center, every page on the site, organized by section.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Sitemap | Synergy Spine & Nerve Center",

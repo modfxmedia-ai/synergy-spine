@@ -30,7 +30,7 @@ export default function MapSection() {
       />
 
       <div className="relative mx-auto max-w-7xl px-6">
-        {/* Header — centered for visual balance */}
+        {/* Header, centered for visual balance */}
         <Reveal className="text-center max-w-2xl mx-auto">
           <div className="inline-flex items-center gap-3">
             <span className="h-px w-10 bg-brand-blue" />
@@ -44,12 +44,12 @@ export default function MapSection() {
             <span className="italic text-brand-blue">Rio Rancho</span>.
           </h2>
           <p className="mt-5 text-base md:text-lg text-brand-textLight leading-relaxed">
-            Centrally located on Rio Rancho Boulevard — minutes from
+            Centrally located on Rio Rancho Boulevard, minutes from
             Albuquerque&apos;s Westside, the North Valley, and Bernalillo.
           </p>
         </Reveal>
 
-        {/* Inset frame — map on left, contact on right, sharing the same baseline */}
+        {/* Inset frame, map on left, contact on right, sharing the same baseline */}
         <Reveal delay={120}>
           <div className="mt-14 lg:mt-16 overflow-hidden rounded-[32px] bg-white ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgba(13,35,64,0.25)]">
             <div className="grid grid-cols-1 lg:grid-cols-12">
@@ -65,7 +65,7 @@ export default function MapSection() {
                 />
               </div>
 
-              {/* Info — vertically centered, evenly spaced */}
+              {/* Info, vertically centered, evenly spaced */}
               <div className="lg:col-span-5 p-8 md:p-10 lg:p-12 flex flex-col justify-center gap-8 lg:border-l lg:border-black/5">
                 {/* Eyebrow */}
                 <div className="flex items-center gap-3">
@@ -120,7 +120,7 @@ export default function MapSection() {
                   </a>
                 </div>
 
-                {/* Hours — compact two-column layout */}
+                {/* Hours, compact two-column layout */}
                 <div>
                   <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-brand-textLight">
                     Hours

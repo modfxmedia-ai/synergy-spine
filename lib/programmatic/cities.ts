@@ -22,7 +22,7 @@ export const CITIES: CityCopy[] = [
     zip: "87124",
     driveMin: 0,
     blurb:
-      "Rio Rancho is our home — the third-largest city in New Mexico and the city Synergy Spine and Nerve Center has called home for two decades.",
+      "Rio Rancho is our home, the third-largest city in New Mexico and the city Synergy Spine and Nerve Center has called home for two decades.",
     landmarks: [
       "Rio Rancho Boulevard",
       "Loma Colorado Public Library",
@@ -50,7 +50,7 @@ export const CITIES: CityCopy[] = [
     zip: "87004",
     driveMin: 15,
     blurb:
-      "Bernalillo sits at the crossroads of I-25 and US-550 just north of Rio Rancho — many of our patients commute in from this historic Rio Grande town.",
+      "Bernalillo sits at the crossroads of I-25 and US-550 just north of Rio Rancho, many of our patients commute in from this historic Rio Grande town.",
     landmarks: ["Coronado Historic Site", "Town of Bernalillo Plaza", "Range Café"],
     neighborhoods: ["Old Town Bernalillo", "Camino del Pueblo", "Algodones edge"],
   },
@@ -61,7 +61,7 @@ export const CITIES: CityCopy[] = [
     zip: "87048",
     driveMin: 12,
     blurb:
-      "Corrales is the rural village of horses, lavender fields, and old adobe just east of Rio Rancho — a quick drive across the Rio Grande to our office.",
+      "Corrales is the rural village of horses, lavender fields, and old adobe just east of Rio Rancho, a quick drive across the Rio Grande to our office.",
     landmarks: ["Corrales Bosque Preserve", "Old Church", "Corrales Road wineries"],
     neighborhoods: ["Old Corrales", "Loma Larga", "East Corrales"],
   },
@@ -72,7 +72,7 @@ export const CITIES: CityCopy[] = [
     zip: "87043",
     driveMin: 25,
     blurb:
-      "Placitas is the high-desert village northeast of Bernalillo where the Sandia foothills meet open country — patients drive in for spinal hygiene support every week.",
+      "Placitas is the high-desert village northeast of Bernalillo where the Sandia foothills meet open country, patients drive in for spinal hygiene support every week.",
     landmarks: ["Las Placitas Presbyterian Church", "Crest of Montezuma trail", "Tunnel Spring"],
     neighborhoods: ["Anasazi Trails", "Homestead Village", "Overlook"],
   },
@@ -83,7 +83,7 @@ export const CITIES: CityCopy[] = [
     zip: "87047",
     driveMin: 35,
     blurb:
-      "Sandia Park sits in the East Mountains under the back side of the Sandias — a scenic but spine-stiffening commute that many patients pair with chiropractic visits.",
+      "Sandia Park sits in the East Mountains under the back side of the Sandias, a scenic but spine-stiffening commute that many patients pair with chiropractic visits.",
     landmarks: ["Tinkertown Museum", "Sandia Peak Ski Area", "Capulin Snow Play Area"],
     neighborhoods: ["Cedro", "Paako", "Cole Springs"],
   },
@@ -94,7 +94,7 @@ export const CITIES: CityCopy[] = [
     zip: "87059",
     driveMin: 35,
     blurb:
-      "Tijeras is the East Mountain village at the I-40 / NM-14 junction — a base for patients in the Carnuel and Cedar Crest corridor.",
+      "Tijeras is the East Mountain village at the I-40 / NM-14 junction, a base for patients in the Carnuel and Cedar Crest corridor.",
     landmarks: ["Cibola National Forest", "Tijeras Pueblo Archaeological Site", "Tijeras Open Space"],
     neighborhoods: ["Cedro Peak", "Carnuel", "Sedillo"],
   },
@@ -105,7 +105,7 @@ export const CITIES: CityCopy[] = [
     zip: "87008",
     driveMin: 30,
     blurb:
-      "Cedar Crest sits along NM-14 in the East Mountains — close enough to Rio Rancho that many residents commute for honest, evidence-based chiropractic care.",
+      "Cedar Crest sits along NM-14 in the East Mountains, close enough to Rio Rancho that many residents commute for honest, evidence-based chiropractic care.",
     landmarks: ["Sandia Crest Highway", "Cedar Crest Library", "Tinkertown Museum"],
     neighborhoods: ["Sandia Park edge", "San Antonito", "Frost Road"],
   },
@@ -116,7 +116,7 @@ export const CITIES: CityCopy[] = [
     zip: "87015",
     driveMin: 40,
     blurb:
-      "Edgewood is the East Mountain town along I-40 and NM-344 — a growing community of commuters, ranchers, and remote workers who value drug-free spinal care.",
+      "Edgewood is the East Mountain town along I-40 and NM-344, a growing community of commuters, ranchers, and remote workers who value drug-free spinal care.",
     landmarks: ["Wildlife West Nature Park", "Edgewood town center", "Kraft Azalea park"],
     neighborhoods: ["Estates of Edgewood", "Edgewood Heights", "Frost Road corridor"],
   },
@@ -127,7 +127,7 @@ export const CITIES: CityCopy[] = [
     zip: "87035",
     driveMin: 50,
     blurb:
-      "Moriarty is the historic Route 66 town along I-40 — patients drive in from the Estancia Valley for spinal decompression and chiropractic care.",
+      "Moriarty is the historic Route 66 town along I-40, patients drive in from the Estancia Valley for spinal decompression and chiropractic care.",
     landmarks: ["Moriarty Civic Center", "Lewis Antique Auto & Toy Museum", "Moriarty Soaring Club"],
     neighborhoods: ["Old Route 66", "South Moriarty", "Moriarty Heights"],
   },
@@ -138,7 +138,7 @@ export const CITIES: CityCopy[] = [
     zip: "87016",
     driveMin: 65,
     blurb:
-      "Estancia is the county seat of Torrance County in the Estancia Valley — ranch country an hour southeast of Rio Rancho.",
+      "Estancia is the county seat of Torrance County in the Estancia Valley, ranch country an hour southeast of Rio Rancho.",
     landmarks: ["Salinas Pueblo Missions", "Estancia Public Library", "Stagecoach Trail"],
     neighborhoods: ["Old Estancia", "Estancia Valley"],
   },
@@ -149,7 +149,7 @@ export const CITIES: CityCopy[] = [
     zip: "87036",
     driveMin: 80,
     blurb:
-      "Mountainair sits at the southern edge of the Manzano Mountains — the gateway to the Salinas Pueblo Missions and a scenic drive south for our patients.",
+      "Mountainair sits at the southern edge of the Manzano Mountains, the gateway to the Salinas Pueblo Missions and a scenic drive south for our patients.",
     landmarks: ["Salinas Pueblo Missions National Monument", "Shaffer Hotel", "Manzano Mountain Trails"],
     neighborhoods: ["Old Mountainair", "Manzano foothills"],
   },
@@ -160,7 +160,7 @@ export const CITIES: CityCopy[] = [
     zip: "87002",
     driveMin: 45,
     blurb:
-      "Belen anchors the Mid-Rio Grande Valley south of Albuquerque — a Rail Runner stop and rail town with deep New Mexico history.",
+      "Belen anchors the Mid-Rio Grande Valley south of Albuquerque, a Rail Runner stop and rail town with deep New Mexico history.",
     landmarks: ["Belen Harvey House Museum", "Eagle Park", "Our Lady of Belen Church"],
     neighborhoods: ["Old Belen", "Becker Avenue", "Rio Communities"],
   },
@@ -171,7 +171,7 @@ export const CITIES: CityCopy[] = [
     zip: "87031",
     driveMin: 35,
     blurb:
-      "Los Lunas is the largest community in Valencia County and one of the fastest-growing towns in New Mexico — many of our south-corridor patients live here.",
+      "Los Lunas is the largest community in Valencia County and one of the fastest-growing towns in New Mexico, many of our south-corridor patients live here.",
     landmarks: ["Daniel Fernandez Park", "Los Lunas Museum of Heritage and Arts", "Los Lunas River Park"],
     neighborhoods: ["Huning Ranch", "Mission Valley", "Los Morros"],
   },
@@ -182,7 +182,7 @@ export const CITIES: CityCopy[] = [
     zip: "87068",
     driveMin: 30,
     blurb:
-      "Bosque Farms sits along the Rio Grande between Los Lunas and the South Valley — small, quiet, and equestrian-minded.",
+      "Bosque Farms sits along the Rio Grande between Los Lunas and the South Valley, small, quiet, and equestrian-minded.",
     landmarks: ["Bosque Farms Police Department park", "Whitfield Wildlife Conservation Area", "Bosque Farms Library"],
     neighborhoods: ["Bosque Loop", "Pinto Lane", "Old Church Road"],
   },
@@ -204,7 +204,7 @@ export const CITIES: CityCopy[] = [
     zip: "87060",
     driveMin: 38,
     blurb:
-      "Tomé is a historic Rio Grande Valley village known for Tomé Hill — a Lenten pilgrimage site and a New Mexico landmark.",
+      "Tomé is a historic Rio Grande Valley village known for Tomé Hill, a Lenten pilgrimage site and a New Mexico landmark.",
     landmarks: ["Tomé Hill", "Tomé Plaza", "Immaculate Conception Church"],
     neighborhoods: ["Tomé Plaza", "Tomé Hill foothills"],
   },
@@ -215,7 +215,7 @@ export const CITIES: CityCopy[] = [
     zip: "87023",
     driveMin: 50,
     blurb:
-      "Jarales is the small unincorporated village south of Belen along the Rio Grande — quiet, agricultural, and tight-knit.",
+      "Jarales is the small unincorporated village south of Belen along the Rio Grande, quiet, agricultural, and tight-knit.",
     landmarks: ["Jarales Lateral", "Belen River corridor", "Pueblitos Road farmland"],
     neighborhoods: ["Pueblitos", "Jarales Road"],
   },
@@ -226,7 +226,7 @@ export const CITIES: CityCopy[] = [
     zip: "87031",
     driveMin: 40,
     blurb:
-      "Meadow Lake is the unincorporated community east of Los Lunas — a growing residential area along NM-47.",
+      "Meadow Lake is the unincorporated community east of Los Lunas, a growing residential area along NM-47.",
     landmarks: ["Meadow Lake Park", "Manzano Vista Middle School area", "Jarales Lateral access"],
     neighborhoods: ["Meadow Lake Estates", "Manzano Vista"],
   },
@@ -237,7 +237,7 @@ export const CITIES: CityCopy[] = [
     zip: "87031",
     driveMin: 38,
     blurb:
-      "El Cerro Mission is a small Valencia County community south of Los Lunas — many residents commute to Albuquerque or Rio Rancho.",
+      "El Cerro Mission is a small Valencia County community south of Los Lunas, many residents commute to Albuquerque or Rio Rancho.",
     landmarks: ["El Cerro de los Lunas", "Mission Valley shopping", "Highway 47 corridor"],
     neighborhoods: ["El Cerro Mission", "El Cerro Estates"],
   },
@@ -248,7 +248,7 @@ export const CITIES: CityCopy[] = [
     zip: "87002",
     driveMin: 55,
     blurb:
-      "Casa Colorada is the small Rio Grande Valley village east of Belen — quiet farmland and a strong agricultural community.",
+      "Casa Colorada is the small Rio Grande Valley village east of Belen, quiet farmland and a strong agricultural community.",
     landmarks: ["Casa Colorada Lateral", "Rio Grande bosque", "Belen rail corridor"],
     neighborhoods: ["Old Casa Colorada", "Highway 304 corridor"],
   },
@@ -259,7 +259,7 @@ export const CITIES: CityCopy[] = [
     zip: "87062",
     driveMin: 65,
     blurb:
-      "Veguita sits south of Belen in northern Socorro County — small, rural, and along the Rio Grande's southern reach.",
+      "Veguita sits south of Belen in northern Socorro County, small, rural, and along the Rio Grande's southern reach.",
     landmarks: ["Sevilleta National Wildlife Refuge", "Bernardo Wildlife Area", "Rio Grande bosque"],
     neighborhoods: ["Old Veguita", "Highway 304"],
   },
@@ -292,7 +292,7 @@ export const CITIES: CityCopy[] = [
     zip: "87041",
     driveMin: 40,
     blurb:
-      "Peña Blanca is the historic Rio Grande village between Bernalillo and Cochiti — a quiet stop on NM-22 toward Cochiti Lake.",
+      "Peña Blanca is the historic Rio Grande village between Bernalillo and Cochiti, a quiet stop on NM-22 toward Cochiti Lake.",
     landmarks: ["Peña Blanca church", "Cochiti Dam (nearby)", "Rio Grande bosque"],
     neighborhoods: ["Old Peña Blanca", "Sile road"],
   },
@@ -303,7 +303,7 @@ export const CITIES: CityCopy[] = [
     zip: "87001",
     driveMin: 25,
     blurb:
-      "Algodones is the small Rio Grande village along NM-313 between Bernalillo and Santo Domingo — a peaceful drive of vineyards and pastures.",
+      "Algodones is the small Rio Grande village along NM-313 between Bernalillo and Santo Domingo, a peaceful drive of vineyards and pastures.",
     landmarks: ["NM-313 / El Camino Real", "Rio Grande bosque", "Tamaya Resort (nearby)"],
     neighborhoods: ["Old Algodones", "Camino del Pueblo"],
   },
@@ -325,7 +325,7 @@ export const CITIES: CityCopy[] = [
     zip: "87001",
     driveMin: 30,
     blurb:
-      "San Felipe Pueblo sits along the Rio Grande between Algodones and Santo Domingo — one of the historic Keres Pueblos of the middle Rio Grande.",
+      "San Felipe Pueblo sits along the Rio Grande between Algodones and Santo Domingo, one of the historic Keres Pueblos of the middle Rio Grande.",
     landmarks: ["San Felipe Pueblo church", "Black Mesa Casino", "Rio Grande bosque"],
     neighborhoods: ["Pueblo center", "Black Mesa side"],
   },
@@ -336,7 +336,7 @@ export const CITIES: CityCopy[] = [
     zip: "87004",
     driveMin: 18,
     blurb:
-      "Santa Ana Pueblo (Tamaya) is the closest Pueblo to Rio Rancho — many patients live and work here, and the Tamaya Resort is a frequent stop on the way to our office.",
+      "Santa Ana Pueblo (Tamaya) is the closest Pueblo to Rio Rancho, many patients live and work here, and the Tamaya Resort is a frequent stop on the way to our office.",
     landmarks: ["Hyatt Regency Tamaya Resort", "Santa Ana Star Casino", "Santa Ana golf course"],
     neighborhoods: ["Tamaya", "Pueblo center"],
   },
@@ -347,7 +347,7 @@ export const CITIES: CityCopy[] = [
     zip: "87053",
     driveMin: 35,
     blurb:
-      "Zia Pueblo gives New Mexico its iconic sun symbol — a Keres Pueblo on US-550 northwest of Bernalillo, surrounded by stunning red-rock country.",
+      "Zia Pueblo gives New Mexico its iconic sun symbol, a Keres Pueblo on US-550 northwest of Bernalillo, surrounded by stunning red-rock country.",
     landmarks: ["Zia Pueblo Cultural Center", "US-550 corridor", "Mesa Cabezon"],
     neighborhoods: ["Pueblo center", "US-550 frontage"],
   },
@@ -358,7 +358,7 @@ export const CITIES: CityCopy[] = [
     zip: "87053",
     driveMin: 40,
     blurb:
-      "San Ysidro sits at the junction of US-550 and NM-4 — the gateway village to the Jemez Mountains and Jemez Springs.",
+      "San Ysidro sits at the junction of US-550 and NM-4, the gateway village to the Jemez Mountains and Jemez Springs.",
     landmarks: ["San Ysidro Church", "Jemez River canyon", "Cabezon Peak"],
     neighborhoods: ["Old San Ysidro", "US-550 / NM-4 junction"],
   },
@@ -380,7 +380,7 @@ export const CITIES: CityCopy[] = [
     zip: "87025",
     driveMin: 70,
     blurb:
-      "Jemez Springs is the mountain village in the heart of the Jemez Mountains — hot springs, ranch country, and a long but stunning drive to our office.",
+      "Jemez Springs is the mountain village in the heart of the Jemez Mountains, hot springs, ranch country, and a long but stunning drive to our office.",
     landmarks: ["Jemez Springs Bath House", "Jemez Historic Site", "Soda Dam"],
     neighborhoods: ["Old Jemez Springs", "Jemez Falls area"],
   },
@@ -402,7 +402,7 @@ export const CITIES: CityCopy[] = [
     zip: "87026",
     driveMin: 65,
     blurb:
-      "Cañoncito (To'Hajiilee) is the Navajo Nation chapter west of Albuquerque — patients commute in along I-40 for honest, evidence-based chiropractic care.",
+      "Cañoncito (To'Hajiilee) is the Navajo Nation chapter west of Albuquerque, patients commute in along I-40 for honest, evidence-based chiropractic care.",
     landmarks: ["I-40 corridor", "Tohajiilee community", "Mesa landscape"],
     neighborhoods: ["Tohajiilee village", "Cañoncito"],
   },
@@ -424,7 +424,7 @@ export const CITIES: CityCopy[] = [
     zip: "87047",
     driveMin: 45,
     blurb:
-      "Golden is the historic mining village along NM-14 — the start of the Turquoise Trail Scenic Byway between Albuquerque and Santa Fe.",
+      "Golden is the historic mining village along NM-14, the start of the Turquoise Trail Scenic Byway between Albuquerque and Santa Fe.",
     landmarks: ["San Francisco Catholic Church", "Turquoise Trail National Scenic Byway", "Sandia Mountains backside"],
     neighborhoods: ["Old Golden", "NM-14 corridor"],
   },
@@ -435,7 +435,7 @@ export const CITIES: CityCopy[] = [
     zip: "87010",
     driveMin: 55,
     blurb:
-      "Madrid is the artsy former coal town along the Turquoise Trail — galleries, the Mine Shaft Tavern, and a steady weekend pull from across the metro.",
+      "Madrid is the artsy former coal town along the Turquoise Trail, galleries, the Mine Shaft Tavern, and a steady weekend pull from across the metro.",
     landmarks: ["Mine Shaft Tavern", "Madrid Old Coal Town Museum", "Turquoise Trail"],
     neighborhoods: ["Madrid Main Street", "Turquoise Trail"],
   },
@@ -446,7 +446,7 @@ export const CITIES: CityCopy[] = [
     zip: "87010",
     driveMin: 60,
     blurb:
-      "Cerrillos is the historic mining village just north of Madrid — turquoise country and a stop on the Turquoise Trail toward Santa Fe.",
+      "Cerrillos is the historic mining village just north of Madrid, turquoise country and a stop on the Turquoise Trail toward Santa Fe.",
     landmarks: ["Cerrillos Hills State Park", "Casa Grande Trading Post", "Turquoise Mining Museum"],
     neighborhoods: ["Old Cerrillos", "Cerrillos Hills"],
   },
@@ -457,7 +457,7 @@ export const CITIES: CityCopy[] = [
     zip: "87056",
     driveMin: 55,
     blurb:
-      "Stanley is the small ranching community along NM-41 in southern Santa Fe County — wide open and quiet.",
+      "Stanley is the small ranching community along NM-41 in southern Santa Fe County, wide open and quiet.",
     landmarks: ["NM-41 corridor", "Galisteo Basin Preserve (nearby)", "Stanley Volunteer Fire Station"],
     neighborhoods: ["Old Stanley", "NM-41 frontage"],
   },
@@ -468,7 +468,7 @@ export const CITIES: CityCopy[] = [
     zip: "87540",
     driveMin: 55,
     blurb:
-      "Galisteo is the historic adobe village in the Galisteo Basin south of Santa Fe — old church, ranch country, and quiet beauty.",
+      "Galisteo is the historic adobe village in the Galisteo Basin south of Santa Fe, old church, ranch country, and quiet beauty.",
     landmarks: ["Galisteo Basin Preserve", "Our Lady of Remedies Church", "Cerro Pelon"],
     neighborhoods: ["Old Galisteo", "Galisteo Basin"],
   },
@@ -479,7 +479,7 @@ export const CITIES: CityCopy[] = [
     zip: "87540",
     driveMin: 60,
     blurb:
-      "Lamy is the small rail village south of Santa Fe — Amtrak's Santa Fe stop and a quiet base of ranch country.",
+      "Lamy is the small rail village south of Santa Fe, Amtrak's Santa Fe stop and a quiet base of ranch country.",
     landmarks: ["Lamy Train Station", "Sky Railway", "Galisteo Basin Preserve"],
     neighborhoods: ["Old Lamy", "Eldorado side"],
   },
@@ -490,7 +490,7 @@ export const CITIES: CityCopy[] = [
     zip: "87508",
     driveMin: 65,
     blurb:
-      "Eldorado at Santa Fe is the planned community southeast of Santa Fe — adobe-style homes, the Eldorado Community School, and easy I-25 access for our patients.",
+      "Eldorado at Santa Fe is the planned community southeast of Santa Fe, adobe-style homes, the Eldorado Community School, and easy I-25 access for our patients.",
     landmarks: ["Eldorado Community Center", "Hondo Hills", "Galisteo Basin Preserve"],
     neighborhoods: ["Eldorado", "Vista del Monte", "Hondo Hills"],
   },
@@ -501,7 +501,7 @@ export const CITIES: CityCopy[] = [
     zip: "87070",
     driveMin: 70,
     blurb:
-      "Clines Corners is the I-40 / US-285 crossroads east of Moriarty — a Route 66 landmark and a true New Mexico travel stop.",
+      "Clines Corners is the I-40 / US-285 crossroads east of Moriarty, a Route 66 landmark and a true New Mexico travel stop.",
     landmarks: ["Clines Corners Travel Center", "Route 66", "I-40 / US-285 junction"],
     neighborhoods: ["I-40 frontage", "Old Clines Corners"],
   },
@@ -512,7 +512,7 @@ export const CITIES: CityCopy[] = [
     zip: "88321",
     driveMin: 90,
     blurb:
-      "Encino is the small Route 66 era village east of Clines Corners — quiet ranchland and big-sky country.",
+      "Encino is the small Route 66 era village east of Clines Corners, quiet ranchland and big-sky country.",
     landmarks: ["Old US-60 corridor", "Encino Pioneer Cemetery", "Estancia Valley"],
     neighborhoods: ["Old Encino", "US-60 frontage"],
   },
@@ -523,7 +523,7 @@ export const CITIES: CityCopy[] = [
     zip: "87063",
     driveMin: 80,
     blurb:
-      "Willard sits in the southern Estancia Valley along NM-42 — ranching country south of Estancia.",
+      "Willard sits in the southern Estancia Valley along NM-42, ranching country south of Estancia.",
     landmarks: ["Estancia Valley", "Manzano Mountains east edge", "NM-42 corridor"],
     neighborhoods: ["Old Willard", "Estancia Valley south"],
   },
@@ -534,7 +534,7 @@ export const CITIES: CityCopy[] = [
     zip: "87061",
     driveMin: 70,
     blurb:
-      "Torreón is the small village in the Manzano Mountain foothills — quiet ranchland east of the Manzano range.",
+      "Torreón is the small village in the Manzano Mountain foothills, quiet ranchland east of the Manzano range.",
     landmarks: ["Manzano Mountains", "Torreón Cemetery", "NM-55 corridor"],
     neighborhoods: ["Old Torreón", "NM-55 frontage"],
   },
@@ -545,7 +545,7 @@ export const CITIES: CityCopy[] = [
     zip: "87016",
     driveMin: 65,
     blurb:
-      "Tajique is the small mountain village in the Manzanos along NM-55 — a stop on the Salt Missions Trail.",
+      "Tajique is the small mountain village in the Manzanos along NM-55, a stop on the Salt Missions Trail.",
     landmarks: ["Cibola National Forest", "Salt Missions Trail", "Manzano peaks"],
     neighborhoods: ["Old Tajique", "NM-55"],
   },
@@ -556,7 +556,7 @@ export const CITIES: CityCopy[] = [
     zip: "87016",
     driveMin: 70,
     blurb:
-      "Manzano is the historic apple-orchard village in the Manzano Mountains — some of the oldest cultivated apple trees in the U.S.",
+      "Manzano is the historic apple-orchard village in the Manzano Mountains, some of the oldest cultivated apple trees in the U.S.",
     landmarks: ["Manzano Mountains State Park", "Manzano Catholic Church", "Salt Missions Trail"],
     neighborhoods: ["Old Manzano", "Manzano Mountains"],
   },
@@ -567,7 +567,7 @@ export const CITIES: CityCopy[] = [
     zip: "87032",
     driveMin: 55,
     blurb:
-      "McIntosh is the Estancia Valley community north of Estancia along NM-41 — ranching, rail, and rural quiet.",
+      "McIntosh is the Estancia Valley community north of Estancia along NM-41, ranching, rail, and rural quiet.",
     landmarks: ["Estancia Valley", "NM-41 corridor", "Salt Missions Trail edge"],
     neighborhoods: ["Old McIntosh", "Estancia Valley"],
   },
@@ -578,7 +578,7 @@ export const CITIES: CityCopy[] = [
     zip: "87107",
     driveMin: 18,
     blurb:
-      "Albuquerque's North Valley runs the Rio Grande between downtown and Bernalillo — old adobes, horse properties, and easy access to Synergy Spine.",
+      "Albuquerque's North Valley runs the Rio Grande between downtown and Bernalillo, old adobes, horse properties, and easy access to Synergy Spine.",
     landmarks: ["Los Poblanos Open Space", "Rio Grande bosque", "Open Space Visitor Center"],
     neighborhoods: ["Los Ranchos", "Alameda", "North Valley estates"],
   },
@@ -589,7 +589,7 @@ export const CITIES: CityCopy[] = [
     zip: "87105",
     driveMin: 30,
     blurb:
-      "Albuquerque's South Valley is the long Rio Grande corridor south of downtown — agricultural roots, multigenerational families, and a strong community fabric.",
+      "Albuquerque's South Valley is the long Rio Grande corridor south of downtown, agricultural roots, multigenerational families, and a strong community fabric.",
     landmarks: ["Tingley Beach", "Pueblo Cultural Center", "Rio Grande bosque"],
     neighborhoods: ["Pajarito", "Mountain View", "Atrisco"],
   },
@@ -600,7 +600,7 @@ export const CITIES: CityCopy[] = [
     zip: "87107",
     driveMin: 18,
     blurb:
-      "Los Ranchos de Albuquerque is the village inside the North Valley — vineyards, lavender, and small farms minutes from Synergy Spine.",
+      "Los Ranchos de Albuquerque is the village inside the North Valley, vineyards, lavender, and small farms minutes from Synergy Spine.",
     landmarks: ["Los Poblanos Historic Inn", "Anderson Valley Vineyards", "Rio Grande Nature Center"],
     neighborhoods: ["Los Poblanos", "Mountain Bluff", "Old Los Ranchos"],
   },
@@ -611,7 +611,7 @@ export const CITIES: CityCopy[] = [
     zip: "87105",
     driveMin: 30,
     blurb:
-      "Los Padillas is the Rio Grande village in the South Valley — historic, quiet, and surrounded by acequias.",
+      "Los Padillas is the Rio Grande village in the South Valley, historic, quiet, and surrounded by acequias.",
     landmarks: ["Los Padillas Wildlife Sanctuary", "Rio Grande bosque", "Pajarito Drain"],
     neighborhoods: ["Old Los Padillas", "Pajarito"],
   },
@@ -622,7 +622,7 @@ export const CITIES: CityCopy[] = [
     zip: "87122",
     driveMin: 30,
     blurb:
-      "Sandia Heights is the foothills neighborhood pressed up against the west face of the Sandias — incredible views and easy access to the Tram and trails.",
+      "Sandia Heights is the foothills neighborhood pressed up against the west face of the Sandias, incredible views and easy access to the Tram and trails.",
     landmarks: ["Sandia Peak Tramway", "La Luz Trail", "Elena Gallegos Open Space"],
     neighborhoods: ["Sandia Heights North", "Sandia Heights South", "High Desert"],
   },
@@ -633,7 +633,7 @@ export const CITIES: CityCopy[] = [
     zip: "87122",
     driveMin: 25,
     blurb:
-      "North Albuquerque Acres is the foothills neighborhood north of Paseo del Norte — bigger lots, mountain views, and an easy commute across to Rio Rancho.",
+      "North Albuquerque Acres is the foothills neighborhood north of Paseo del Norte, bigger lots, mountain views, and an easy commute across to Rio Rancho.",
     landmarks: ["Sandia Foothills", "Embudito Trailhead", "La Cueva area schools"],
     neighborhoods: ["North ABQ Acres", "Tanoan", "High Desert"],
   },
@@ -644,7 +644,7 @@ export const CITIES: CityCopy[] = [
     zip: "87114",
     driveMin: 12,
     blurb:
-      "Paradise Hills is the Westside Albuquerque neighborhood that flows directly into Rio Rancho — five minutes from our office.",
+      "Paradise Hills is the Westside Albuquerque neighborhood that flows directly into Rio Rancho, five minutes from our office.",
     landmarks: ["Paradise Hills Park", "Black Arroyo Wilderness", "Westside Boulevard corridor"],
     neighborhoods: ["Paradise Hills East", "Paradise Hills West", "Ventana Ranch edge"],
   },
@@ -655,7 +655,7 @@ export const CITIES: CityCopy[] = [
     zip: "87114",
     driveMin: 12,
     blurb:
-      "Ventana Ranch is the planned community on Albuquerque's far West Side — minutes from Rio Rancho and a steady source of patients for Synergy Spine.",
+      "Ventana Ranch is the planned community on Albuquerque's far West Side, minutes from Rio Rancho and a steady source of patients for Synergy Spine.",
     landmarks: ["Ventana Ranch park system", "Paseo del Norte West", "Petroglyph National Monument"],
     neighborhoods: ["Ventana Ranch East", "Ventana Ranch West"],
   },
@@ -666,7 +666,7 @@ export const CITIES: CityCopy[] = [
     zip: "87120",
     driveMin: 20,
     blurb:
-      "Volcano Cliffs is the West Side Albuquerque neighborhood at the edge of Petroglyph National Monument — bold views and easy access to Rio Rancho.",
+      "Volcano Cliffs is the West Side Albuquerque neighborhood at the edge of Petroglyph National Monument, bold views and easy access to Rio Rancho.",
     landmarks: ["Petroglyph National Monument", "Volcanoes Trail", "Double Eagle Airport"],
     neighborhoods: ["Volcano Cliffs", "Volcano Vista"],
   },
@@ -677,7 +677,7 @@ export const CITIES: CityCopy[] = [
     zip: "87123",
     driveMin: 30,
     blurb:
-      "Carnuel sits in Tijeras Canyon along old Route 66 — the gateway between Albuquerque and the East Mountains.",
+      "Carnuel sits in Tijeras Canyon along old Route 66, the gateway between Albuquerque and the East Mountains.",
     landmarks: ["Tijeras Canyon", "Route 66 corridor", "Cibola National Forest"],
     neighborhoods: ["Old Carnuel", "Tijeras Canyon"],
   },
@@ -688,7 +688,7 @@ export const CITIES: CityCopy[] = [
     zip: "87047",
     driveMin: 35,
     blurb:
-      "Sedillo is the East Mountain community along NM-217 / Sedillo Hill Road — quiet wooded lots and easy I-40 access.",
+      "Sedillo is the East Mountain community along NM-217 / Sedillo Hill Road, quiet wooded lots and easy I-40 access.",
     landmarks: ["Cibola National Forest", "Sedillo Hill", "Tijeras Canyon"],
     neighborhoods: ["Old Sedillo", "Sedillo Hill"],
   },
@@ -699,7 +699,7 @@ export const CITIES: CityCopy[] = [
     zip: "87015",
     driveMin: 35,
     blurb:
-      "Sandia Knolls is the East Mountain residential neighborhood between Edgewood and Cedar Crest — wooded acreages and mountain quiet.",
+      "Sandia Knolls is the East Mountain residential neighborhood between Edgewood and Cedar Crest, wooded acreages and mountain quiet.",
     landmarks: ["Sandia Crest", "Cibola National Forest", "Frost Road corridor"],
     neighborhoods: ["Sandia Knolls", "Frost Road"],
   },
@@ -710,7 +710,7 @@ export const CITIES: CityCopy[] = [
     zip: "87015",
     driveMin: 38,
     blurb:
-      "Ponderosa Pine is the East Mountain residential pocket near Edgewood — pine-shaded lots and a strong commuter community.",
+      "Ponderosa Pine is the East Mountain residential pocket near Edgewood, pine-shaded lots and a strong commuter community.",
     landmarks: ["Cibola National Forest", "Frost Road corridor", "Edgewood schools"],
     neighborhoods: ["Ponderosa Pine", "Frost Road"],
   },
@@ -721,7 +721,7 @@ export const CITIES: CityCopy[] = [
     zip: "87016",
     driveMin: 50,
     blurb:
-      "Chilili is the historic land-grant village along NM-337 in the southern East Mountains — old roots and a tight-knit community.",
+      "Chilili is the historic land-grant village along NM-337 in the southern East Mountains, old roots and a tight-knit community.",
     landmarks: ["Chilili Land Grant", "Manzano Mountains", "Salt Missions Trail edge"],
     neighborhoods: ["Old Chilili", "Land Grant"],
   },
@@ -743,7 +743,7 @@ export const CITIES: CityCopy[] = [
     zip: "87002",
     driveMin: 47,
     blurb:
-      "Rio Communities is the city east of Belen — a fast-growing community across the Rio Grande from the historic Belen rail town.",
+      "Rio Communities is the city east of Belen, a fast-growing community across the Rio Grande from the historic Belen rail town.",
     landmarks: ["Tierra del Sol Country Club", "Whitfield Wildlife Conservation Area", "Eagle Park"],
     neighborhoods: ["Rio del Oro", "Tierra del Sol"],
   },
@@ -754,7 +754,7 @@ export const CITIES: CityCopy[] = [
     zip: "87031",
     driveMin: 35,
     blurb:
-      "Valencia is the unincorporated Mid-Rio Grande community between Los Lunas and Bosque Farms — old farmland and quiet rural living.",
+      "Valencia is the unincorporated Mid-Rio Grande community between Los Lunas and Bosque Farms, old farmland and quiet rural living.",
     landmarks: ["Whitfield Wildlife Conservation Area", "NM-47 corridor", "Old Valencia church"],
     neighborhoods: ["Old Valencia", "NM-47"],
   },
@@ -765,7 +765,7 @@ export const CITIES: CityCopy[] = [
     zip: "87022",
     driveMin: 25,
     blurb:
-      "Isleta Pueblo is the historic Tiwa-speaking Pueblo south of Albuquerque — agriculture, gaming, and a deep cultural heritage.",
+      "Isleta Pueblo is the historic Tiwa-speaking Pueblo south of Albuquerque, agriculture, gaming, and a deep cultural heritage.",
     landmarks: ["Isleta Resort & Casino", "St. Augustine Mission Church", "Isleta Lakes"],
     neighborhoods: ["Pueblo center", "Isleta lakes side"],
   },
@@ -787,7 +787,7 @@ export const CITIES: CityCopy[] = [
     zip: "87046",
     driveMin: 90,
     blurb:
-      "Regina is the small mountain village in the upper Rio Puerco country northwest of Cuba — high desert, ranch country, and a long but striking drive in.",
+      "Regina is the small mountain village in the upper Rio Puerco country northwest of Cuba, high desert, ranch country, and a long but striking drive in.",
     landmarks: ["Cuba (nearby)", "Santa Fe National Forest", "Rio Puerco"],
     neighborhoods: ["Old Regina", "Rio Puerco"],
   },
@@ -798,7 +798,7 @@ export const CITIES: CityCopy[] = [
     zip: "87013",
     driveMin: 90,
     blurb:
-      "Cuba sits at the junction of US-550 and NM-126 — the gateway to the Continental Divide Trail and the high country northwest of the Jemez.",
+      "Cuba sits at the junction of US-550 and NM-126, the gateway to the Continental Divide Trail and the high country northwest of the Jemez.",
     landmarks: ["Continental Divide Trail", "Bandera Volcano (nearby)", "Cuba High School"],
     neighborhoods: ["Old Cuba", "US-550 frontage"],
   },
@@ -809,7 +809,7 @@ export const CITIES: CityCopy[] = [
     zip: "87053",
     driveMin: 50,
     blurb:
-      "Ojito Wilderness is the badlands-and-mesa country northwest of San Ysidro — a small community known for the wilderness area itself.",
+      "Ojito Wilderness is the badlands-and-mesa country northwest of San Ysidro, a small community known for the wilderness area itself.",
     landmarks: ["Ojito Wilderness", "Mesa Cabezon", "Seismosaurus dig site"],
     neighborhoods: ["Ojito", "San Ysidro edge"],
   },

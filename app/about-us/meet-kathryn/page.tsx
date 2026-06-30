@@ -123,7 +123,7 @@ export default function MeetKathrynPage() {
               <Reveal delay={160}>
                 <p className="mt-5 text-lg leading-relaxed">
                   Dr. Brad has a passion for what he does and it shows. I only
-                  wish I would have found chiropractic care sooner — adjustments
+                  wish I would have found chiropractic care sooner, adjustments
                   have improved my health.
                 </p>
               </Reveal>

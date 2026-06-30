@@ -50,7 +50,7 @@ export default function CTASection() {
           </h2>
         </Reveal>
 
-        {/* Stats panel — premium dark card */}
+        {/* Stats panel, premium dark card */}
         <Reveal delay={150}>
           <div className="mt-16 relative overflow-hidden rounded-[32px] bg-gradient-to-br from-brand-navyDark via-brand-navy to-brand-navyDark p-1 shadow-[0_30px_80px_-30px_rgba(13,35,64,0.5)]">
             <div

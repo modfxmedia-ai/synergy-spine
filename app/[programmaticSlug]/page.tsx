@@ -21,7 +21,7 @@ const SITE_ORIGIN = "https://synergyspineandnerve.com";
 const PHONE_DISPLAY = "(505) 891-2280";
 const PHONE_HREF = "tel:+15058912280";
 
-// Slugs that already exist as static folders — skip these to avoid route collisions.
+// Slugs that already exist as static folders, skip these to avoid route collisions.
 const RESERVED_SLUGS = new Set<string>([
   "chiropractor-albuquerque-nm",
   "chiropractor-bernalillo-nm",
@@ -128,7 +128,7 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
 
   const { service, city } = parsed;
   const h1 = fillCity(service.h1Template, city.name);
-  const intro = `Looking for ${service.short} near ${city.name}, NM? Synergy Spine and Nerve Center serves ${city.name} from our Rio Rancho office — about ${city.driveMin === 0 ? "0 minutes (right next door)" : `${city.driveMin} minutes' drive`} via ${city.county === "Sandoval County" ? "I-25 and US-550" : city.county.includes("Bernalillo") ? "the Westside corridor" : "I-25 and the metro corridors"}. ${city.blurb}`;
+  const intro = `Looking for ${service.short} near ${city.name}, NM? Synergy Spine and Nerve Center serves ${city.name} from our Rio Rancho office, about ${city.driveMin === 0 ? "0 minutes (right next door)" : `${city.driveMin} minutes' drive`} via ${city.county === "Sandoval County" ? "I-25 and US-550" : city.county.includes("Bernalillo") ? "the Westside corridor" : "I-25 and the metro corridors"}. ${city.blurb}`;
 
   const nearbyCities = getNearbyCities(city.slug, 6);
   const relatedServices = service.related
@@ -516,7 +516,7 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
               </h2>
               <p className="mt-5 text-base md:text-lg text-brand-textLight leading-relaxed">
                 {city.blurb} We see {city.name} families from across the
-                community — including residents near{" "}
+                community, including residents near{" "}
                 {city.neighborhoods.slice(0, 3).join(", ")}. Patients tell us
                 they appreciate that we explain the why before the what, and
                 that we're upfront if chiropractic care isn't the right tool
@@ -542,7 +542,7 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
                   </p>
                   <p className="mt-2 text-lg font-semibold text-brand-navyDark">
                     {city.driveMin === 0
-                      ? "0 min — same city"
+                      ? "0 min, same city"
                       : `~${city.driveMin} min drive`}
                   </p>
                 </div>
@@ -708,7 +708,7 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
               <p className="mt-5 text-white/85 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
                 Synergy Spine and Nerve Center has served {city.name} and the
                 Rio Rancho metro for over 20 years. Schedule your first visit
-                online, or call us — we'll tell you straight whether we're the
+                online, or call us, we'll tell you straight whether we're the
                 right fit for what you're going through.
               </p>
             </Reveal>

@@ -12,12 +12,12 @@ const ORDER_URL =
 export const metadata: Metadata = {
   title: "Purchase Supplements | Synergy Spine & Nerve Center",
   description:
-    "Order Innate Choice supplements direct to your door — recommended by Synergy Spine and Nerve Center in Rio Rancho, NM.",
+    "Order Innate Choice supplements direct to your door, recommended by Synergy Spine and Nerve Center in Rio Rancho, NM.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Purchase Supplements | Synergy Spine & Nerve Center",
     description:
-      "Order Innate Choice supplements direct to your door — recommended by Synergy Spine and Nerve Center.",
+      "Order Innate Choice supplements direct to your door, recommended by Synergy Spine and Nerve Center.",
     url: CANONICAL,
     type: "website",
     siteName: "Synergy Spine and Nerve Center",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const FEATURES = [
   {
     title: "Whole-food sourced",
-    desc: "Real food, not synthetic isolates. Your body recognizes — and uses — the difference.",
+    desc: "Real food, not synthetic isolates. Your body recognizes, and uses, the difference.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M12 2c4 4 4 9 0 13M12 22c-4-4-4-9 0-13" />
@@ -37,7 +37,7 @@ const FEATURES = [
   },
   {
     title: "Third-party tested",
-    desc: "Verified for purity, potency, and the absence of heavy metals — every batch.",
+    desc: "Verified for purity, potency, and the absence of heavy metals, every batch.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M9 12l2 2 4-4" />
@@ -47,7 +47,7 @@ const FEATURES = [
   },
   {
     title: "Direct to your door",
-    desc: "Order from home and skip the trip — supplements arrive shipped right to you.",
+    desc: "Order from home and skip the trip, supplements arrive shipped right to you.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="3" y="7" width="18" height="13" rx="2" />
@@ -174,7 +174,7 @@ export default function PurchaseSupplementsPage() {
                 </h2>
                 <p className="mt-5 text-brand-text leading-relaxed">
                   These are the supplements Dr. Brad recommends every day in
-                  the office. Real food, real standards, real results — at the
+                  the office. Real food, real standards, real results, at the
                   doses needed for the body to actually use them.
                 </p>
               </div>

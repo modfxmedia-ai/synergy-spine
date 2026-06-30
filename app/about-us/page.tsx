@@ -65,7 +65,7 @@ const ACCENT = {
 const PILLARS = [
   {
     title: "Discover the cause",
-    body: "Pain is a symptom — we hunt the source so healing isn't a guessing game.",
+    body: "Pain is a symptom, we hunt the source so healing isn't a guessing game.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <circle cx="11" cy="11" r="7" />
@@ -75,7 +75,7 @@ const PILLARS = [
   },
   {
     title: "Illuminate the path",
-    body: "Clear, evidence-based plans that respect biological law — not band-aids.",
+    body: "Clear, evidence-based plans that respect biological law, not band-aids.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <circle cx="12" cy="12" r="4" />
@@ -296,7 +296,7 @@ export default function AboutUsPage() {
                 <h2 className="section-title mt-4 text-3xl md:text-4xl lg:text-5xl text-brand-navyDark font-semibold leading-tight">
                   Honoring{" "}
                   <span className="italic text-brand-blue">biological law</span>
-                  {" "}— and your body&apos;s built-in ability to heal.
+                  {" "}, and your body&apos;s built-in ability to heal.
                 </h2>
               </Reveal>
 

@@ -525,7 +525,7 @@ export default function LocalSeoPage({
             <Reveal delay={400}>
               <p className="mt-10 text-center text-brand-textLight max-w-2xl mx-auto">
                 Chiropractic care at Synergy Spine and Nerve promotes more
-                than just symptom relief — it supports your body&apos;s
+                than just symptom relief, it supports your body&apos;s
                 overall health and resilience.
               </p>
             </Reveal>

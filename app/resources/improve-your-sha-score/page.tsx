@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Improve Your SHA Score – Synergy Spine and Nerve Center",
     description:
-      "Pain doesn't tell the whole story — your SHA score does. Learn what your assessment really means.",
+      "Pain doesn't tell the whole story, your SHA score does. Learn what your assessment really means.",
     url: CANONICAL,
     type: "article",
     siteName: "Synergy Spine and Nerve Center",
@@ -93,8 +93,8 @@ export default function ImproveSHAScorePage() {
                 </div>
                 <h2 className="section-title mt-4 text-3xl md:text-4xl text-brand-navyDark font-semibold leading-tight">
                   Pain is a{" "}
-                  <span className="italic text-brand-blue">late warning</span>{" "}
-                  — not a status update.
+                  <span className="italic text-brand-blue">late warning</span>
+, not a status update.
                 </h2>
               </div>
             </Reveal>
@@ -111,7 +111,7 @@ export default function ImproveSHAScorePage() {
                   <p className="mt-3 text-brand-text leading-relaxed">
                     By the time a tooth hurts, decay has already done
                     significant damage. The exact same thing happens in the
-                    spine — and that&apos;s why we don&apos;t wait for pain to measure
+                    spine, and that&apos;s why we don&apos;t wait for pain to measure
                     spinal health.
                   </p>
                 </article>
@@ -152,7 +152,7 @@ export default function ImproveSHAScorePage() {
                   We measure posture, range of motion, balance, strength, and
                   nervous-system function. Then we compile every finding into
                   a single, easy-to-track score so you know exactly where you
-                  stand — and exactly where you&apos;re heading.
+                  stand, and exactly where you&apos;re heading.
                 </p>
               </div>
             </Reveal>
@@ -198,7 +198,7 @@ export default function ImproveSHAScorePage() {
                   </h3>
                   <p className="mt-3 text-brand-text leading-relaxed">
                     Your body is balanced and self-regulating. The spine and
-                    nerve system are doing what they were designed to do —
+                    nerve system are doing what they were designed to do, 
                     and you have the resources to handle daily stress without
                     breaking down.
                   </p>
@@ -214,7 +214,7 @@ export default function ImproveSHAScorePage() {
                   </h3>
                   <p className="mt-3 text-brand-text leading-relaxed">
                     Your body is using extra resources just to maintain
-                    function — borrowing energy from healing, recovery, and
+                    function, borrowing energy from healing, recovery, and
                     immunity to keep up with daily demands. Pain often shows
                     up well after this point.
                   </p>
@@ -341,7 +341,7 @@ export default function ImproveSHAScorePage() {
                 <span className="italic text-brand-gold">number</span>?
               </p>
               <p className="mt-4 text-white/80">
-                The $37 New Patient Special includes the full SHA — your
+                The $37 New Patient Special includes the full SHA, your
                 17-page printed report and an honest plan.
               </p>
             </Reveal>

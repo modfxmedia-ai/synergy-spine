@@ -10,7 +10,7 @@ const CANONICAL = "https://synergyspineandnerve.com/resources/";
 export const metadata: Metadata = {
   title: "Chiropractic Resources – Synergy Spine and Nerve Center",
   description:
-    "Helpful chiropractic resources from Synergy Spine and Nerve Center in Rio Rancho, NM — videos, spinal hygiene, nutrition, SHA scoring, and supplements.",
+    "Helpful chiropractic resources from Synergy Spine and Nerve Center in Rio Rancho, NM, videos, spinal hygiene, nutrition, SHA scoring, and supplements.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Chiropractic Resources – Synergy Spine and Nerve Center",
@@ -47,7 +47,7 @@ const RESOURCES: Resource[] = [
   {
     title: "Spinal Hygiene",
     href: "/resources/all-about-spinal-hygiene/",
-    desc: "Spinal hygiene exercises create movement in joints that can move — adjustments help joints that can't. Learn how to do both.",
+    desc: "Spinal hygiene exercises create movement in joints that can move, adjustments help joints that can't. Learn how to do both.",
     accent: "navy",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -95,7 +95,7 @@ const RESOURCES: Resource[] = [
   {
     title: "Get Notified",
     href: "/resources/get-notified/",
-    desc: "Stay in touch with text message notifications — sent right to your phone.",
+    desc: "Stay in touch with text message notifications, sent right to your phone.",
     accent: "navy",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -162,7 +162,7 @@ export default function ResourcesPage() {
                 Check out these helpful chiropractic resources from Synergy
                 Spine and Nerve Center in Rio Rancho, NM. Whether you are a
                 current patient, curious about the field, or considering
-                chiropractic care — we have the resources you need to stay
+                chiropractic care, we have the resources you need to stay
                 informed.
               </p>
             </Reveal>
@@ -311,8 +311,8 @@ export default function ResourcesPage() {
                       The{" "}
                       <span className="italic text-brand-gold">
                         Triune of Care
-                      </span>{" "}
-                      — your three-pillar plan for whole-body health.
+                      </span>
+, your three-pillar plan for whole-body health.
                     </h3>
                     <p className="mt-3 text-white/80">
                       Take an active role in your healing with three pillars

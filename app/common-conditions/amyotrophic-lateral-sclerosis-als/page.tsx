@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title:
     "Amyotrophic Lateral Sclerosis (ALS) – Synergy Spine and Nerve Center",
   description:
-    "Overview of Amyotrophic Lateral Sclerosis (ALS) — symptoms, diagnosis, and supportive treatment options. Educational resource from Synergy Spine and Nerve Center.",
+    "Overview of Amyotrophic Lateral Sclerosis (ALS), symptoms, diagnosis, and supportive treatment options. Educational resource from Synergy Spine and Nerve Center.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Amyotrophic Lateral Sclerosis (ALS) – An Overview",
     description:
-      "ALS symptoms, diagnosis, and supportive treatment — an educational overview.",
+      "ALS symptoms, diagnosis, and supportive treatment, an educational overview.",
     url: CANONICAL,
     type: "article",
     siteName: "Synergy Spine and Nerve Center",
@@ -231,7 +231,7 @@ export default function ALSPage() {
                   course of the disease.
                 </p>
                 <p className="mt-4 text-lg leading-relaxed text-brand-text">
-                  On the whole, treatment is supportive — with physical
+                  On the whole, treatment is supportive, with physical
                   therapy, assistive devices, respiratory support, and special
                   feeding tools being helpful as the disease progresses.
                 </p>
@@ -259,7 +259,7 @@ export default function ALSPage() {
                 <span className="italic text-brand-gold">supportive care</span>?
               </p>
               <p className="mt-4 text-white/80">
-                Reach out — we&apos;ll point you in the right direction.
+                Reach out, we&apos;ll point you in the right direction.
               </p>
             </Reveal>
             <Reveal delay={150} className="mt-8 flex flex-wrap items-center justify-center gap-4">

@@ -39,7 +39,7 @@ const FEATURES: Feature[] = [
     icon: ClockIcon,
     title: "Timely Care",
     description:
-      "We respect your time with efficient appointments and zero unnecessary wait times — so healing fits into your life.",
+      "We respect your time with efficient appointments and zero unnecessary wait times, so healing fits into your life.",
     accent: "blue",
   },
   {

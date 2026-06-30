@@ -20,7 +20,7 @@ const TESTIMONIALS: Testimonial[] = [
   },
   {
     quote:
-      "The whole team at Synergy is incredible. They truly care about your wellbeing — not just getting you in and out. Highly recommend to anyone in the area.",
+      "The whole team at Synergy is incredible. They truly care about your wellbeing, not just getting you in and out. Highly recommend to anyone in the area.",
     name: "James T.",
     location: "Albuquerque, NM",
     initials: "JT",

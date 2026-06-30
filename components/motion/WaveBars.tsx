@@ -7,7 +7,7 @@ type Props = {
 };
 
 /**
- * Animated equalizer / wave bars — useful as a percussion/music motif.
+ * Animated equalizer / wave bars, useful as a percussion/music motif.
  */
 export default function WaveBars({
   className = "",

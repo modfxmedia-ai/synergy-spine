@@ -14,12 +14,12 @@ const CRACKER_JACK_IMAGE =
 export const metadata: Metadata = {
   title: "Chiropractic Research – Synergy Spine and Nerve Center",
   description:
-    "Explore the growing body of research behind chiropractic care. Chiropractic doesn't directly treat conditions — it helps restore homeostasis through nerve system health.",
+    "Explore the growing body of research behind chiropractic care. Chiropractic doesn't directly treat conditions, it helps restore homeostasis through nerve system health.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Chiropractic Research – Synergy Spine and Nerve Center",
     description:
-      "More evidence supports chiropractic for back pain than any medical procedure — and the body of research is growing fast.",
+      "More evidence supports chiropractic for back pain than any medical procedure, and the body of research is growing fast.",
     url: CANONICAL,
     type: "article",
     siteName: "Synergy Spine and Nerve Center",
@@ -63,7 +63,7 @@ const STUDIES = [
     area: "Cost-effectiveness",
     finding:
       "Chiropractic care was found to be more effective, safer, and more cost-effective than medical management for low back pain.",
-    citation: "Manga Report — Government of Ontario (1993)",
+    citation: "Manga Report, Government of Ontario (1993)",
   },
   {
     area: "Patient satisfaction",
@@ -83,7 +83,7 @@ const KEY_POINTS = [
   {
     title: "More evidence than you might think",
     body:
-      "There is more evidence for the utilization of chiropractic for back pain than any medical procedure — and the body of research is still growing.",
+      "There is more evidence for the utilization of chiropractic for back pain than any medical procedure, and the body of research is still growing.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M3 12 9 6l4 4 8-8" />
@@ -104,7 +104,7 @@ const KEY_POINTS = [
   {
     title: "Whole-system perspective",
     body:
-      "Chiropractic doesn't directly treat conditions — it improves the health of the nervous system, which controls or influences every other system in the body.",
+      "Chiropractic doesn't directly treat conditions, it improves the health of the nervous system, which controls or influences every other system in the body.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <circle cx="12" cy="12" r="10" />
@@ -154,7 +154,7 @@ export default function ChiropracticResearchPage() {
             </Reveal>
             <Reveal delay={220}>
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
-                Chiropractic doesn&apos;t directly treat health conditions —
+                Chiropractic doesn&apos;t directly treat health conditions, 
                 it aims to resolve issues with homeostasis by improving the
                 health of your nervous system, which can indirectly influence
                 the health of other systems.
@@ -195,7 +195,7 @@ export default function ChiropracticResearchPage() {
                 I even had one guy tell me I probably got my degree from a
                 Cracker Jack box. Another tried to convince me that he could
                 get a chiropractic degree and license online. I guess my best
-                response is — verify the qualifications of the chiropractor
+                response is, verify the qualifications of the chiropractor
                 before they ever work on you. Cracker Jack boxes should only
                 be used for an insulin spike and worthless prizes.
               </p>
@@ -223,7 +223,7 @@ export default function ChiropracticResearchPage() {
                 the positive relationship between chiropractic and other
                 health conditions. I began chiropractic care because a
                 chiropractor gave me hope, and I simply acted on faith. That
-                may work for some people. Others want solid evidence — and
+                may work for some people. Others want solid evidence, and
                 the good news is, every year we are getting more.
               </p>
             </Reveal>
@@ -254,7 +254,7 @@ export default function ChiropracticResearchPage() {
                 <p className="section-title mt-3 text-xl md:text-2xl text-brand-navyDark font-semibold leading-snug">
                   Chiropractic does not treat health conditions like high
                   blood pressure, ear infections, bed-wetting, asthma,
-                  diabetes, ulcers — or anything else.
+                  diabetes, ulcers, or anything else.
                 </p>
                 <p className="mt-4 text-brand-text leading-relaxed">
                   Chiropractic works at restoring a more homeostatic
@@ -391,7 +391,7 @@ export default function ChiropracticResearchPage() {
                         {s.finding}
                       </p>
                       <p className="mt-2 text-xs text-brand-textLight italic">
-                        — {s.citation}
+                        {s.citation}
                       </p>
                     </div>
                   </article>
@@ -416,7 +416,7 @@ export default function ChiropracticResearchPage() {
                 <p className="text-brand-text text-lg leading-relaxed">
                   If you are the type of person that wants some research,
                   this page is a good starting point for you. We&apos;ll
-                  continue to add links and summaries — and if you have
+                  continue to add links and summaries, and if you have
                   specific questions about a study or a condition, please
                   ask. We love this stuff.
                 </p>

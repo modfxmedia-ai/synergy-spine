@@ -185,7 +185,7 @@ export default function HeroSection() {
             <Reveal delay={220}>
               <p className="mt-7 max-w-xl text-base sm:text-lg text-white/75 leading-relaxed">
                 We discover the cause of your pain, illuminate the
-                possibilities, and liberate you from discomfort — using
+                possibilities, and liberate you from discomfort, using
                 evidence-based, modern chiropractic care that gets you back to
                 living fully.
               </p>
@@ -319,7 +319,7 @@ export default function HeroSection() {
                   </div>
                 </div>
 
-                {/* Floating stat card — top right */}
+                {/* Floating stat card, top right */}
                 <div className="absolute -top-6 -right-2 sm:-right-6 bg-white rounded-2xl shadow-xl px-4 py-3 ring-1 ring-black/5 animate-float">
                   <p className="text-[10px] uppercase tracking-[0.18em] text-brand-textLight">
                     Years caring
@@ -329,7 +329,7 @@ export default function HeroSection() {
                   </p>
                 </div>
 
-                {/* Floating trust card — bottom left */}
+                {/* Floating trust card, bottom left */}
                 <div
                   className="absolute -left-2 sm:-left-8 -bottom-6 bg-white rounded-2xl shadow-xl px-4 py-3.5 ring-1 ring-black/5 flex items-center gap-3 animate-floatSlow"
                   style={{ animationDelay: "-2s" }}
@@ -362,7 +362,7 @@ export default function HeroSection() {
                   </div>
                 </div>
 
-                {/* Floating spine icon — left middle */}
+                {/* Floating spine icon, left middle */}
                 <div
                   className="hidden sm:flex absolute -left-10 top-1/2 -translate-y-1/2 h-14 w-14 items-center justify-center rounded-2xl bg-white text-brand-blue shadow-xl rotate-[-6deg] animate-float"
                   style={{ animationDelay: "-3s" }}

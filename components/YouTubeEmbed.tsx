@@ -8,7 +8,7 @@ type Props = {
   id: string;
   /** Accessible title for the video. */
   title: string;
-  /** Optional aspect ratio class — defaults to 16/9. */
+  /** Optional aspect ratio class, defaults to 16/9. */
   aspect?: string;
 };
 

@@ -39,7 +39,7 @@ export default function VideoSection() {
           </Reveal>
           <Reveal className="lg:col-span-5" delay={120}>
             <p className="text-white/70 leading-relaxed">
-              A short look inside Synergy Spine and Nerve Center — our team, our
+              A short look inside Synergy Spine and Nerve Center, our team, our
               approach, and the patients we serve every day in Rio Rancho.
             </p>
           </Reveal>

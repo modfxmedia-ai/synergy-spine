@@ -10,9 +10,9 @@ const CANONICAL = "https://synergyspineandnerve.com/rof/";
 export const metadata: Metadata = {
   title: "Report of Findings (ROF) – Synergy Spine and Nerve Center",
   description:
-    "What to expect at your Report of Findings visit at Synergy Spine and Nerve Center — your exam results explained, plus a clear plan forward.",
+    "What to expect at your Report of Findings visit at Synergy Spine and Nerve Center, your exam results explained, plus a clear plan forward.",
   alternates: { canonical: CANONICAL },
-  // Live page is unindexed/empty — keep ours discoverable but low-priority.
+  // Live page is unindexed/empty, keep ours discoverable but low-priority.
   robots: { index: false, follow: true },
   openGraph: {
     title: "Report of Findings (ROF) Visit",
@@ -57,7 +57,7 @@ export default function ROFPage() {
             </Reveal>
             <Reveal delay={220}>
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
-                Your second visit is where everything comes together — the
+                Your second visit is where everything comes together, the
                 exam results, the imaging, what we found, and the clearest path
                 forward for your spine and your health.
               </p>
@@ -82,7 +82,7 @@ export default function ROFPage() {
               <p className="mt-4 text-lg leading-relaxed text-brand-text">
                 The Report of Findings (ROF) is a focused, low-pressure
                 conversation with Dr. Brad. We sit down and walk through your
-                exam together — what we found, what it means, and what
+                exam together, what we found, what it means, and what
                 happens next.
               </p>
             </Reveal>
@@ -91,7 +91,7 @@ export default function ROFPage() {
               {[
                 {
                   title: "Your exam results",
-                  body: "Posture, range of motion, neurological tests — and what each one is telling us about your nerve system.",
+                  body: "Posture, range of motion, neurological tests, and what each one is telling us about your nerve system.",
                 },
                 {
                   title: "Imaging review",
@@ -103,7 +103,7 @@ export default function ROFPage() {
                 },
                 {
                   title: "Your questions answered",
-                  body: "No rush. Bring every question — including the ones you weren't sure how to ask.",
+                  body: "No rush. Bring every question, including the ones you weren't sure how to ask.",
                 },
               ].map((item, i) => (
                 <Reveal as="li" key={item.title} delay={i * 80}>

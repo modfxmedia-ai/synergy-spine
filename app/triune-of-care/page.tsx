@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Triune of Care – Synergy Spine and Nerve Center",
     description:
-      "Three pillars working in synergy — adjustments, spinal hygiene, and nutrition — for whole-body health.",
+      "Three pillars working in synergy, adjustments, spinal hygiene, and nutrition, for whole-body health.",
     url: CANONICAL,
     type: "article",
     siteName: "Synergy Spine and Nerve Center",
@@ -27,7 +27,7 @@ const PILLARS = [
   {
     n: "01",
     title: "Chiropractic Adjustments",
-    body: "Precise adjustments restore motion to joints that have lost the ability to move on their own — clearing nerve interference so your body can heal.",
+    body: "Precise adjustments restore motion to joints that have lost the ability to move on their own, clearing nerve interference so your body can heal.",
     href: "/what-is-a-subluxation/",
     cta: "Subluxation explained",
     accent: "from-brand-blue to-brand-blueLight",
@@ -86,7 +86,7 @@ export default function TriuneOfCarePage() {
             <Reveal delay={220}>
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
                 Take an active role in your healing with the Triune of
-                Care — three pillars working together so your body has
+                Care, three pillars working together so your body has
                 everything it needs to function the way it was designed to.
               </p>
             </Reveal>
@@ -110,7 +110,7 @@ export default function TriuneOfCarePage() {
                 <span className="h-px w-10 bg-brand-blue" />
               </div>
               <h2 className="section-title mt-4 text-3xl md:text-4xl text-brand-navyDark font-semibold leading-tight">
-                None of these pillars is enough on its own —{" "}
+                None of these pillars is enough on its own, {" "}
                 <span className="italic text-brand-blue">together</span> they
                 multiply.
               </h2>
@@ -164,7 +164,7 @@ export default function TriuneOfCarePage() {
               </div>
               <p className="mt-8 text-center text-brand-textLight max-w-xl mx-auto">
                 Where the three circles overlap is where your body finds true
-                synergy — and where lasting healing happens.
+                synergy, and where lasting healing happens.
               </p>
             </Reveal>
           </div>
@@ -222,13 +222,13 @@ export default function TriuneOfCarePage() {
                   Take an active role
                 </p>
                 <p className="mt-3 section-title text-xl md:text-2xl text-brand-navyDark font-semibold leading-snug">
-                  Healing isn&apos;t something we do <em>to</em> you — it&apos;s
+                  Healing isn&apos;t something we do <em>to</em> you, it&apos;s
                   something we partner with you on.
                 </p>
                 <p className="mt-4 text-brand-text leading-relaxed">
                   Our role is to remove the interference. Your role is to
-                  show up with the daily habits — the movement, the
-                  nutrition, the rest — that let your body do what it&apos;s
+                  show up with the daily habits, the movement, the
+                  nutrition, the rest, that let your body do what it&apos;s
                   designed to do. That partnership is the Triune of Care.
                 </p>
               </div>

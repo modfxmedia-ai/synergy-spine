@@ -220,7 +220,7 @@ export default function NerveChartPage() {
                   className="w-full h-auto rounded-[20px]"
                 />
                 <figcaption className="mt-4 text-center text-sm text-brand-textLight">
-                  Synergy Spine and Nerve Center — Spinal Nerve Chart
+                  Synergy Spine and Nerve Center, Spinal Nerve Chart
                 </figcaption>
               </figure>
             </Reveal>
@@ -314,7 +314,7 @@ export default function NerveChartPage() {
                   visual aid to show how subluxation at a given spinal level
                   may contribute to interference with the organs supplied by
                   those nerves. Reducing or removing that interference helps
-                  the body do what it is already designed to do — heal and
+                  the body do what it is already designed to do, heal and
                   regulate itself.
                 </p>
               </div>

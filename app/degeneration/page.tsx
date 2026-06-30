@@ -58,7 +58,7 @@ const STAGES = [
     range: "Years 1–10",
     title: "Subtle subluxation",
     body:
-      "Joint motion is slightly restricted. Most people feel little to no pain. The body adapts — but scar tissue is already starting to form.",
+      "Joint motion is slightly restricted. Most people feel little to no pain. The body adapts, but scar tissue is already starting to form.",
     accent: "from-brand-blueLight to-brand-blue",
   },
   {
@@ -82,7 +82,7 @@ const STAGES = [
     range: "Years 30+",
     title: "Joint fusion",
     body:
-      "Joints essentially fuse from years of immobility. Nerve compromise can be severe. This stage is irreversible — but progression can still be slowed.",
+      "Joints essentially fuse from years of immobility. Nerve compromise can be severe. This stage is irreversible, but progression can still be slowed.",
     accent: "from-brand-navyDark to-brand-navy",
   },
 ];
@@ -100,7 +100,7 @@ const TREATMENT = [
   {
     title: "Restore motion",
     body:
-      "Targeted chiropractic adjustments restore joint motion — the single most important factor in preventing further degeneration.",
+      "Targeted chiropractic adjustments restore joint motion, the single most important factor in preventing further degeneration.",
   },
   {
     title: "Reduce nerve interference",
@@ -115,7 +115,7 @@ const TREATMENT = [
   {
     title: "Track progress",
     body:
-      "Periodic reassessments — and follow-up imaging when indicated — show real, measurable change over the course of care.",
+      "Periodic reassessments, and follow-up imaging when indicated, show real, measurable change over the course of care.",
   },
 ];
 
@@ -162,7 +162,7 @@ export default function DegenerationPage() {
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
                 Degenerative disc disease is caused by a lack of motion in
                 the joints over years or decades. The good news? It can be
-                slowed — and in earlier stages, dramatically improved.
+                slowed, and in earlier stages, dramatically improved.
               </p>
             </Reveal>
           </div>
@@ -198,11 +198,11 @@ export default function DegenerationPage() {
 
               <p className="mt-6 text-brand-text text-lg leading-relaxed">
                 Degeneration of one or more intervertebral discs of the spine
-                — often called{" "}
+, often called{" "}
                 <strong className="text-brand-navyDark">
                   &ldquo;degenerative disc disease&rdquo; (DDD)
                 </strong>{" "}
-                or &ldquo;degenerative disc disorder&rdquo; — is a condition
+                or &ldquo;degenerative disc disorder&rdquo;, is a condition
                 that can be painful and can greatly affect the quality of
                 one&apos;s life. Disc degeneration is caused by lack of
                 motion to the joints over an extended period of time, usually
@@ -343,7 +343,7 @@ export default function DegenerationPage() {
                 </p>
                 <p className="section-title mt-2 text-lg md:text-xl text-brand-navyDark font-semibold leading-snug">
                   If you are experiencing pain you may also have some degree
-                  of degeneration — and it&apos;s a good idea to do whatever
+                  of degeneration, and it&apos;s a good idea to do whatever
                   it takes to keep it from advancing.
                 </p>
               </div>

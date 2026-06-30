@@ -10,12 +10,12 @@ const CANONICAL = "https://synergyspineandnerve.com/resources/calendar/";
 export const metadata: Metadata = {
   title: "Calendar | Synergy Spine & Nerve Center",
   description:
-    "View the live Synergy Spine and Nerve Center calendar — office hours, workshops, and events at our Rio Rancho, NM chiropractic clinic.",
+    "View the live Synergy Spine and Nerve Center calendar, office hours, workshops, and events at our Rio Rancho, NM chiropractic clinic.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Calendar | Synergy Spine & Nerve Center",
     description:
-      "View the live Synergy Spine and Nerve Center calendar — office hours, workshops, and events.",
+      "View the live Synergy Spine and Nerve Center calendar, office hours, workshops, and events.",
     url: CANONICAL,
     type: "website",
     siteName: "Synergy Spine and Nerve Center",

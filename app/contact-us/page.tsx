@@ -15,13 +15,13 @@ export const metadata: Metadata = {
   title:
     "Get In Touch with Synergy Spine and Nerve Center – Rio Rancho, NM",
   description:
-    "Questions, comments, or concerns about our Rio Rancho, NM chiropractic care? Call (505) 891-2280 or send a message — we'll be in touch shortly.",
+    "Questions, comments, or concerns about our Rio Rancho, NM chiropractic care? Call (505) 891-2280 or send a message, we'll be in touch shortly.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title:
       "Get In Touch with Synergy Spine and Nerve Center – Rio Rancho, NM",
     description:
-      "Reach Dr. Brad and Austin at Synergy Spine and Nerve Center — call, message, or stop by 1453 Rio Rancho Blvd-Suite 2.",
+      "Reach Dr. Brad and Austin at Synergy Spine and Nerve Center, call, message, or stop by 1453 Rio Rancho Blvd-Suite 2.",
     url: CANONICAL,
     type: "website",
     siteName: "Synergy Spine and Nerve Center",
@@ -112,7 +112,7 @@ export default function ContactUsPage() {
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
                 If you have any questions, comments or concerns about our
                 Rio Rancho, NM chiropractic care center, please use the
-                form below — we&apos;ll be sure to get back to you as soon as
+                form below, we&apos;ll be sure to get back to you as soon as
                 possible. We look forward to hearing from you.
               </p>
             </Reveal>
@@ -358,7 +358,7 @@ export default function ContactUsPage() {
                 <span className="italic text-brand-gold">book directly</span>.
               </p>
               <p className="mt-4 text-white/80">
-                Skip the back-and-forth — schedule online and we&apos;ll see you
+                Skip the back-and-forth, schedule online and we&apos;ll see you
                 soon.
               </p>
             </Reveal>

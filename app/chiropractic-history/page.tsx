@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Chiropractic History – Synergy Spine and Nerve Center",
     description:
-      "Key milestones in the history of chiropractic — from 1895 to today.",
+      "Key milestones in the history of chiropractic, from 1895 to today.",
     url: CANONICAL,
     type: "article",
     siteName: "Synergy Spine and Nerve Center",
@@ -41,13 +41,13 @@ const MILESTONES: { year: string; title: string; body: string }[] = [
     year: "1895",
     title: "The very first adjustment",
     body:
-      "On September 18, 1895, Daniel David (D.D.) Palmer performed the first chiropractic adjustment in Davenport, Iowa. His patient, Harvey Lillard, reported that his hearing — which he had lost 17 years earlier — was restored after the adjustment.",
+      "On September 18, 1895, Daniel David (D.D.) Palmer performed the first chiropractic adjustment in Davenport, Iowa. His patient, Harvey Lillard, reported that his hearing, which he had lost 17 years earlier, was restored after the adjustment.",
   },
   {
     year: "1897",
     title: "The first chiropractic school",
     body:
-      "D.D. Palmer founded the Palmer School of Chiropractic in Davenport, Iowa — still operating today as Palmer College of Chiropractic, the &ldquo;Fountainhead&rdquo; of the profession.",
+      "D.D. Palmer founded the Palmer School of Chiropractic in Davenport, Iowa, still operating today as Palmer College of Chiropractic, the &ldquo;Fountainhead&rdquo; of the profession.",
   },
   {
     year: "1906",
@@ -59,7 +59,7 @@ const MILESTONES: { year: string; title: string; body: string }[] = [
     year: "1910s",
     title: "B.J. Palmer takes the lead",
     body:
-      "Bartlett Joshua (B.J.) Palmer, D.D.&apos;s son, took the reins and is widely credited with developing chiropractic into a recognized profession — fighting court battles to defend chiropractors&apos; right to practice.",
+      "Bartlett Joshua (B.J.) Palmer, D.D.&apos;s son, took the reins and is widely credited with developing chiropractic into a recognized profession, fighting court battles to defend chiropractors&apos; right to practice.",
   },
   {
     year: "1913",
@@ -71,7 +71,7 @@ const MILESTONES: { year: string; title: string; body: string }[] = [
     year: "1924",
     title: "X-ray analysis introduced",
     body:
-      "B.J. Palmer introduced the use of X-ray (which he called the &ldquo;Spinograph&rdquo;) to analyze the spine — a technological leap that still informs how chiropractors work today.",
+      "B.J. Palmer introduced the use of X-ray (which he called the &ldquo;Spinograph&rdquo;) to analyze the spine, a technological leap that still informs how chiropractors work today.",
   },
   {
     year: "1963",
@@ -101,7 +101,7 @@ const MILESTONES: { year: string; title: string; body: string }[] = [
     year: "Today",
     title: "Family-centered, full-spectrum care",
     body:
-      "Modern chiropractic blends time-tested adjusting techniques with research-driven assessment, neurology, and lifestyle care — serving infants, kids, athletes, and grandparents alike.",
+      "Modern chiropractic blends time-tested adjusting techniques with research-driven assessment, neurology, and lifestyle care, serving infants, kids, athletes, and grandparents alike.",
   },
 ];
 
@@ -110,7 +110,7 @@ const FOUNDERS = [
     name: "D.D. Palmer",
     role: "Founder of Chiropractic",
     body:
-      "A self-taught healer and magnetic therapist who, on a hunch about a misaligned vertebra, performed the first chiropractic adjustment in 1895 — and changed healthcare forever.",
+      "A self-taught healer and magnetic therapist who, on a hunch about a misaligned vertebra, performed the first chiropractic adjustment in 1895, and changed healthcare forever.",
   },
   {
     name: "B.J. Palmer",
@@ -122,7 +122,7 @@ const FOUNDERS = [
     name: "Harvey Lillard",
     role: "First Chiropractic Patient",
     body:
-      "Janitor in the building where D.D. Palmer worked. After receiving the first adjustment, his hearing — lost for 17 years — improved dramatically. His story sparked an entire profession.",
+      "Janitor in the building where D.D. Palmer worked. After receiving the first adjustment, his hearing, lost for 17 years, improved dramatically. His story sparked an entire profession.",
   },
 ];
 
@@ -168,7 +168,7 @@ export default function ChiropracticHistoryPage() {
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
                 Ever wonder about how chiropractic started and evolved over
                 time? From a single adjustment in an Iowa office to a
-                worldwide healthcare profession — here&apos;s the journey.
+                worldwide healthcare profession, here&apos;s the journey.
               </p>
             </Reveal>
           </div>
@@ -212,7 +212,7 @@ export default function ChiropracticHistoryPage() {
                 upper back of a janitor named Harvey Lillard. Lillard had
                 been deaf for 17 years. After a single carefully placed
                 adjustment, his hearing began to return. From that moment, a
-                new profession was born — one that would grow into the
+                new profession was born, one that would grow into the
                 world&apos;s largest drug-free, surgery-free healthcare
                 discipline.
               </p>
@@ -358,7 +358,7 @@ export default function ChiropracticHistoryPage() {
                   &ldquo;Get the big idea, and all else follows.&rdquo;
                 </blockquote>
                 <figcaption className="mt-4 text-sm text-brand-textLight uppercase tracking-[0.18em] font-semibold">
-                  — B.J. Palmer
+                  B.J. Palmer
                 </figcaption>
               </figure>
             </Reveal>

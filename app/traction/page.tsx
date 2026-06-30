@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title:
     "Traction & Spinal Hygiene Devices – Synergy Spine and Nerve Center",
   description:
-    "Three traction tools to keep your spine moving — Thoracic Roller, 6-Way Strap, and Over-the-Door Traction. Part of the Pettibon System of Spinal Hygiene.",
+    "Three traction tools to keep your spine moving, Thoracic Roller, 6-Way Strap, and Over-the-Door Traction. Part of the Pettibon System of Spinal Hygiene.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Traction Tools | Pettibon Spinal Hygiene",
@@ -41,7 +41,7 @@ const TOOLS = [
   {
     title: "Over-the-Door Traction",
     blurb:
-      "Rehydrate the discs in your neck and improve posture — using gravity and a doorway.",
+      "Rehydrate the discs in your neck and improve posture, using gravity and a doorway.",
     href: "/over-the-door-traction/",
     accent: "from-brand-navy to-brand-navyDark",
   },
@@ -98,7 +98,7 @@ export default function TractionPage() {
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
                 A few simple, at-home devices keep your spine moving the way
                 it&apos;s supposed to. Pick the right one for your problem
-                area, and use it daily — that&apos;s how the magic happens.
+                area, and use it daily, that&apos;s how the magic happens.
               </p>
             </Reveal>
           </div>
@@ -227,7 +227,7 @@ export default function TractionPage() {
                 <span className="italic text-brand-gold">right for you</span>?
               </p>
               <p className="mt-4 text-white/80">
-                Ask us at your next visit — we&apos;ll point you in the right
+                Ask us at your next visit, we&apos;ll point you in the right
                 direction.
               </p>
             </Reveal>

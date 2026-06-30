@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title:
     "Over The Door Traction – Synergy Spine and Nerve Center",
   description:
-    "Watch the Over the Door Traction demonstration — rehydrate the discs in your neck and improve your posture with the Pettibon System of Spinal Hygiene.",
+    "Watch the Over the Door Traction demonstration, rehydrate the discs in your neck and improve your posture with the Pettibon System of Spinal Hygiene.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Over The Door Traction | Pettibon Spinal Hygiene",
@@ -27,7 +27,7 @@ export default function OverTheDoorTractionPage() {
       title="Over the Door Traction"
       emphasis="Traction"
       eyebrow="Spinal hygiene · Pettibon System"
-      lead="Watch this video for instructions on how to use the Over the Door Traction to rehydrate the discs in your neck and improve your posture — part of the Pettibon System of Spinal Hygiene."
+      lead="Watch this video for instructions on how to use the Over the Door Traction to rehydrate the discs in your neck and improve your posture, part of the Pettibon System of Spinal Hygiene."
       videoId={VIDEO_ID}
       videoTitle="Over the Door Traction Demonstration"
       breadcrumbs={[

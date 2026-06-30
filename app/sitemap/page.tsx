@@ -10,7 +10,7 @@ const CANONICAL = "https://synergyspineandnerve.com/sitemap/";
 export const metadata: Metadata = {
   title: "Sitemap – Synergy Spine and Nerve Center",
   description:
-    "Browse the complete sitemap of Synergy Spine and Nerve Center — every page, resource, location guide, and blog post on our website at a glance.",
+    "Browse the complete sitemap of Synergy Spine and Nerve Center, every page, resource, location guide, and blog post on our website at a glance.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Sitemap – Synergy Spine and Nerve Center",
@@ -452,7 +452,7 @@ export default function SitemapPage() {
             <Reveal delay={220}>
               <p className="mt-5 max-w-2xl text-white/80 text-base md:text-lg leading-relaxed">
                 Browse all of our pages, resources, location guides, and blog
-                posts — neatly organized for easy discovery.
+                posts, neatly organized for easy discovery.
               </p>
             </Reveal>
 
@@ -527,7 +527,7 @@ export default function SitemapPage() {
           </div>
         </nav>
 
-        {/* Pages — organized */}
+        {/* Pages, organized */}
         <section id="pages" className="relative bg-white py-20 lg:py-24 scroll-mt-32">
           <div className="mx-auto max-w-6xl px-6">
             <Reveal>

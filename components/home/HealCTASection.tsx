@@ -54,7 +54,7 @@ export default function HealCTASection() {
         <Reveal delay={150}>
           <h2 className="section-title mt-7 text-4xl md:text-5xl lg:text-7xl font-semibold leading-[1.02]">
             If you believe your body{" "}
-            <span className="italic text-brand-gold">can heal</span> —
+            <span className="italic text-brand-gold">can heal</span>, 
             <br />
             we&apos;d love to{" "}
             <span className="relative inline-block">
@@ -100,7 +100,7 @@ export default function HealCTASection() {
               </span>
             </Link>
 
-            <span className="text-white/40 text-sm">— or —</span>
+            <span className="text-white/40 text-sm">, or, </span>
 
             <a
               href={`tel:${PHONE_TEL}`}

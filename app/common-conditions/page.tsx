@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title:
       "Common Chiropractic Conditions – Synergy Spine and Nerve Center",
     description:
-      "Conditions we evaluate every week — and how a clear plan often changes the trajectory.",
+      "Conditions we evaluate every week, and how a clear plan often changes the trajectory.",
     url: CANONICAL,
     type: "article",
     siteName: "Synergy Spine and Nerve Center",
@@ -36,7 +36,7 @@ const CONDITIONS: Cond[] = [
   {
     title: "Back Pain",
     desc:
-      "Acute or chronic, lower or upper — back pain is the most common reason new folks find us. We start with a real exam and a real plan.",
+      "Acute or chronic, lower or upper, back pain is the most common reason new folks find us. We start with a real exam and a real plan.",
   },
   {
     title: "Neck Pain",
@@ -98,7 +98,7 @@ const CONDITIONS: Cond[] = [
   {
     title: "Pregnancy & Postpartum Pain",
     desc:
-      "Gentle, pregnancy-safe adjustments support a comfortable pregnancy and faster recovery — for mom and baby.",
+      "Gentle, pregnancy-safe adjustments support a comfortable pregnancy and faster recovery, for mom and baby.",
   },
 ];
 
@@ -138,7 +138,7 @@ export default function CommonConditionsPage() {
             <Reveal delay={220}>
               <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
                 A short list of what we see most often in Rio Rancho. If
-                what you&apos;re dealing with isn&apos;t here, ask us — we&apos;ve likely
+                what you&apos;re dealing with isn&apos;t here, ask us, we&apos;ve likely
                 seen it before.
               </p>
             </Reveal>
@@ -162,8 +162,8 @@ export default function CommonConditionsPage() {
               </div>
               <h2 className="section-title mt-4 text-3xl md:text-4xl text-brand-navyDark font-semibold leading-tight">
                 We don&apos;t{" "}
-                <span className="italic text-brand-blue">treat conditions</span>{" "}
-                — we restore the body&apos;s ability to heal them.
+                <span className="italic text-brand-blue">treat conditions</span>
+, we restore the body&apos;s ability to heal them.
               </h2>
               <p className="mt-6 text-brand-text leading-relaxed">
                 Every condition below has one thing in common: when the
@@ -267,7 +267,7 @@ export default function CommonConditionsPage() {
                 <p className="mt-4 text-white/90 leading-relaxed">
                   We help people every week whose conditions don&apos;t show up on
                   any short list. If you&apos;re dealing with something and aren&apos;t
-                  sure where to start, send us a message — we&apos;ll be honest
+                  sure where to start, send us a message, we&apos;ll be honest
                   about whether we&apos;re the right fit and refer if we&apos;re not.
                 </p>
                 <div className="mt-6">

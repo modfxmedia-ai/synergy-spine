@@ -111,7 +111,7 @@ export const POSTS: BlogPost[] = [
   {
     slug: "five-reasons-to-quit-sugar-now-2",
     title: "Five Reasons to Quit Sugar Now",
-    excerpt: "Why it's so important to cut back on your sugar intake—and take back control of your health.",
+    excerpt: "Why it's so important to cut back on your sugar intake, and take back control of your health.",
     category: "Uncategorized",
     date: "November 26, 2018",
     isoDate: "2018-11-26",
@@ -210,7 +210,7 @@ export const POSTS: BlogPost[] = [
   },
   {
     slug: "symptoms-or-causes-numbness-or-functional-restoration",
-    title: "Symptoms or Causes—Numbness or Functional Restoration",
+    title: "Symptoms or Causes, Numbness or Functional Restoration",
     excerpt: "It is easy to accept that when you have a tooth ache that you have a problem that is causing pain and that the pain is not the problem. The problem, whether it be a cracked tooth, decay or whatever, is the CAUSE of th...",
     category: "Uncategorized",
     date: "January 11, 2018",

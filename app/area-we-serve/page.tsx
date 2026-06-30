@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title:
     "New Mexico Chiropractic Service Areas – Synergy Spine and Nerve Center",
   description:
-    "Synergy Spine and Nerve Center proudly serves Rio Rancho, NM and surrounding communities — from Placitas and Bernalillo to Los Lunas, Belen, Edgewood, and beyond.",
+    "Synergy Spine and Nerve Center proudly serves Rio Rancho, NM and surrounding communities, from Placitas and Bernalillo to Los Lunas, Belen, Edgewood, and beyond.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title:
@@ -70,17 +70,17 @@ const REASONS = [
   {
     title: "20+ years of experience",
     body:
-      "Decades of clinical practice mean you get a real evaluation and a real plan — not a quick crack-and-go visit.",
+      "Decades of clinical practice mean you get a real evaluation and a real plan, not a quick crack-and-go visit.",
   },
   {
     title: "Spinal Health Assessment",
     body:
-      "Every new patient gets a full SHA — a 17-page report with an objective 0-100 score so you know exactly where you stand.",
+      "Every new patient gets a full SHA, a 17-page report with an objective 0-100 score so you know exactly where you stand.",
   },
   {
     title: "Triune of Care",
     body:
-      "Adjustments, daily spinal hygiene, and nutrition coaching working together — because no single pillar is enough.",
+      "Adjustments, daily spinal hygiene, and nutrition coaching working together, because no single pillar is enough.",
   },
   {
     title: "Honest, no-upsell visits",
@@ -264,8 +264,8 @@ export default function AreaWeServePage() {
                   className="text-brand-blue font-semibold underline-offset-4 hover:underline"
                 >
                   Reach out
-                </Link>{" "}
-                — we likely serve your area too.
+                </Link>
+, we likely serve your area too.
               </p>
             </Reveal>
           </div>
@@ -294,7 +294,7 @@ export default function AreaWeServePage() {
                   We publish a dedicated, locally-tailored page for each
                   service we offer in each community we serve.{" "}
                   {SERVICES.length} services × {PSEO_CITIES.length}{" "}
-                  communities — find the one that matches you.
+                  communities, find the one that matches you.
                 </p>
               </div>
             </Reveal>
@@ -364,7 +364,7 @@ export default function AreaWeServePage() {
                           />
                         </div>
                         <h3 className="section-title mt-4 text-2xl md:text-3xl text-brand-navyDark font-semibold leading-tight">
-                          {service.name} —{" "}
+                          {service.name}, {" "}
                           <span className="text-brand-textLight font-normal italic">
                             by city
                           </span>
@@ -482,7 +482,7 @@ export default function AreaWeServePage() {
                 <span className="italic text-brand-gold">drive</span>.
               </p>
               <p className="mt-4 text-white/80">
-                Patients come from across the metro and beyond — start your
+                Patients come from across the metro and beyond, start your
                 $37 New Patient Special and see why.
               </p>
             </Reveal>

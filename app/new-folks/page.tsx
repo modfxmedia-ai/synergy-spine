@@ -11,7 +11,7 @@ const CANONICAL = "https://synergyspineandnerve.com/new-folks/";
 export const metadata: Metadata = {
   title: "New Folks – Synergy Spine and Nerve Center",
   description:
-    "Welcome to Synergy Spine and Nerve Center. Everything new patients need — first visit guide, intake forms, our vision, and online scheduling in Rio Rancho, NM.",
+    "Welcome to Synergy Spine and Nerve Center. Everything new patients need, first visit guide, intake forms, our vision, and online scheduling in Rio Rancho, NM.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "New Folks – Synergy Spine and Nerve Center",
@@ -34,7 +34,7 @@ type Card = {
 const CARDS: Card[] = [
   {
     title: "First Visit",
-    desc: "Walk in knowing exactly what to expect — from intake to consultation, exam, and your report of findings.",
+    desc: "Walk in knowing exactly what to expect, from intake to consultation, exam, and your report of findings.",
     href: "/new-folks/first-visit/",
     accent: "blue",
     icon: (
@@ -47,7 +47,7 @@ const CARDS: Card[] = [
   },
   {
     title: "Intake Forms",
-    desc: "Fill out your paperwork online before you arrive — your wait at the office will be very short.",
+    desc: "Fill out your paperwork online before you arrive, your wait at the office will be very short.",
     href: "/new-folks/intake-forms/",
     accent: "gold",
     icon: (
@@ -71,7 +71,7 @@ const CARDS: Card[] = [
   },
   {
     title: "Book Appointment",
-    desc: "Get our $37 New Patient Special — a consultation, complete Spinal Health Assessment, any necessary X-rays, your first treatment, and a care plan, normally $250.",
+    desc: "Get our $37 New Patient Special, a consultation, complete Spinal Health Assessment, any necessary X-rays, your first treatment, and a care plan, normally $250.",
     href: "/new-folks/np-schedule/",
     accent: "blueLight",
     icon: (
@@ -171,8 +171,8 @@ export default function NewFolksPage() {
                 Welcome to Synergy Spine{" "}
                 <span className="italic normal-case text-brand-gold">
                   &amp; Nerve Center
-                </span>{" "}
-                — your new patient guide
+                </span>
+, your new patient guide
               </h1>
             </Reveal>
 
@@ -180,7 +180,7 @@ export default function NewFolksPage() {
               <p className="mt-6 max-w-2xl text-white/75 text-base md:text-lg leading-relaxed">
                 Many people find us because they&apos;re in some kind of pain.
                 Over the years we&apos;ve helped a lot of folks live a better
-                life — but what makes us feel <em>great</em> is helping someone
+                life, but what makes us feel <em>great</em> is helping someone
                 overcome a major health challenge.
               </p>
             </Reveal>
@@ -239,7 +239,7 @@ export default function NewFolksPage() {
                   </p>
                 </div>
                 <h2 className="section-title mt-4 text-3xl md:text-4xl text-brand-navyDark font-semibold leading-tight">
-                  More than pain relief —{" "}
+                  More than pain relief, {" "}
                   <span className="italic text-brand-blue">
                     real change
                   </span>

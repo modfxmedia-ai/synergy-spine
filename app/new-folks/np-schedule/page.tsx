@@ -14,12 +14,12 @@ const BOOKING_URL =
 export const metadata: Metadata = {
   title: "$37 Online New Patient Special – Synergy Spine and Nerve Center",
   description:
-    "Get our $37 online New Patient Special — a one-on-one consultation, complete Spinal Health Assessment, any necessary X-rays, your first treatment, and a care plan with Dr. Brad and Austin (normally $250) at Synergy Spine and Nerve Center.",
+    "Get our $37 online New Patient Special, a one-on-one consultation, complete Spinal Health Assessment, any necessary X-rays, your first treatment, and a care plan with Dr. Brad and Austin (normally $250) at Synergy Spine and Nerve Center.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "$37 Online New Patient Special – Synergy Spine and Nerve Center",
     description:
-      "New Patient Special normally $250 — yours for just $37 when you book online.",
+      "New Patient Special normally $250, yours for just $37 when you book online.",
     url: CANONICAL,
     type: "article",
     siteName: "Synergy Spine and Nerve Center",
@@ -38,7 +38,7 @@ const INCLUDED = [
   },
   {
     title: "Complete Spinal Health Assessment",
-    body: "A thorough neuro-spinal evaluation that objectively scores how spinal stress is affecting your nervous system — the master controller of every cell in your body.",
+    body: "A thorough neuro-spinal evaluation that objectively scores how spinal stress is affecting your nervous system, the master controller of every cell in your body.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <circle cx="11" cy="11" r="7" />
@@ -48,7 +48,7 @@ const INCLUDED = [
   },
   {
     title: "Any necessary X-rays",
-    body: "Low-dose, high-detail digital imaging when indicated, so we can see exactly what is happening in your spine — no guesswork.",
+    body: "Low-dose, high-detail digital imaging when indicated, so we can see exactly what is happening in your spine, no guesswork.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="3" y="3" width="18" height="18" rx="2" />
@@ -58,7 +58,7 @@ const INCLUDED = [
   },
   {
     title: "Your first treatment",
-    body: "We don't just assess — we get to work. Your first adjustment is included so you can start feeling the difference right away.",
+    body: "We don't just assess, we get to work. Your first adjustment is included so you can start feeling the difference right away.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M12 21s-7-4.35-7-10a7 7 0 0 1 14 0c0 5.65-7 10-7 10z" />
@@ -68,7 +68,7 @@ const INCLUDED = [
   },
   {
     title: "A personalized care plan",
-    body: "We sit down and explain everything we found — what's going on, what we recommend, and a clear, plain-English plan to move forward.",
+    body: "We sit down and explain everything we found, what's going on, what we recommend, and a clear, plain-English plan to move forward.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M9 11h6M9 7h6M9 15h4" />
@@ -159,7 +159,7 @@ export default function NPSchedulePage() {
                 <p className="mt-6 max-w-xl text-white/75 text-base md:text-lg leading-relaxed">
                   A one-on-one consultation, complete Spinal Health Assessment,
                   any necessary X-rays, your first treatment, and a care plan
-                  with Dr. Brad or Austin — normally{" "}
+                  with Dr. Brad or Austin, normally{" "}
                   <span className="line-through text-white/55">$250</span>{" "}
                   <span className="text-brand-gold font-semibold">
                     just $37
@@ -304,7 +304,7 @@ export default function NPSchedulePage() {
                 <p className="mt-5 text-brand-text text-lg leading-relaxed">
                   No insurance hassle. No pressure to commit to anything more.
                   Just a comprehensive Spinal Health Assessment so you know
-                  exactly what is going on — and what we can do about it.
+                  exactly what is going on, and what we can do about it.
                 </p>
               </Reveal>
             </div>
@@ -347,7 +347,7 @@ export default function NPSchedulePage() {
                 </h2>
                 <p className="mt-4 text-brand-text text-lg leading-relaxed">
                   Your Spinal Health Assessment is performed by Dr. Brad or
-                  Austin — both are committed to the same standard of care
+                  Austin, both are committed to the same standard of care
                   that has helped families across New Mexico thrive.
                 </p>
               </div>

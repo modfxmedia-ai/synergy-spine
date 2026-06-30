@@ -13,13 +13,13 @@ export const metadata: Metadata = {
   title:
     "Chiropractic Videos: Your Guide to Spinal Health Education – Synergy Spine and Nerve Center",
   description:
-    "Browse our chiropractic video library — Spinal Hygiene, Workshops, Promo, Humorous and educational videos from over 20 years of practice.",
+    "Browse our chiropractic video library, Spinal Hygiene, Workshops, Promo, Humorous and educational videos from over 20 years of practice.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title:
       "Chiropractic Videos: Your Guide to Spinal Health Education – Synergy Spine and Nerve Center",
     description:
-      "Spinal hygiene, workshops, intros, and lighter promo content — pick a category and start watching.",
+      "Spinal hygiene, workshops, intros, and lighter promo content, pick a category and start watching.",
     url: CANONICAL,
     type: "website",
     siteName: "Synergy Spine and Nerve Center",
@@ -38,35 +38,35 @@ const CATEGORIES: VideoCat[] = [
   {
     title: "Spinal Hygiene Videos",
     href: "/resources/videos/spinal-hygiene-videos/",
-    desc: "What you can do at home — every day — to take better care of your spine and nerve system.",
+    desc: "What you can do at home, every day, to take better care of your spine and nerve system.",
     accent: "blue",
     thumbId: "9wPYA3RWAwI",
   },
   {
     title: "Workshop Videos",
     href: "/resources/videos/workshop-videos/",
-    desc: "Our most-recent 30-minute workshops — informative and educational. Folks usually find them very valuable.",
+    desc: "Our most-recent 30-minute workshops, informative and educational. Folks usually find them very valuable.",
     accent: "navy",
     thumbId: "fX2yQ5rJVi4",
   },
   {
     title: "Workshop Videos of the Past",
     href: "/resources/videos/workshop-videos-of-the-past/",
-    desc: "Educational workshops from earlier years — habits people changed to overcome significant health challenges.",
+    desc: "Educational workshops from earlier years, habits people changed to overcome significant health challenges.",
     accent: "navyLight",
     thumbId: "uKrWp84qU4c",
   },
   {
     title: "Promo Videos",
     href: "/resources/videos/promo-videos/",
-    desc: "Short promotional and educational clips — quick ways to learn what we do and why it works.",
+    desc: "Short promotional and educational clips, quick ways to learn what we do and why it works.",
     accent: "gold",
     thumbId: "UAuYYnLuh6U",
   },
   {
     title: "Humorous Promo Videos of the Past",
     href: "/resources/videos/humorous-promo-videos-of-the-past/",
-    desc: "A creative, funny family making short videos to promote past workshops — go back and have a laugh.",
+    desc: "A creative, funny family making short videos to promote past workshops, go back and have a laugh.",
     accent: "goldDeep",
     thumbId: "DmyGPDNkPpQ",
   },
@@ -144,7 +144,7 @@ export default function VideosHubPage() {
                 <span className="text-white font-semibold">
                   Introduction to Straight Chiropractic
                 </span>{" "}
-                video first — it will help you know what you can expect in our office.
+                video first, it will help you know what you can expect in our office.
               </p>
             </Reveal>
           </div>
@@ -212,7 +212,7 @@ export default function VideosHubPage() {
                   <span className="italic text-brand-blue">category</span>.
                 </h2>
                 <p className="mt-4 text-brand-text">
-                  Pick a topic that fits where you are today — from the basics of spinal
+                  Pick a topic that fits where you are today, from the basics of spinal
                   hygiene to deeper workshop content.
                 </p>
               </div>
@@ -311,7 +311,7 @@ export default function VideosHubPage() {
                 <span className="italic text-brand-gold">next step</span>?
               </p>
               <p className="mt-4 text-white/80">
-                Watch a video, then book your $37 New Patient Special — and see what 20+
+                Watch a video, then book your $37 New Patient Special, and see what 20+
                 years of practice can do for you.
               </p>
             </Reveal>

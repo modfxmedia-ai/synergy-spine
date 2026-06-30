@@ -68,11 +68,11 @@ const FOUNDATIONS = [
   {
     eat: "Eat more",
     items: [
-      "Whole vegetables — especially leafy greens",
+      "Whole vegetables, especially leafy greens",
       "Fresh raw fruit, in season when possible",
       "Wild or pasture-raised animal proteins",
-      "Healthy fats — olive oil, avocado, fish",
-      "Filtered water — your cells depend on it",
+      "Healthy fats, olive oil, avocado, fish",
+      "Filtered water, your cells depend on it",
     ],
     tone: "from-brand-blue to-brand-blueLight",
   },
@@ -196,7 +196,7 @@ export default function AllAboutNutritionPage() {
                   What we see clinically
                 </p>
                 <p className="mt-3 section-title text-xl md:text-2xl text-brand-navyDark font-semibold leading-snug">
-                  Many of our patients seek treatment because of pain — and
+                  Many of our patients seek treatment because of pain, and
                   frequently we find their nutritional habits are creating
                   inflammation that leads to that pain.
                 </p>
@@ -206,7 +206,7 @@ export default function AllAboutNutritionPage() {
                   <strong className="text-brand-navyDark">
                     Health Risk Assessment (HRA)
                   </strong>{" "}
-                  questionnaire — so we can determine how urgent we need to
+                  questionnaire, so we can determine how urgent we need to
                   address their nutritional habits.
                 </p>
               </div>
@@ -258,7 +258,7 @@ export default function AllAboutNutritionPage() {
                   .
                 </h2>
                 <p className="mt-4 text-brand-text">
-                  No perfection required — just steady direction toward foods
+                  No perfection required, just steady direction toward foods
                   that create health.
                 </p>
               </div>
@@ -341,7 +341,7 @@ export default function AllAboutNutritionPage() {
                 {
                   href: "/resources/essential-nutrients-supplements/",
                   title: "Essential Supplements",
-                  desc: "The supplements most people are deficient in — and why we recommend them.",
+                  desc: "The supplements most people are deficient in, and why we recommend them.",
                 },
                 {
                   href: "/resources/all-about-spinal-hygiene/",

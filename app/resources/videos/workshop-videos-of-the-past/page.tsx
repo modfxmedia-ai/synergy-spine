@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title:
     "Workshop Videos of the Past – Educational Workshops Archive | Synergy Spine and Nerve Center",
   description:
-    "Browse educational workshops from earlier years — habits people changed to overcome significant health challenges, from spinal hygiene to vitamin D and beyond.",
+    "Browse educational workshops from earlier years, habits people changed to overcome significant health challenges, from spinal hygiene to vitamin D and beyond.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Workshop Videos of the Past | Synergy Spine and Nerve Center",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 };
 
 const VIDEOS: { id: string; title: string }[] = [
-  { id: "fX2yQ5rJVi4", title: "Spinal Hygiene — 30 Minute Workshop" },
+  { id: "fX2yQ5rJVi4", title: "Spinal Hygiene, 30 Minute Workshop" },
   { id: "uKrWp84qU4c", title: "The Science Behind Vitamin D" },
   { id: "r7dIJhqD3xs", title: "No More Asthma" },
   { id: "qrCIA0ip9w0", title: "The Wonder Drug" },
@@ -122,7 +122,7 @@ export default function WorkshopVideosOfThePastPage() {
                 >
                   health challenges
                 </Link>{" "}
-                by simply changing some of their habits — including practicing daily{" "}
+                by simply changing some of their habits, including practicing daily{" "}
                 <Link
                   href="/resources/all-about-spinal-hygiene/"
                   className="text-brand-gold underline-offset-4 hover:underline"

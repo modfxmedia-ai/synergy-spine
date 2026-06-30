@@ -31,7 +31,7 @@ const PILLARS = [
     label: "Educate",
     title: "Knowledge before adjustment.",
     body:
-      "We teach families how the spine, nervous system, and overall health are connected — so every choice you make at home builds on what we do at the office.",
+      "We teach families how the spine, nervous system, and overall health are connected, so every choice you make at home builds on what we do at the office.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M22 10v6M2 10l10-5 10 5-10 5L2 10z" />
@@ -43,7 +43,7 @@ const PILLARS = [
     label: "Adjust",
     title: "Care that actually corrects.",
     body:
-      "Targeted chiropractic adjustments that respect each member of your family — from infants to grandparents — and give the body its best chance to heal.",
+      "Targeted chiropractic adjustments that respect each member of your family, from infants to grandparents, and give the body its best chance to heal.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M12 2v8M8 6h8M5 14c0 4 3 7 7 7s7-3 7-7" />
@@ -55,7 +55,7 @@ const PILLARS = [
     label: "Empower",
     title: "Health that lasts a lifetime.",
     body:
-      "Every family we serve becomes a small force for natural health in their community — that ripple effect is why we do this work.",
+      "Every family we serve becomes a small force for natural health in their community, that ripple effect is why we do this work.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M3 12c2-3 5-5 9-5s7 2 9 5c-2 3-5 5-9 5s-7-2-9-5z" />
@@ -74,10 +74,10 @@ const RESULTS = [
 ];
 
 const VALUES = [
-  { title: "Family-first care", body: "We treat infants, kids, parents, and grandparents — generations of health under one roof." },
+  { title: "Family-first care", body: "We treat infants, kids, parents, and grandparents, generations of health under one roof." },
   { title: "Natural before invasive", body: "We pursue every drug-free option that respects the body's own ability to heal." },
-  { title: "Honest plans", body: "Clear communication, clear expectations, clear pricing — every step of the way." },
-  { title: "Whole-community impact", body: "From Rio Rancho and Albuquerque to Tucumcari, Gallup, and Taos — distance is no obstacle to feeling great." },
+  { title: "Honest plans", body: "Clear communication, clear expectations, clear pricing, every step of the way." },
+  { title: "Whole-community impact", body: "From Rio Rancho and Albuquerque to Tucumcari, Gallup, and Taos, distance is no obstacle to feeling great." },
 ];
 
 export default function OurVisionPage() {
@@ -230,7 +230,7 @@ export default function OurVisionPage() {
 
           <div className="relative mx-auto max-w-7xl px-6">
             <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 lg:items-center">
-              {/* Left — video */}
+              {/* Left, video */}
               <Reveal className="lg:col-span-6" variant="fade">
                 <div className="relative">
                   <div
@@ -240,7 +240,7 @@ export default function OurVisionPage() {
                   <div className="relative rounded-[28px] p-2 bg-white ring-1 ring-black/[0.06] shadow-[0_30px_60px_-25px_rgba(13,35,64,0.35)]">
                     <YouTubeEmbed
                       id="Sod3VjIEKOA"
-                      title="Watch our story — Synergy Spine and Nerve Center"
+                      title="Watch our story, Synergy Spine and Nerve Center"
                       aspect="aspect-[4/3]"
                     />
                   </div>
@@ -256,7 +256,7 @@ export default function OurVisionPage() {
                 </div>
               </Reveal>
 
-              {/* Right — copy */}
+              {/* Right, copy */}
               <div className="lg:col-span-6">
                 <Reveal>
                   <div className="inline-flex items-center gap-3">
@@ -266,7 +266,7 @@ export default function OurVisionPage() {
                     </p>
                   </div>
                   <h2 className="section-title mt-4 text-3xl md:text-4xl lg:text-[2.6rem] text-brand-navyDark font-semibold leading-[1.1]">
-                    Serving the Rio Rancho &amp; Albuquerque area —{" "}
+                    Serving the Rio Rancho &amp; Albuquerque area, {" "}
                     <span className="italic text-brand-blue">and beyond</span>.
                   </h2>
                 </Reveal>
@@ -276,7 +276,7 @@ export default function OurVisionPage() {
                     Our office is located in the heart of Rio Rancho, but we are
                     blessed to serve the Albuquerque area. Many of our patients
                     travel from East-Albuquerque, the South Valley, and the
-                    surrounding mountain communities — we even have folks who
+                    surrounding mountain communities, we even have folks who
                     come to us from Tucumcari, Gallup, and Taos.
                   </p>
                 </Reveal>
@@ -290,7 +290,7 @@ export default function OurVisionPage() {
                       </svg>
                     </span>
                     <p className="text-brand-text text-[15px] md:text-base leading-relaxed">
-                      Why do they make the trip? Because the changes are real —
+                      Why do they make the trip? Because the changes are real, 
                       long-standing migraines fading, blood pressure and
                       cholesterol numbers improving, immune systems bouncing
                       back, and families finally getting a good night&apos;s
@@ -336,7 +336,7 @@ export default function OurVisionPage() {
                     Generations cared for
                   </p>
                   <p className="mt-2 text-sm text-brand-textLight">
-                    Infants, kids, parents, and grandparents — all under one roof.
+                    Infants, kids, parents, and grandparents, all under one roof.
                   </p>
                 </article>
               </Reveal>
@@ -362,7 +362,7 @@ export default function OurVisionPage() {
                     Lives improved
                   </p>
                   <p className="mt-2 text-sm text-brand-textLight">
-                    From migraines to immunity — your story is welcome here.
+                    From migraines to immunity, your story is welcome here.
                   </p>
                 </article>
               </Reveal>

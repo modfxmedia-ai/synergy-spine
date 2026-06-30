@@ -16,7 +16,7 @@ const PORTRAIT_IMAGE = "/team/doctor-brad-fackrell.jpg";
 export const metadata: Metadata = {
   title: "Meet Dr. Brad – Synergy Spine and Nerve Center",
   description:
-    "Meet Dr. Brad Fackrell, owner, founder, and chiropractor at Synergy Spine and Nerve Center — the premier family chiropractic and neuropathy treatment center in Rio Rancho, New Mexico.",
+    "Meet Dr. Brad Fackrell, owner, founder, and chiropractor at Synergy Spine and Nerve Center, the premier family chiropractic and neuropathy treatment center in Rio Rancho, New Mexico.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Meet Dr. Brad Fackrell – Owner, Founder & Chiropractor",
@@ -63,13 +63,13 @@ const JOURNEY = [
   {
     age: "Childhood",
     title: "Years of severe asthma",
-    body: "Growing up I battled severe asthma — and nothing the medical world offered ever addressed the root cause.",
+    body: "Growing up I battled severe asthma, and nothing the medical world offered ever addressed the root cause.",
     accent: "from-brand-blue to-brand-blueLight",
   },
   {
     age: "Age 23",
     title: "First chiropractic adjustment",
-    body: "A chiropractor discovered subluxation putting pressure on the nerves to my lungs — something no medical doctor had ever found.",
+    body: "A chiropractor discovered subluxation putting pressure on the nerves to my lungs, something no medical doctor had ever found.",
     accent: "from-brand-gold to-brand-goldSoft",
   },
   {
@@ -81,7 +81,7 @@ const JOURNEY = [
   {
     age: "Today",
     title: "Founder of Synergy",
-    body: "I became a chiropractor so others could experience the same healing — and built Synergy so families could thrive together.",
+    body: "I became a chiropractor so others could experience the same healing, and built Synergy so families could thrive together.",
     accent: "from-brand-navy to-brand-navyDark",
   },
 ];
@@ -89,7 +89,7 @@ const JOURNEY = [
 const VALUES = [
   {
     title: "Family first",
-    body: "Nine children, eight grandchildren — all adjusted since birth. Chiropractic is how we live.",
+    body: "Nine children, eight grandchildren, all adjusted since birth. Chiropractic is how we live.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M20 21v-2a4 4 0 0 0-3-3.87" />
@@ -487,7 +487,7 @@ export default function MeetDrBradPage() {
                 </p>
               </div>
               <h2 className="section-title mt-4 text-3xl md:text-4xl text-brand-navyDark font-semibold leading-tight max-w-2xl">
-                I don&apos;t cover symptoms — I correct the{" "}
+                I don&apos;t cover symptoms, I correct the{" "}
                 <span className="italic text-brand-blue">cause</span>.
               </h2>
             </Reveal>
@@ -552,7 +552,7 @@ export default function MeetDrBradPage() {
                   <span className="italic text-brand-blue">Survivor 47</span>
                 </h2>
                 <p className="mt-3 text-brand-text">
-                  Resilience, strategy, and a whole lot of grit — the same
+                  Resilience, strategy, and a whole lot of grit, the same
                   qualities Dr. Brad brings to your care.
                 </p>
               </div>
@@ -561,7 +561,7 @@ export default function MeetDrBradPage() {
               <div className="mt-10">
                 <YouTubeEmbed
                   id="QbQP6OTlFlI"
-                  title="Survivor 47 — Brad Fackrell"
+                  title="Survivor 47, Brad Fackrell"
                 />
               </div>
             </Reveal>

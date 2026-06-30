@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Truth About Neuropathy | Synergy Spine & Nerve Center",
     description:
-      "Four free video lessons on neuropathy — causes, symptoms, and natural drug-free options.",
+      "Four free video lessons on neuropathy, causes, symptoms, and natural drug-free options.",
     url: CANONICAL,
     type: "website",
     siteName: "Synergy Spine and Nerve Center",
@@ -38,17 +38,17 @@ const LESSONS: Lesson[] = [
   },
   {
     number: 2,
-    title: "Lesson 2 — Why Common Treatments Often Fall Short",
+    title: "Lesson 2, Why Common Treatments Often Fall Short",
     desc: "Walk through why medication-only approaches can miss the underlying problem, and what the research says about long-term outcomes.",
   },
   {
     number: 3,
-    title: "Lesson 3 — A Natural, Drug-Free Approach",
-    desc: "How a comprehensive chiropractic and nerve-system approach can support healing — without the side effects of long-term medication.",
+    title: "Lesson 3, A Natural, Drug-Free Approach",
+    desc: "How a comprehensive chiropractic and nerve-system approach can support healing, without the side effects of long-term medication.",
   },
   {
     number: 4,
-    title: "Lesson 4 — Your Next Steps",
+    title: "Lesson 4, Your Next Steps",
     desc: "A simple roadmap for what to do next, including how we evaluate every new patient and what your first visit will look like.",
   },
 ];

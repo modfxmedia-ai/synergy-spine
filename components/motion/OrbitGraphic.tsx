@@ -6,7 +6,7 @@ type Props = {
 };
 
 /**
- * Decorative orbit graphic — three particles orbiting a glowing core.
+ * Decorative orbit graphic, three particles orbiting a glowing core.
  * Used to evoke synergy / balance.
  */
 export default function OrbitGraphic({
