@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -49,6 +50,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body>{children}</body>
+      <Script id="knock-knock-widget" strategy="afterInteractive">
+        {`window.company_id = '6a44c93ffb43c2761ccbc33c';
+var newScript = document.createElement('script');
+newScript.src = 'https://api.knock-knockapp.com/widget/widget.js';
+document.getElementsByTagName('HEAD')[0].appendChild(newScript);`}
+      </Script>
     </html>
   );
 }
