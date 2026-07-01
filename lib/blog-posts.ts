@@ -39,6 +39,39 @@ export function categorySlug(c: BlogCategory): string {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: "non-surgical-spinal-decompression-what-to-expect",
+    title: "Non-Surgical Spinal Decompression: What to Expect at Your First Visit",
+    excerpt:
+      "Living with a bulging or herniated disk doesn't have to mean surgery. Here is a plain-English walkthrough of non-surgical spinal decompression, who it helps, and what your first appointment at Synergy Spine actually looks like.",
+    category: "Chiropractic Treatment",
+    date: "July 1, 2026",
+    isoDate: "2026-07-01",
+    readTime: "5 min read",
+    featureImage: "/blog-images/non-surgical-spinal-decompression-what-to-expect.jpeg",
+  },
+  {
+    slug: "5-early-warning-signs-of-peripheral-neuropathy",
+    title: "5 Early Warning Signs of Peripheral Neuropathy You Shouldn't Ignore",
+    excerpt:
+      "Numbness, tingling, or burning in your hands and feet is rarely just \"getting older.\" These five early clues can help you catch peripheral neuropathy before the nerves are permanently damaged.",
+    category: "Chiropractic Care",
+    date: "June 18, 2026",
+    isoDate: "2026-06-18",
+    readTime: "4 min read",
+    featureImage: "/blog-images/5-early-warning-signs-of-peripheral-neuropathy.jpg",
+  },
+  {
+    slug: "sitting-is-the-new-sugar-daily-movement-for-a-healthier-spine",
+    title: "Sitting Is the New Sugar: Daily Movement for a Healthier Spine",
+    excerpt:
+      "Sitting eight-plus hours a day quietly wears down your disks, joints, and nerve system, the same way sugar erodes teeth. Here is why movement is non-negotiable, and three habits that fit into any workday.",
+    category: "Chiropractic Approach",
+    date: "May 30, 2026",
+    isoDate: "2026-05-30",
+    readTime: "4 min read",
+    featureImage: "/blog-images/sitting-is-the-new-sugar-daily-movement-for-a-healthier-spine.webp",
+  },
+  {
     slug: "two-reasons-you-should-not-supplement-with-vitamin-d",
     title: "Two Reasons You Should NOT Supplement with Vitamin D",
     excerpt: "I can only think of 2 reasons why a person should NOT supplement with Vitamin D.",
