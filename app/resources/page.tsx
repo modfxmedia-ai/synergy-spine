@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/resources/";
 
 export const metadata: Metadata = {
@@ -170,12 +171,11 @@ export default function ResourcesPage() {
               <p className="mt-4 max-w-3xl text-white/70 text-base leading-relaxed">
                 If you cannot find the information you are looking for or if
                 you have any questions, feel free to{" "}
-                <Link
-                  href="/contact-us/"
+                <BookTrigger
                   className="text-brand-gold underline-offset-4 hover:underline"
                 >
                   reach out to us directly
-                </Link>
+                </BookTrigger>
                 .
               </p>
             </Reveal>
@@ -282,12 +282,11 @@ export default function ResourcesPage() {
               <p className="mt-12 text-center text-brand-textLight">
                 If you cannot find the information you are looking for or if
                 you have any questions,{" "}
-                <Link
-                  href="/contact-us/"
+                <BookTrigger
                   className="text-brand-blue underline-offset-4 hover:underline font-semibold"
                 >
                   reach out to us directly
-                </Link>
+                </BookTrigger>
                 .
               </p>
             </Reveal>
@@ -341,8 +340,7 @@ export default function ResourcesPage() {
               </p>
             </Reveal>
             <Reveal delay={150} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/new-folks/np-schedule/"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-navyDark text-white rounded-full pl-7 pr-2 py-2 text-sm font-semibold hover:bg-brand-blue transition-colors"
               >
                 <span>Book $37 New Patient Visit</span>
@@ -352,13 +350,12 @@ export default function ResourcesPage() {
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </Link>
-              <Link
-                href="/contact-us/"
+              </BookTrigger>
+              <BookTrigger
                 className="text-sm font-semibold text-brand-navyDark hover:text-brand-blue transition-colors"
               >
                 Or contact us with a question →
-              </Link>
+              </BookTrigger>
             </Reveal>
           </div>
         </section>

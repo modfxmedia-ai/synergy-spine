@@ -7,6 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 import PulseWave from "@/components/motion/PulseWave";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/degeneration/";
 const HERO_IMAGE =
   "https://synergyspineandnerve.com/wp-content/uploads/2020/03/degeneration-model-1024x735-1.jpg";
@@ -221,12 +222,11 @@ export default function DegenerationPage() {
                 </a>{" "}
                 can be present without pain in the early stages. This is one
                 reason that{" "}
-                <Link
-                  href="/schedule/"
+                <BookTrigger
                   className="text-brand-blue underline-offset-4 hover:underline font-semibold"
                 >
                   our office
-                </Link>{" "}
+                </BookTrigger>{" "}
                 recommends every person be checked periodically in order to
                 prevent it from happening.
               </p>
@@ -441,8 +441,7 @@ export default function DegenerationPage() {
                       A periodic spinal check is the simplest way to keep
                       degeneration from quietly advancing.
                     </p>
-                    <Link
-                      href="/new-folks/np-schedule/"
+                    <BookTrigger
                       className="mt-5 inline-flex items-center gap-2 rounded-full bg-brand-gold text-brand-navyDark px-6 py-2.5 text-sm font-bold hover:bg-white transition-colors"
                     >
                       <span>$37 Spinal Health Assessment</span>
@@ -450,7 +449,7 @@ export default function DegenerationPage() {
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <polyline points="12 5 19 12 12 19" />
                       </svg>
-                    </Link>
+                    </BookTrigger>
                   </div>
                   <PulseWave className="w-full max-w-md justify-self-end" accent="#FFE066" />
                 </div>
@@ -490,12 +489,11 @@ export default function DegenerationPage() {
                   </svg>
                 </span>
               </Link>
-              <Link
-                href="/contact-us/"
+              <BookTrigger
                 className="text-sm font-semibold text-white/85 hover:text-brand-gold transition-colors"
               >
                 Or reach out with a question →
-              </Link>
+              </BookTrigger>
             </Reveal>
           </div>
         </section>

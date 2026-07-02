@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL =
   "https://synergyspineandnerve.com/resources/order-supplements/";
 
@@ -100,12 +101,11 @@ export default function OrderSupplementsPage() {
             <Reveal delay={300}>
               <p className="mt-4 max-w-3xl text-white/70 text-base leading-relaxed">
                 We currently do not offer online ordering. However, you can{" "}
-                <Link
-                  href="/contact-us/"
+                <BookTrigger
                   className="text-brand-gold underline-offset-4 hover:underline"
                 >
                   email us here
-                </Link>{" "}
+                </BookTrigger>{" "}
                 to let us know what you would like, and we can have it ready for
                 you on your next visit. We can also ship direct to you almost
                 anywhere in the 48 states with{" "}
@@ -163,12 +163,11 @@ export default function OrderSupplementsPage() {
                   .
                 </p>
                 <div className="mt-6 flex flex-wrap items-center gap-4">
-                  <Link
-                    href="/contact-us/"
+                  <BookTrigger
                     className="rounded-full bg-brand-gold px-7 py-3 text-sm font-bold text-brand-navyDark uppercase tracking-wide hover:bg-brand-goldSoft transition"
                   >
                     Email an order
-                  </Link>
+                  </BookTrigger>
                   <a
                     href="tel:+15058912280"
                     className="rounded-full border border-white/30 px-7 py-3 text-sm font-bold uppercase tracking-wide hover:bg-white hover:text-brand-navyDark transition"

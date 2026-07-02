@@ -17,6 +17,7 @@ import {
   type CityCopy,
 } from "@/lib/programmatic/cities";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const SITE_ORIGIN = "https://synergyspineandnerve.com";
 const PHONE_DISPLAY = "(505) 891-2280";
 const PHONE_HREF = "tel:+15058912280";
@@ -249,12 +250,11 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
             </Reveal>
             <Reveal delay={320}>
               <div className="mt-8 flex flex-wrap items-center gap-3">
-                <Link
-                  href="/schedule/"
+                <BookTrigger
                   className="inline-flex items-center gap-2 rounded-full bg-brand-gold px-6 py-3 text-sm font-semibold text-brand-navyDark hover:bg-brand-goldSoft transition-colors"
                 >
                   Schedule a visit
-                </Link>
+                </BookTrigger>
                 <a
                   href={PHONE_HREF}
                   className="inline-flex items-center gap-2 rounded-full ring-1 ring-white/30 backdrop-blur px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
@@ -714,12 +714,11 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
             </Reveal>
             <Reveal delay={220}>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-                <Link
-                  href="/schedule/"
+                <BookTrigger
                   className="inline-flex items-center gap-2 rounded-full bg-brand-gold px-6 py-3 text-sm font-semibold text-brand-navyDark hover:bg-brand-goldSoft transition-colors"
                 >
                   Schedule a visit
-                </Link>
+                </BookTrigger>
                 <a
                   href={PHONE_HREF}
                   className="inline-flex items-center gap-2 rounded-full ring-1 ring-white/30 backdrop-blur px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors"

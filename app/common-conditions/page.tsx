@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/common-conditions/";
 
 export const metadata: Metadata = {
@@ -271,8 +272,7 @@ export default function CommonConditionsPage() {
                   about whether we&apos;re the right fit and refer if we&apos;re not.
                 </p>
                 <div className="mt-6">
-                  <Link
-                    href="/contact-us/"
+                  <BookTrigger
                     className="inline-flex items-center gap-2 rounded-full bg-brand-gold text-brand-navyDark px-5 py-2 text-sm font-semibold hover:bg-white transition-colors"
                   >
                     <span>Send us a message</span>
@@ -280,7 +280,7 @@ export default function CommonConditionsPage() {
                       <line x1="5" y1="12" x2="19" y2="12" />
                       <polyline points="12 5 19 12 12 19" />
                     </svg>
-                  </Link>
+                  </BookTrigger>
                 </div>
               </div>
             </Reveal>
@@ -347,8 +347,7 @@ export default function CommonConditionsPage() {
               </p>
             </Reveal>
             <Reveal delay={150} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/new-folks/np-schedule/"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-7 pr-2 py-2 text-sm font-semibold hover:bg-white transition-colors"
               >
                 <span>Book $37 New Patient Visit</span>
@@ -358,13 +357,12 @@ export default function CommonConditionsPage() {
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </Link>
-              <Link
-                href="/contact-us/"
+              </BookTrigger>
+              <BookTrigger
                 className="text-sm font-semibold text-white/90 hover:text-brand-gold transition-colors"
               >
                 Or call (505) 891-2280 →
-              </Link>
+              </BookTrigger>
             </Reveal>
           </div>
         </section>

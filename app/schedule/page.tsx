@@ -5,9 +5,8 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/schedule/";
-const BOOKING_URL =
-  "https://www.atlaschirosys.com/booking/#/login?s=13323023";
 const PHONE = "(505) 891-2280";
 const PHONE_HREF = "tel:+15058912280";
 
@@ -89,7 +88,7 @@ const SCHEMA = {
     "@type": "ReserveAction",
     target: {
       "@type": "EntryPoint",
-      urlTemplate: BOOKING_URL,
+      urlTemplate: CANONICAL,
       actionPlatform: [
         "http://schema.org/DesktopWebPlatform",
         "http://schema.org/MobileWebPlatform",
@@ -207,10 +206,7 @@ export default function SchedulePage() {
                       <span className="italic text-brand-gold">book</span>{" "}
                       with Dr. Brad or Austin.
                     </p>
-                    <a
-                      href={BOOKING_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <BookTrigger
                       className="group/cta mt-6 inline-flex items-center gap-2 bg-white text-brand-navyDark rounded-full pl-7 pr-2 py-2 text-sm font-semibold hover:bg-brand-gold transition-colors shadow-lg"
                     >
                       <span>Book Online!</span>
@@ -219,7 +215,7 @@ export default function SchedulePage() {
                           <path d="M7 17 17 7M17 7H8M17 7v9" />
                         </svg>
                       </span>
-                    </a>
+                    </BookTrigger>
                     <p className="mt-5 text-sm text-white/85">
                       Prefer to call?{" "}
                       <a
@@ -314,8 +310,7 @@ export default function SchedulePage() {
                   <p className="text-[11px] uppercase tracking-[0.22em] font-bold text-brand-gold">
                     Questions?
                   </p>
-                  <Link
-                    href="/contact-us/"
+                  <BookTrigger
                     className="mt-2 inline-flex items-center gap-2 text-base font-semibold hover:text-brand-gold transition-colors"
                   >
                     <span>Contact us</span>
@@ -323,7 +318,7 @@ export default function SchedulePage() {
                       <line x1="5" y1="12" x2="19" y2="12" />
                       <polyline points="12 5 19 12 12 19" />
                     </svg>
-                  </Link>
+                  </BookTrigger>
                 </div>
               </div>
             </Reveal>
@@ -350,8 +345,7 @@ export default function SchedulePage() {
               </p>
             </Reveal>
             <Reveal delay={150} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/new-folks/np-schedule/"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-7 pr-2 py-2 text-sm font-semibold hover:bg-white transition-colors"
               >
                 <span>Book $37 New Patient Visit</span>
@@ -361,7 +355,7 @@ export default function SchedulePage() {
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </Link>
+              </BookTrigger>
               <a
                 href={PHONE_HREF}
                 className="text-sm font-semibold text-white/90 hover:text-brand-gold transition-colors"

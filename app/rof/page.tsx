@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/rof/";
 
 export const metadata: Metadata = {
@@ -150,8 +151,7 @@ export default function ROFPage() {
                 Intake Forms
               </p>
             </Link>
-            <Link
-              href="/schedule/"
+            <BookTrigger
               className="rounded-2xl bg-white p-6 ring-1 ring-black/5 hover:ring-brand-blue/30 hover:-translate-y-0.5 transition shadow-sm"
             >
               <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-brand-textLight">
@@ -160,7 +160,7 @@ export default function ROFPage() {
               <p className="mt-2 font-semibold text-brand-navyDark">
                 Book Appointment
               </p>
-            </Link>
+            </BookTrigger>
           </div>
         </section>
       </main>

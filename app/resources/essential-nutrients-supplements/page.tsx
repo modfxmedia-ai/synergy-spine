@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL =
   "https://synergyspineandnerve.com/resources/essential-nutrients-supplements/";
 
@@ -358,8 +359,7 @@ export default function EssentialNutrientsSupplementsPage() {
               </p>
             </Reveal>
             <Reveal delay={150} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/contact-us/"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-navyDark text-white rounded-full pl-7 pr-2 py-2 text-sm font-semibold hover:bg-brand-blue transition-colors"
               >
                 <span>Contact the Office</span>
@@ -369,13 +369,12 @@ export default function EssentialNutrientsSupplementsPage() {
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </Link>
-              <Link
-                href="/new-folks/np-schedule/"
+              </BookTrigger>
+              <BookTrigger
                 className="text-sm font-semibold text-brand-navyDark hover:text-brand-blue transition-colors"
               >
                 $37 New Patient Special →
-              </Link>
+              </BookTrigger>
             </Reveal>
           </div>
         </section>

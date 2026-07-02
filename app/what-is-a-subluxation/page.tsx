@@ -8,6 +8,7 @@ import Reveal from "@/components/Reveal";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import SpineGraphic from "@/components/motion/SpineGraphic";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/what-is-a-subluxation/";
 const HERO_IMAGE =
   "https://synergyspineandnerve.com/wp-content/uploads/2020/04/AdobeStock_170696498.jpg";
@@ -538,8 +539,7 @@ export default function WhatIsASubluxationPage() {
               </p>
             </Reveal>
             <Reveal delay={150} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/contact-us/"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-7 pr-2 py-2 text-sm font-bold hover:bg-white transition-colors"
               >
                 <span>Contact Us Today!</span>
@@ -549,13 +549,12 @@ export default function WhatIsASubluxationPage() {
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </Link>
-              <Link
-                href="/new-folks/np-schedule/"
+              </BookTrigger>
+              <BookTrigger
                 className="text-sm font-semibold text-white/85 hover:text-brand-gold transition-colors"
               >
                 Book the $37 New Patient Special →
-              </Link>
+              </BookTrigger>
             </Reveal>
           </div>
         </section>

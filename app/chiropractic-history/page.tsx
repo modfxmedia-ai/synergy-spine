@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/chiropractic-history/";
 
 export const metadata: Metadata = {
@@ -385,8 +386,7 @@ export default function ChiropracticHistoryPage() {
               </p>
             </Reveal>
             <Reveal delay={150} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/contact-us/"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-7 pr-2 py-2 text-sm font-bold hover:bg-white transition-colors"
               >
                 <span>Contact Us Today</span>
@@ -396,7 +396,7 @@ export default function ChiropracticHistoryPage() {
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </Link>
+              </BookTrigger>
               <Link
                 href="/chiropractic-research/"
                 className="text-sm font-semibold text-white/85 hover:text-brand-gold transition-colors"

@@ -8,8 +8,8 @@ import YouTubeEmbed from "@/components/YouTubeEmbed";
 import SpineGraphic from "@/components/motion/SpineGraphic";
 import PulseWave from "@/components/motion/PulseWave";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/new-folks/first-visit/";
-const BOOK_URL = "https://www.atlaschirosys.com/apps/#/form?form=2210&clinic=153";
 
 export const metadata: Metadata = {
   title: "What to Expect on Your First Visit – Synergy Spine and Nerve Center",
@@ -205,10 +205,7 @@ export default function FirstVisitPage() {
               </Reveal>
 
               <Reveal delay={320} className="mt-8 flex flex-wrap items-center gap-4">
-                <a
-                  href={BOOK_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <BookTrigger
                   className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-6 pr-2 py-2 text-sm font-bold hover:bg-white transition-colors shadow-[0_10px_30px_-10px_rgba(245,197,24,0.6)]"
                 >
                   <span>Start Intake Form</span>
@@ -218,7 +215,7 @@ export default function FirstVisitPage() {
                       <polyline points="12 5 19 12 12 19" />
                     </svg>
                   </span>
-                </a>
+                </BookTrigger>
                 <a
                   href="tel:+15058912280"
                   className="inline-flex items-center gap-2 text-sm font-semibold text-white/85 hover:text-brand-gold transition-colors"
@@ -350,10 +347,7 @@ export default function FirstVisitPage() {
                       It takes just a few minutes. Your wait at the office will
                       be very short.
                     </p>
-                    <a
-                      href={BOOK_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <BookTrigger
                       className="mt-5 inline-flex items-center gap-2 rounded-full bg-white text-brand-navyDark px-6 py-2.5 text-sm font-bold hover:bg-brand-gold transition-colors"
                     >
                       <span>Open New Patient Form</span>
@@ -361,7 +355,7 @@ export default function FirstVisitPage() {
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <polyline points="12 5 19 12 12 19" />
                       </svg>
-                    </a>
+                    </BookTrigger>
                   </div>
                   <PulseWave className="w-full max-w-md justify-self-end" accent="#FFE066" />
                 </div>
@@ -462,10 +456,7 @@ export default function FirstVisitPage() {
               </p>
             </Reveal>
             <Reveal delay={150} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href={BOOK_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-7 pr-2 py-2 text-sm font-bold hover:bg-white transition-colors"
               >
                 <span>Book Your First Visit</span>
@@ -475,13 +466,12 @@ export default function FirstVisitPage() {
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </a>
-              <Link
-                href="/new-folks/np-schedule/"
+              </BookTrigger>
+              <BookTrigger
                 className="text-sm font-semibold text-white/85 hover:text-brand-gold transition-colors"
               >
                 Or grab the $37 New Patient Special →
-              </Link>
+              </BookTrigger>
             </Reveal>
           </div>
         </section>

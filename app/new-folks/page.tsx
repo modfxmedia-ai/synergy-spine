@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 import OrbitGraphic from "@/components/motion/OrbitGraphic";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/new-folks/";
 
 export const metadata: Metadata = {
@@ -186,8 +187,7 @@ export default function NewFolksPage() {
             </Reveal>
 
             <Reveal delay={320} className="mt-8 flex flex-wrap items-center gap-4">
-              <Link
-                href="/new-folks/np-schedule/"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-6 pr-2 py-2 text-sm font-bold hover:bg-white transition-colors shadow-[0_10px_30px_-10px_rgba(245,197,24,0.6)]"
               >
                 <span>$37 New Patient Special</span>
@@ -197,7 +197,7 @@ export default function NewFolksPage() {
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </Link>
+              </BookTrigger>
               <Link
                 href="/testimonials/"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-white/85 hover:text-brand-gold transition-colors"
@@ -392,8 +392,7 @@ export default function NewFolksPage() {
             </Reveal>
 
             <Reveal delay={150} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/new-folks/np-schedule/"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-navyDark text-white rounded-full pl-7 pr-2 py-2 text-sm font-semibold hover:bg-brand-blue transition-colors shadow-[0_10px_30px_-10px_rgba(13,35,64,0.5)]"
               >
                 <span>Book Appointment</span>
@@ -403,7 +402,7 @@ export default function NewFolksPage() {
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </Link>
+              </BookTrigger>
               <a
                 href="tel:+15058912280"
                 className="group inline-flex items-center gap-3 text-sm font-semibold text-brand-navyDark hover:text-brand-blue transition-colors"

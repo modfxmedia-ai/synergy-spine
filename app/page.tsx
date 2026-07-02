@@ -5,6 +5,7 @@ import AnnouncementBar from "@/components/home/AnnouncementBar";
 import HeroSection from "@/components/home/HeroSection";
 import PrinciplesSection from "@/components/home/PrinciplesSection";
 import FeaturesBar from "@/components/home/FeaturesBar";
+import DoctorSnippet from "@/components/home/DoctorSnippet";
 import VideoSection from "@/components/home/VideoSection";
 import HealCTASection from "@/components/home/HealCTASection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
@@ -55,6 +56,7 @@ export default function Home() {
         <HeroSection />
         <PrinciplesSection />
         <FeaturesBar />
+        <DoctorSnippet />
         <VideoSection />
         <HealCTASection />
         <TestimonialsSection />

@@ -3,10 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { useBooking } from "./booking/BookingProvider";
 
 type NavChild = {
   label: string;
   href: string;
+  action?: "book";
 };
 
 type NavItem = {
@@ -23,6 +25,7 @@ const NAV_ITEMS: NavItem[] = [
     children: [
       { label: "Meet Dr. Brad", href: "/about-us/meet-dr-brad/" },
       { label: "Meet Austin", href: "/about-us/meet-austin/" },
+      { label: "Book Appointment", href: "#book", action: "book" },
     ],
   },
   {
@@ -30,10 +33,10 @@ const NAV_ITEMS: NavItem[] = [
     href: "/new-folks/",
     children: [
       { label: "What to Expect on Your First Visit", href: "/new-folks/first-visit/" },
-      { label: "Book a New Patient Appointment", href: "/new-folks/np-schedule/" },
       { label: "Intake Forms", href: "/new-folks/intake-forms/" },
       { label: "Our Vision", href: "/new-folks/our-vision/" },
       { label: "Testimonials", href: "/testimonials/" },
+      { label: "Book a New Patient Appointment", href: "#book", action: "book" },
     ],
   },
   {
@@ -45,13 +48,13 @@ const NAV_ITEMS: NavItem[] = [
       { label: "Degeneration", href: "/degeneration/" },
       { label: "Chiropractic History", href: "/chiropractic-history/" },
       { label: "Chiropractic Research", href: "/chiropractic-research/" },
+      { label: "Book Appointment", href: "#book", action: "book" },
     ],
   },
   {
     label: "Resources",
     href: "/resources/",
     children: [
-      { label: "Schedule", href: "/schedule/" },
       { label: "Calendar", href: "/resources/calendar/" },
       { label: "All About Nutrition", href: "/resources/all-about-nutrition/" },
       { label: "All About Spinal Hygiene", href: "/resources/all-about-spinal-hygiene/" },
@@ -60,10 +63,10 @@ const NAV_ITEMS: NavItem[] = [
       { label: "Essential Nutrients & Supplements", href: "/resources/essential-nutrients-supplements/" },
       { label: "Purchase Supplements", href: "/purchase-supplements-2/" },
       { label: "Videos", href: "/resources/videos/" },
+      { label: "Book Appointment", href: "#book", action: "book" },
     ],
   },
   { label: "Blog", href: "/blog/" },
-  { label: "Contact Us", href: "/contact-us/" },
 ];
 
 const PHONE_DISPLAY = "(505) 891-2280";
@@ -183,6 +186,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const { open: openBooking } = useBooking();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -218,7 +222,7 @@ export default function Header() {
 
   const handleLeave = () => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
-    closeTimer.current = setTimeout(() => setOpenDropdown(null), 150);
+    closeTimer.current = setTimeout(() => setOpenDropdown(null), 300);
   };
 
   const toggleMobileExpanded = (label: string) => {
@@ -266,7 +270,7 @@ export default function Header() {
         }`}
       >
         <div
-          className={`mx-auto max-w-7xl px-6 flex items-center justify-between transition-all duration-300 ${
+          className={`relative mx-auto max-w-7xl px-6 flex items-center justify-between transition-all duration-300 ${
             scrolled ? "h-16" : "h-20"
           }`}
         >
@@ -287,7 +291,10 @@ export default function Header() {
             />
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-1" aria-label="Primary">
+          <nav
+            className="hidden lg:flex items-center gap-1 ml-10 xl:ml-16"
+            aria-label="Primary"
+          >
             {NAV_ITEMS.map((item) => {
               const hasChildren = !!item.children?.length;
               const isOpen = openDropdown === item.label;
@@ -322,7 +329,7 @@ export default function Header() {
 
                   {hasChildren && (
                     <div
-                      className={`absolute left-1/2 -translate-x-1/2 top-full pt-3 min-w-[280px] transition-all duration-200 ${
+                      className={`absolute left-1/2 -translate-x-1/2 top-full pt-4 -mt-1 min-w-[280px] transition-all duration-200 ${
                         isOpen
                           ? "opacity-100 translate-y-0 visible"
                           : "opacity-0 -translate-y-2 invisible"
@@ -334,16 +341,32 @@ export default function Header() {
                           aria-hidden="true"
                         />
                         <div className="relative">
-                          {item.children!.map((child) => (
-                            <Link
-                              key={child.href}
-                              href={child.href}
-                              className="group/child flex items-center justify-between gap-3 px-4 py-2.5 rounded-xl text-[13.5px] text-brand-text hover:bg-brand-blue/5 hover:text-brand-blue transition-colors"
-                            >
-                              <span>{child.label}</span>
-                              <ArrowRightIcon className="w-3.5 h-3.5 -translate-x-1 opacity-0 group-hover/child:translate-x-0 group-hover/child:opacity-100 transition-all duration-200" />
-                            </Link>
-                          ))}
+                          {item.children!.map((child, ci) =>
+                            child.action === "book" ? (
+                              <div key={child.label} className={ci > 0 ? "mt-1 pt-2 border-t border-black/5" : undefined}>
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    setOpenDropdown(null);
+                                    openBooking();
+                                  }}
+                                  className="group/child flex w-full items-center justify-between gap-3 px-4 py-2.5 rounded-xl text-[13.5px] font-semibold text-brand-blue hover:bg-brand-blue hover:text-white transition-colors text-left"
+                                >
+                                  <span>{child.label}</span>
+                                  <ArrowRightIcon className="w-3.5 h-3.5 -translate-x-1 opacity-0 group-hover/child:translate-x-0 group-hover/child:opacity-100 transition-all duration-200" />
+                                </button>
+                              </div>
+                            ) : (
+                              <Link
+                                key={child.href}
+                                href={child.href}
+                                className="group/child flex items-center justify-between gap-3 px-4 py-2.5 rounded-xl text-[13.5px] text-brand-text hover:bg-brand-blue/5 hover:text-brand-blue transition-colors"
+                              >
+                                <span>{child.label}</span>
+                                <ArrowRightIcon className="w-3.5 h-3.5 -translate-x-1 opacity-0 group-hover/child:translate-x-0 group-hover/child:opacity-100 transition-all duration-200" />
+                              </Link>
+                            )
+                          )}
                         </div>
                       </div>
                     </div>
@@ -353,7 +376,7 @@ export default function Header() {
             })}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-4 ml-auto">
             <a
               href={`tel:${PHONE_TEL}`}
               className="hidden xl:inline-flex items-center gap-2 text-sm font-semibold text-brand-navyDark hover:text-brand-blue transition-colors"
@@ -361,15 +384,16 @@ export default function Header() {
               <PhoneIcon className="w-4 h-4 text-brand-blue" />
               <span>{PHONE_DISPLAY}</span>
             </a>
-            <Link
-              href="/schedule/"
+            <button
+              type="button"
+              onClick={openBooking}
               className="group/cta inline-flex items-center gap-2 bg-brand-navyDark text-white rounded-full pl-5 pr-1.5 py-1.5 text-[13.5px] font-semibold hover:bg-brand-blue transition-colors"
             >
               <span>Book Appointment</span>
               <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand-blue group-hover/cta:bg-white group-hover/cta:text-brand-blue transition-colors">
                 <ArrowRightIcon className="w-3.5 h-3.5 group-hover/cta:translate-x-0.5 transition-transform" />
               </span>
-            </Link>
+            </button>
           </div>
 
           <button
@@ -444,14 +468,27 @@ export default function Header() {
                     >
                       <ul className="pl-4 pb-3 ml-1 border-l-2 border-brand-blue/20 space-y-1">
                         {item.children!.map((child) => (
-                          <li key={child.href}>
-                            <Link
-                              href={child.href}
-                              className="block py-2 text-sm text-brand-textLight hover:text-brand-blue"
-                              onClick={closeMobile}
-                            >
-                              {child.label}
-                            </Link>
+                          <li key={child.action === "book" ? child.label : child.href}>
+                            {child.action === "book" ? (
+                              <button
+                                type="button"
+                                className="block w-full py-2 text-left text-sm text-brand-textLight hover:text-brand-blue"
+                                onClick={() => {
+                                  closeMobile();
+                                  openBooking();
+                                }}
+                              >
+                                {child.label}
+                              </button>
+                            ) : (
+                              <Link
+                                href={child.href}
+                                className="block py-2 text-sm text-brand-textLight hover:text-brand-blue"
+                                onClick={closeMobile}
+                              >
+                                {child.label}
+                              </Link>
+                            )}
                           </li>
                         ))}
                       </ul>
@@ -462,14 +499,17 @@ export default function Header() {
             })}
           </ul>
 
-          <Link
-            href="/schedule/"
+          <button
+            type="button"
             className="mt-6 inline-flex items-center justify-center gap-2 w-full bg-brand-navyDark text-white rounded-full px-5 py-3.5 text-sm font-semibold hover:bg-brand-blue transition-colors"
-            onClick={closeMobile}
+            onClick={() => {
+              closeMobile();
+              openBooking();
+            }}
           >
             <span>Book Appointment</span>
             <ArrowRightIcon className="w-4 h-4" />
-          </Link>
+          </button>
 
           <p className="mt-5 text-xs text-brand-textLight inline-flex items-start gap-2">
             <PinIcon className="w-3.5 h-3.5 text-brand-blue mt-0.5 flex-shrink-0" />

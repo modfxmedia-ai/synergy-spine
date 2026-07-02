@@ -6,8 +6,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 import OrbitGraphic from "@/components/motion/OrbitGraphic";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/new-folks/intake-forms/";
-const FORM_URL = "https://www.atlaschirosys.com/apps/#/form?form=2210&clinic=153";
 
 export const metadata: Metadata = {
   title: "Complete Your Intake Forms – Synergy Spine and Nerve Center",
@@ -139,10 +139,7 @@ export default function IntakeFormsPage() {
               </Reveal>
 
               <Reveal delay={320} className="mt-8 flex flex-wrap items-center gap-4">
-                <a
-                  href={FORM_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <BookTrigger
                   className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-6 pr-2 py-2 text-sm font-bold hover:bg-white transition-colors shadow-[0_10px_30px_-10px_rgba(245,197,24,0.6)]"
                 >
                   <span>Open New Patient Form</span>
@@ -151,7 +148,7 @@ export default function IntakeFormsPage() {
                       <path d="M7 17 17 7M17 7H8M17 7v9" />
                     </svg>
                   </span>
-                </a>
+                </BookTrigger>
                 <Link
                   href="/new-folks/first-visit/"
                   className="inline-flex items-center gap-2 text-sm font-semibold text-white/85 hover:text-brand-gold transition-colors"
@@ -273,10 +270,7 @@ export default function IntakeFormsPage() {
               </ul>
 
               <Reveal delay={400} className="mt-10">
-                <a
-                  href={FORM_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <BookTrigger
                   className="group inline-flex items-center gap-2 rounded-full bg-brand-blue text-white px-6 py-3 text-sm font-semibold hover:bg-brand-navyDark transition-colors shadow-[0_10px_30px_-10px_rgba(1,112,185,0.5)]"
                 >
                   <span>Start the New Patient Form</span>
@@ -284,7 +278,7 @@ export default function IntakeFormsPage() {
                     <line x1="5" y1="12" x2="19" y2="12" />
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
-                </a>
+                </BookTrigger>
               </Reveal>
             </div>
 
@@ -357,10 +351,7 @@ export default function IntakeFormsPage() {
               </p>
             </Reveal>
             <Reveal delay={150} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href={FORM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-7 pr-2 py-2 text-sm font-bold hover:bg-white transition-colors"
               >
                 <span>Open New Patient Form</span>
@@ -369,7 +360,7 @@ export default function IntakeFormsPage() {
                     <path d="M7 17 17 7M17 7H8M17 7v9" />
                   </svg>
                 </span>
-              </a>
+              </BookTrigger>
               <a
                 href="tel:+15058912280"
                 className="text-sm font-semibold text-white/85 hover:text-brand-gold transition-colors"

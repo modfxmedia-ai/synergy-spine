@@ -7,9 +7,8 @@ import Reveal from "@/components/Reveal";
 import PulseWave from "@/components/motion/PulseWave";
 import WaveBars from "@/components/motion/WaveBars";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/new-folks/np-schedule/";
-const BOOKING_URL =
-  "https://www.atlaschirosys.com/booking/#/login?s=13323023";
 
 export const metadata: Metadata = {
   title: "$37 Online New Patient Special – Synergy Spine and Nerve Center",
@@ -169,10 +168,7 @@ export default function NPSchedulePage() {
               </Reveal>
 
               <Reveal delay={340} className="mt-8 flex flex-wrap items-center gap-4">
-                <a
-                  href={BOOKING_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <BookTrigger
                   className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-6 pr-2 py-2 text-sm font-bold hover:bg-white transition-colors shadow-[0_10px_30px_-10px_rgba(245,197,24,0.6)]"
                 >
                   <span>Claim My $37 Visit</span>
@@ -181,7 +177,7 @@ export default function NPSchedulePage() {
                       <path d="M7 17 17 7M17 7H8M17 7v9" />
                     </svg>
                   </span>
-                </a>
+                </BookTrigger>
                 <a
                   href="tel:+15058912280"
                   className="inline-flex items-center gap-2 text-sm font-semibold text-white/85 hover:text-brand-gold transition-colors"
@@ -242,10 +238,7 @@ export default function NPSchedulePage() {
                     ))}
                   </ul>
 
-                  <a
-                    href={BOOKING_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <BookTrigger
                     className="mt-7 group/btn inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-navyDark text-white px-6 py-3 text-sm font-bold hover:bg-brand-blue transition-colors"
                   >
                     <span>Book online now</span>
@@ -253,7 +246,7 @@ export default function NPSchedulePage() {
                       <line x1="5" y1="12" x2="19" y2="12" />
                       <polyline points="12 5 19 12 12 19" />
                     </svg>
-                  </a>
+                  </BookTrigger>
                 </article>
               </div>
             </Reveal>
@@ -427,17 +420,14 @@ export default function NPSchedulePage() {
                       Pick a time that works. Fill out your forms ahead of
                       time. Show up calm.
                     </p>
-                    <a
-                      href={BOOKING_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <BookTrigger
                       className="mt-5 inline-flex items-center gap-2 rounded-full bg-brand-gold text-brand-navyDark px-6 py-2.5 text-sm font-bold hover:bg-white transition-colors"
                     >
                       <span>Book my visit</span>
                       <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                         <path d="M7 17 17 7M17 7H8M17 7v9" />
                       </svg>
-                    </a>
+                    </BookTrigger>
                   </div>
                   <PulseWave className="w-full max-w-md justify-self-end" accent="#FFE066" />
                 </div>
@@ -467,10 +457,7 @@ export default function NPSchedulePage() {
               </p>
             </Reveal>
             <Reveal delay={150} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-navyDark text-white rounded-full pl-7 pr-2 py-2 text-sm font-semibold hover:bg-brand-blue transition-colors"
               >
                 <span>Book $37 New Patient Visit</span>
@@ -480,7 +467,7 @@ export default function NPSchedulePage() {
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </a>
+              </BookTrigger>
               <Link
                 href="/new-folks/intake-forms/"
                 className="text-sm font-semibold text-brand-navyDark hover:text-brand-blue transition-colors"

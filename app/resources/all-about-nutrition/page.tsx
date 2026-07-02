@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL =
   "https://synergyspineandnerve.com/resources/all-about-nutrition/";
 
@@ -387,8 +388,7 @@ export default function AllAboutNutritionPage() {
               </p>
             </Reveal>
             <Reveal delay={150} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/contact-us/"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-navyDark text-white rounded-full pl-7 pr-2 py-2 text-sm font-semibold hover:bg-brand-blue transition-colors"
               >
                 <span>Ask About the HRA</span>
@@ -398,13 +398,12 @@ export default function AllAboutNutritionPage() {
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </Link>
-              <Link
-                href="/new-folks/np-schedule/"
+              </BookTrigger>
+              <BookTrigger
                 className="text-sm font-semibold text-brand-navyDark hover:text-brand-blue transition-colors"
               >
                 $37 New Patient Special →
-              </Link>
+              </BookTrigger>
             </Reveal>
           </div>
         </section>

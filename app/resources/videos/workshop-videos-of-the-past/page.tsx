@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const SLUG = "workshop-videos-of-the-past";
 const CANONICAL = `https://synergyspineandnerve.com/resources/videos/${SLUG}/`;
 
@@ -140,19 +141,17 @@ export default function WorkshopVideosOfThePastPage() {
             <Reveal delay={360}>
               <p className="mt-6 max-w-3xl text-white/70 text-base leading-relaxed">
                 Ready to put what you learn into action?{" "}
-                <Link
-                  href="/schedule/"
+                <BookTrigger
                   className="text-brand-gold underline-offset-4 hover:underline"
                 >
                   Schedule a visit
-                </Link>{" "}
+                </BookTrigger>{" "}
                 or{" "}
-                <Link
-                  href="/contact-us/"
+                <BookTrigger
                   className="text-brand-gold underline-offset-4 hover:underline"
                 >
                   contact us
-                </Link>{" "}
+                </BookTrigger>{" "}
                 with any questions.
               </p>
             </Reveal>
@@ -263,12 +262,11 @@ export default function WorkshopVideosOfThePastPage() {
               delay={150}
               className="mt-8 flex flex-wrap items-center justify-center gap-4"
             >
-              <Link
-                href="/schedule/"
+              <BookTrigger
                 className="rounded-full bg-brand-gold px-7 py-3 text-sm font-bold text-brand-navyDark uppercase tracking-wide hover:bg-brand-goldSoft transition"
               >
                 Book Appointment
-              </Link>
+              </BookTrigger>
               <a
                 href="tel:+15058912280"
                 className="rounded-full border border-white/30 px-7 py-3 text-sm font-bold uppercase tracking-wide hover:bg-white hover:text-brand-navyDark transition"

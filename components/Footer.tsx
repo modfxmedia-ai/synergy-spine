@@ -14,7 +14,6 @@ const SITE_LINKS = [
   { label: "Area We Serve", href: "/area-we-serve/" },
   { label: "Resources", href: "/resources/" },
   { label: "Blog", href: "/blog/" },
-  { label: "Contact Us", href: "/contact-us/" },
   { label: "Sitemap", href: "/sitemap/" },
 ];
 
@@ -132,9 +131,6 @@ export default function Footer() {
             <div className="flex items-center gap-5">
               <Link href="/sitemap/" className="hover:text-brand-blue transition-colors">
                 Sitemap
-              </Link>
-              <Link href="/contact-us/" className="hover:text-brand-blue transition-colors">
-                Contact
               </Link>
             </div>
           </div>

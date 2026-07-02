@@ -10,6 +10,7 @@ import SpineGraphic from "@/components/motion/SpineGraphic";
 import PulseWave from "@/components/motion/PulseWave";
 import AnimatedCounter from "@/components/motion/AnimatedCounter";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/about-us/meet-dr-brad/";
 const PORTRAIT_IMAGE = "/team/doctor-brad-fackrell.jpg";
 
@@ -240,8 +241,7 @@ export default function MeetDrBradPage() {
                     </svg>
                   </span>
                 </a>
-                <Link
-                  href="/schedule/"
+                <BookTrigger
                   className="inline-flex items-center gap-2 text-sm font-semibold text-white/85 hover:text-brand-gold transition-colors"
                 >
                   <span>Schedule with Dr. Brad</span>
@@ -249,7 +249,7 @@ export default function MeetDrBradPage() {
                     <line x1="5" y1="12" x2="19" y2="12" />
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
-                </Link>
+                </BookTrigger>
               </Reveal>
             </div>
           </div>
@@ -601,8 +601,7 @@ export default function MeetDrBradPage() {
             </Reveal>
 
             <Reveal delay={220} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/schedule/"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-navyDark text-white rounded-full pl-7 pr-2 py-2 text-sm font-semibold hover:bg-brand-blue transition-colors shadow-[0_10px_30px_-10px_rgba(13,35,64,0.5)]"
               >
                 <span>Book Appointment</span>
@@ -612,7 +611,7 @@ export default function MeetDrBradPage() {
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </Link>
+              </BookTrigger>
               <a
                 href="tel:+15058912280"
                 className="group inline-flex items-center gap-3 text-sm font-semibold text-brand-navyDark hover:text-brand-blue transition-colors"

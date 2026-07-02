@@ -85,15 +85,43 @@ export default function MapSection() {
                     <br />
                     {ADDRESS_LINE_2}
                   </p>
-                  <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2">
+                  <div className="mt-5 flex flex-wrap items-center gap-3">
                     <a
                       href={DIRECTIONS_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-semibold text-brand-blue hover:underline underline-offset-4"
+                      className="group/dir inline-flex items-center gap-2 rounded-full bg-brand-blue text-white px-5 py-2.5 text-sm font-semibold hover:bg-brand-navyDark transition-colors shadow-[0_10px_30px_-10px_rgba(1,112,185,0.5)]"
                     >
-                      Get directions
-                      <span aria-hidden="true">→</span>
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="w-4 h-4"
+                        aria-hidden="true"
+                      >
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      <span>Get Directions</span>
+                      <span
+                        aria-hidden="true"
+                        className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white/15 group-hover/dir:bg-white/25 transition-colors"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="w-3 h-3"
+                        >
+                          <path d="M7 17 17 7M17 7H8M17 7v9" />
+                        </svg>
+                      </span>
                     </a>
                     <a
                       href={MAP_VIEW_URL}

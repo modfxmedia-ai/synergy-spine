@@ -14,6 +14,7 @@ import {
 } from "@/lib/blog-posts";
 import { getPostContent } from "@/lib/blog-content";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const SITE_ORIGIN = "https://synergyspineandnerve.com";
 
 export function generateStaticParams() {
@@ -237,12 +238,11 @@ export default async function BlogPostPage({
                     Schedule a no-pressure consultation with our team.
                   </p>
                   <div className="relative mt-5 flex flex-col gap-3">
-                    <Link
-                      href="/schedule/"
+                    <BookTrigger
                       className="rounded-full bg-brand-gold px-5 py-2.5 text-center text-sm font-bold uppercase tracking-wide text-brand-navyDark hover:bg-brand-goldSoft transition"
                     >
                       Schedule Online
-                    </Link>
+                    </BookTrigger>
                     <a
                       href="tel:+15058912280"
                       className="rounded-full border border-white/30 px-5 py-2.5 text-center text-sm font-bold uppercase tracking-wide hover:bg-white hover:text-brand-navyDark transition"

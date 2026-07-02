@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL =
   "https://synergyspineandnerve.com/resources/get-notified/";
 
@@ -167,12 +168,11 @@ export default function GetNotifiedPage() {
               </p>
             </Reveal>
             <Reveal delay={150} className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="/contact-us/"
+              <BookTrigger
                 className="rounded-full bg-brand-gold px-7 py-3 text-sm font-bold text-brand-navyDark uppercase tracking-wide hover:bg-brand-goldSoft transition"
               >
                 Contact Us
-              </Link>
+              </BookTrigger>
               <a
                 href="tel:+15058912280"
                 className="rounded-full border border-white/30 px-7 py-3 text-sm font-bold uppercase tracking-wide hover:bg-white hover:text-brand-navyDark transition"

@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
+import BookTrigger from "@/components/booking/BookTrigger";
 import { POSTS, CATEGORIES, categorySlug, type BlogPost } from "@/lib/blog-posts";
 
 export const POSTS_PER_PAGE = 12;
@@ -126,12 +127,11 @@ export function BlogListing({ page }: { page: number }) {
               Schedule a no-pressure consultation with our team and get a clear plan for your spine.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="/schedule/"
+              <BookTrigger
                 className="rounded-full bg-brand-gold px-7 py-3 text-sm font-bold text-brand-navyDark uppercase tracking-wide hover:bg-brand-goldSoft transition"
               >
                 Book Appointment
-              </Link>
+              </BookTrigger>
               <a
                 href="tel:+15058912280"
                 className="rounded-full border border-white/30 px-7 py-3 text-sm font-bold uppercase tracking-wide hover:bg-white hover:text-brand-navyDark transition"

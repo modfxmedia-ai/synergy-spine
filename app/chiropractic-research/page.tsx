@@ -7,6 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 import AnimatedCounter from "@/components/motion/AnimatedCounter";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/chiropractic-research/";
 const CRACKER_JACK_IMAGE =
   "https://synergyspineandnerve.com/wp-content/uploads/2020/03/cracker-jack-1-145x300.png";
@@ -431,12 +432,11 @@ export default function ChiropracticResearchPage() {
                       <polyline points="12 5 19 12 12 19" />
                     </svg>
                   </Link>
-                  <Link
-                    href="/contact-us/"
+                  <BookTrigger
                     className="inline-flex items-center gap-2 rounded-full bg-white text-brand-navyDark ring-1 ring-brand-navyDark/15 px-5 py-2.5 text-sm font-bold hover:bg-brand-bg transition-colors"
                   >
                     <span>Ask a question</span>
-                  </Link>
+                  </BookTrigger>
                 </div>
               </div>
             </Reveal>
@@ -463,8 +463,7 @@ export default function ChiropracticResearchPage() {
               </p>
             </Reveal>
             <Reveal delay={150} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/new-folks/np-schedule/"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-7 pr-2 py-2 text-sm font-bold hover:bg-white transition-colors"
               >
                 <span>$37 New Patient Special</span>
@@ -474,7 +473,7 @@ export default function ChiropracticResearchPage() {
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </Link>
+              </BookTrigger>
               <Link
                 href="/chiropractic-history/"
                 className="text-sm font-semibold text-white/85 hover:text-brand-gold transition-colors"

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
+import BookTrigger from "@/components/booking/BookTrigger";
 
 const STATS = [
   { value: "15", suffix: "+", label: "Years Serving Rio Rancho", sub: "Established practice", accent: "blue" as const },
@@ -105,8 +106,7 @@ export default function CTASection() {
           delay={300}
           className="mt-14 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <Link
-            href="/schedule/"
+          <BookTrigger
             className="group/cta inline-flex items-center gap-2 bg-brand-navyDark text-white rounded-full pl-7 pr-2 py-2 text-sm font-semibold hover:bg-brand-blue transition-colors shadow-[0_10px_30px_-10px_rgba(13,35,64,0.5)]"
           >
             <span>Schedule an Appointment</span>
@@ -116,7 +116,7 @@ export default function CTASection() {
                 <polyline points="12 5 19 12 12 19" />
               </svg>
             </span>
-          </Link>
+          </BookTrigger>
 
           <Link
             href="/new-folks/our-vision/"

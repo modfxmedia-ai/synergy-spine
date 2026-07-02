@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/np-thank-you/";
 
 export const metadata: Metadata = {
@@ -123,12 +124,11 @@ export default function NpThankYouPage() {
                     new patient appointment at one of our New Patient
                     Appointment Times.
                   </p>
-                  <Link
-                    href="/new-folks/np-schedule/"
+                  <BookTrigger
                     className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-blue hover:text-brand-navy transition"
                   >
                     Pick a time →
-                  </Link>
+                  </BookTrigger>
                 </article>
               </Reveal>
               <Reveal as="li" delay={100}>
@@ -175,12 +175,11 @@ export default function NpThankYouPage() {
 
             <Reveal>
               <div className="mt-14 flex flex-wrap items-center justify-center gap-4">
-                <Link
-                  href="/new-folks/np-schedule/"
+                <BookTrigger
                   className="rounded-full bg-brand-gold px-7 py-3 text-sm font-bold uppercase tracking-wide text-brand-navyDark hover:bg-brand-goldSoft transition"
                 >
                   Schedule My Appointment
-                </Link>
+                </BookTrigger>
                 <Link
                   href="/"
                   className="rounded-full border border-brand-navyDark/30 px-7 py-3 text-sm font-bold uppercase tracking-wide text-brand-navyDark hover:bg-brand-navyDark hover:text-white transition"

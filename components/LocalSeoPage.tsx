@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
+import BookTrigger from "@/components/booking/BookTrigger";
 
 const SITE_ORIGIN = "https://synergyspineandnerve.com";
 const PHONE_DISPLAY = "(505) 891-2280";
@@ -222,8 +223,7 @@ export default function LocalSeoPage({
               delay={300}
               className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4"
             >
-              <Link
-                href="/schedule/"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-6 pr-2 py-2 text-sm font-semibold hover:bg-white transition-colors"
               >
                 <span>Schedule an Appointment</span>
@@ -242,7 +242,7 @@ export default function LocalSeoPage({
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </Link>
+              </BookTrigger>
               <a
                 href={PHONE_HREF}
                 className="text-sm font-semibold text-white/90 hover:text-brand-gold transition-colors"
@@ -634,8 +634,7 @@ export default function LocalSeoPage({
               delay={150}
               className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
             >
-              <Link
-                href="/schedule/"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-7 pr-2 py-2 text-sm font-semibold hover:bg-white transition-colors"
               >
                 <span>Schedule an Appointment</span>
@@ -654,7 +653,7 @@ export default function LocalSeoPage({
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </Link>
+              </BookTrigger>
               <a
                 href={PHONE_HREF}
                 className="text-sm font-semibold text-white/90 hover:text-brand-gold transition-colors"

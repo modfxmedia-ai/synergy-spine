@@ -7,6 +7,7 @@ import Reveal from "@/components/Reveal";
 import { SERVICES } from "@/lib/programmatic/services";
 import { CITIES as PSEO_CITIES } from "@/lib/programmatic/cities";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const RESERVED_PROGRAMMATIC_SLUGS = new Set<string>([
   "chiropractor-albuquerque-nm",
   "chiropractor-bernalillo-nm",
@@ -259,12 +260,11 @@ export default function AreaWeServePage() {
             <Reveal delay={400}>
               <p className="mt-12 text-center text-brand-textLight">
                 Don&apos;t see your town?{" "}
-                <Link
-                  href="/contact-us/"
+                <BookTrigger
                   className="text-brand-blue font-semibold underline-offset-4 hover:underline"
                 >
                   Reach out
-                </Link>
+                </BookTrigger>
 , we likely serve your area too.
               </p>
             </Reveal>
@@ -487,8 +487,7 @@ export default function AreaWeServePage() {
               </p>
             </Reveal>
             <Reveal delay={150} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/new-folks/np-schedule/"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-7 pr-2 py-2 text-sm font-semibold hover:bg-white transition-colors"
               >
                 <span>Book $37 New Patient Visit</span>
@@ -498,13 +497,12 @@ export default function AreaWeServePage() {
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </Link>
-              <Link
-                href="/contact-us/"
+              </BookTrigger>
+              <BookTrigger
                 className="text-sm font-semibold text-white/90 hover:text-brand-gold transition-colors"
               >
                 Or call (505) 891-2280 →
-              </Link>
+              </BookTrigger>
             </Reveal>
           </div>
         </section>

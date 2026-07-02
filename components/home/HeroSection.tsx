@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
+import BookTrigger from "@/components/booking/BookTrigger";
 
 const HERO_IMAGE =
   "https://synergyspineandnerve.com/wp-content/uploads/2020/04/AdobeStock_319143390_6e8be8e243246272480f53637761cf18.jpg";
@@ -193,15 +194,14 @@ export default function HeroSection() {
 
             <Reveal delay={320}>
               <div className="mt-9 flex flex-col sm:flex-row gap-3 sm:gap-4 sm:items-center">
-                <Link
-                  href="/schedule/"
+                <BookTrigger
                   className="group/cta relative inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-7 pr-2 py-2 text-sm font-bold overflow-hidden hover:bg-brand-goldSoft transition-colors shadow-[0_10px_30px_-10px_rgba(245,197,24,0.6)]"
                 >
                   <span className="relative z-10">Book Appointment</span>
                   <span className="relative z-10 inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand-navyDark text-brand-gold group-hover/cta:bg-white group-hover/cta:text-brand-navyDark transition-colors">
                     <ArrowIcon className="w-4 h-4 group-hover/cta:translate-x-0.5 transition-transform" />
                   </span>
-                </Link>
+                </BookTrigger>
 
                 <Link
                   href="#watch-our-story"

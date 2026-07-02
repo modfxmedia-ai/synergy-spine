@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
+import BookTrigger from "@/components/booking/BookTrigger";
 
 export type VideoPageProps = {
   title: string;
@@ -132,12 +133,11 @@ export default function VideoPage({
               delay={150}
               className="mt-8 flex flex-wrap items-center justify-center gap-4"
             >
-              <Link
-                href="/schedule/"
+              <BookTrigger
                 className="rounded-full bg-brand-gold px-7 py-3 text-sm font-bold text-brand-navyDark uppercase tracking-wide hover:bg-brand-goldSoft transition"
               >
                 Book Appointment
-              </Link>
+              </BookTrigger>
               <a
                 href="tel:+15058912280"
                 className="rounded-full border border-white/30 px-7 py-3 text-sm font-bold uppercase tracking-wide hover:bg-white hover:text-brand-navyDark transition"

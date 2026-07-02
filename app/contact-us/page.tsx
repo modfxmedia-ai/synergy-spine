@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/contact-us/";
 const PHONE = "(505) 891-2280";
 const PHONE_HREF = "tel:+15058912280";
@@ -363,8 +364,7 @@ export default function ContactUsPage() {
               </p>
             </Reveal>
             <Reveal delay={150} className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link
-                href="/schedule/"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-7 pr-2 py-2 text-sm font-semibold hover:bg-white transition-colors"
               >
                 <span>Book Online</span>
@@ -374,13 +374,12 @@ export default function ContactUsPage() {
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </Link>
-              <Link
-                href="/new-folks/np-schedule/"
+              </BookTrigger>
+              <BookTrigger
                 className="text-sm font-semibold text-white/90 hover:text-brand-gold transition-colors"
               >
                 $37 New Patient Special →
-              </Link>
+              </BookTrigger>
             </Reveal>
           </div>
         </section>

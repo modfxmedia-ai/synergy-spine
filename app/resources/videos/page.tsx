@@ -7,6 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/resources/videos/";
 
 export const metadata: Metadata = {
@@ -319,8 +320,7 @@ export default function VideosHubPage() {
               delay={150}
               className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
             >
-              <Link
-                href="/new-folks/np-schedule/"
+              <BookTrigger
                 className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-7 pr-2 py-2 text-sm font-semibold hover:bg-white transition-colors"
               >
                 <span>Book $37 New Patient Visit</span>
@@ -339,7 +339,7 @@ export default function VideosHubPage() {
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </span>
-              </Link>
+              </BookTrigger>
               <Link
                 href="/resources/"
                 className="text-sm font-semibold text-white/90 hover:text-brand-gold transition-colors"

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import BookingProvider from "@/components/booking/BookingProvider";
+import BottomBookBar from "@/components/BottomBookBar";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -49,7 +51,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body>{children}</body>
+      <body>
+        <BookingProvider>
+          {children}
+          <BottomBookBar />
+        </BookingProvider>
+      </body>
       <Script id="knock-knock-widget" strategy="afterInteractive">
         {`window.company_id = '6a44c93ffb43c2761ccbc33c';
 var newScript = document.createElement('script');

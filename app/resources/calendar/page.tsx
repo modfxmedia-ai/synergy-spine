@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 
+import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/resources/calendar/";
 
 export const metadata: Metadata = {
@@ -122,12 +123,11 @@ export default function CalendarPage() {
 
             <Reveal delay={250}>
               <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
-                <Link
-                  href="/schedule/"
+                <BookTrigger
                   className="rounded-full bg-brand-gold px-7 py-3 text-sm font-bold text-brand-navyDark uppercase tracking-wide hover:bg-brand-goldSoft transition"
                 >
                   Schedule an Appointment
-                </Link>
+                </BookTrigger>
                 <Link
                   href="/resources/"
                   className="rounded-full border border-brand-navyDark/30 px-7 py-3 text-sm font-bold uppercase tracking-wide text-brand-navyDark hover:bg-brand-navyDark hover:text-white transition"
