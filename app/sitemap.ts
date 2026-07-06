@@ -21,6 +21,7 @@ const PRIORITY_0_9 = [
   "/new-folks",
   "/contact-us",
   "/schedule",
+  "/booking",
   "/testimonials",
   "/blog",
 ];

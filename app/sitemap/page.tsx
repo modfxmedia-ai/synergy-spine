@@ -126,6 +126,7 @@ const PAGE_GROUPS: Group[] = [
     items: [
       { label: "Home", href: "/" },
       { label: "Schedule", href: "/schedule/" },
+      { label: "Booking", href: "/booking/" },
       { label: "Contact Us", href: "/contact-us/" },
       { label: "Testimonials", href: "/testimonials/" },
       { label: "Blog", href: "/blog/" },

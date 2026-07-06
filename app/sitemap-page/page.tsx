@@ -35,6 +35,7 @@ const MAIN_PAGES: SiteLink[] = [
   { label: "About Us", href: "/about-us/" },
   { label: "New Folks", href: "/new-folks/" },
   { label: "Schedule", href: "/schedule/" },
+  { label: "Booking", href: "/booking/" },
   { label: "Contact Us", href: "/contact-us/" },
   { label: "Testimonials", href: "/testimonials/" },
   { label: "Area We Serve", href: "/area-we-serve/" },
