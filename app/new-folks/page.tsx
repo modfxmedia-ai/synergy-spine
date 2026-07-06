@@ -47,18 +47,6 @@ const CARDS: Card[] = [
     ),
   },
   {
-    title: "Intake Forms",
-    desc: "Fill out your paperwork online before you arrive, your wait at the office will be very short.",
-    href: "/new-folks/intake-forms/",
-    accent: "gold",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-        <path d="M14 2v6h6M9 13h6M9 17h6M9 9h2" />
-      </svg>
-    ),
-  },
-  {
     title: "Our Vision",
     desc: "Educate and adjust as many families as possible toward optimal health through natural chiropractic care.",
     href: "/new-folks/our-vision/",

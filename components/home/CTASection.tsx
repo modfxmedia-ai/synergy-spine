@@ -3,8 +3,8 @@ import Reveal from "@/components/Reveal";
 import BookTrigger from "@/components/booking/BookTrigger";
 
 const STATS = [
-  { value: "15", suffix: "+", label: "Years Serving Rio Rancho", sub: "Established practice", accent: "blue" as const },
-  { value: "1,200", suffix: "+", label: "Patients Cared For", sub: "And counting", accent: "gold" as const },
+  { value: "25", suffix: "+", label: "Years Serving Rio Rancho", sub: "Established practice", accent: "blue" as const },
+  { value: "15,000", suffix: "+", label: "Patients Cared For", sub: "And counting", accent: "gold" as const },
   { value: "5", suffix: "★", label: "Average Rating", sub: "Across patient reviews", accent: "blue" as const },
   { value: "100", suffix: "%", label: "Evidence-Based", sub: "Modern protocols", accent: "gold" as const },
 ];

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Spinal Health Assessment (SHA) is your spine's report card. 90+ means homeostasis; below 90 your body is in allostasis. Learn how to improve your score.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Improve Your SHA Score – Synergy Spine and Nerve Center",
+    title: "Spinal Health Assessment – Synergy Spine and Nerve Center",
     description:
       "Pain doesn't tell the whole story, your SHA score does. Learn what your assessment really means.",
     url: CANONICAL,
@@ -33,7 +33,7 @@ export default function ImproveSHAScorePage() {
         items={[
           { label: "Home", href: "/" },
           { label: "Resources", href: "/resources/" },
-          { label: "SHA Score" },
+          { label: "Spinal Health Assessment" },
         ]}
       />
 
@@ -59,9 +59,9 @@ export default function ImproveSHAScorePage() {
             </Reveal>
             <Reveal delay={120}>
               <h1 className="section-title mt-5 text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.05] uppercase max-w-4xl">
-                Improve your{" "}
+                Spinal Health{" "}
                 <span className="italic normal-case text-brand-gold">
-                  SHA score
+                  Assessment
                 </span>
               </h1>
             </Reveal>
@@ -255,8 +255,8 @@ export default function ImproveSHAScorePage() {
                 "Stay hydrated",
                 "Sleep on your back or side",
                 "Take movement breaks",
-                "Eat anti-inflammatory foods",
-                "Walk every day",
+                "Get the right nutrients",
+                "Exercise daily",
                 "Manage stress intentionally",
                 "Follow your adjustment plan",
               ].map((item, i) => (

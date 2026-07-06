@@ -149,14 +149,14 @@ export default function TriuneOfCarePage() {
                   <circle cx="150" cy="140" r="100" fill="url(#g1)" className="animate-drift" style={{ transformOrigin: "150px 140px" }} />
                   <circle cx="250" cy="140" r="100" fill="url(#g2)" className="animate-drift" style={{ transformOrigin: "250px 140px", animationDelay: "-4s" }} />
                   <circle cx="200" cy="230" r="100" fill="url(#g3)" className="animate-drift" style={{ transformOrigin: "200px 230px", animationDelay: "-8s" }} />
-                  <text x="105" y="100" textAnchor="middle" className="fill-brand-navyDark" style={{ fontSize: "13px", fontWeight: 700, letterSpacing: "0.12em" }}>
-                    ADJUSTMENTS
+                  <text x="105" y="100" textAnchor="middle" className="fill-brand-navyDark" style={{ fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em" }}>
+                    SPINAL MOVEMENT
                   </text>
-                  <text x="295" y="100" textAnchor="middle" className="fill-brand-navyDark" style={{ fontSize: "13px", fontWeight: 700, letterSpacing: "0.12em" }}>
-                    HYGIENE
+                  <text x="295" y="100" textAnchor="middle" className="fill-brand-navyDark" style={{ fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em" }}>
+                    EXERCISE
                   </text>
-                  <text x="200" y="320" textAnchor="middle" className="fill-brand-navyDark" style={{ fontSize: "13px", fontWeight: 700, letterSpacing: "0.12em" }}>
-                    NUTRITION
+                  <text x="200" y="320" textAnchor="middle" className="fill-brand-navyDark" style={{ fontSize: "12px", fontWeight: 700, letterSpacing: "0.12em" }}>
+                    NUTRIENT SUFFICIENCY
                   </text>
                   <text x="200" y="180" textAnchor="middle" className="fill-brand-navyDark" style={{ fontSize: "20px", fontWeight: 700, fontStyle: "italic", fontFamily: "Playfair Display, serif" }}>
                     synergy

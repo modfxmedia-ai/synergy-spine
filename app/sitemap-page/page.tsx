@@ -34,6 +34,7 @@ const MAIN_PAGES: SiteLink[] = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about-us/" },
   { label: "New Folks", href: "/new-folks/" },
+  { label: "Services", href: "/services/" },
   { label: "Schedule", href: "/schedule/" },
   { label: "Booking", href: "/booking/" },
   { label: "Contact Us", href: "/contact-us/" },
@@ -52,7 +53,6 @@ const ABOUT_PAGES: SiteLink[] = [
 const NEW_FOLKS_PAGES: SiteLink[] = [
   { label: "New Folks", href: "/new-folks/" },
   { label: "First Visit", href: "/new-folks/first-visit/" },
-  { label: "Intake Forms", href: "/new-folks/intake-forms/" },
   { label: "NP Schedule", href: "/new-folks/np-schedule/" },
   { label: "Our Vision", href: "/new-folks/our-vision/" },
 ];
@@ -67,6 +67,23 @@ const CHIROPRACTIC_PAGES: SiteLink[] = [
   { label: "Helpful Stretches", href: "/helpful-stretches/" },
 ];
 
+const SERVICE_PAGES: SiteLink[] = [
+  { label: "Services", href: "/services/" },
+  { label: "Chiropractic", href: "/services/chiropractic/" },
+  { label: "Wellness", href: "/services/chiropractic/wellness/" },
+  { label: "Headaches", href: "/services/chiropractic/headaches/" },
+  { label: "Migraine", href: "/services/chiropractic/migraine/" },
+  { label: "Back Pain", href: "/services/chiropractic/back-pain/" },
+  { label: "Neck Pain", href: "/services/chiropractic/neck-pain/" },
+  { label: "Radiating Arm/Hand Pain", href: "/services/chiropractic/radiating-arm-hand-pain/" },
+  { label: "Radiating Leg/Feet Pain", href: "/services/chiropractic/radiating-leg-feet-pain/" },
+  { label: "Shoulder Pain", href: "/services/chiropractic/shoulder-pain/" },
+  { label: "Massage", href: "/services/massage/" },
+  { label: "Medical Massage", href: "/services/massage/medical-massage/" },
+  { label: "Sports Massage", href: "/services/massage/sports-massage/" },
+  { label: "Car/Truck Accident Care", href: "/services/car-truck-accident-care/" },
+];
+
 const RESOURCE_PAGES: SiteLink[] = [
   { label: "Resources Hub", href: "/resources/" },
   { label: "Calendar", href: "/resources/calendar/" },
@@ -77,10 +94,10 @@ const RESOURCE_PAGES: SiteLink[] = [
     href: "/resources/all-about-spinal-hygiene/",
   },
   {
-    label: "Essential Nutrients & Supplements",
+    label: "Essential Nutrients",
     href: "/resources/essential-nutrients-supplements/",
   },
-  { label: "Improve Your SHA Score", href: "/resources/improve-your-sha-score/" },
+  { label: "Spinal Health Assessment", href: "/resources/improve-your-sha-score/" },
   { label: "Videos", href: "/resources/videos/" },
   { label: "Purchase Supplements", href: "/purchase-supplements-2/" },
 ];
@@ -147,6 +164,12 @@ const GROUPS: Group[] = [
     heading: "New Folks",
     description: "Information for first-time and prospective patients.",
     links: NEW_FOLKS_PAGES,
+  },
+  {
+    heading: "Services",
+    description:
+      "Chiropractic, massage, and car/truck accident care pages.",
+    links: SERVICE_PAGES,
   },
   {
     heading: "Chiropractic",

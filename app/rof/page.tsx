@@ -128,7 +128,7 @@ export default function ROFPage() {
         </section>
 
         <section className="bg-brand-bg py-16">
-          <div className="mx-auto max-w-5xl px-6 grid sm:grid-cols-3 gap-4">
+          <div className="mx-auto max-w-4xl px-6 grid sm:grid-cols-2 gap-4">
             <Link
               href="/new-folks/first-visit/"
               className="rounded-2xl bg-white p-6 ring-1 ring-black/5 hover:ring-brand-blue/30 hover:-translate-y-0.5 transition shadow-sm"
@@ -138,17 +138,6 @@ export default function ROFPage() {
               </p>
               <p className="mt-2 font-semibold text-brand-navyDark">
                 What to Expect
-              </p>
-            </Link>
-            <Link
-              href="/new-folks/intake-forms/"
-              className="rounded-2xl bg-white p-6 ring-1 ring-black/5 hover:ring-brand-blue/30 hover:-translate-y-0.5 transition shadow-sm"
-            >
-              <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-brand-textLight">
-                Save time
-              </p>
-              <p className="mt-2 font-semibold text-brand-navyDark">
-                Intake Forms
               </p>
             </Link>
             <BookTrigger

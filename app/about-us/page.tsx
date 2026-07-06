@@ -96,7 +96,7 @@ const PILLARS = [
 ];
 
 const STATS = [
-  { label: "Years serving Rio Rancho", value: 15, suffix: "+" },
+  { label: "Years serving Rio Rancho", value: 25, suffix: "+" },
   { label: "Families restored", value: 5000, suffix: "+" },
   { label: "Adjustments delivered", value: 100000, suffix: "+" },
   { label: "Star reviews", value: 5, suffix: "★" },

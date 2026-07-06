@@ -2,6 +2,10 @@ import type { MetadataRoute } from "next";
 import { POSTS, CATEGORIES, categorySlug } from "@/lib/blog-posts";
 import { SERVICES } from "@/lib/programmatic/services";
 import { CITIES } from "@/lib/programmatic/cities";
+import {
+  CHIROPRACTIC_SERVICES,
+  MASSAGE_SERVICES,
+} from "@/lib/services-catalog";
 
 const BASE_URL = "https://synergyspineandnerve.com";
 
@@ -18,6 +22,10 @@ const PRIORITY_1_0 = ["/"];
 
 const PRIORITY_0_9 = [
   "/about-us",
+  "/services",
+  "/services/chiropractic",
+  "/services/massage",
+  "/services/car-truck-accident-care",
   "/new-folks",
   "/contact-us",
   "/schedule",
@@ -34,7 +42,6 @@ const PRIORITY_0_8 = [
   "/about-us/meet-jess",
   "/about-us/meet-kathryn",
   "/new-folks/first-visit",
-  "/new-folks/intake-forms",
   "/new-folks/our-vision",
   "/new-folks/np-schedule",
   "/what-is-a-subluxation",
@@ -153,12 +160,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  const serviceDetailEntries: Entry[] = [
+    ...CHIROPRACTIC_SERVICES.map((s) => ({
+      url: `${BASE_URL}/services/chiropractic/${s.slug}`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+    ...MASSAGE_SERVICES.map((s) => ({
+      url: `${BASE_URL}/services/massage/${s.slug}`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+  ];
+
   return [
     ...buildEntries(PRIORITY_1_0, 1.0, lastModified),
     ...buildEntries(PRIORITY_0_9, 0.9, lastModified),
     ...buildEntries(PRIORITY_0_8, 0.8, lastModified),
     ...buildEntries(PRIORITY_0_7, 0.7, lastModified),
     ...buildEntries(PRIORITY_0_6, 0.6, lastModified),
+    ...serviceDetailEntries,
     ...categoryEntries,
     ...blogPaginationEntries,
     ...blogPostEntries,

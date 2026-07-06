@@ -53,7 +53,6 @@ const PAGE_GROUPS: Group[] = [
     items: [
       { label: "New Folks", href: "/new-folks/" },
       { label: "First Visit", href: "/new-folks/first-visit/" },
-      { label: "Intake Forms", href: "/new-folks/intake-forms/" },
       { label: "NP-Schedule", href: "/new-folks/np-schedule/" },
       { label: "Our Vision", href: "/new-folks/our-vision/" },
       { label: "NP-Thank-You", href: "/np-thank-you/" },
@@ -69,9 +68,9 @@ const PAGE_GROUPS: Group[] = [
       { label: "All About Nutrition", href: "/resources/all-about-nutrition/" },
       { label: "All About Spinal Hygiene", href: "/resources/all-about-spinal-hygiene/" },
       { label: "Calendar", href: "/resources/calendar/" },
-      { label: "Essential Nutrients & Supplements", href: "/resources/essential-nutrients-supplements/" },
+      { label: "Essential Nutrients", href: "/resources/essential-nutrients-supplements/" },
       { label: "Get Notified", href: "/resources/get-notified/" },
-      { label: "Improve Your SHA Score", href: "/resources/improve-your-sha-score/" },
+      { label: "Spinal Health Assessment", href: "/resources/improve-your-sha-score/" },
       { label: "Order Supplements", href: "/resources/order-supplements/" },
       { label: "Purchase Supplements", href: "/purchase-supplements-2/" },
       { label: "Videos", href: "/resources/videos/", children: [
@@ -125,6 +124,23 @@ const PAGE_GROUPS: Group[] = [
     accent: "navy",
     items: [
       { label: "Home", href: "/" },
+      { label: "Services", href: "/services/", children: [
+        { label: "Chiropractic", href: "/services/chiropractic/", children: [
+          { label: "Wellness", href: "/services/chiropractic/wellness/" },
+          { label: "Headaches", href: "/services/chiropractic/headaches/" },
+          { label: "Migraine", href: "/services/chiropractic/migraine/" },
+          { label: "Back Pain", href: "/services/chiropractic/back-pain/" },
+          { label: "Neck Pain", href: "/services/chiropractic/neck-pain/" },
+          { label: "Radiating Arm/Hand Pain", href: "/services/chiropractic/radiating-arm-hand-pain/" },
+          { label: "Radiating Leg/Feet Pain", href: "/services/chiropractic/radiating-leg-feet-pain/" },
+          { label: "Shoulder Pain", href: "/services/chiropractic/shoulder-pain/" },
+        ] },
+        { label: "Massage", href: "/services/massage/", children: [
+          { label: "Medical Massage", href: "/services/massage/medical-massage/" },
+          { label: "Sports Massage", href: "/services/massage/sports-massage/" },
+        ] },
+        { label: "Car/Truck Accident Care", href: "/services/car-truck-accident-care/" },
+      ] },
       { label: "Schedule", href: "/schedule/" },
       { label: "Booking", href: "/booking/" },
       { label: "Contact Us", href: "/contact-us/" },

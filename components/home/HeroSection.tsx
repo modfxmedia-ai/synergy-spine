@@ -7,8 +7,8 @@ const HERO_IMAGE =
   "https://synergyspineandnerve.com/wp-content/uploads/2020/04/AdobeStock_319143390_6e8be8e243246272480f53637761cf18.jpg";
 
 const HERO_STATS = [
-  { value: "15+", label: "Years in Rio Rancho" },
-  { value: "1,200+", label: "Patients Cared For" },
+  { value: "25+", label: "Years in Rio Rancho" },
+  { value: "15,000+", label: "Patients Cared For" },
   { value: "5★", label: "Average Rating" },
 ];
 
@@ -219,7 +219,11 @@ export default function HeroSection() {
 
             {/* Trust row with avatars */}
             <Reveal delay={420}>
-              <div className="mt-10 flex items-center gap-4">
+              <Link
+                href="/testimonials/"
+                aria-label="Read testimonials from our happy patients"
+                className="group/trust mt-10 inline-flex items-center gap-4 rounded-full hover:opacity-95 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/70 focus-visible:ring-offset-2 focus-visible:ring-offset-brand-navyDark"
+              >
                 <div className="flex -space-x-2">
                   {[0, 1, 2, 3].map((i) => (
                     <div
@@ -238,7 +242,7 @@ export default function HeroSection() {
                     />
                   ))}
                 </div>
-                <div>
+                <div className="text-left">
                   <div className="flex items-center gap-1 text-brand-gold">
                     <StarIcon className="w-3.5 h-3.5" />
                     <StarIcon className="w-3.5 h-3.5" />
@@ -246,12 +250,15 @@ export default function HeroSection() {
                     <StarIcon className="w-3.5 h-3.5" />
                     <StarIcon className="w-3.5 h-3.5" />
                   </div>
-                  <p className="text-xs text-white/60 mt-0.5">
-                    <span className="font-semibold text-white">1,200+</span>{" "}
+                  <p className="text-xs text-white/60 mt-0.5 group-hover/trust:text-white/80 transition-colors">
+                    <span className="font-semibold text-white">15,000+</span>{" "}
                     happy patients &amp; families
+                    <span className="ml-1.5 inline-block text-brand-goldSoft group-hover/trust:translate-x-0.5 transition-transform">
+                      →
+                    </span>
                   </p>
                 </div>
-              </div>
+              </Link>
             </Reveal>
           </div>
 
@@ -357,7 +364,7 @@ export default function HeroSection() {
                       Trusted by
                     </p>
                     <p className="text-sm font-semibold text-brand-navyDark">
-                      1,200+ patients
+                      15,000+ patients
                     </p>
                   </div>
                 </div>

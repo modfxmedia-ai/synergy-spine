@@ -468,12 +468,6 @@ export default function NPSchedulePage() {
                   </svg>
                 </span>
               </BookTrigger>
-              <Link
-                href="/new-folks/intake-forms/"
-                className="text-sm font-semibold text-brand-navyDark hover:text-brand-blue transition-colors"
-              >
-                Fill out intake forms first →
-              </Link>
             </Reveal>
           </div>
         </section>

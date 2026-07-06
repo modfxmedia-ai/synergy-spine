@@ -7,8 +7,10 @@ import { useBooking } from "./booking/BookingProvider";
 
 type NavChild = {
   label: string;
-  href: string;
+  href?: string;
   action?: "book";
+  heading?: boolean;
+  children?: NavChild[];
 };
 
 type NavItem = {
@@ -33,21 +35,47 @@ const NAV_ITEMS: NavItem[] = [
     href: "/new-folks/",
     children: [
       { label: "What to Expect on Your First Visit", href: "/new-folks/first-visit/" },
-      { label: "Intake Forms", href: "/new-folks/intake-forms/" },
       { label: "Our Vision", href: "/new-folks/our-vision/" },
       { label: "Testimonials", href: "/testimonials/" },
       { label: "Book a New Patient Appointment", href: "#book", action: "book" },
     ],
   },
   {
-    label: "Chiropractic",
-    href: "#",
+    label: "Services",
+    href: "/services/",
     children: [
-      { label: "What is a Subluxation?", href: "/what-is-a-subluxation/" },
-      { label: "Nerve Chart", href: "/nerve-chart/" },
-      { label: "Degeneration", href: "/degeneration/" },
-      { label: "Chiropractic History", href: "/chiropractic-history/" },
-      { label: "Chiropractic Research", href: "/chiropractic-research/" },
+      {
+        label: "Chiropractic",
+        href: "/services/chiropractic/",
+        children: [
+          { label: "Wellness", href: "/services/chiropractic/wellness/" },
+          { label: "Headaches", href: "/services/chiropractic/headaches/" },
+          { label: "Migraine", href: "/services/chiropractic/migraine/" },
+          { label: "Back Pain", href: "/services/chiropractic/back-pain/" },
+          { label: "Neck Pain", href: "/services/chiropractic/neck-pain/" },
+          {
+            label: "Radiating Arm/Hand Pain",
+            href: "/services/chiropractic/radiating-arm-hand-pain/",
+          },
+          {
+            label: "Radiating Leg/Feet Pain",
+            href: "/services/chiropractic/radiating-leg-feet-pain/",
+          },
+          { label: "Shoulder Pain", href: "/services/chiropractic/shoulder-pain/" },
+        ],
+      },
+      {
+        label: "Massage",
+        href: "/services/massage/",
+        children: [
+          { label: "Medical Massage", href: "/services/massage/medical-massage/" },
+          { label: "Sports Massage", href: "/services/massage/sports-massage/" },
+        ],
+      },
+      {
+        label: "Car/Truck Accident Care",
+        href: "/services/car-truck-accident-care/",
+      },
       { label: "Book Appointment", href: "#book", action: "book" },
     ],
   },
@@ -55,14 +83,10 @@ const NAV_ITEMS: NavItem[] = [
     label: "Resources",
     href: "/resources/",
     children: [
-      { label: "Calendar", href: "/resources/calendar/" },
-      { label: "All About Nutrition", href: "/resources/all-about-nutrition/" },
-      { label: "All About Spinal Hygiene", href: "/resources/all-about-spinal-hygiene/" },
       { label: "Triune of Care", href: "/triune-of-care/" },
-      { label: "Improve Your SHA Score", href: "/resources/improve-your-sha-score/" },
-      { label: "Essential Nutrients & Supplements", href: "/resources/essential-nutrients-supplements/" },
+      { label: "Spinal Health Assessment", href: "/resources/improve-your-sha-score/" },
+      { label: "Essential Nutrients", href: "/resources/essential-nutrients-supplements/" },
       { label: "Purchase Supplements", href: "/purchase-supplements-2/" },
-      { label: "Videos", href: "/resources/videos/" },
       { label: "Book Appointment", href: "#book", action: "book" },
     ],
   },
@@ -341,32 +365,77 @@ export default function Header() {
                           aria-hidden="true"
                         />
                         <div className="relative">
-                          {item.children!.map((child, ci) =>
-                            child.action === "book" ? (
-                              <div key={child.label} className={ci > 0 ? "mt-1 pt-2 border-t border-black/5" : undefined}>
-                                <button
-                                  type="button"
-                                  onClick={() => {
-                                    setOpenDropdown(null);
-                                    openBooking();
-                                  }}
-                                  className="group/child flex w-full items-center justify-between gap-3 px-4 py-2.5 rounded-xl text-[13.5px] font-semibold text-brand-blue hover:bg-brand-blue hover:text-white transition-colors text-left"
+                          {item.children!.map((child, ci) => {
+                            if (child.heading) {
+                              return (
+                                <div
+                                  key={`h-${child.label}-${ci}`}
+                                  className={`px-4 pb-1 text-[10px] font-bold uppercase tracking-[0.18em] text-brand-textLight ${
+                                    ci > 0 ? "mt-2 pt-3 border-t border-black/5" : "pt-1"
+                                  }`}
                                 >
-                                  <span>{child.label}</span>
-                                  <ArrowRightIcon className="w-3.5 h-3.5 -translate-x-1 opacity-0 group-hover/child:translate-x-0 group-hover/child:opacity-100 transition-all duration-200" />
-                                </button>
-                              </div>
-                            ) : (
+                                  {child.label}
+                                </div>
+                              );
+                            }
+                            if (child.action === "book") {
+                              return (
+                                <div key={child.label} className={ci > 0 ? "mt-1 pt-2 border-t border-black/5" : undefined}>
+                                  <button
+                                    type="button"
+                                    onClick={() => {
+                                      setOpenDropdown(null);
+                                      openBooking();
+                                    }}
+                                    className="group/child flex w-full items-center justify-between gap-3 px-4 py-2.5 rounded-xl text-[13.5px] font-semibold text-brand-blue hover:bg-brand-blue hover:text-white transition-colors text-left"
+                                  >
+                                    <span>{child.label}</span>
+                                    <ArrowRightIcon className="w-3.5 h-3.5 -translate-x-1 opacity-0 group-hover/child:translate-x-0 group-hover/child:opacity-100 transition-all duration-200" />
+                                  </button>
+                                </div>
+                              );
+                            }
+                            if (child.children && child.children.length > 0) {
+                              return (
+                                <div
+                                  key={`${child.href ?? child.label}-${ci}`}
+                                  className="relative group/sub"
+                                >
+                                  <Link
+                                    href={child.href ?? "#"}
+                                    className="flex items-center justify-between gap-3 px-4 py-2.5 rounded-xl text-[13.5px] text-brand-text hover:bg-brand-blue/5 hover:text-brand-blue group-hover/sub:bg-brand-blue/5 group-hover/sub:text-brand-blue transition-colors"
+                                  >
+                                    <span>{child.label}</span>
+                                    <ChevronIcon className="w-3 h-3 -rotate-90" />
+                                  </Link>
+                                  <div className="pointer-events-none invisible absolute left-full top-0 pl-3 opacity-0 -translate-x-1 transition-all duration-200 group-hover/sub:pointer-events-auto group-hover/sub:visible group-hover/sub:opacity-100 group-hover/sub:translate-x-0">
+                                    <div className="min-w-[240px] rounded-2xl bg-white p-2 shadow-[0_20px_50px_-10px_rgba(13,35,64,0.25)] ring-1 ring-black/5">
+                                      {child.children.map((sub, si) => (
+                                        <Link
+                                          key={`${sub.href}-${si}`}
+                                          href={sub.href ?? "#"}
+                                          className="group/subchild flex items-center justify-between gap-3 px-4 py-2 rounded-xl text-[13px] text-brand-text hover:bg-brand-blue/5 hover:text-brand-blue transition-colors"
+                                        >
+                                          <span>{sub.label}</span>
+                                          <ArrowRightIcon className="w-3.5 h-3.5 -translate-x-1 opacity-0 group-hover/subchild:translate-x-0 group-hover/subchild:opacity-100 transition-all duration-200" />
+                                        </Link>
+                                      ))}
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            }
+                            return (
                               <Link
-                                key={child.href}
-                                href={child.href}
+                                key={`${child.href}-${ci}`}
+                                href={child.href ?? "#"}
                                 className="group/child flex items-center justify-between gap-3 px-4 py-2.5 rounded-xl text-[13.5px] text-brand-text hover:bg-brand-blue/5 hover:text-brand-blue transition-colors"
                               >
                                 <span>{child.label}</span>
                                 <ArrowRightIcon className="w-3.5 h-3.5 -translate-x-1 opacity-0 group-hover/child:translate-x-0 group-hover/child:opacity-100 transition-all duration-200" />
                               </Link>
-                            )
-                          )}
+                            );
+                          })}
                         </div>
                       </div>
                     </div>
@@ -389,7 +458,7 @@ export default function Header() {
               onClick={openBooking}
               className="group/cta inline-flex items-center gap-2 bg-brand-navyDark text-white rounded-full pl-5 pr-1.5 py-1.5 text-[13.5px] font-semibold hover:bg-brand-blue transition-colors"
             >
-              <span>Book Appointment</span>
+              <span>Book New Patient Appointment</span>
               <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand-blue group-hover/cta:bg-white group-hover/cta:text-brand-blue transition-colors">
                 <ArrowRightIcon className="w-3.5 h-3.5 group-hover/cta:translate-x-0.5 transition-transform" />
               </span>
@@ -463,13 +532,21 @@ export default function Header() {
                   {hasChildren && (
                     <div
                       className={`overflow-hidden transition-[max-height,opacity] duration-300 ${
-                        expanded ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
+                        expanded ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
                       }`}
                     >
                       <ul className="pl-4 pb-3 ml-1 border-l-2 border-brand-blue/20 space-y-1">
-                        {item.children!.map((child) => (
-                          <li key={child.action === "book" ? child.label : child.href}>
-                            {child.action === "book" ? (
+                        {item.children!.map((child, ci) => (
+                          <li key={child.action === "book" ? child.label : `${child.href ?? child.label}-${ci}`}>
+                            {child.heading ? (
+                              <div
+                                className={`text-[10px] font-bold uppercase tracking-[0.18em] text-brand-textLight ${
+                                  ci > 0 ? "mt-2 pt-2 border-t border-black/5" : ""
+                                } pb-1`}
+                              >
+                                {child.label}
+                              </div>
+                            ) : child.action === "book" ? (
                               <button
                                 type="button"
                                 className="block w-full py-2 text-left text-sm text-brand-textLight hover:text-brand-blue"
@@ -481,13 +558,30 @@ export default function Header() {
                                 {child.label}
                               </button>
                             ) : (
-                              <Link
-                                href={child.href}
-                                className="block py-2 text-sm text-brand-textLight hover:text-brand-blue"
-                                onClick={closeMobile}
-                              >
-                                {child.label}
-                              </Link>
+                              <>
+                                <Link
+                                  href={child.href ?? "#"}
+                                  className="block py-2 text-sm font-medium text-brand-navyDark hover:text-brand-blue"
+                                  onClick={closeMobile}
+                                >
+                                  {child.label}
+                                </Link>
+                                {child.children && child.children.length > 0 && (
+                                  <ul className="pl-4 ml-1 mt-1 mb-2 border-l border-brand-blue/10 space-y-0.5">
+                                    {child.children.map((sub, si) => (
+                                      <li key={`${sub.href}-${si}`}>
+                                        <Link
+                                          href={sub.href ?? "#"}
+                                          className="block py-1.5 text-[13px] text-brand-textLight hover:text-brand-blue"
+                                          onClick={closeMobile}
+                                        >
+                                          {sub.label}
+                                        </Link>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                )}
+                              </>
                             )}
                           </li>
                         ))}
@@ -507,7 +601,7 @@ export default function Header() {
               openBooking();
             }}
           >
-            <span>Book Appointment</span>
+            <span>Book New Patient Appointment</span>
             <ArrowRightIcon className="w-4 h-4" />
           </button>
 

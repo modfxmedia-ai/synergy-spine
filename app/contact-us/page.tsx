@@ -340,7 +340,7 @@ export default function ContactUsPage() {
                   title="Map to Synergy Spine and Nerve Center"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  className="w-full h-[420px] md:h-[480px] border-0"
+                  className="w-full h-[280px] md:h-[320px] border-0"
                   allowFullScreen
                 />
               </div>

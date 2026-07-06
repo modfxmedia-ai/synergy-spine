@@ -52,9 +52,9 @@ export default function MapSection() {
         {/* Inset frame, map on left, contact on right, sharing the same baseline */}
         <Reveal delay={120}>
           <div className="mt-14 lg:mt-16 overflow-hidden rounded-[32px] bg-white ring-1 ring-black/5 shadow-[0_30px_80px_-30px_rgba(13,35,64,0.25)]">
-            <div className="grid grid-cols-1 lg:grid-cols-12">
+            <div className="grid grid-cols-1 lg:grid-cols-12 lg:h-[380px]">
               {/* Map */}
-              <div className="lg:col-span-7 relative min-h-[360px] md:min-h-[460px] lg:min-h-[560px]">
+              <div className="lg:col-span-6 relative h-[220px] md:h-[260px] lg:h-full">
                 <iframe
                   title="Map showing Synergy Spine and Nerve Center in Rio Rancho, NM"
                   src={MAP_EMBED}
@@ -66,7 +66,7 @@ export default function MapSection() {
               </div>
 
               {/* Info, vertically centered, evenly spaced */}
-              <div className="lg:col-span-5 p-8 md:p-10 lg:p-12 flex flex-col justify-center gap-8 lg:border-l lg:border-black/5">
+              <div className="lg:col-span-6 p-7 md:p-8 lg:p-8 flex flex-col justify-center gap-5 lg:border-l lg:border-black/5">
                 {/* Eyebrow */}
                 <div className="flex items-center gap-3">
                   <span className="h-px w-8 bg-brand-gold" />
@@ -80,17 +80,17 @@ export default function MapSection() {
                   <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-brand-textLight">
                     Address
                   </p>
-                  <p className="mt-3 text-lg md:text-xl text-brand-navyDark font-semibold leading-snug">
+                  <p className="mt-2 text-base md:text-lg text-brand-navyDark font-semibold leading-snug">
                     {ADDRESS_LINE_1}
                     <br />
                     {ADDRESS_LINE_2}
                   </p>
-                  <div className="mt-5 flex flex-wrap items-center gap-3">
+                  <div className="mt-3 flex flex-wrap items-center gap-3">
                     <a
                       href={DIRECTIONS_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group/dir inline-flex items-center gap-2 rounded-full bg-brand-blue text-white px-5 py-2.5 text-sm font-semibold hover:bg-brand-navyDark transition-colors shadow-[0_10px_30px_-10px_rgba(1,112,185,0.5)]"
+                      className="group/dir inline-flex items-center gap-2 rounded-full bg-brand-blue text-white px-4 py-2 text-xs font-semibold hover:bg-brand-navyDark transition-colors shadow-[0_10px_30px_-10px_rgba(1,112,185,0.5)]"
                     >
                       <svg
                         viewBox="0 0 24 24"
@@ -127,7 +127,7 @@ export default function MapSection() {
                       href={MAP_VIEW_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-semibold text-brand-textLight hover:text-brand-navyDark transition-colors"
+                      className="inline-flex items-center gap-2 text-xs font-semibold text-brand-textLight hover:text-brand-navyDark transition-colors"
                     >
                       View larger map
                       <span aria-hidden="true">↗</span>
@@ -136,13 +136,13 @@ export default function MapSection() {
                 </div>
 
                 {/* Phone */}
-                <div>
+                <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
                   <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-brand-textLight">
                     Phone
                   </p>
                   <a
                     href={PHONE_HREF}
-                    className="mt-3 inline-block text-lg md:text-xl text-brand-navyDark font-semibold leading-snug hover:text-brand-blue transition-colors"
+                    className="text-base md:text-lg text-brand-navyDark font-semibold leading-snug hover:text-brand-blue transition-colors"
                   >
                     {PHONE_DISPLAY}
                   </a>
@@ -153,7 +153,7 @@ export default function MapSection() {
                   <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-brand-textLight">
                     Hours
                   </p>
-                  <ul className="mt-4 grid grid-cols-1 gap-1.5">
+                  <ul className="mt-2 grid grid-cols-2 gap-x-6 gap-y-1">
                     {HOURS.map((h) => {
                       const closed = h.time === "Closed";
                       return (
