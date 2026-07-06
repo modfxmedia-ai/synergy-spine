@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -8,6 +9,7 @@ import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/triune-of-care/";
+const HERO_IMAGE = "/triune-of-care.jpeg";
 
 export const metadata: Metadata = {
   title: "Triune of Care – Synergy Spine and Nerve Center",
@@ -69,28 +71,58 @@ export default function TriuneOfCarePage() {
             className="absolute inset-0 bg-gradient-to-br from-brand-navyDark via-brand-navy/95 to-brand-navyDark"
             aria-hidden="true"
           />
-          <div className="relative mx-auto max-w-6xl px-6 py-20 lg:py-28">
-            <Reveal>
-              <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-gold">
-                Three pillars · One plan
-              </p>
-            </Reveal>
-            <Reveal delay={120}>
-              <h1 className="section-title mt-3 text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.05] uppercase max-w-4xl">
-                Embrace the{" "}
-                <span className="italic normal-case text-brand-gold">
-                  triune of care
-                </span>{" "}
-                for comprehensive health &amp; wellness
-              </h1>
-            </Reveal>
-            <Reveal delay={220}>
-              <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
-                Take an active role in your healing with the Triune of
-                Care, three pillars working together so your body has
-                everything it needs to function the way it was designed to.
-              </p>
-            </Reveal>
+          <div className="relative mx-auto max-w-6xl px-6 py-20 lg:py-24">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+              <div className="lg:col-span-7">
+                <Reveal>
+                  <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-gold">
+                    Three pillars · One plan
+                  </p>
+                </Reveal>
+                <Reveal delay={120}>
+                  <h1 className="section-title mt-3 text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.05] uppercase">
+                    Embrace the{" "}
+                    <span className="italic normal-case text-brand-gold">
+                      triune of care
+                    </span>{" "}
+                    for comprehensive health &amp; wellness
+                  </h1>
+                </Reveal>
+                <Reveal delay={220}>
+                  <p className="mt-5 max-w-xl text-white/80 text-base md:text-lg leading-relaxed">
+                    Take an active role in your healing with the Triune of
+                    Care, three pillars working together so your body has
+                    everything it needs to function the way it was designed
+                    to.
+                  </p>
+                </Reveal>
+              </div>
+
+              <div className="lg:col-span-5">
+                <Reveal delay={200} variant="fade">
+                  <div className="relative">
+                    <div
+                      aria-hidden="true"
+                      className="absolute -top-6 -left-6 h-24 w-24 rounded-full bg-brand-gold/25 blur-2xl"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className="absolute -bottom-8 -right-6 h-28 w-28 rounded-full bg-brand-blue/25 blur-2xl"
+                    />
+                    <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] ring-1 ring-white/10 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)]">
+                      <Image
+                        src={HERO_IMAGE}
+                        alt="Triune of Care at Synergy Spine and Nerve Center"
+                        fill
+                        priority
+                        sizes="(min-width: 1024px) 460px, 80vw"
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                </Reveal>
+              </div>
+            </div>
           </div>
           <div className="relative">
             <svg viewBox="0 0 1440 80" className="block w-full h-12 md:h-20" preserveAspectRatio="none" aria-hidden="true">

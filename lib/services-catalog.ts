@@ -10,6 +10,7 @@ export type ServiceItem = {
   intro: string;
   helpsWith: string[];
   whatToExpect: string[];
+  image?: string;
 };
 
 export type ServiceCategory = {
@@ -26,6 +27,7 @@ export const CHIROPRACTIC_SERVICES: ServiceItem[] = [
     name: "Wellness",
     short: "Ongoing wellness care",
     tagline: "Feel your best, week after week.",
+    image: "/services/chiropractic/wellness.jpg",
     intro:
       "Wellness chiropractic care focuses on keeping your spine and nervous system moving well long after your original complaint is gone. Regular adjustments help maintain mobility, posture, and stress resilience so small issues don't become big ones.",
     helpsWith: [
@@ -47,6 +49,7 @@ export const CHIROPRACTIC_SERVICES: ServiceItem[] = [
     name: "Headaches",
     short: "Headache relief",
     tagline: "Address the cause, not just the symptom.",
+    image: "/services/chiropractic/headaches.avif",
     intro:
       "Most headaches have a mechanical driver: tension in the upper neck, jaw, or shoulders. Careful cervical adjustments and soft-tissue work can restore normal motion and take pressure off the nerves that trigger headache pain.",
     helpsWith: [
@@ -68,6 +71,7 @@ export const CHIROPRACTIC_SERVICES: ServiceItem[] = [
     name: "Migraine",
     short: "Migraine support",
     tagline: "Fewer episodes. Better function.",
+    image: "/services/chiropractic/migraine.webp",
     intro:
       "Migraine is complex, but many patients find real relief when the mechanical piece is addressed. We work alongside your medical team to reduce cervical spine irritation, calm the nervous system, and identify lifestyle triggers.",
     helpsWith: [
@@ -88,6 +92,7 @@ export const CHIROPRACTIC_SERVICES: ServiceItem[] = [
     name: "Back Pain",
     short: "Back pain relief",
     tagline: "Get out of pain. Stay out of pain.",
+    image: "/services/chiropractic/back-pain.webp",
     intro:
       "Low- and mid-back pain is one of the most common reasons people come see us. We assess the joints, discs, and muscles involved, then combine adjustments, mobility work, and simple home care to get you moving again.",
     helpsWith: [
@@ -109,6 +114,7 @@ export const CHIROPRACTIC_SERVICES: ServiceItem[] = [
     name: "Neck Pain",
     short: "Neck pain relief",
     tagline: "Turn your head without wincing.",
+    image: "/services/chiropractic/neck-pain.jpeg",
     intro:
       "Tech neck, whiplash, and everyday tension all show up in the same place. We restore normal neck motion with careful adjustments and release the muscles that keep pulling you back into pain.",
     helpsWith: [
@@ -129,6 +135,7 @@ export const CHIROPRACTIC_SERVICES: ServiceItem[] = [
     name: "Radiating Arm/Hand Pain",
     short: "Arm and hand pain",
     tagline: "Calm the nerve. Restore the hand.",
+    image: "/services/chiropractic/radiating-arm-hand-pain.jpg",
     intro:
       "Numbness, tingling, or burning that runs from the neck into the shoulder, arm, or hand usually means a nerve is being irritated. We find where it's happening — neck, shoulder, or wrist — and take pressure off.",
     helpsWith: [
@@ -150,6 +157,7 @@ export const CHIROPRACTIC_SERVICES: ServiceItem[] = [
     name: "Radiating Leg/Feet Pain",
     short: "Sciatica and leg pain",
     tagline: "Take the pressure off the nerve.",
+    image: "/services/chiropractic/radiating-leg-feet-pain.avif",
     intro:
       "Pain that shoots from the low back into the buttock, leg, or foot — the classic sciatica pattern — is almost always a nerve compression issue. We identify the source and use conservative care to relieve pressure and rebuild strength.",
     helpsWith: [
@@ -171,6 +179,7 @@ export const CHIROPRACTIC_SERVICES: ServiceItem[] = [
     name: "Shoulder Pain",
     short: "Shoulder pain relief",
     tagline: "Reach, lift, and sleep without pain.",
+    image: "/services/chiropractic/shoulder-pain.jpeg",
     intro:
       "Shoulder pain often looks like a shoulder problem but starts in the neck, upper back, or shoulder blade. We assess the whole chain and treat what's actually driving the pain.",
     helpsWith: [
@@ -195,6 +204,7 @@ export const MASSAGE_SERVICES: ServiceItem[] = [
     name: "Medical Massage",
     short: "Medical massage",
     tagline: "Targeted work for real problems.",
+    image: "/services/massage/medical-massage.jpg",
     intro:
       "Medical massage is focused, condition-driven bodywork designed to complement your chiropractic care. Sessions target the exact muscles, trigger points, and fascia that are keeping you in pain or limiting your motion.",
     helpsWith: [
@@ -216,6 +226,7 @@ export const MASSAGE_SERVICES: ServiceItem[] = [
     name: "Sports Massage",
     short: "Sports massage",
     tagline: "Recover faster. Perform better.",
+    image: "/services/massage/sports-massage.jpeg",
     intro:
       "Sports massage helps active people train harder and recover cleaner. Whether you lift, run, ride, or weekend-warrior, we focus on the tissue quality and mobility your sport actually demands.",
     helpsWith: [

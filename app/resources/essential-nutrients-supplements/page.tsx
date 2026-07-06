@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -9,6 +10,7 @@ import YouTubeEmbed from "@/components/YouTubeEmbed";
 import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL =
   "https://synergyspineandnerve.com/resources/essential-nutrients-supplements/";
+const HERO_IMAGE = "/resources/essential-nutrients.jpg";
 
 export const metadata: Metadata = {
   title: "Essential Nutrients & Supplements – Synergy Spine and Nerve Center",
@@ -81,7 +83,7 @@ export default function EssentialNutrientsSupplementsPage() {
             className="absolute inset-0 bg-gradient-to-br from-brand-navyDark via-brand-navy/95 to-brand-navyDark"
             aria-hidden="true"
           />
-          <div className="relative mx-auto max-w-6xl px-6 py-20 lg:py-28">
+          <div className="relative mx-auto max-w-6xl px-6 py-20 lg:py-24">
             <Reveal>
               <Link
                 href="/resources/"
@@ -94,22 +96,52 @@ export default function EssentialNutrientsSupplementsPage() {
                 <span>Resources</span>
               </Link>
             </Reveal>
-            <Reveal delay={120}>
-              <h1 className="section-title mt-5 text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.05] uppercase max-w-4xl">
-                Essential nutrients{" "}
-                <span className="italic normal-case text-brand-gold">
-                  &amp; supplements
-                </span>
-              </h1>
-            </Reveal>
-            <Reveal delay={220}>
-              <p className="mt-5 max-w-3xl text-white/80 text-base md:text-lg leading-relaxed">
-                Looking for effective nutrients or supplements to relieve your
-                symptoms and support overall health? Start with the three
-                most-deficient nutrients in the modern diet, and a brand we
-                actually trust.
-              </p>
-            </Reveal>
+
+            <div className="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+              <div className="lg:col-span-7">
+                <Reveal delay={120}>
+                  <h1 className="section-title text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.05] uppercase">
+                    Essential{" "}
+                    <span className="italic normal-case text-brand-gold">
+                      nutrients
+                    </span>
+                  </h1>
+                </Reveal>
+                <Reveal delay={220}>
+                  <p className="mt-5 max-w-2xl text-white/80 text-base md:text-lg leading-relaxed">
+                    Looking for effective nutrients to relieve your symptoms
+                    and support overall health? Start with the three
+                    most-deficient nutrients in the modern diet, and a brand
+                    we actually trust.
+                  </p>
+                </Reveal>
+              </div>
+
+              <div className="lg:col-span-5">
+                <Reveal delay={200} variant="fade">
+                  <div className="relative">
+                    <div
+                      aria-hidden="true"
+                      className="absolute -top-6 -left-6 h-24 w-24 rounded-full bg-brand-gold/25 blur-2xl"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className="absolute -bottom-8 -right-6 h-28 w-28 rounded-full bg-brand-blue/25 blur-2xl"
+                    />
+                    <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] ring-1 ring-white/10 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)]">
+                      <Image
+                        src={HERO_IMAGE}
+                        alt="Essential nutrients at Synergy Spine and Nerve Center"
+                        fill
+                        priority
+                        sizes="(min-width: 1024px) 460px, 80vw"
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                </Reveal>
+              </div>
+            </div>
           </div>
           <div className="relative">
             <svg viewBox="0 0 1440 80" className="block w-full h-12 md:h-20" preserveAspectRatio="none" aria-hidden="true">

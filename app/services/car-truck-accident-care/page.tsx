@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -10,6 +11,7 @@ const CANONICAL =
   "https://synergyspineandnerve.com/services/car-truck-accident-care/";
 const PHONE_DISPLAY = "(505) 891-2280";
 const PHONE_HREF = "tel:+15058912280";
+const HERO_IMAGE = "/services/car-truck-accident-care.jpg";
 
 export const metadata: Metadata = {
   title:
@@ -103,41 +105,71 @@ export default function CarTruckAccidentCarePage() {
           <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-brand-blue/30 blur-3xl animate-drift" />
           <div className="absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-brand-gold/20 blur-3xl animate-drift" />
 
-          <div className="relative mx-auto max-w-4xl px-6 py-20 lg:py-24">
-            <Reveal>
-              <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-gold">
-                Services
-              </p>
-            </Reveal>
-            <Reveal delay={120}>
-              <h1 className="section-title mt-3 text-3xl md:text-5xl font-semibold leading-[1.1] uppercase">
-                Car &amp; Truck{" "}
-                <span className="italic normal-case text-brand-gold">
-                  accident care
-                </span>
-              </h1>
-            </Reveal>
-            <Reveal delay={220}>
-              <p className="mt-6 text-white/85 text-base md:text-lg leading-relaxed max-w-2xl">
-                Even a low-speed collision can leave you sore, stiff, and dealing
-                with symptoms that take weeks to show up. We assess, treat, and
-                document your recovery — and we&apos;ll tell you honestly whether
-                chiropractic care is the right first step.
-              </p>
-            </Reveal>
-            <Reveal delay={320}>
-              <div className="mt-8 flex flex-wrap items-center gap-3">
-                <BookTrigger className="group/cta inline-flex items-center gap-2 rounded-full bg-brand-gold px-6 py-2.5 text-sm font-bold uppercase tracking-wide text-brand-navyDark hover:bg-brand-goldSoft transition-colors">
-                  Book Appointment
-                </BookTrigger>
-                <a
-                  href={PHONE_HREF}
-                  className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-2.5 text-sm font-semibold text-white hover:bg-white hover:text-brand-navyDark transition-colors"
-                >
-                  Call {PHONE_DISPLAY}
-                </a>
+          <div className="relative mx-auto max-w-6xl px-6 py-20 lg:py-24">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+              <div className="lg:col-span-7">
+                <Reveal>
+                  <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-gold">
+                    Services
+                  </p>
+                </Reveal>
+                <Reveal delay={120}>
+                  <h1 className="section-title mt-3 text-3xl md:text-5xl font-semibold leading-[1.1] uppercase">
+                    Car &amp; Truck{" "}
+                    <span className="italic normal-case text-brand-gold">
+                      accident care
+                    </span>
+                  </h1>
+                </Reveal>
+                <Reveal delay={220}>
+                  <p className="mt-6 text-white/85 text-base md:text-lg leading-relaxed max-w-2xl">
+                    Even a low-speed collision can leave you sore, stiff, and
+                    dealing with symptoms that take weeks to show up. We
+                    assess, treat, and document your recovery — and
+                    we&apos;ll tell you honestly whether chiropractic care is
+                    the right first step.
+                  </p>
+                </Reveal>
+                <Reveal delay={320}>
+                  <div className="mt-8 flex flex-wrap items-center gap-3">
+                    <BookTrigger className="group/cta inline-flex items-center gap-2 rounded-full bg-brand-gold px-6 py-2.5 text-sm font-bold uppercase tracking-wide text-brand-navyDark hover:bg-brand-goldSoft transition-colors">
+                      Book Appointment
+                    </BookTrigger>
+                    <a
+                      href={PHONE_HREF}
+                      className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-2.5 text-sm font-semibold text-white hover:bg-white hover:text-brand-navyDark transition-colors"
+                    >
+                      Call {PHONE_DISPLAY}
+                    </a>
+                  </div>
+                </Reveal>
               </div>
-            </Reveal>
+
+              <div className="lg:col-span-5">
+                <Reveal delay={200} variant="fade">
+                  <div className="relative">
+                    <div
+                      aria-hidden="true"
+                      className="absolute -top-6 -left-6 h-24 w-24 rounded-full bg-brand-gold/25 blur-2xl"
+                    />
+                    <div
+                      aria-hidden="true"
+                      className="absolute -bottom-8 -right-6 h-28 w-28 rounded-full bg-brand-blue/25 blur-2xl"
+                    />
+                    <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] ring-1 ring-white/10 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)]">
+                      <Image
+                        src={HERO_IMAGE}
+                        alt="Car and truck accident chiropractic care in Rio Rancho"
+                        fill
+                        priority
+                        sizes="(min-width: 1024px) 460px, 80vw"
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                </Reveal>
+              </div>
+            </div>
           </div>
         </section>
 

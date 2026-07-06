@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -105,26 +106,39 @@ export default function ServiceHub({ category }: Props) {
                 <Reveal as="li" key={item.slug} delay={i * 60}>
                   <Link
                     href={`/services/${category.slug}/${item.slug}/`}
-                    className="group flex h-full flex-col rounded-2xl bg-white p-6 ring-1 ring-black/5 hover:ring-brand-blue/40 hover:-translate-y-0.5 transition shadow-sm hover:shadow-md"
+                    className="group flex h-full flex-col overflow-hidden rounded-2xl bg-white ring-1 ring-black/5 hover:ring-brand-blue/40 hover:-translate-y-0.5 transition shadow-sm hover:shadow-md"
                   >
-                    <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-brand-blue">
-                      {category.name}
-                    </p>
-                    <h3 className="mt-2 text-lg md:text-xl font-semibold text-brand-navyDark leading-snug">
-                      {item.name}
-                    </h3>
-                    <p className="mt-2 text-sm text-brand-text leading-relaxed">
-                      {item.tagline}
-                    </p>
-                    <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-blue">
-                      Learn more
-                      <span
-                        aria-hidden="true"
-                        className="transition-transform group-hover:translate-x-0.5"
-                      >
-                        →
+                    {item.image && (
+                      <div className="relative aspect-[16/10] w-full overflow-hidden bg-brand-bg">
+                        <Image
+                          src={item.image}
+                          alt={item.name}
+                          fill
+                          sizes="(min-width: 1024px) 360px, (min-width: 640px) 45vw, 90vw"
+                          className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                        />
+                      </div>
+                    )}
+                    <div className="flex flex-1 flex-col p-6">
+                      <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-brand-blue">
+                        {category.name}
+                      </p>
+                      <h3 className="mt-2 text-lg md:text-xl font-semibold text-brand-navyDark leading-snug">
+                        {item.name}
+                      </h3>
+                      <p className="mt-2 text-sm text-brand-text leading-relaxed">
+                        {item.tagline}
+                      </p>
+                      <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-blue">
+                        Learn more
+                        <span
+                          aria-hidden="true"
+                          className="transition-transform group-hover:translate-x-0.5"
+                        >
+                          →
+                        </span>
                       </span>
-                    </span>
+                    </div>
                   </Link>
                 </Reveal>
               ))}
