@@ -34,7 +34,9 @@ export function useBooking(): BookingContextValue {
 export default function BookingProvider({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [step, setStep] = useState<"intro" | "payment">("intro");
   const dialogRef = useRef<HTMLDivElement | null>(null);
+  const iframeRef = useRef<HTMLIFrameElement | null>(null);
   const previouslyFocused = useRef<HTMLElement | null>(null);
 
   const open = useCallback(() => {
@@ -42,6 +44,7 @@ export default function BookingProvider({ children }: { children: ReactNode }) {
       previouslyFocused.current = document.activeElement as HTMLElement | null;
     }
     setMounted(true);
+    setStep("intro");
     setIsOpen(true);
   }, []);
 
@@ -74,6 +77,79 @@ export default function BookingProvider({ children }: { children: ReactNode }) {
       previouslyFocused.current?.focus?.();
     }
   }, [isOpen]);
+
+  // Detect when the LeadConnector survey iframe reaches the payment step.
+  // The widget resizes the iframe as it moves between slides; the card
+  // form is noticeably taller than the intro fields, so we watch the
+  // iframe height and flip the header copy once it grows past a threshold.
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const iframe = iframeRef.current;
+    if (!iframe) return;
+
+    // Threshold in px; the intro slide (name/email) is ~500-560px; once
+    // Stripe's card fields render the iframe jumps well above 640px.
+    const PAYMENT_HEIGHT_THRESHOLD = 640;
+
+    const check = () => {
+      const attr = Number(iframe.getAttribute("height"));
+      const measured = iframe.offsetHeight;
+      const h = Math.max(
+        Number.isFinite(attr) ? attr : 0,
+        Number.isFinite(measured) ? measured : 0
+      );
+      if (h >= PAYMENT_HEIGHT_THRESHOLD) {
+        setStep("payment");
+      }
+    };
+
+    check();
+
+    const ro =
+      typeof ResizeObserver !== "undefined" ? new ResizeObserver(check) : null;
+    ro?.observe(iframe);
+
+    const mo = new MutationObserver(check);
+    mo.observe(iframe, { attributes: true, attributeFilter: ["height", "style"] });
+
+    // Extra safety net: postMessage-based detection for widget messages
+    // that mention the payment step.
+    const onMessage = (e: MessageEvent) => {
+      const origin = e.origin || "";
+      if (
+        !origin.includes("leadconnectorhq") &&
+        !origin.includes("msgsndr") &&
+        !origin.includes("gohighlevel")
+      ) {
+        return;
+      }
+      const data = e.data;
+      if (data == null) return;
+      let asString = "";
+      try {
+        asString = typeof data === "string" ? data : JSON.stringify(data);
+      } catch {
+        return;
+      }
+      const lower = asString.toLowerCase();
+      if (
+        lower.includes("payment") ||
+        lower.includes("stripe") ||
+        lower.includes("card_number") ||
+        lower.includes("\"card\"")
+      ) {
+        setStep("payment");
+      }
+    };
+    window.addEventListener("message", onMessage);
+
+    return () => {
+      ro?.disconnect();
+      mo.disconnect();
+      window.removeEventListener("message", onMessage);
+    };
+  }, [isOpen, mounted]);
 
   return (
     <BookingContext.Provider value={{ open, close, isOpen }}>
@@ -122,13 +198,28 @@ export default function BookingProvider({ children }: { children: ReactNode }) {
                       id="booking-title"
                       className="mt-2 font-serif text-2xl leading-tight sm:text-3xl"
                     >
-                      Let&apos;s get you feeling better.
+                      {step === "payment"
+                        ? "Let's get you feeling better."
+                        : "Your new-patient visit includes:"}
                     </h2>
-                    <p className="mt-2 max-w-md text-sm text-white/80">
-                      Due to high demand and the low cost of this special
-                      offer, please enter your payment details below so that
-                      your appointment time will be reserved for you.
-                    </p>
+                    {step === "payment" ? (
+                      <p className="mt-2 max-w-md text-sm text-white/80">
+                        Due to high demand and the low cost of this special
+                        offer, please enter your payment details below so
+                        that your appointment time will be reserved for you.
+                      </p>
+                    ) : (
+                      <>
+                        <p className="mt-2 max-w-md text-sm text-white/80">
+                          A one-on-one consultation, a complete spinal
+                          health assessment, any necessary X-rays, a first
+                          treatment, and a care plan.
+                        </p>
+                        <p className="mt-3 max-w-md text-sm font-semibold text-brand-gold">
+                          Can&apos;t wait to see you soon!
+                        </p>
+                      </>
+                    )}
                   </div>
 
                   <button
@@ -159,6 +250,7 @@ export default function BookingProvider({ children }: { children: ReactNode }) {
                 <div className="max-h-[70vh] overflow-y-auto px-2 pb-4 pt-2 sm:px-4">
                   {mounted && (
                     <iframe
+                      ref={iframeRef}
                       src={SURVEY_SRC}
                       id={SURVEY_ID}
                       title="Book an appointment"

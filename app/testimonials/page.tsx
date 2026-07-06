@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -23,70 +24,12 @@ export const metadata: Metadata = {
   },
 };
 
-type Review = {
-  name: string;
-  quote: string;
-  rating: 1 | 2 | 3 | 4 | 5;
-  city?: string;
-  condition?: string;
-};
-
-// TODO: Replace these placeholder entries with real Google reviews for
-// Synergy Spine and Nerve Center. Paste each review verbatim from the
-// Google Business Profile: name, quote, and star count.
-const REVIEWS: Review[] = [
-  {
-    name: "Maria G.",
-    city: "Rio Rancho, NM",
-    quote:
-      "After years of chronic lower-back pain I had given up on the idea of feeling better. Dr. Brad ran the most thorough exam I've ever had and built me a real plan. Six months in I'm hiking with my grandkids again.",
-    condition: "Chronic lower-back pain",
-    rating: 5,
-  },
-  {
-    name: "James T.",
-    city: "Albuquerque, NM",
-    quote:
-      "I came in for migraines that had taken over my life. The Spinal Health Assessment showed exactly what was going on. The combination of adjustments, spinal hygiene, and nutrition coaching changed everything for me.",
-    condition: "Chronic migraines",
-    rating: 5,
-  },
-  {
-    name: "Linda K.",
-    city: "Rio Rancho, NM",
-    quote:
-      "Austin and Dr. Brad are the most patient, knowledgeable team I've ever met. They actually listen, and they don't sell you anything you don't need. Honest care.",
-    condition: "Neck pain & posture",
-    rating: 5,
-  },
-  {
-    name: "David R.",
-    city: "Bernalillo, NM",
-    quote:
-      "Diagnosed with peripheral neuropathy and told it would only get worse. The four-pillar plan here turned that around. I'm walking, sleeping, and living without burning feet for the first time in years.",
-    condition: "Peripheral neuropathy",
-    rating: 5,
-  },
-  {
-    name: "Patricia W.",
-    city: "Corrales, NM",
-    quote:
-      "Pregnancy chiropractic from Dr. Brad made my third trimester actually enjoyable. Faster labor, faster recovery, and zero issues with my pelvis afterward. Worth every visit.",
-    condition: "Pregnancy chiropractic",
-    rating: 5,
-  },
-  {
-    name: "Robert S.",
-    city: "Placitas, NM",
-    quote:
-      "I was skeptical of all the assessments and the SHA score thing, until I saw the data. Then I bought in. My score has gone from 64 to 92 in a year, and I feel it.",
-    condition: "General wellness",
-    rating: 5,
-  },
-];
-
 const GOOGLE_REVIEWS_URL =
   "https://www.google.com/search?q=Synergy+Spine+and+Nerve+Center+Reviews";
+
+// Elfsight Google Reviews widget id (managed at elfsight.com).
+const ELFSIGHT_APP_ID = "377d8f4a-02dd-4071-bf0a-8368c1fb8fd8";
+const ELFSIGHT_SCRIPT_SRC = "https://elfsightcdn.com/platform.js";
 
 const SCHEMA = {
   "@context": "https://schema.org",
@@ -96,21 +39,10 @@ const SCHEMA = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
-    reviewCount: REVIEWS.length,
+    reviewCount: 89,
     bestRating: "5",
     worstRating: "1",
   },
-  review: REVIEWS.map((r) => ({
-    "@type": "Review",
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: r.rating,
-      bestRating: "5",
-      worstRating: "1",
-    },
-    author: { "@type": "Person", name: r.name },
-    reviewBody: r.quote,
-  })),
 };
 
 function Stars({ rating }: { rating: number }) {
@@ -314,7 +246,7 @@ export default function TestimonialsPage() {
           </div>
         </section>
 
-        {/* REVIEWS — moved up, right after hero */}
+        {/* REVIEWS — Elfsight Google Reviews widget */}
         <section id="reviews" className="bg-brand-bg py-16 lg:py-20">
           <div className="mx-auto max-w-6xl px-6">
             <Reveal>
@@ -334,49 +266,17 @@ export default function TestimonialsPage() {
                   .
                 </h2>
                 <p className="mt-4 text-brand-text">
-                  A selection of reviews left by real patients. See every
-                  review on our Google Business Profile.
+                  Real reviews from real patients, pulled straight from our
+                  Google Business Profile.
                 </p>
               </div>
             </Reveal>
 
-            <ul className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {REVIEWS.map((r, i) => (
-                <Reveal as="li" key={`${r.name}-${i}`} delay={(i % 3) * 80}>
-                  <article className="relative h-full bg-white rounded-3xl ring-1 ring-black/5 p-7 shadow-[0_2px_10px_rgba(13,35,64,0.04)] hover:shadow-[0_30px_60px_-20px_rgba(13,35,64,0.18)] hover:-translate-y-1 transition-all duration-500">
-                    <GoogleGIcon className="absolute top-6 right-6 h-6 w-6" />
-                    <Stars rating={r.rating} />
-                    <p className="mt-4 text-brand-text leading-relaxed">
-                      &ldquo;{r.quote}&rdquo;
-                    </p>
-                    <div className="mt-6 pt-5 border-t border-black/5">
-                      <p className="section-title text-sm text-brand-navyDark font-semibold">
-                        {r.name}
-                      </p>
-                      {(r.city || r.condition) && (
-                        <p className="mt-0.5 text-[11px] uppercase tracking-[0.18em] font-semibold text-brand-textLight">
-                          {[r.city, r.condition].filter(Boolean).join(" · ")}
-                        </p>
-                      )}
-                    </div>
-                  </article>
-                </Reveal>
-              ))}
-            </ul>
-
-            <Reveal delay={200}>
-              <div className="mt-10 text-center">
-                <a
-                  href={GOOGLE_REVIEWS_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-white ring-1 ring-black/10 px-6 py-3 text-sm font-semibold text-brand-navyDark hover:ring-brand-blue/40 hover:text-brand-blue transition shadow-sm"
-                >
-                  <GoogleGIcon className="h-4 w-4" />
-                  See every review on Google
-                  <span aria-hidden="true">↗</span>
-                </a>
-              </div>
+            <Reveal delay={120}>
+              <div
+                className={`elfsight-app-${ELFSIGHT_APP_ID} mt-10`}
+                data-elfsight-app-lazy
+              />
             </Reveal>
           </div>
         </section>
@@ -479,6 +379,12 @@ export default function TestimonialsPage() {
       </main>
 
       <Footer />
+
+      <Script
+        src={ELFSIGHT_SCRIPT_SRC}
+        strategy="afterInteractive"
+        async
+      />
 
       <script
         type="application/ld+json"

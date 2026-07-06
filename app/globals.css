@@ -44,3 +44,25 @@
     line-height: 1.1;
   }
 }
+
+/* Hide Elfsight free-tier "Free Google Reviews Widget" branding badge. */
+.eapps-link,
+.eapps-widget-toolbar,
+[class*="eapps-widget-toolbar"],
+[class*="eapps-link"],
+[class*="ElfsightWidget__Link"],
+[class*="Widget__Copyright"],
+[class*="poweredBy"],
+[class*="PoweredBy"],
+[class*="powered-by"],
+[data-elfsight-app-lazy] a[href*="elfsight"],
+a[href*="elfsight.com"],
+a[href*="apps.elfsight"],
+a[href*="widget.elfsight"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  pointer-events: none !important;
+}

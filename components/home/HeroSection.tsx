@@ -332,7 +332,7 @@ export default function HeroSection() {
                     Years caring
                   </p>
                   <p className="section-title text-2xl text-brand-navyDark font-semibold">
-                    15<span className="text-brand-gold">+</span>
+                    25<span className="text-brand-gold">+</span>
                   </p>
                 </div>
 

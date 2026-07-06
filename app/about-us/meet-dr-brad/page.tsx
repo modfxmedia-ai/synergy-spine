@@ -320,7 +320,10 @@ export default function MeetDrBradPage() {
                   </div>
 
                   {/* Floating spine accent */}
-                  <div className="absolute -top-10 -right-10 w-28 h-40 opacity-90 hidden md:block">
+                  <div
+                    className="absolute -top-10 -right-10 w-28 h-40 opacity-90 hidden md:block pointer-events-none"
+                    aria-hidden="true"
+                  >
                     <SpineGraphic className="w-full h-full" />
                   </div>
                 </div>
@@ -370,22 +373,16 @@ export default function MeetDrBradPage() {
                     My lungs worked better when my spine wasn&apos;t putting
                     pressure on my nerves. Today I am relatively drug free and
                     I became a chiropractor so others could experience the same
-                    health benefits I have.{" "}
-                    <Link
-                      href="/about-us/meet-dr-brad/dr-brads-full-story/"
-                      className="text-brand-blue font-semibold underline-offset-4 hover:underline"
-                    >
-                      You may read more of my story here.
-                    </Link>
+                    health benefits I have.
                   </p>
                 </div>
 
-                <div className="mt-8">
+                <div className="relative z-10 mt-8">
                   <Link
                     href="/about-us/meet-dr-brad/dr-brads-full-story/"
-                    className="group inline-flex items-center gap-2 rounded-full bg-brand-blue text-white px-6 py-3 text-sm font-semibold hover:bg-brand-navyDark transition-colors shadow-[0_10px_30px_-10px_rgba(1,112,185,0.5)]"
+                    className="group relative z-10 inline-flex items-center gap-2 rounded-full bg-brand-blue text-white px-6 py-3 text-sm font-semibold hover:bg-brand-navyDark transition-colors shadow-[0_10px_30px_-10px_rgba(1,112,185,0.5)]"
                   >
-                    <span>Full Story</span>
+                    <span>Read the Full Story</span>
                     <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <line x1="5" y1="12" x2="19" y2="12" />
                       <polyline points="12 5 19 12 12 19" />

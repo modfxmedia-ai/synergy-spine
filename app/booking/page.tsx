@@ -58,21 +58,22 @@ export default function BookingPage() {
           <div className="relative mx-auto max-w-4xl px-6 py-20 lg:py-24 text-center">
             <Reveal>
               <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-gold">
-                Schedule Your Visit
+                Final step
               </p>
             </Reveal>
             <Reveal delay={120}>
               <h1 className="section-title mt-3 text-3xl md:text-5xl font-semibold leading-[1.1] uppercase">
-                Book your{" "}
+                Book your slot with{" "}
                 <span className="italic normal-case text-brand-gold">
-                  appointment
+                  Dr. Brad
                 </span>
               </h1>
             </Reveal>
             <Reveal delay={220}>
               <p className="mt-6 text-white/85 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-                Pick a time that works best for you and we&apos;ll take care of the
-                rest. If you don&apos;t see a slot that fits, give us a call at{" "}
+                You&apos;re one click away. Pick the time that works best and
+                we&apos;ll take care of the rest. If nothing on the calendar
+                fits your schedule, give us a call at{" "}
                 <a
                   href="tel:+15058912280"
                   className="font-semibold text-brand-gold underline underline-offset-4 hover:text-white"

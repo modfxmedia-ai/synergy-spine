@@ -11,7 +11,7 @@ import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL =
   "https://synergyspineandnerve.com/about-us/meet-dr-brad/dr-brads-full-story/";
 
-const PORTRAIT = "/team/doctor-brad-fackrell.jpg";
+const PORTRAIT = "/team/dr-brad.webp";
 const FAMILY = "/team/dr-brad-family.jpg";
 
 export const metadata: Metadata = {
