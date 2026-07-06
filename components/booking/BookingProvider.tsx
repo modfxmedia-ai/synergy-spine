@@ -125,8 +125,9 @@ export default function BookingProvider({ children }: { children: ReactNode }) {
                       Let&apos;s get you feeling better.
                     </h2>
                     <p className="mt-2 max-w-md text-sm text-white/80">
-                      Tell us a little about you and we&apos;ll reach out to
-                      confirm your appointment at our Rio Rancho office.
+                      Due to high demand and the low cost of this special
+                      offer, please enter your payment details below so that
+                      your appointment time will be reserved for you.
                     </p>
                   </div>
 
