@@ -208,7 +208,7 @@ export default function FirstVisitPage() {
                 <BookTrigger
                   className="group/cta inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-6 pr-2 py-2 text-sm font-bold hover:bg-white transition-colors shadow-[0_10px_30px_-10px_rgba(245,197,24,0.6)]"
                 >
-                  <span>Start Intake Form</span>
+                  <span>Book an appointment</span>
                   <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand-navyDark text-brand-gold group-hover/cta:bg-brand-blue group-hover/cta:text-white transition-colors">
                     <svg className="w-4 h-4 group-hover/cta:translate-x-0.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <line x1="5" y1="12" x2="19" y2="12" />
@@ -337,20 +337,20 @@ export default function FirstVisitPage() {
                 <div className="relative grid md:grid-cols-2 items-center gap-6">
                   <div>
                     <p className="text-[11px] uppercase tracking-[0.22em] font-bold text-brand-gold">
-                      Save time before you arrive
+                      Ready to get started
                     </p>
                     <h3 className="section-title mt-2 text-2xl md:text-3xl font-semibold leading-snug">
-                      Fill out your intake forms{" "}
-                      <span className="italic text-brand-gold">online</span>.
+                      Book an{" "}
+                      <span className="italic text-brand-gold">appointment</span>.
                     </h3>
                     <p className="mt-3 text-white/85">
-                      It takes just a few minutes. Your wait at the office will
-                      be very short.
+                      It only takes a minute. Pick a time that works for you
+                      and we&apos;ll see you soon.
                     </p>
                     <BookTrigger
                       className="mt-5 inline-flex items-center gap-2 rounded-full bg-white text-brand-navyDark px-6 py-2.5 text-sm font-bold hover:bg-brand-gold transition-colors"
                     >
-                      <span>Open New Patient Form</span>
+                      <span>Book an appointment</span>
                       <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <polyline points="12 5 19 12 12 19" />
