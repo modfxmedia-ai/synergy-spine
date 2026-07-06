@@ -187,23 +187,6 @@ export default function FeaturesBar() {
                     <p className="mt-3 text-brand-textLight text-sm leading-relaxed">
                       {feature.description}
                     </p>
-
-                    <div className="mt-8 pt-6 border-t border-black/5 flex items-center justify-between text-[12px] font-semibold uppercase tracking-[0.18em] text-brand-textLight group-hover:text-brand-navyDark transition-colors">
-                      <span>Learn more</span>
-                      <svg
-                        className="w-4 h-4 -translate-x-1 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        aria-hidden="true"
-                      >
-                        <line x1="5" y1="12" x2="19" y2="12" />
-                        <polyline points="12 5 19 12 12 19" />
-                      </svg>
-                    </div>
                   </div>
                 </article>
               </Reveal>
