@@ -1,11 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { useBooking } from "./booking/BookingProvider";
 
 const PHONE_DISPLAY = "(505) 891-2280";
 const PHONE_TEL = "+15058912280";
 const SHOW_AFTER_PX = 320;
+
+// Routes where the floating "Book" bar should never appear.
+const HIDDEN_ROUTES = ["/booking"];
 
 function PhoneIcon({ className = "" }: { className?: string }) {
   return (
@@ -65,6 +69,7 @@ function ArrowRightIcon({ className = "" }: { className?: string }) {
 export default function BottomBookBar() {
   const [visible, setVisible] = useState(false);
   const { open, isOpen } = useBooking();
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > SHOW_AFTER_PX);
@@ -72,6 +77,13 @@ export default function BottomBookBar() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const normalized = (pathname ?? "").replace(/\/+$/, "") || "/";
+  const routeHidden = HIDDEN_ROUTES.some(
+    (r) => normalized === r || normalized.startsWith(`${r}/`)
+  );
+
+  if (routeHidden) return null;
 
   const shown = visible && !isOpen;
 
