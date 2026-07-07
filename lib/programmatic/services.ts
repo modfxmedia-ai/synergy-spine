@@ -286,10 +286,6 @@ export const SERVICES: ServiceCopy[] = [
         q: "What's the difference between back pain from a muscle vs. a disc?",
         a: "Muscle pain is usually local, dull, and worse with movement. Disc pain often radiates, can numb or tingle, and may be worse with sitting or sneezing. Our exam separates the two so the right tool gets used.",
       },
-      {
-        q: "Do you offer same-day appointments for {city} patients?",
-        a: "Yes. Call (505) 891-2280 and ask for first-available, we leave intentional gaps for new acute cases.",
-      },
     ],
     related: ["spinal-decompression", "sciatica-relief", "herniated-disc-treatment"],
   },
@@ -413,7 +409,7 @@ export const SERVICES: ServiceCopy[] = [
     whatItIs:
       "Whiplash is a soft-tissue and joint injury caused by a rapid back-and-forth motion of the head, most commonly in a rear-end collision. The classic mistake is to skip evaluation because 'nothing feels broken.' Whiplash symptoms often appear 24–72 hours later, and untreated whiplash is the single biggest predictor of chronic neck pain a decade later.",
     howItWorks: [
-      "A same-day post-accident exam, we hold spots open.",
+      "A prompt post-accident exam.",
       "Imaging when warranted (or referral if findings suggest it).",
       "Documentation that satisfies attorneys and insurers, we know the paperwork.",
       "A graded care plan from acute to recovery to function.",
@@ -428,7 +424,6 @@ export const SERVICES: ServiceCopy[] = [
     whoItsFor:
       "Any {city}-area driver or passenger involved in a recent collision, even low-speed. Don't wait for symptoms to set in before getting documented.",
     expect: [
-      "Same-day appointment after a collision",
       "Documentation suitable for insurance or legal counsel",
       "Care coordinated with your attorney if you have one",
       "A clear timeline and goal, re-evaluated every 12 visits",

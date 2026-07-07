@@ -1,7 +1,6 @@
 const ITEMS = [
   "Now Welcoming New Patients",
   "Established Patients · Click to Schedule",
-  "Same-day Appointments Available",
   "Evidence-Based Modern Chiropractic",
 ];
 
