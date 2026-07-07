@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title:
     "Car & Truck Accident Care in Rio Rancho | Synergy Spine & Nerve Center",
   description:
-    "Chiropractic care after a car or truck accident in Rio Rancho, NM. Whiplash, back and neck pain, and post-collision recovery — we document your care and coordinate with your insurance.",
+    "Chiropractic care after a car or truck accident in Rio Rancho, NM. Whiplash, back and neck pain, and post-collision recovery. We document your care and coordinate with your insurance.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Car & Truck Accident Care | Synergy Spine & Nerve Center",
@@ -46,7 +46,7 @@ const PROCESS = [
   },
   {
     title: "Imaging and referrals when needed",
-    body: "If imaging or a medical referral is warranted, we say so and coordinate the next step — no guessing, no wasted visits.",
+    body: "If imaging or a medical referral is warranted, we say so and coordinate the next step, no guessing, no wasted visits.",
   },
   {
     title: "Focused treatment",
@@ -125,7 +125,7 @@ export default function CarTruckAccidentCarePage() {
                   <p className="mt-6 text-white/85 text-base md:text-lg leading-relaxed max-w-2xl">
                     Even a low-speed collision can leave you sore, stiff, and
                     dealing with symptoms that take weeks to show up. We
-                    assess, treat, and document your recovery — and
+                    assess, treat, and document your recovery, and
                     we&apos;ll tell you honestly whether chiropractic care is
                     the right first step.
                   </p>
@@ -315,7 +315,7 @@ export default function CarTruckAccidentCarePage() {
             <Reveal delay={120}>
               <p className="mt-4 text-white/80">
                 The sooner we can assess and start care, the smoother the
-                recovery — even if symptoms feel minor right now.
+                recovery, even if symptoms feel minor right now.
               </p>
             </Reveal>
             <Reveal delay={200}>

@@ -145,7 +145,7 @@ export default function TestimonialsPage() {
                   <p className="mt-6 text-white/85 text-base md:text-lg leading-relaxed max-w-2xl">
                     We believe everyone matters, and everyone can take their
                     next step toward better health. We make no claim to cure
-                    pain, sickness, or disease — we simply cannot do that.
+                    pain, sickness, or disease. We simply cannot do that.
                     What we can promise is that we&apos;ll do everything in
                     our power to help your body heal.
                   </p>
@@ -246,7 +246,7 @@ export default function TestimonialsPage() {
           </div>
         </section>
 
-        {/* REVIEWS — Elfsight Google Reviews widget */}
+        {/* REVIEWS - Elfsight Google Reviews widget */}
         <section id="reviews" className="bg-brand-bg py-16 lg:py-20">
           <div className="mx-auto max-w-6xl px-6">
             <Reveal>
@@ -341,7 +341,7 @@ export default function TestimonialsPage() {
                 <span className="italic text-brand-gold">next</span>.
               </p>
               <p className="mt-4 text-white/80">
-                Start with a thorough exam and a real plan — the $37 New
+                Start with a thorough exam and a real plan. The $37 New
                 Patient Special.
               </p>
             </Reveal>

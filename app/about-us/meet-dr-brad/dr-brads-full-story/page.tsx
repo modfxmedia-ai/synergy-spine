@@ -93,7 +93,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Dr. Brad Fackrell’s Full Story",
   description:
-    "The full personal story of Dr. Brad Fackrell — from a teenage wrestling injury to severe asthma to a drug-free life through wellness chiropractic care.",
+    "The full personal story of Dr. Brad Fackrell, from a teenage wrestling injury to severe asthma to a drug-free life through wellness chiropractic care.",
   author: {
     "@type": "Person",
     name: "Dr. Brad Fackrell",
@@ -185,7 +185,7 @@ export default function DrBradsFullStoryPage() {
                 <Reveal delay={300}>
                   <p className="mt-6 max-w-xl text-white/85 text-base md:text-lg leading-relaxed">
                     From wrestling injuries at 16 to severe asthma to a
-                    drug-free life — here&apos;s the full story of how
+                    drug-free life. Here&apos;s the full story of how
                     chiropractic changed everything.
                   </p>
                 </Reveal>
@@ -387,7 +387,7 @@ export default function DrBradsFullStoryPage() {
                             looked back.
                           </blockquote>
                           <figcaption className="relative mt-5 text-[11px] font-bold uppercase tracking-[0.22em] text-brand-gold">
-                            — Dr. Brad Fackrell
+                            Dr. Brad Fackrell
                           </figcaption>
                         </figure>
                       )}
@@ -460,7 +460,7 @@ export default function DrBradsFullStoryPage() {
                     At Synergy Spine and Nerve Center, we believe that everyone
                     matters and that everyone can take their next step toward
                     better health. We take pride in discovering the cause of
-                    your problem — whether it&apos;s neck or back pain,
+                    your problem, whether it&apos;s neck or back pain,
                     neuropathy, or just wanting to feel your best. We illuminate
                     the possibilities and then liberate you from your pain.
                   </p>

@@ -106,7 +106,7 @@ export const CHIROPRACTIC_SERVICES: ServiceItem[] = [
       "Orthopedic and neurological exam",
       "Adjustments plus targeted soft-tissue therapy",
       "Home stretches and lifting tips",
-      "A clear plan with milestones — no open-ended care",
+      "A clear plan with milestones, no open-ended care",
     ],
   },
   {
@@ -137,7 +137,7 @@ export const CHIROPRACTIC_SERVICES: ServiceItem[] = [
     tagline: "Calm the nerve. Restore the hand.",
     image: "/services/chiropractic/radiating-arm-hand-pain.jpg",
     intro:
-      "Numbness, tingling, or burning that runs from the neck into the shoulder, arm, or hand usually means a nerve is being irritated. We find where it's happening — neck, shoulder, or wrist — and take pressure off.",
+      "Numbness, tingling, or burning that runs from the neck into the shoulder, arm, or hand usually means a nerve is being irritated. We find where it's happening (neck, shoulder, or wrist) and take pressure off.",
     helpsWith: [
       "Pinched nerves in the neck",
       "Thoracic outlet irritation",
@@ -159,7 +159,7 @@ export const CHIROPRACTIC_SERVICES: ServiceItem[] = [
     tagline: "Take the pressure off the nerve.",
     image: "/services/chiropractic/radiating-leg-feet-pain.avif",
     intro:
-      "Pain that shoots from the low back into the buttock, leg, or foot — the classic sciatica pattern — is almost always a nerve compression issue. We identify the source and use conservative care to relieve pressure and rebuild strength.",
+      "Pain that shoots from the low back into the buttock, leg, or foot (the classic sciatica pattern) is almost always a nerve compression issue. We identify the source and use conservative care to relieve pressure and rebuild strength.",
     helpsWith: [
       "Sciatica with sharp leg or foot pain",
       "Numbness or tingling in the leg",

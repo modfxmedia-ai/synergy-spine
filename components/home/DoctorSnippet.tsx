@@ -10,7 +10,7 @@ const DOCTOR = {
   quote:
     "I became a chiropractor so others could experience the same drug-free healing I did.",
   bio:
-    "After overcoming severe childhood asthma through chiropractic care, Dr. Brad founded Synergy Spine and Nerve Center in Rio Rancho — helping families across New Mexico feel their best, without medication.",
+    "After overcoming severe childhood asthma through chiropractic care, Dr. Brad founded Synergy Spine and Nerve Center in Rio Rancho, helping families across New Mexico feel their best, without medication.",
   stats: [
     { value: "30", suffix: "+", label: "Years drug-free" },
     { value: "3", suffix: "", label: "Generations adjusted" },
