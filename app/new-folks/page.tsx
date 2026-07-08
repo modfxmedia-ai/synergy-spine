@@ -60,7 +60,7 @@ const CARDS: Card[] = [
   },
   {
     title: "Book Appointment",
-    desc: "Get our $37 New Patient Special, a consultation, complete Spinal Health Assessment, any necessary X-rays, your first treatment, and a care plan, normally $250.",
+    desc: "Get our $37 New Patient Special, a consultation, complete Spinal Health Assessment, any necessary X-rays, your first treatment, and a care plan, normally $450.",
     href: "/new-folks/np-schedule/",
     accent: "blueLight",
     icon: (

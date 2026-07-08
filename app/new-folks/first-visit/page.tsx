@@ -110,23 +110,19 @@ const STEPS: Step[] = [
 const FAQS = [
   {
     q: "How long should I plan to be there?",
-    a: "Plan for around 60–75 minutes for the first visit. That covers your consultation, exam, X-rays if needed, and a clear conversation about what we found.",
+    a: "Plan for around 75-90 minutes for the first visit. That covers your consultation, exam, X-rays if needed, a clear conversation about what we found and your first treatment if safe and appropriate.",
   },
   {
     q: "Do I need a referral?",
-    a: "Not at all. You can book directly with us, chiropractic care does not require a physician referral.",
+    a: "Not at all. You can book directly with us. Chiropractors are considered primary care physicians.",
   },
   {
     q: "What should I wear?",
-    a: "Comfortable, loose-fitting clothing is best. We want to be able to evaluate posture and movement easily.",
+    a: "Comfortable, athletic type or loose-fitting clothing is best. We want to be able to evaluate posture and movement easily. Also, please avoid clothing with zippers and buttons. If we take x-rays, we want to see your spine, not your zipper.",
   },
   {
-    q: "Is the adjustment going to hurt?",
-    a: "For most people the adjustment feels gentle and relieving. We always explain what we are doing and tailor our approach to what your body can handle.",
-  },
-  {
-    q: "Do you take insurance?",
-    a: "Many insurance plans cover chiropractic care. We will help you understand your benefits, and we offer a simple $37 New Patient Special if you'd rather skip the insurance maze.",
+    q: "Do you take my insurance?",
+    a: "Our office does not directly bill your health insurance. This allows us to keep our cost down for the majority of people in New Mexico. We offer affordable care plans that will be discussed after your exam and we determine if we can help you.",
   },
 ];
 

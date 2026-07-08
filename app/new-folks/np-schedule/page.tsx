@@ -13,12 +13,12 @@ const CANONICAL = "https://synergyspineandnerve.com/new-folks/np-schedule/";
 export const metadata: Metadata = {
   title: "$37 Online New Patient Special – Synergy Spine and Nerve Center",
   description:
-    "Get our $37 online New Patient Special, a one-on-one consultation, complete Spinal Health Assessment, any necessary X-rays, your first treatment, and a care plan with Dr. Brad and Austin (normally $250) at Synergy Spine and Nerve Center.",
+    "Get our $37 online New Patient Special, a one-on-one consultation, complete Spinal Health Assessment, any necessary X-rays, your first treatment, and a care plan with Dr. Brad and Austin (normally $450) at Synergy Spine and Nerve Center.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "$37 Online New Patient Special – Synergy Spine and Nerve Center",
     description:
-      "New Patient Special normally $250, yours for just $37 when you book online.",
+      "New Patient Special normally $450, yours for just $37 when you book online.",
     url: CANONICAL,
     type: "article",
     siteName: "Synergy Spine and Nerve Center",
@@ -136,7 +136,7 @@ export default function NPSchedulePage() {
               <Reveal delay={100}>
                 <div className="mt-5 inline-flex items-center gap-3 rounded-full bg-brand-gold/10 ring-1 ring-brand-gold/30 backdrop-blur pl-2 pr-4 py-1.5">
                   <span className="inline-flex h-6 px-2 items-center justify-center rounded-full bg-brand-gold text-brand-navyDark text-[10px] font-extrabold uppercase tracking-[0.18em]">
-                    Save $213
+                    Save $413
                   </span>
                   <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-white/85">
                     Limited online offer
@@ -159,7 +159,7 @@ export default function NPSchedulePage() {
                   A one-on-one consultation, complete Spinal Health Assessment,
                   any necessary X-rays, your first treatment, and a care plan
                   with Dr. Brad or Austin, normally{" "}
-                  <span className="line-through text-white/55">$250</span>{" "}
+                  <span className="line-through text-white/55">$450</span>{" "}
                   <span className="text-brand-gold font-semibold">
                     just $37
                   </span>{" "}
@@ -212,7 +212,7 @@ export default function NPSchedulePage() {
                       $37
                     </span>
                     <span className="pb-2 text-base font-semibold text-brand-textLight line-through">
-                      $250
+                      $450
                     </span>
                   </div>
                   <p className="mt-1 text-sm text-brand-textLight">
