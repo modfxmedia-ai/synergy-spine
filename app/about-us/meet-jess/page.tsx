@@ -8,12 +8,12 @@ import Reveal from "@/components/Reveal";
 const CANONICAL = "https://synergyspineandnerve.com/about-us/meet-jess/";
 
 export const metadata: Metadata = {
-  title: "Meet Jess – Synergy Spine and Nerve Center",
+  title: "Meet Jess Synergy Spine and Nerve Center",
   description:
     "Meet Jess Biggs, MS, Exercise Physiologist at Synergy Spine and Nerve Center, 25+ years of experience guiding people toward a healthier, pain-free life.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Meet Jess Biggs, MS – Exercise Physiologist",
+    title: "Meet Jess Biggs, MS Exercise Physiologist",
     description:
       "Exercise Physiologist with 25+ years of experience helping people heal through quality food and quality movement.",
     url: CANONICAL,

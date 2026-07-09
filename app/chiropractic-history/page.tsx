@@ -9,12 +9,12 @@ import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/chiropractic-history/";
 
 export const metadata: Metadata = {
-  title: "Chiropractic History – Synergy Spine and Nerve Center",
+  title: "Chiropractic History Synergy Spine and Nerve Center",
   description:
     "Ever wonder how chiropractic started and evolved over time? Walk through the key milestones from D.D. Palmer's first adjustment in 1895 to modern evidence-based care.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Chiropractic History – Synergy Spine and Nerve Center",
+    title: "Chiropractic History Synergy Spine and Nerve Center",
     description:
       "Key milestones in the history of chiropractic, from 1895 to today.",
     url: CANONICAL,

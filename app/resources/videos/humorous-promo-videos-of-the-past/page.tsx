@@ -12,7 +12,7 @@ const CANONICAL = `https://synergyspineandnerve.com/resources/videos/${SLUG}/`;
 
 export const metadata: Metadata = {
   title:
-    "Humorous Promo Videos of the Past – Family Workshop Promos | Synergy Spine and Nerve Center",
+    "Humorous Promo Videos of the Past Family Workshop Promos | Synergy Spine and Nerve Center",
   description:
     "Short, funny family-made videos we used to shoot to promote our upcoming workshops, Eating Raw, Subluxation, Boy Likes Girl, Captain Chiro and more.",
   alternates: { canonical: CANONICAL },

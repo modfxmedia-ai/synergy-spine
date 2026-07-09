@@ -714,7 +714,7 @@ export const POSTS: BlogPost[] = [
   {
     slug: "chiroopractors-and-injection-for-back-pain",
     title: "Chiroopractors and Injection for Back Pain",
-    excerpt: "A severe back pain can create debilitating effects on a person's quality of life. The reaasons for back pain may be several – sedentary life style, non-ergonomic furniture, sports injuries or even accidents. However,...",
+    excerpt: "A severe back pain can create debilitating effects on a person's quality of life. The reaasons for back pain may be several sedentary life style, non-ergonomic furniture, sports injuries or even accidents. However,...",
     category: "Chiropractic Treatment",
     date: "July 9, 2014",
     isoDate: "2014-07-09",

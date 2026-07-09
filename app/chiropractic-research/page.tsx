@@ -13,12 +13,12 @@ const CRACKER_JACK_IMAGE =
   "https://synergyspineandnerve.com/wp-content/uploads/2020/03/cracker-jack-1-145x300.png";
 
 export const metadata: Metadata = {
-  title: "Chiropractic Research – Synergy Spine and Nerve Center",
+  title: "Chiropractic Research Synergy Spine and Nerve Center",
   description:
     "Explore the growing body of research behind chiropractic care. Chiropractic doesn't directly treat conditions, it helps restore homeostasis through nerve system health.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Chiropractic Research – Synergy Spine and Nerve Center",
+    title: "Chiropractic Research Synergy Spine and Nerve Center",
     description:
       "More evidence supports chiropractic for back pain than any medical procedure, and the body of research is growing fast.",
     url: CANONICAL,

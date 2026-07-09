@@ -15,12 +15,12 @@ const CANONICAL = "https://synergyspineandnerve.com/about-us/meet-dr-brad/";
 const PORTRAIT_IMAGE = "/team/doctor-brad-fackrell.jpg";
 
 export const metadata: Metadata = {
-  title: "Meet Dr. Brad – Synergy Spine and Nerve Center",
+  title: "Meet Dr. Brad Synergy Spine and Nerve Center",
   description:
     "Meet Dr. Brad Fackrell, owner, founder, and chiropractor at Synergy Spine and Nerve Center, the premier family chiropractic and neuropathy treatment center in Rio Rancho, New Mexico.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Meet Dr. Brad Fackrell – Owner, Founder & Chiropractor",
+    title: "Meet Dr. Brad Fackrell Owner, Founder & Chiropractor",
     description:
       "Owner, founder, and chiropractor at Synergy Spine and Nerve Center in Rio Rancho, NM.",
     url: CANONICAL,

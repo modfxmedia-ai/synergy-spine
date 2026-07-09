@@ -12,12 +12,12 @@ import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/new-folks/first-visit/";
 
 export const metadata: Metadata = {
-  title: "What to Expect on Your First Visit – Synergy Spine and Nerve Center",
+  title: "What to Expect on Your First Visit Synergy Spine and Nerve Center",
   description:
     "Wondering what to expect on your first chiropractic visit? Walk through every step, intake forms, consultation, examination, digital X-rays, and your report of findings.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "What to Expect on Your First Visit – Synergy Spine and Nerve Center",
+    title: "What to Expect on Your First Visit Synergy Spine and Nerve Center",
     description:
       "From intake to report of findings, here is exactly what to expect on your first visit at Synergy Spine.",
     url: CANONICAL,

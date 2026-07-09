@@ -6,7 +6,7 @@ const CANONICAL =
 const VIDEO_ID = "uEtdfzxle2c";
 
 export const metadata: Metadata = {
-  title: "Use Your Head Video – Synergy Spine and Nerve Center",
+  title: "Use Your Head Video Synergy Spine and Nerve Center",
   description:
     "The foundation exercise for your spinal hygiene practice. Watch this video to learn how to keep your spine moving every day.",
   alternates: { canonical: CANONICAL },

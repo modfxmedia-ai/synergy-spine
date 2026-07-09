@@ -7,7 +7,7 @@ const VIDEO_ID = "TbbI9zyWeKE";
 
 export const metadata: Metadata = {
   title:
-    "Over The Door Traction – Synergy Spine and Nerve Center",
+    "Over The Door Traction Synergy Spine and Nerve Center",
   description:
     "Watch the Over the Door Traction demonstration, rehydrate the discs in your neck and improve your posture with the Pettibon System of Spinal Hygiene.",
   alternates: { canonical: CANONICAL },

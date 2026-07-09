@@ -10,12 +10,12 @@ const CANONICAL =
   "https://synergyspineandnerve.com/resources/all-about-nutrition/";
 
 export const metadata: Metadata = {
-  title: "Essential Nutrition for Optimal Health – Synergy Spine and Nerve Center",
+  title: "Essential Nutrition for Optimal Health Synergy Spine and Nerve Center",
   description:
     "Are you eating a diet that is congruent with your genetic requirements? Learn how nutrition fuels your cells, controls inflammation, and supports chiropractic care.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Essential Nutrition for Optimal Health – Synergy Spine and Nerve Center",
+    title: "Essential Nutrition for Optimal Health Synergy Spine and Nerve Center",
     description:
       "What you eat creates either sufficiency or deficiency at the cellular level. Learn the basics that fuel real healing.",
     url: CANONICAL,

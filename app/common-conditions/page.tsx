@@ -11,13 +11,13 @@ const CANONICAL = "https://synergyspineandnerve.com/common-conditions/";
 
 export const metadata: Metadata = {
   title:
-    "Common Chiropractic Conditions – Synergy Spine and Nerve Center",
+    "Common Chiropractic Conditions Synergy Spine and Nerve Center",
   description:
     "From back pain and sciatica to ALS and peripheral neuropathy, see the common conditions we evaluate at Synergy Spine and Nerve Center in Rio Rancho, NM.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title:
-      "Common Chiropractic Conditions – Synergy Spine and Nerve Center",
+      "Common Chiropractic Conditions Synergy Spine and Nerve Center",
     description:
       "Conditions we evaluate every week, and how a clear plan often changes the trajectory.",
     url: CANONICAL,

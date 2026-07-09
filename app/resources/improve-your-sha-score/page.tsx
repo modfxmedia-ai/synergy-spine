@@ -13,12 +13,12 @@ const CANONICAL =
   "https://synergyspineandnerve.com/resources/improve-your-sha-score/";
 
 export const metadata: Metadata = {
-  title: "Improve Your SHA Score – Synergy Spine and Nerve Center",
+  title: "Improve Your SHA Score Synergy Spine and Nerve Center",
   description:
     "Spinal Health Assessment (SHA) is your spine's report card. 90+ means homeostasis; below 90 your body is in allostasis. Learn how to improve your score.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Spinal Health Assessment – Synergy Spine and Nerve Center",
+    title: "Spinal Health Assessment Synergy Spine and Nerve Center",
     description:
       "Pain doesn't tell the whole story, your SHA score does. Learn what your assessment really means.",
     url: CANONICAL,
@@ -180,7 +180,7 @@ export default function ImproveSHAScorePage() {
                 </p>
                 <p className="mt-3 section-title text-2xl md:text-3xl font-semibold leading-snug">
                   Your Spinal Health Assessment is a 17-page printed report
-                  scored 0–100.
+                  scored 0100.
                 </p>
                 <p className="mt-4 text-white/90 leading-relaxed">
                   We measure posture, range of motion, balance, strength, and
@@ -225,7 +225,7 @@ export default function ImproveSHAScorePage() {
               <Reveal>
                 <article className="h-full rounded-3xl bg-white ring-1 ring-black/5 p-7 shadow-[0_2px_10px_rgba(13,35,64,0.04)] border-t-4 border-emerald-400">
                   <p className="text-[11px] uppercase tracking-[0.22em] font-bold text-emerald-600">
-                    90 – 100
+                    90 100
                   </p>
                   <h3 className="section-title mt-2 text-xl text-brand-navyDark font-semibold">
                     Homeostasis

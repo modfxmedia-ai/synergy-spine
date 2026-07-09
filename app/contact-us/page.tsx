@@ -14,13 +14,13 @@ const ADDRESS_LINE2 = "Rio Rancho, NM 87124";
 
 export const metadata: Metadata = {
   title:
-    "Get In Touch with Synergy Spine and Nerve Center – Rio Rancho, NM",
+    "Get In Touch with Synergy Spine and Nerve Center Rio Rancho, NM",
   description:
     "Questions, comments, or concerns about our Rio Rancho, NM chiropractic care? Call (505) 891-2280 or send a message, we'll be in touch shortly.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title:
-      "Get In Touch with Synergy Spine and Nerve Center – Rio Rancho, NM",
+      "Get In Touch with Synergy Spine and Nerve Center Rio Rancho, NM",
     description:
       "Reach Dr. Brad and Austin at Synergy Spine and Nerve Center, call, message, or stop by 1453 Rio Rancho Blvd-Suite 2.",
     url: CANONICAL,
@@ -30,11 +30,11 @@ export const metadata: Metadata = {
 };
 
 const HOURS = [
-  { day: "Mon", hours: "8:00 – 10:00 AM & 3:00 – 5:30 PM" },
-  { day: "Tues", hours: "3:00 – 5:00 PM" },
-  { day: "Wed", hours: "10:00 AM – 5:30 PM" },
-  { day: "Thurs", hours: "3:00 – 5:30 PM" },
-  { day: "Fri – Sun", hours: "Closed" },
+  { day: "Mon", hours: "8:00 10:00 AM & 3:00 5:30 PM" },
+  { day: "Tues", hours: "3:00 5:00 PM" },
+  { day: "Wed", hours: "10:00 AM 5:30 PM" },
+  { day: "Thurs", hours: "3:00 5:30 PM" },
+  { day: "Fri Sun", hours: "Closed" },
 ];
 
 const MAP_QUERY = "1453+Rio+Rancho+Blvd+Suite+2+Rio+Rancho+NM+87124";
@@ -288,7 +288,7 @@ export default function ContactUsPage() {
                     />
                   </label>
 
-                  <input type="hidden" name="_subject" value="New contact form submission – Synergy Spine and Nerve Center" />
+                  <input type="hidden" name="_subject" value="New contact form submission Synergy Spine and Nerve Center" />
                   <input type="hidden" name="_template" value="table" />
 
                   <button

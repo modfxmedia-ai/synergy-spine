@@ -10,7 +10,7 @@ const CANONICAL =
   "https://synergyspineandnerve.com/resources/get-notified/";
 
 export const metadata: Metadata = {
-  title: "Get Notified – Synergy Spine and Nerve Center",
+  title: "Get Notified Synergy Spine and Nerve Center",
   description:
     "Stay in touch with text notifications. Get important schedule updates and event news from Synergy Spine and Nerve Center directly to your phone.",
   alternates: { canonical: CANONICAL },

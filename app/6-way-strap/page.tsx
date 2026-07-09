@@ -5,7 +5,7 @@ const CANONICAL = "https://synergyspineandnerve.com/6-way-strap/";
 const VIDEO_ID = "RsgxFYDSmJs";
 
 export const metadata: Metadata = {
-  title: "6 Way Strap – Synergy Spine and Nerve Center",
+  title: "6 Way Strap Synergy Spine and Nerve Center",
   description:
     "Watch the 6-way strap demonstration, improve neck mobility and decrease neck pain and headaches with the Pettibon System of Spinal Hygiene.",
   alternates: { canonical: CANONICAL },

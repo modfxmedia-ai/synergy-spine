@@ -5,7 +5,7 @@ const CANONICAL = "https://synergyspineandnerve.com/backpack-analogy/";
 const VIDEO_ID = "z_iICcjcmjs";
 
 export const metadata: Metadata = {
-  title: "Backpack Analogy – Synergy Spine and Nerve Center",
+  title: "Backpack Analogy Synergy Spine and Nerve Center",
   description:
     "Did you know your spine, nerve system and overall health may be suffering even if you don't feel pain? Watch the Backpack Analogy to understand how spinal health slips silently.",
   alternates: { canonical: CANONICAL },

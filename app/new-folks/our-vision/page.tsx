@@ -13,12 +13,12 @@ import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/new-folks/our-vision/";
 
 export const metadata: Metadata = {
-  title: "Our Vision – Synergy Spine and Nerve Center",
+  title: "Our Vision Synergy Spine and Nerve Center",
   description:
     "Empowering families: our vision for health and wellness. We educate and adjust families across Rio Rancho and Albuquerque toward optimal natural health.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Our Vision – Synergy Spine and Nerve Center",
+    title: "Our Vision Synergy Spine and Nerve Center",
     description:
       "Educate and adjust as many families as possible toward optimal health through chiropractic.",
     url: CANONICAL,

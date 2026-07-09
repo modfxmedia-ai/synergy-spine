@@ -12,13 +12,13 @@ const CANONICAL = "https://synergyspineandnerve.com/neuropathy/";
 
 export const metadata: Metadata = {
   title:
-    "Chiropractic Solutions for Neuropathy – Synergy Spine and Nerve Center",
+    "Chiropractic Solutions for Neuropathy Synergy Spine and Nerve Center",
   description:
     "Peripheral neuropathy isn't only a medication problem. Learn how adjustments, spinal health, diet, and lifestyle work together at Synergy Spine and Nerve Center.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title:
-      "Chiropractic Solutions for Neuropathy – Synergy Spine and Nerve Center",
+      "Chiropractic Solutions for Neuropathy Synergy Spine and Nerve Center",
     description:
       "A four-pillar approach to peripheral neuropathy in Rio Rancho, NM, adjustments, spinal health, diet, and lifestyle.",
     url: CANONICAL,

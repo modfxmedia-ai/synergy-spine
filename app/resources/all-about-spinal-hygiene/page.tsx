@@ -11,12 +11,12 @@ const CANONICAL =
   "https://synergyspineandnerve.com/resources/all-about-spinal-hygiene/";
 
 export const metadata: Metadata = {
-  title: "All About Spinal Hygiene – Synergy Spine and Nerve Center",
+  title: "All About Spinal Hygiene Synergy Spine and Nerve Center",
   description:
     "Spinal hygiene videos, stretches, traction tools, and 30-second self-tests. Every joint must move through its full range every 24 hours or arthritis is developing.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "All About Spinal Hygiene – Synergy Spine and Nerve Center",
+    title: "All About Spinal Hygiene Synergy Spine and Nerve Center",
     description:
       "Daily movement matters. Watch the spinal hygiene video library and learn the tools we use with every patient.",
     url: CANONICAL,

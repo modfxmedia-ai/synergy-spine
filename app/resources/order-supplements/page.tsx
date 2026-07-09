@@ -10,7 +10,7 @@ const CANONICAL =
   "https://synergyspineandnerve.com/resources/order-supplements/";
 
 export const metadata: Metadata = {
-  title: "Order Supplements – Synergy Spine and Nerve Center",
+  title: "Order Supplements Synergy Spine and Nerve Center",
   description:
     "Order Innate Choice supplements through Synergy Spine and Nerve Center, superior quality, 100% natural, never synthetic. Free shipping in 48 states.",
   alternates: { canonical: CANONICAL },

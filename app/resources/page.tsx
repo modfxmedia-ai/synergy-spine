@@ -9,12 +9,12 @@ import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/resources/";
 
 export const metadata: Metadata = {
-  title: "Chiropractic Resources – Synergy Spine and Nerve Center",
+  title: "Chiropractic Resources Synergy Spine and Nerve Center",
   description:
     "Helpful chiropractic resources from Synergy Spine and Nerve Center in Rio Rancho, NM, videos, spinal hygiene, nutrition, SHA scoring, and supplements.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Chiropractic Resources – Synergy Spine and Nerve Center",
+    title: "Chiropractic Resources Synergy Spine and Nerve Center",
     description:
       "Stay informed with videos, spinal hygiene guides, nutrition help, SHA scoring, and recommended supplements.",
     url: CANONICAL,

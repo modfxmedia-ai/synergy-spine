@@ -7,7 +7,7 @@ const VIDEO_ID = "qQ2S4UZTR_s";
 
 export const metadata: Metadata = {
   title:
-    "Mobility Disk for Lower Back – Synergy Spine and Nerve Center",
+    "Mobility Disk for Lower Back Synergy Spine and Nerve Center",
   description:
     "A simple lower back mobility technique using the lumbar mobility disk to greatly decrease episodes of low-back pain and keep your back feeling young.",
   alternates: { canonical: CANONICAL },

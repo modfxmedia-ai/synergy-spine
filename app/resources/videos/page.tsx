@@ -12,13 +12,13 @@ const CANONICAL = "https://synergyspineandnerve.com/resources/videos/";
 
 export const metadata: Metadata = {
   title:
-    "Chiropractic Videos: Your Guide to Spinal Health Education – Synergy Spine and Nerve Center",
+    "Chiropractic Videos: Your Guide to Spinal Health Education Synergy Spine and Nerve Center",
   description:
     "Browse our chiropractic video library, Spinal Hygiene, Workshops, Promo, Humorous and educational videos from over 20 years of practice.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title:
-      "Chiropractic Videos: Your Guide to Spinal Health Education – Synergy Spine and Nerve Center",
+      "Chiropractic Videos: Your Guide to Spinal Health Education Synergy Spine and Nerve Center",
     description:
       "Spinal hygiene, workshops, intros, and lighter promo content, pick a category and start watching.",
     url: CANONICAL,

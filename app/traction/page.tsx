@@ -10,7 +10,7 @@ const CANONICAL = "https://synergyspineandnerve.com/traction/";
 
 export const metadata: Metadata = {
   title:
-    "Traction & Spinal Hygiene Devices – Synergy Spine and Nerve Center",
+    "Traction & Spinal Hygiene Devices Synergy Spine and Nerve Center",
   description:
     "Three traction tools to keep your spine moving, Thoracic Roller, 6-Way Strap, and Over-the-Door Traction. Part of the Pettibon System of Spinal Hygiene.",
   alternates: { canonical: CANONICAL },

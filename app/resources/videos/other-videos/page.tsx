@@ -12,7 +12,7 @@ const CANONICAL = `https://synergyspineandnerve.com/resources/videos/${SLUG}/`;
 
 export const metadata: Metadata = {
   title:
-    "Informative Videos on Chiropractic Care and Health Strategies – Synergy Spine and Nerve Center",
+    "Informative Videos on Chiropractic Care and Health Strategies Synergy Spine and Nerve Center",
   description:
     "Healthy chocolate recipes, glimpses of Dr. Brad\u2019s personal life, and other odds-and-ends content from Synergy Spine and Nerve Center.",
   alternates: { canonical: CANONICAL },

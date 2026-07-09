@@ -10,12 +10,12 @@ import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/new-folks/";
 
 export const metadata: Metadata = {
-  title: "New Folks – Synergy Spine and Nerve Center",
+  title: "New Folks Synergy Spine and Nerve Center",
   description:
     "Welcome to Synergy Spine and Nerve Center. Everything new patients need, first visit guide, intake forms, our vision, and online scheduling in Rio Rancho, NM.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "New Folks – Synergy Spine and Nerve Center",
+    title: "New Folks Synergy Spine and Nerve Center",
     description:
       "Welcome new patients! First visit guide, intake forms, our vision, and online scheduling.",
     url: CANONICAL,

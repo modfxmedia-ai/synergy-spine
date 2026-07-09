@@ -12,7 +12,7 @@ const CANONICAL = `https://synergyspineandnerve.com/resources/videos/${SLUG}/`;
 
 export const metadata: Metadata = {
   title:
-    "Workshop Videos of the Past – Educational Workshops Archive | Synergy Spine and Nerve Center",
+    "Workshop Videos of the Past Educational Workshops Archive | Synergy Spine and Nerve Center",
   description:
     "Browse educational workshops from earlier years, habits people changed to overcome significant health challenges, from spinal hygiene to vitamin D and beyond.",
   alternates: { canonical: CANONICAL },

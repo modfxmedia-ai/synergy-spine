@@ -9,7 +9,7 @@ import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/rof/";
 
 export const metadata: Metadata = {
-  title: "Report of Findings (ROF) – Synergy Spine and Nerve Center",
+  title: "Report of Findings (ROF) Synergy Spine and Nerve Center",
   description:
     "What to expect at your Report of Findings visit at Synergy Spine and Nerve Center, your exam results explained, plus a clear plan forward.",
   alternates: { canonical: CANONICAL },

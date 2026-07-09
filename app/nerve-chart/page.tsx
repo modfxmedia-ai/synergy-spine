@@ -12,12 +12,12 @@ const CHART_IMAGE =
   "https://synergyspineandnerve.com/wp-content/uploads/2020/03/20x30-spinal-nerve-chart.jpg";
 
 export const metadata: Metadata = {
-  title: "Nerve Chart: Spinal Health & Organ Function – Synergy Spine and Nerve Center",
+  title: "Nerve Chart: Spinal Health & Organ Function Synergy Spine and Nerve Center",
   description:
     "Your nerve system controls every other system in your body. See how subluxation at different spinal levels can affect organs and overall health.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Nerve Chart: Spinal Health & Organ Function – Synergy Spine and Nerve Center",
+    title: "Nerve Chart: Spinal Health & Organ Function Synergy Spine and Nerve Center",
     description:
       "Visualize how each level of the spine connects to specific organs and bodily systems.",
     url: CANONICAL,
@@ -48,7 +48,7 @@ type RegionRow = {
 
 const REGIONS: { name: string; tone: "blue" | "gold" | "navy"; rows: RegionRow[] }[] = [
   {
-    name: "Cervical (C1–C7)",
+    name: "Cervical (C1C7)",
     tone: "blue",
     rows: [
       { level: "C1", organs: "Head, brain, inner & middle ear, sympathetic nerve system", conditions: "Headaches, insomnia, brain fog, fatigue, dizziness" },
@@ -61,7 +61,7 @@ const REGIONS: { name: string; tone: "blue" | "gold" | "navy"; rows: RegionRow[]
     ],
   },
   {
-    name: "Thoracic (T1–T12)",
+    name: "Thoracic (T1T12)",
     tone: "navy",
     rows: [
       { level: "T1", organs: "Hands, wrists, fingers, esophagus, trachea", conditions: "Asthma, cough, hand/finger pain" },
@@ -79,7 +79,7 @@ const REGIONS: { name: string; tone: "blue" | "gold" | "navy"; rows: RegionRow[]
     ],
   },
   {
-    name: "Lumbar / Sacral (L1–S–Coccyx)",
+    name: "Lumbar / Sacral (L1SCoccyx)",
     tone: "gold",
     rows: [
       { level: "L1", organs: "Large intestines, inguinal rings", conditions: "Constipation, colitis, diarrhea, hernias" },

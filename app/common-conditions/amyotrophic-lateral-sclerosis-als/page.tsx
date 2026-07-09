@@ -11,12 +11,12 @@ const CANONICAL =
 
 export const metadata: Metadata = {
   title:
-    "Amyotrophic Lateral Sclerosis (ALS) – Synergy Spine and Nerve Center",
+    "Amyotrophic Lateral Sclerosis (ALS) Synergy Spine and Nerve Center",
   description:
     "Overview of Amyotrophic Lateral Sclerosis (ALS), symptoms, diagnosis, and supportive treatment options. Educational resource from Synergy Spine and Nerve Center.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Amyotrophic Lateral Sclerosis (ALS) – An Overview",
+    title: "Amyotrophic Lateral Sclerosis (ALS) An Overview",
     description:
       "ALS symptoms, diagnosis, and supportive treatment, an educational overview.",
     url: CANONICAL,
@@ -56,10 +56,10 @@ const articleJsonLd = {
 };
 
 const QUICK_FACTS = [
-  { label: "Typical onset", value: "50s–60s" },
+  { label: "Typical onset", value: "50s60s" },
   { label: "Risk peak", value: "Age 74" },
-  { label: "M:F ratio", value: "1.5–1.7×" },
-  { label: "US prevalence", value: "3–8 / 100k" },
+  { label: "M:F ratio", value: "1.51.7×" },
+  { label: "US prevalence", value: "38 / 100k" },
 ];
 
 export default function ALSPage() {
@@ -158,8 +158,8 @@ export default function ALSPage() {
                   vast majority of cases occur sporadically. The mean onset of
                   ALS occurs in the patients&apos; 50&apos;s and 60&apos;s with
                   increasing risk until the age of 74. Males are affected
-                  1.5–1.7 times as often as females. The prevalence in the
-                  United States is 3–8 cases per 100,000 people.
+                  1.51.7 times as often as females. The prevalence in the
+                  United States is 38 cases per 100,000 people.
                 </p>
               </article>
             </Reveal>
@@ -189,7 +189,7 @@ export default function ALSPage() {
                   not involved.
                 </p>
                 <p className="mt-4 text-lg leading-relaxed text-brand-text">
-                  The mean survival rate is 3–4 years, but about 4–10% of
+                  The mean survival rate is 34 years, but about 410% of
                   patients survive more than ten years. ALS is responsible for
                   about 1 in 700 deaths in the United States. Death is usually
                   peaceful with the patient dying in their sleep of respiratory

@@ -12,12 +12,12 @@ const CANONICAL = "https://synergyspineandnerve.com/triune-of-care/";
 const HERO_IMAGE = "/triune-of-care.jpeg";
 
 export const metadata: Metadata = {
-  title: "Triune of Care – Synergy Spine and Nerve Center",
+  title: "Triune of Care Synergy Spine and Nerve Center",
   description:
     "Take an active role in your healing with the Triune of Care: chiropractic adjustments, daily spinal hygiene, and intentional nutrition working together.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Triune of Care – Synergy Spine and Nerve Center",
+    title: "Triune of Care Synergy Spine and Nerve Center",
     description:
       "Three pillars working in synergy, adjustments, spinal hygiene, and nutrition, for whole-body health.",
     url: CANONICAL,

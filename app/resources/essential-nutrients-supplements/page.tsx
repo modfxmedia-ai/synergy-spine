@@ -13,12 +13,12 @@ const CANONICAL =
 const HERO_IMAGE = "/resources/essential-nutrients.jpg";
 
 export const metadata: Metadata = {
-  title: "Essential Nutrients & Supplements – Synergy Spine and Nerve Center",
+  title: "Essential Nutrients & Supplements Synergy Spine and Nerve Center",
   description:
     "The three supplements most people are deficient in, Vitamin A&D fish oil, probiotics, and a quality multi-vitamin. Why we recommend Innate Choice.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Essential Nutrients & Supplements – Synergy Spine and Nerve Center",
+    title: "Essential Nutrients & Supplements Synergy Spine and Nerve Center",
     description:
       "Two qualifications, three core supplements, one trusted brand. Here's the foundation we recommend.",
     url: CANONICAL,

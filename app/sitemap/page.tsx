@@ -8,12 +8,12 @@ import Reveal from "@/components/Reveal";
 const CANONICAL = "https://synergyspineandnerve.com/sitemap/";
 
 export const metadata: Metadata = {
-  title: "Sitemap – Synergy Spine and Nerve Center",
+  title: "Sitemap Synergy Spine and Nerve Center",
   description:
     "Browse the complete sitemap of Synergy Spine and Nerve Center, every page, resource, location guide, and blog post on our website at a glance.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Sitemap – Synergy Spine and Nerve Center",
+    title: "Sitemap Synergy Spine and Nerve Center",
     description:
       "Every page, resource, and blog post at Synergy Spine and Nerve Center.",
     url: CANONICAL,

@@ -14,7 +14,7 @@ const CANONICAL = "https://synergyspineandnerve.com/about-us/meet-austin/";
 const PORTRAIT_IMAGE = "/team/austin-vidonn-huber.jpg";
 
 export const metadata: Metadata = {
-  title: "Meet Austin – Synergy Spine and Nerve Center",
+  title: "Meet Austin Synergy Spine and Nerve Center",
   description:
     "Meet Austin Vidonn Huber, your expert massage therapist at Synergy Spine and Nerve Center in Rio Rancho, NM. Bachelor's in Kinesiology and certified medical massage therapist.",
   alternates: { canonical: CANONICAL },
@@ -205,7 +205,7 @@ export default function MeetAustinPage() {
                     <line x1="19" y1="12" x2="5" y2="12" />
                     <polyline points="12 19 5 12 12 5" />
                   </svg>
-                  <span>Meet Austin – Your Deep Tissue Massage Therapist</span>
+                  <span>Meet Austin Your Deep Tissue Massage Therapist</span>
                 </Link>
               </Reveal>
 

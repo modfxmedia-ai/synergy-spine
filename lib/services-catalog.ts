@@ -216,7 +216,7 @@ export const MASSAGE_SERVICES: ServiceItem[] = [
     ],
     whatToExpect: [
       "A brief goals-and-symptoms check-in",
-      "Focused work on 1–3 specific areas",
+      "Focused work on 13 specific areas",
       "Coordination with your chiropractic care plan",
       "Home stretches to keep the tissue happy",
     ],

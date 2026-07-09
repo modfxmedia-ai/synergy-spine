@@ -7,7 +7,7 @@ const VIDEO_ID = "UAuYYnLuh6U";
 
 export const metadata: Metadata = {
   title:
-    "30-Second Spinal Hygiene Report Card – Synergy Spine and Nerve Center",
+    "30-Second Spinal Hygiene Report Card Synergy Spine and Nerve Center",
   description:
     "Do you know if the spinal hygiene you are doing is good enough? Watch this video to give yourself a 30-second Spinal Hygiene Report Card.",
   alternates: { canonical: CANONICAL },

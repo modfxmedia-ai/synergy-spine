@@ -9,12 +9,12 @@ import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/about-us/meet-kathryn/";
 
 export const metadata: Metadata = {
-  title: "Meet Kathryn – Synergy Spine and Nerve Center",
+  title: "Meet Kathryn Synergy Spine and Nerve Center",
   description:
     "Meet Kathryn, Chiropractic Assistant at Synergy Spine and Nerve Center in Rio Rancho, NM since 2018.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Meet Kathryn – Chiropractic Assistant",
+    title: "Meet Kathryn Chiropractic Assistant",
     description:
       "Chiropractic Assistant at Synergy Spine and Nerve Center in Rio Rancho, NM since 2018.",
     url: CANONICAL,

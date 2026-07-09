@@ -11,12 +11,12 @@ import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/new-folks/np-schedule/";
 
 export const metadata: Metadata = {
-  title: "$37 Online New Patient Special – Synergy Spine and Nerve Center",
+  title: "$37 Online New Patient Special Synergy Spine and Nerve Center",
   description:
     "Get our $37 online New Patient Special, a one-on-one consultation, complete Spinal Health Assessment, any necessary X-rays, your first treatment, and a care plan with Dr. Brad and Austin (normally $450) at Synergy Spine and Nerve Center.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "$37 Online New Patient Special – Synergy Spine and Nerve Center",
+    title: "$37 Online New Patient Special Synergy Spine and Nerve Center",
     description:
       "New Patient Special normally $450, yours for just $37 when you book online.",
     url: CANONICAL,

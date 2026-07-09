@@ -13,12 +13,12 @@ const HERO_IMAGE =
   "https://synergyspineandnerve.com/wp-content/uploads/2020/03/degeneration-model-1024x735-1.jpg";
 
 export const metadata: Metadata = {
-  title: "Understanding Degeneration: Symptoms, Causes & Treatment – Synergy Spine and Nerve Center",
+  title: "Understanding Degeneration: Symptoms, Causes & Treatment Synergy Spine and Nerve Center",
   description:
     "Degenerative disc disease is caused by a lack of motion to the joints over years. Learn the four stages, symptoms, and chiropractic treatment options.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Understanding Degeneration – Synergy Spine and Nerve Center",
+    title: "Understanding Degeneration Synergy Spine and Nerve Center",
     description:
       "Expert chiropractic care for lasting relief from spinal degeneration.",
     url: CANONICAL,
@@ -56,7 +56,7 @@ const SCHEMA = {
 const STAGES = [
   {
     phase: "Phase 1",
-    range: "Years 1–10",
+    range: "Years 110",
     title: "Subtle subluxation",
     body:
       "Joint motion is slightly restricted. Most people feel little to no pain. The body adapts, but scar tissue is already starting to form.",
@@ -64,7 +64,7 @@ const STAGES = [
   },
   {
     phase: "Phase 2",
-    range: "Years 10–20",
+    range: "Years 1020",
     title: "Disc narrowing",
     body:
       "Discs lose hydration and height. Bone spurs begin to develop, and posture starts to shift. Pain may come and go.",
@@ -72,7 +72,7 @@ const STAGES = [
   },
   {
     phase: "Phase 3",
-    range: "Years 20–30",
+    range: "Years 2030",
     title: "Advanced osteoarthritis",
     body:
       "Significant disc degeneration with visible bone spurs on imaging. Range of motion is clearly limited. Pain becomes chronic.",

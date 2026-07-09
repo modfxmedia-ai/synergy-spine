@@ -10,12 +10,12 @@ import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/new-folks/intake-forms/";
 
 export const metadata: Metadata = {
-  title: "Complete Your Intake Forms – Synergy Spine and Nerve Center",
+  title: "Complete Your Intake Forms Synergy Spine and Nerve Center",
   description:
     "Complete your intake forms online before your first visit at Synergy Spine and Nerve Center for a fast, smooth check-in.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Complete Your Intake Forms – Synergy Spine and Nerve Center",
+    title: "Complete Your Intake Forms Synergy Spine and Nerve Center",
     description:
       "Fill out your New Patient form online so your first visit goes smoothly.",
     url: CANONICAL,

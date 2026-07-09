@@ -24,7 +24,7 @@ export async function generateMetadata({
   const page = Number.parseInt(n, 10);
   const title =
     Number.isFinite(page) && page > 1
-      ? `Blog – Page ${page} | Synergy Spine & Nerve Center`
+      ? `Blog Page ${page} | Synergy Spine & Nerve Center`
       : "Chiropractic Health Blog | Synergy Spine & Nerve Center";
 
   return {

@@ -9,12 +9,12 @@ import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/about-us/meet-bert/";
 
 export const metadata: Metadata = {
-  title: "Meet Bert – Synergy Spine and Nerve Center",
+  title: "Meet Bert Synergy Spine and Nerve Center",
   description:
     "Meet Bert Jaramillo-Garcia, Office Manager at Synergy Spine and Nerve Center in Rio Rancho, NM since 2019.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Meet Bert Jaramillo-Garcia – Office Manager",
+    title: "Meet Bert Jaramillo-Garcia Office Manager",
     description:
       "Office Manager at Synergy Spine and Nerve Center in Rio Rancho, NM since 2019.",
     url: CANONICAL,

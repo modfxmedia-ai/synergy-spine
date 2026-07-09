@@ -771,12 +771,12 @@ export const CITIES: CityCopy[] = [
   },
   {
     slug: "tomeito",
-    name: "Tomé–Adelino",
+    name: "ToméAdelino",
     county: "Valencia County",
     zip: "87031",
     driveMin: 38,
     blurb:
-      "Tomé–Adelino is the small unincorporated community in eastern Valencia County, near Tomé Hill and the Adelino farmland.",
+      "ToméAdelino is the small unincorporated community in eastern Valencia County, near Tomé Hill and the Adelino farmland.",
     landmarks: ["Tomé Hill", "Adelino farmland", "Manzano Mountain views"],
     neighborhoods: ["Adelino", "Tomé"],
   },

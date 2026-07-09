@@ -12,7 +12,7 @@ const CANONICAL = `https://synergyspineandnerve.com/resources/videos/${SLUG}/`;
 
 export const metadata: Metadata = {
   title:
-    "Chiropractic Promo Videos: Discover the Benefits of Spinal Care – Synergy Spine and Nerve Center",
+    "Chiropractic Promo Videos: Discover the Benefits of Spinal Care Synergy Spine and Nerve Center",
   description:
     "Short promotional and educational clips, quick ways to learn what we do, why it works, and the number-one reason to see a chiropractor.",
   alternates: { canonical: CANONICAL },

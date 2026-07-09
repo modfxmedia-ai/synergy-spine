@@ -6,7 +6,7 @@ const CANONICAL =
 const VIDEO_ID = "9wPYA3RWAwI";
 
 export const metadata: Metadata = {
-  title: "Spinal Hygiene Video – Synergy Spine and Nerve Center",
+  title: "Spinal Hygiene Video Synergy Spine and Nerve Center",
   description:
     "What happens to your brain function when you don't have full range of motion in your spine? Watch this video to find out, the foundation of spinal hygiene.",
   alternates: { canonical: CANONICAL },

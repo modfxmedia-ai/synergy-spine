@@ -12,13 +12,13 @@ const PHONE_HREF = "tel:+15058912280";
 
 export const metadata: Metadata = {
   title:
-    "Schedule Your Chiropractic Appointment – Synergy Spine and Nerve Center",
+    "Schedule Your Chiropractic Appointment Synergy Spine and Nerve Center",
   description:
     "Book your visit with Dr. Brad or Austin in Rio Rancho, NM. Online scheduling available, or call (505) 891-2280.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title:
-      "Schedule Your Chiropractic Appointment – Synergy Spine and Nerve Center",
+      "Schedule Your Chiropractic Appointment Synergy Spine and Nerve Center",
     description:
       "Online booking with Dr. Brad and Austin at Synergy Spine and Nerve Center in Rio Rancho, NM.",
     url: CANONICAL,
@@ -28,10 +28,10 @@ export const metadata: Metadata = {
 };
 
 const HOURS = [
-  { day: "Monday", hours: "8:00 – 10:00 AM & 3:00 – 5:30 PM" },
-  { day: "Tuesday", hours: "3:00 – 5:00 PM" },
-  { day: "Wednesday", hours: "10:00 AM – 5:30 PM" },
-  { day: "Thursday", hours: "3:00 – 5:30 PM" },
+  { day: "Monday", hours: "8:00 10:00 AM & 3:00 5:30 PM" },
+  { day: "Tuesday", hours: "3:00 5:00 PM" },
+  { day: "Wednesday", hours: "10:00 AM 5:30 PM" },
+  { day: "Thursday", hours: "3:00 5:30 PM" },
   { day: "Friday", hours: "Closed" },
   { day: "Saturday", hours: "Closed" },
   { day: "Sunday", hours: "Closed" },

@@ -15,12 +15,12 @@ import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/about-us/";
 
 export const metadata: Metadata = {
-  title: "About Us – Synergy Spine and Nerve Center",
+  title: "About Us Synergy Spine and Nerve Center",
   description:
     "Looking for a chiropractor near Rio Rancho, New Mexico? Synergy Spine and Nerve Center is New Mexico's Premier Chiropractic care center.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "About Us – Synergy Spine and Nerve Center",
+    title: "About Us Synergy Spine and Nerve Center",
     description:
       "New Mexico's Premier Chiropractic care center. Meet the team committed to helping you achieve your health goals.",
     url: CANONICAL,

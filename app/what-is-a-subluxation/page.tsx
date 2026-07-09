@@ -14,12 +14,12 @@ const HERO_IMAGE =
   "https://synergyspineandnerve.com/wp-content/uploads/2020/04/AdobeStock_170696498.jpg";
 
 export const metadata: Metadata = {
-  title: "What is a Subluxation? – Synergy Spine and Nerve Center",
+  title: "What is a Subluxation? Synergy Spine and Nerve Center",
   description:
     "Subluxation is a joint that is out of position or unable to move through full range of motion. Learn how chiropractic care reduces or removes subluxation to restore proper nerve function.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "What is a Subluxation? – Synergy Spine and Nerve Center",
+    title: "What is a Subluxation? Synergy Spine and Nerve Center",
     description:
       "Understand chiropractic care: its role in health and wellness, what subluxation is, how it affects the nervous system, and how it is corrected.",
     url: CANONICAL,

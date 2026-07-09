@@ -12,7 +12,7 @@ const CANONICAL = `https://synergyspineandnerve.com/resources/videos/${SLUG}/`;
 
 export const metadata: Metadata = {
   title:
-    "Spinal Hygiene Videos – What You Can Do at Home | Synergy Spine and Nerve Center",
+    "Spinal Hygiene Videos What You Can Do at Home | Synergy Spine and Nerve Center",
   description:
     "Daily things you can do to take better care of your spine and nerve system, from the Spinal Hygiene Video to Use Your Head, 6-Way Strap, Thoracic Roller, and more.",
   alternates: { canonical: CANONICAL },
@@ -30,7 +30,7 @@ const VIDEOS: { id: string; title: string }[] = [
   { id: "BtIRyXk9iZc", title: "Intro to Straight Chiropractic" },
   { id: "z_iICcjcmjs", title: "Backpack Analogy" },
   { id: "9wPYA3RWAwI", title: "Spinal Hygiene Video" },
-  { id: "BEBtnLXhpiQ", title: "Fish Oil Evidence – Omega 3" },
+  { id: "BEBtnLXhpiQ", title: "Fish Oil Evidence Omega 3" },
   { id: "uEtdfzxle2c", title: "Use Your Head" },
   { id: "RsgxFYDSmJs", title: "6-Way Strap Demonstration" },
   { id: "TbbI9zyWeKE", title: "Over the Door Traction Demonstration" },

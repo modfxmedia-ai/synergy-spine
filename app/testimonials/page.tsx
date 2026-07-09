@@ -10,12 +10,12 @@ const CANONICAL = "https://synergyspineandnerve.com/testimonials/";
 
 export const metadata: Metadata = {
   title:
-    "Patient Testimonials & Google Reviews – Synergy Spine and Nerve Center",
+    "Patient Testimonials & Google Reviews Synergy Spine and Nerve Center",
   description:
     "Real Google reviews from Rio Rancho, NM patients who found relief through Synergy Spine and Nerve Center.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title: "Patient Testimonials – Synergy Spine and Nerve Center",
+    title: "Patient Testimonials Synergy Spine and Nerve Center",
     description:
       "Real Google reviews from patients at Synergy Spine and Nerve Center in Rio Rancho, NM.",
     url: CANONICAL,

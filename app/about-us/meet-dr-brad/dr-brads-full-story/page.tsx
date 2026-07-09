@@ -15,7 +15,7 @@ const PORTRAIT = "/team/dr-brad.webp";
 const FAMILY = "/team/dr-brad-family.jpg";
 
 export const metadata: Metadata = {
-  title: "Dr. Brad’s Full Story – Synergy Spine and Nerve Center",
+  title: "Dr. Brad’s Full Story Synergy Spine and Nerve Center",
   description:
     "Dr. Brad Fackrell shares the full story of how chiropractic transformed his health from severe asthma and daily medication to a drug-free life, and why he became a chiropractor.",
   alternates: { canonical: CANONICAL },

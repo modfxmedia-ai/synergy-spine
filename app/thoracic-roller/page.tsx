@@ -5,7 +5,7 @@ const CANONICAL = "https://synergyspineandnerve.com/thoracic-roller/";
 const VIDEO_ID = "sR1DmFFsQsQ";
 
 export const metadata: Metadata = {
-  title: "Thoracic Roller – Synergy Spine and Nerve Center",
+  title: "Thoracic Roller Synergy Spine and Nerve Center",
   description:
     "Watch the Thoracic Roller demonstration, improve mobility in your upper back, reduce pain and improve health. Part of the Pettibon System of Spinal Hygiene.",
   alternates: { canonical: CANONICAL },

@@ -21,13 +21,13 @@ const CANONICAL = "https://synergyspineandnerve.com/area-we-serve/";
 
 export const metadata: Metadata = {
   title:
-    "New Mexico Chiropractic Service Areas – Synergy Spine and Nerve Center",
+    "New Mexico Chiropractic Service Areas Synergy Spine and Nerve Center",
   description:
     "Synergy Spine and Nerve Center proudly serves Rio Rancho, NM and surrounding communities, from Placitas and Bernalillo to Los Lunas, Belen, Edgewood, and beyond.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title:
-      "New Mexico Chiropractic Service Areas – Synergy Spine and Nerve Center",
+      "New Mexico Chiropractic Service Areas Synergy Spine and Nerve Center",
     description:
       "Find a chiropractor near you. We serve over 25 New Mexico communities from our Rio Rancho location.",
     url: CANONICAL,

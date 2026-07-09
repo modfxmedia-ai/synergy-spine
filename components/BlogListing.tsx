@@ -94,7 +94,7 @@ export function BlogListing({ page }: { page: number }) {
               <p className="text-sm text-brand-textLight">
                 Showing{" "}
                 <strong className="text-brand-navyDark">
-                  {start + 1}–{start + visible.length}
+                  {start + 1}{start + visible.length}
                 </strong>{" "}
                 of <strong className="text-brand-navyDark">{POSTS.length}</strong> articles
               </p>
