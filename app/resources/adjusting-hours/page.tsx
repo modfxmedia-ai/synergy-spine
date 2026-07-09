@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 };
 
 const REGULAR_HOURS = [
-  { day: "Monday", hours: "9:00 AM – 5:30 PM" },
+  { day: "Monday", hours: "8:00 – 10:00 AM & 3:00 – 5:30 PM" },
   { day: "Tuesday", hours: "3:00 – 5:00 PM" },
   { day: "Wednesday", hours: "10:00 AM – 5:30 PM" },
   { day: "Thursday", hours: "3:00 – 5:30 PM" },

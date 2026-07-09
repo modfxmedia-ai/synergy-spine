@@ -157,7 +157,13 @@ export default function LocalSeoPage({
       {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: "Monday",
-        opens: "09:00",
+        opens: "08:00",
+        closes: "10:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Monday",
+        opens: "15:00",
         closes: "17:30",
       },
       {

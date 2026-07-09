@@ -280,8 +280,6 @@ export default function Header() {
               <PinIcon className="w-3.5 h-3.5 text-brand-blue" />
               <span>{ADDRESS}</span>
             </span>
-            <span className="text-white/30">|</span>
-            <span className="text-white/70">Mon–Fri · 8a–6p</span>
           </div>
         </div>
       </div>
