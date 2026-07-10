@@ -3,7 +3,7 @@ import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import BookTrigger from "@/components/booking/BookTrigger";
 
-const HERO_IMAGE = "/hero-section-img.jpg";
+const HERO_IMAGE = "/hero-section-banner-image.png";
 
 const HERO_STATS = [
   { value: "25+", label: "Years in Rio Rancho" },

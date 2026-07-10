@@ -16,8 +16,7 @@ const PRINCIPLES: Principle[] = [
     title: "We believe everyone matters",
     body: "Every patient deserves to be seen, heard, and treated as a whole person, not a symptom. We meet you where you are and walk with you toward better health.",
     accent: "blue",
-    image:
-      "https://synergyspineandnerve.com/wp-content/uploads/2020/04/AdobeStock_131905531_5728daf376e95dbd68bb771b46885093.jpg",
+    image: "/principles/01-team.webp",
     imageAlt:
       "Compassionate chiropractic team welcoming a patient at Synergy Spine and Nerve Center.",
   },
@@ -26,8 +25,7 @@ const PRINCIPLES: Principle[] = [
     title: "We discover the cause",
     body: "We don't chase symptoms. We illuminate the root cause of your problem so we can liberate you from pain, and keep it from coming back.",
     accent: "gold",
-    image:
-      "https://synergyspineandnerve.com/wp-content/uploads/2020/04/AdobeStock_170696498.jpg",
+    image: "/principles/02-cause.webp",
     imageAlt:
       "Chiropractor evaluating a spinal model to identify the underlying cause of pain.",
   },
@@ -36,8 +34,7 @@ const PRINCIPLES: Principle[] = [
     title: "We use evidence-based protocols",
     body: "Modern chiropractic care, grounded in published research and proven outcomes. Care that improves your quality of life, measurably.",
     accent: "navy",
-    image:
-      "https://synergyspineandnerve.com/wp-content/uploads/2020/04/AdobeStock_221694274_9210ad7af9e5f7b776c84ac6f0276f49.jpg",
+    image: "/principles/03-evidence.webp",
     imageAlt:
       "Modern, evidence-based chiropractic protocols at Synergy Spine and Nerve Center.",
   },

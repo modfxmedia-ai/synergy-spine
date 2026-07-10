@@ -310,7 +310,7 @@ export default function NewFolksPage() {
               </div>
             </Reveal>
 
-            <ul className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <ul className="mt-12 mx-auto grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
               {CARDS.map((c, i) => (
                 <Reveal as="li" key={c.title} delay={i * 100}>
                   <Link href={c.href} className="block h-full group">

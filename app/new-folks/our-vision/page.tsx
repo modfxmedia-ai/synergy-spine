@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
-import SpineGraphic from "@/components/motion/SpineGraphic";
 import PulseWave from "@/components/motion/PulseWave";
 import AnimatedCounter from "@/components/motion/AnimatedCounter";
 
@@ -188,9 +188,25 @@ export default function OurVisionPage() {
 
             <Reveal className="lg:col-span-5" delay={150} variant="fade">
               <div className="relative mx-auto aspect-[4/5] w-full max-w-sm">
-                <div className="absolute inset-0 rounded-[36px] bg-white/5 ring-1 ring-white/10 backdrop-blur" />
-                <SpineGraphic className="absolute inset-0" />
-                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-center">
+                {/* Ambient glow */}
+                <div
+                  className="absolute -inset-8 rounded-[48px] bg-gradient-to-br from-brand-gold/25 via-brand-blue/10 to-transparent blur-2xl"
+                  aria-hidden="true"
+                />
+                {/* Portrait card */}
+                <div className="relative h-full w-full overflow-hidden rounded-[36px] ring-1 ring-white/15 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.6)] bg-brand-navyDark/60">
+                  <Image
+                    src="/team/dr-brad.webp"
+                    alt="Dr. Brad Fackrell of Synergy Spine and Nerve Center"
+                    fill
+                    sizes="(max-width: 640px) 80vw, (max-width: 1024px) 40vw, 360px"
+                    className="object-cover"
+                    priority
+                    quality={90}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-navyDark/85 via-brand-navyDark/10 to-transparent" />
+                </div>
+                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-center">
                   <p className="text-[10px] uppercase tracking-[0.22em] font-bold text-brand-gold">
                     Three generations
                   </p>
