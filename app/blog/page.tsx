@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { BlogListing } from "@/components/BlogListing";
 
-const SITE_ORIGIN = "https://synergyspineandnerve.com";
+import { SITE_ORIGIN } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Chiropractic Health Blog | Synergy Spine & Nerve Center",

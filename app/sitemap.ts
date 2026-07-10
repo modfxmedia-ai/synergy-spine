@@ -7,7 +7,7 @@ import {
   MASSAGE_SERVICES,
 } from "@/lib/services-catalog";
 
-const BASE_URL = "https://synergyspineandnerve.com";
+import { SITE_ORIGIN as BASE_URL } from "@/lib/site";
 
 const RESERVED_PROGRAMMATIC_SLUGS = new Set<string>([
   "chiropractor-albuquerque-nm",
@@ -51,6 +51,7 @@ const PRIORITY_0_8 = [
   "/chiropractic-research",
   "/triune-of-care",
   "/neuropathy",
+  "/the-truth-about-neuropathy",
   "/common-conditions",
   "/common-conditions/amyotrophic-lateral-sclerosis-als",
   "/area-we-serve",
@@ -72,6 +73,7 @@ const PRIORITY_0_7 = [
   "/resources/calendar",
   "/resources/get-notified",
   "/resources/order-supplements",
+  "/resources/adjusting-hours",
   "/helpful-stretches",
   "/spinal-hygiene-video",
   "/use-your-head-video",
@@ -88,6 +90,9 @@ const PRIORITY_0_6 = [
   "/chiropractor-albuquerque-nm",
   "/chiropractor-bernalillo-nm",
   "/chiropractor-corrales-nm",
+  "/chiropractor-casa-colorada-nm",
+  "/chiropractor-chilili-nm",
+  "/chiropractor-ponderosa-nm",
   "/chiropractic-los-lunas-nm",
   "/chiropractic-placitas-nm",
   "/chiropractic-belen-nm",
@@ -97,11 +102,34 @@ const PRIORITY_0_6 = [
   "/chiropractic-north-valley",
   "/chiropractic-south-valley-nm",
   "/chiropractic-tijeras-nm",
+  "/chiropractic-bosque-farms-nm",
+  "/chiropractic-canoncito-nm",
+  "/chiropractic-cochiti-lake-nm",
+  "/chiropractic-cochiti-pueblo-nm",
+  "/chiropractic-el-cerro-mission-nm",
+  "/chiropractic-el-llanito-nm",
+  "/chiropractic-golden-nm",
+  "/chiropractic-jarales-nm",
+  "/chiropractic-jemez-pueblo-nm",
+  "/chiropractic-los-ranchos-de-albuquerque",
+  "/chiropractic-meadow-lake-nm",
+  "/chiropractic-pena-blanca-nm",
+  "/chiropractic-peralta-nm",
+  "/chiropractic-san-felipe-pueblo-nm",
+  "/chiropractic-san-ysidro-nm",
+  "/chiropractic-sandia-park-nm",
+  "/chiropractic-santa-ana-pueblo-nm",
+  "/chiropractic-tome-nm",
+  "/chiropractic-zia-pueblo-nm",
 ];
 
 const WEEKLY_PATHS = new Set(["/", "/blog", "/schedule"]);
 
 type Entry = MetadataRoute.Sitemap[number];
+
+function withSlash(path: string): string {
+  return path.endsWith("/") ? path : `${path}/`;
+}
 
 function buildEntries(
   paths: string[],
@@ -109,7 +137,7 @@ function buildEntries(
   lastModified: Date
 ): Entry[] {
   return paths.map((path) => ({
-    url: `${BASE_URL}${path}`,
+    url: `${BASE_URL}${withSlash(path)}`,
     lastModified,
     changeFrequency: WEEKLY_PATHS.has(path) ? "weekly" : "monthly",
     priority,
@@ -122,14 +150,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
   const blogPostEntries: Entry[] = POSTS.map((p) => ({
-    url: `${BASE_URL}/blog/${p.slug}`,
+    url: `${BASE_URL}/blog/${p.slug}/`,
     lastModified: new Date(p.isoDate),
     changeFrequency: "yearly",
     priority: 0.5,
   }));
 
   const categoryEntries: Entry[] = CATEGORIES.map((c) => ({
-    url: `${BASE_URL}/category/${categorySlug(c)}`,
+    url: `${BASE_URL}/category/${categorySlug(c)}/`,
     lastModified,
     changeFrequency: "monthly",
     priority: 0.5,
@@ -139,7 +167,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogPaginationEntries: Entry[] = [];
   for (let i = 2; i <= totalBlogPages; i++) {
     blogPaginationEntries.push({
-      url: `${BASE_URL}/blog/page/${i}`,
+      url: `${BASE_URL}/blog/page/${i}/`,
       lastModified,
       changeFrequency: "weekly",
       priority: 0.6,
@@ -152,7 +180,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const slug = `${service.slug}-${city.slug}-nm`;
       if (RESERVED_PROGRAMMATIC_SLUGS.has(slug)) continue;
       programmaticEntries.push({
-        url: `${BASE_URL}/${slug}`,
+        url: `${BASE_URL}/${slug}/`,
         lastModified,
         changeFrequency: "monthly",
         priority: 0.5,
@@ -162,13 +190,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const serviceDetailEntries: Entry[] = [
     ...CHIROPRACTIC_SERVICES.map((s) => ({
-      url: `${BASE_URL}/services/chiropractic/${s.slug}`,
+      url: `${BASE_URL}/services/chiropractic/${s.slug}/`,
       lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),
     ...MASSAGE_SERVICES.map((s) => ({
-      url: `${BASE_URL}/services/massage/${s.slug}`,
+      url: `${BASE_URL}/services/massage/${s.slug}/`,
       lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.7,

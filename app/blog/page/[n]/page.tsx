@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BlogListing, TOTAL_PAGES } from "@/components/BlogListing";
 
-const SITE_ORIGIN = "https://synergyspineandnerve.com";
+import { SITE_ORIGIN } from "@/lib/site";
 
 export function generateStaticParams() {
   // Page 1 lives at /blog/, so generate routes only for pages 2..N

@@ -10,7 +10,7 @@ import { POSTS, CATEGORIES, categorySlug, type BlogPost } from "@/lib/blog-posts
 export const POSTS_PER_PAGE = 12;
 export const TOTAL_PAGES = Math.max(1, Math.ceil(POSTS.length / POSTS_PER_PAGE));
 
-const SITE_ORIGIN = "https://synergyspineandnerve.com";
+import { SITE_ORIGIN } from "@/lib/site";
 
 function pageHref(page: number): string {
   return page <= 1 ? "/blog/" : `/blog/page/${page}/`;

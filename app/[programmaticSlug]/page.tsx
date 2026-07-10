@@ -18,7 +18,7 @@ import {
 } from "@/lib/programmatic/cities";
 
 import BookTrigger from "@/components/booking/BookTrigger";
-const SITE_ORIGIN = "https://synergyspineandnerve.com";
+import { SITE_ORIGIN } from "@/lib/site";
 const PHONE_DISPLAY = "(505) 891-2280";
 const PHONE_HREF = "tel:+15058912280";
 

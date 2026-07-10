@@ -5,8 +5,7 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 import BookTrigger from "@/components/booking/BookTrigger";
-
-const SITE_ORIGIN = "https://synergyspineandnerve.com";
+import { SITE_ORIGIN } from "@/lib/site";
 const PHONE_DISPLAY = "(505) 891-2280";
 const PHONE_HREF = "tel:+15058912280";
 
@@ -126,7 +125,7 @@ export default function LocalSeoPage({
     name: "Synergy Spine and Nerve Center",
     url: pageUrl,
     telephone: "+15058912280",
-    image: `${SITE_ORIGIN}/wp-content/uploads/2020/04/logo-80h-1.png`,
+    image: `${SITE_ORIGIN}/logo.png`,
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",

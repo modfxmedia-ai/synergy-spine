@@ -26,7 +26,7 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
   name: "Synergy Spine and Nerve Center",
-  url: "https://synergyspineandnerve.com",
+  url: "https://synergyspineandnerve.com/",
   telephone: "+1-505-891-2280",
   address: {
     "@type": "PostalAddress",
@@ -37,8 +37,7 @@ const localBusinessSchema = {
     addressCountry: "US",
   },
   priceRange: "$$",
-  image:
-    "https://synergyspineandnerve.com/wp-content/uploads/2020/04/logo-80h-1_4002b319900d17494ef2eacd346a20e2.png",
+  image: "https://synergyspineandnerve.com/logo.png",
 };
 
 export default function Home() {

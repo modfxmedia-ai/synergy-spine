@@ -27,9 +27,16 @@ export const metadata: Metadata = {
     title: "Expert Chiropractic Care at Synergy Spine & Nerve",
     description:
       "Unlock your body's natural healing power with chiropractic care.",
+    url: "https://synergyspineandnerve.com/",
     type: "website",
     siteName: "Synergy Spine and Nerve Center",
     locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Synergy Spine & Nerve Center",
+    description:
+      "Chiropractic care in Rio Rancho, NM. Unlock your body's natural healing power.",
   },
   robots: {
     index: true,
@@ -57,12 +64,14 @@ export default function RootLayout({
           <BottomBookBar />
         </BookingProvider>
       </body>
-      <Script id="knock-knock-widget" strategy="afterInteractive">
-        {`window.company_id = '6a44c93ffb43c2761ccbc33c';
-var newScript = document.createElement('script');
-newScript.src = 'https://api.knock-knockapp.com/widget/widget.js';
-document.getElementsByTagName('HEAD')[0].appendChild(newScript);`}
+      <Script id="knock-knock-config" strategy="afterInteractive">
+        {`window.company_id = '6a44c93ffb43c2761ccbc33c';`}
       </Script>
+      <Script
+        id="knock-knock-widget"
+        src="https://api.knock-knockapp.com/widget/widget.js"
+        strategy="lazyOnload"
+      />
     </html>
   );
 }

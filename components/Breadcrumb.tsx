@@ -9,7 +9,7 @@ type BreadcrumbProps = {
   items: BreadcrumbItem[];
 };
 
-const SITE_ORIGIN = "https://synergyspineandnerve.com";
+import { SITE_ORIGIN } from "@/lib/site";
 
 export default function Breadcrumb({ items }: BreadcrumbProps) {
   const schema = {

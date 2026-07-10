@@ -13,8 +13,7 @@ import {
   getPostsByCategory,
   type BlogPost,
 } from "@/lib/blog-posts";
-
-const SITE_ORIGIN = "https://synergyspineandnerve.com";
+import { SITE_ORIGIN } from "@/lib/site";
 
 export function generateStaticParams() {
   return CATEGORIES.map((c) => ({ slug: categorySlug(c) }));
