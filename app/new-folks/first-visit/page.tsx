@@ -36,18 +36,6 @@ type Step = {
 const STEPS: Step[] = [
   {
     num: "01",
-    title: "Intake Forms",
-    body:
-      "We have quality online forms ready to go. Please fill these out before you arrive, your wait at the office will be very short. We aim to be a paperless office.",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-        <path d="M14 2v6h6M9 13h6M9 17h6" />
-      </svg>
-    ),
-  },
-  {
-    num: "02",
     title: "Consultation",
     body:
       "Sit down with us for a clear, honest conversation about your health goals and concerns. We listen first, understanding your story comes before any plan.",
@@ -59,10 +47,10 @@ const STEPS: Step[] = [
     ),
   },
   {
-    num: "03",
+    num: "02",
     title: "Examination",
     body:
-      "Our targeted neurological and structural exam pinpoints how spinal stress is affecting your nervous system, the master controller of every cell in your body.",
+      "A one-on-one consultation paired with a complete spinal health assessment. Our targeted neurological and structural exam pinpoints how spinal stress is affecting your nervous system, the master controller of every cell in your body.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <circle cx="11" cy="11" r="7" />
@@ -71,7 +59,7 @@ const STEPS: Step[] = [
     ),
   },
   {
-    num: "04",
+    num: "03",
     title: "Digital X-Ray Studies",
     body:
       "If clinically indicated, low-dose digital X-rays let us see exactly what is happening in your spine, no guesswork, just precise structural insight.",
@@ -83,10 +71,21 @@ const STEPS: Step[] = [
     ),
   },
   {
+    num: "04",
+    title: "First Treatment",
+    body:
+      "When it is safe and appropriate, we start care on the same visit with a gentle, specific treatment tailored to your findings, so you can begin feeling relief right away.",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+      </svg>
+    ),
+  },
+  {
     num: "05",
     title: "Report of Findings",
     body:
-      "We sit down again and walk you through everything we found, in plain language. You will know exactly what is going on, what we recommend, and why.",
+      "We walk you through everything we found, in plain language. You will know exactly what is going on, what we recommend, and why.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M9 11h6M9 7h6M9 15h4" />
