@@ -85,7 +85,7 @@ const STEPS: Step[] = [
     num: "05",
     title: "Report of Findings",
     body:
-      "We walk you through everything we found, in plain language. You will know exactly what is going on, what we recommend, and why.",
+      "We walk you through your results so you know exactly what is going on with your spine, what we recommend, and why it matters for your health.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M9 11h6M9 7h6M9 15h4" />
