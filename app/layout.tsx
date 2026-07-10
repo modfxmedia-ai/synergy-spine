@@ -64,6 +64,20 @@ export default function RootLayout({
           <BottomBookBar />
         </BookingProvider>
       </body>
+      {/* Google tag (gtag.js) */}
+      <Script
+        id="ga4-src"
+        src="https://www.googletagmanager.com/gtag/js?id=G-QPZT8FNXYE"
+        strategy="afterInteractive"
+      />
+      <Script id="ga4-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-QPZT8FNXYE');
+        `}
+      </Script>
       <Script id="knock-knock-config" strategy="afterInteractive">
         {`window.company_id = '6a44c93ffb43c2761ccbc33c';`}
       </Script>

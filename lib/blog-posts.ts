@@ -79,7 +79,7 @@ export const POSTS: BlogPost[] = [
     date: "October 13, 2022",
     isoDate: "2022-10-13",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2022/10/ezgif.com-gif-maker-865x1024.png",
+    featureImage: "/blog-images/legacy/ezgif.com-gif-maker-865x1024.png",
   },
   {
     slug: "covid-and-flu-prevention-that-you-need-to-know",
@@ -89,7 +89,7 @@ export const POSTS: BlogPost[] = [
     date: "October 27, 2020",
     isoDate: "2020-10-27",
     readTime: "3 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/10/COVID-supplements.jpg",
+    featureImage: "/blog-images/legacy/covid-supplements.jpg",
   },
   {
     slug: "temporary-closing-of-straight-chiropractic",
@@ -99,7 +99,7 @@ export const POSTS: BlogPost[] = [
     date: "April 13, 2020",
     isoDate: "2020-04-13",
     readTime: "3 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/04/tempclose.jpg",
+    featureImage: "/blog-images/legacy/tempclose-300x215.jpg",
   },
   {
     slug: "the-most-important-covid-19-information",
@@ -109,7 +109,7 @@ export const POSTS: BlogPost[] = [
     date: "April 10, 2020",
     isoDate: "2020-04-10",
     readTime: "5 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/04/COVID-19.jpg",
+    featureImage: "/blog-images/legacy/covid-19.jpg",
   },
   {
     slug: "why-we-take-better-care-of-you-than-your-insurance",
@@ -119,7 +119,7 @@ export const POSTS: BlogPost[] = [
     date: "May 23, 2019",
     isoDate: "2019-05-23",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/Health-insurance-money-1024x677.jpg",
+    featureImage: "/blog-images/legacy/health-insurance-money-1024x677.jpg",
   },
   {
     slug: "why-you-should-prevent-arthritis",
@@ -129,7 +129,7 @@ export const POSTS: BlogPost[] = [
     date: "May 9, 2019",
     isoDate: "2019-05-09",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/arthritis.jpg",
+    featureImage: "/blog-images/legacy/arthritis.jpg",
   },
   {
     slug: "how-to-reduce-the-risk-of-cancer-and-heart-disease-but-not-stroke",
@@ -159,7 +159,7 @@ export const POSTS: BlogPost[] = [
     date: "May 30, 2018",
     isoDate: "2018-05-30",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/Vitamin-D3.jpg",
+    featureImage: "/blog-images/legacy/vitamin-d3.jpg",
   },
   {
     slug: "3-habits-to-improve-your-core-strength",
@@ -179,7 +179,7 @@ export const POSTS: BlogPost[] = [
     date: "March 22, 2018",
     isoDate: "2018-03-22",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/unnamed.jpg",
+    featureImage: null,
   },
   {
     slug: "are-you-heading-toward-an-early-death",
@@ -189,7 +189,7 @@ export const POSTS: BlogPost[] = [
     date: "March 14, 2018",
     isoDate: "2018-03-14",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/SHA-Score.jpg",
+    featureImage: null,
   },
   {
     slug: "please-dont-make-this-same-mistake",
@@ -229,7 +229,7 @@ export const POSTS: BlogPost[] = [
     date: "February 26, 2018",
     isoDate: "2018-02-26",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/Chocolates-768x1024.jpg",
+    featureImage: null,
   },
   {
     slug: "the-number-one-reason-to-see-a-chiropractor",
@@ -239,7 +239,7 @@ export const POSTS: BlogPost[] = [
     date: "January 24, 2018",
     isoDate: "2018-01-24",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/article-1-2018.bmp",
+    featureImage: null,
   },
   {
     slug: "symptoms-or-causes-numbness-or-functional-restoration",
@@ -249,7 +249,7 @@ export const POSTS: BlogPost[] = [
     date: "January 11, 2018",
     isoDate: "2018-01-11",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/Tooth-Ache-home-remedy.jpg",
+    featureImage: null,
   },
   {
     slug: "should-i-get-the-flu-shot",
@@ -259,7 +259,7 @@ export const POSTS: BlogPost[] = [
     date: "January 10, 2018",
     isoDate: "2018-01-10",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/vaccines.jpg",
+    featureImage: null,
   },
   {
     slug: "vaccines-are-they-safe-and-effective",
@@ -269,7 +269,7 @@ export const POSTS: BlogPost[] = [
     date: "August 10, 2017",
     isoDate: "2017-08-10",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/vaccines.jpg",
+    featureImage: null,
   },
   {
     slug: "its-not-about-the-score",
@@ -279,7 +279,7 @@ export const POSTS: BlogPost[] = [
     date: "June 26, 2017",
     isoDate: "2017-06-26",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/FullSizeRender-1024x576.jpg",
+    featureImage: null,
   },
   {
     slug: "should-we-trust-the-drugs-we-take",
@@ -289,7 +289,7 @@ export const POSTS: BlogPost[] = [
     date: "June 19, 2017",
     isoDate: "2017-06-19",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/drugs.jpg",
+    featureImage: null,
   },
   {
     slug: "should-you-take-cholesterol-lowering-drugs",
@@ -299,7 +299,7 @@ export const POSTS: BlogPost[] = [
     date: "April 11, 2017",
     isoDate: "2017-04-11",
     readTime: "3 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/pills.jpg",
+    featureImage: null,
   },
   {
     slug: "do-painkillers-work-for-back-pain",
@@ -309,7 +309,7 @@ export const POSTS: BlogPost[] = [
     date: "April 4, 2017",
     isoDate: "2017-04-04",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/painkillers-1024x751.jpg",
+    featureImage: null,
   },
   {
     slug: "do-you-have-movement-deficiency-syndrome",
@@ -319,7 +319,7 @@ export const POSTS: BlogPost[] = [
     date: "March 21, 2017",
     isoDate: "2017-03-21",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/baby-doing-pushups.jpg",
+    featureImage: null,
   },
   {
     slug: "will-exercise-make-you-smarter",
@@ -329,7 +329,7 @@ export const POSTS: BlogPost[] = [
     date: "March 8, 2017",
     isoDate: "2017-03-08",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/baby-squat.jpg",
+    featureImage: null,
   },
   {
     slug: "should-a-chiropractic-adjustment-hurt",
@@ -339,7 +339,7 @@ export const POSTS: BlogPost[] = [
     date: "January 30, 2017",
     isoDate: "2017-01-30",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/download.jpg",
+    featureImage: null,
   },
   {
     slug: "should-your-chiropractor-prescribe-drugs",
@@ -349,7 +349,7 @@ export const POSTS: BlogPost[] = [
     date: "January 19, 2017",
     isoDate: "2017-01-19",
     readTime: "4 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/prescription-drugs.jpg",
+    featureImage: null,
   },
   {
     slug: "feeling-good-does-not-mean-you-are-healthy",
@@ -359,7 +359,7 @@ export const POSTS: BlogPost[] = [
     date: "January 11, 2017",
     isoDate: "2017-01-11",
     readTime: "7 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/maxresdefault-1024x576.jpg",
+    featureImage: null,
   },
   {
     slug: "new-year-new-you-challenge",
@@ -369,7 +369,7 @@ export const POSTS: BlogPost[] = [
     date: "December 21, 2016",
     isoDate: "2016-12-21",
     readTime: "3 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/IMG_3303-e1482279431235-1.jpg",
+    featureImage: null,
   },
   {
     slug: "did-chiropractic-care-cause-katie-mays-death",
@@ -379,7 +379,7 @@ export const POSTS: BlogPost[] = [
     date: "November 18, 2016",
     isoDate: "2016-11-18",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/katie-may.jpg",
+    featureImage: null,
   },
   {
     slug: "how-to-make-your-core-strong",
@@ -389,7 +389,7 @@ export const POSTS: BlogPost[] = [
     date: "November 15, 2016",
     isoDate: "2016-11-15",
     readTime: "3 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/abs-e1479252215517.jpg",
+    featureImage: null,
   },
   {
     slug: "would-you-shoot-a-cannon-from-a-canoe",
@@ -399,7 +399,7 @@ export const POSTS: BlogPost[] = [
     date: "November 7, 2016",
     isoDate: "2016-11-07",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/canoe-cannon-1024x585.jpg",
+    featureImage: null,
   },
   {
     slug: "how-many-pushups-can-you-do",
@@ -409,7 +409,7 @@ export const POSTS: BlogPost[] = [
     date: "November 1, 2016",
     isoDate: "2016-11-01",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/pushups.jpg",
+    featureImage: null,
   },
   {
     slug: "how-long-does-it-take-to-brush",
@@ -419,7 +419,7 @@ export const POSTS: BlogPost[] = [
     date: "October 25, 2016",
     isoDate: "2016-10-25",
     readTime: "3 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/plaque-1024x768.jpg",
+    featureImage: null,
   },
   {
     slug: "how-do-you-compare",
@@ -429,7 +429,7 @@ export const POSTS: BlogPost[] = [
     date: "October 14, 2016",
     isoDate: "2016-10-14",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/IMG_1492-1-e1476465691373-1.jpg",
+    featureImage: null,
   },
   {
     slug: "are-you-fit-enough-to-be-president",
@@ -439,7 +439,7 @@ export const POSTS: BlogPost[] = [
     date: "October 11, 2016",
     isoDate: "2016-10-11",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/hilary-1024x578.jpg",
+    featureImage: null,
   },
   {
     slug: "whats-better-than-a-flu-shot",
@@ -449,7 +449,7 @@ export const POSTS: BlogPost[] = [
     date: "October 5, 2016",
     isoDate: "2016-10-05",
     readTime: "2 min read",
-    featureImage: "https://synergyspineandnerve.com/wp-content/uploads/2020/03/sugar.jpg",
+    featureImage: null,
   },
   {
     slug: "what-will-be-the-cause-of-your-death",
@@ -559,7 +559,7 @@ export const POSTS: BlogPost[] = [
     date: "October 29, 2015",
     isoDate: "2015-10-29",
     readTime: "2 min read",
-    featureImage: "https://www.straightchiro.com/wp-content/uploads/2015/10/liquidfishoil-300x300.jpg",
+    featureImage: null,
   },
   {
     slug: "try-eating-this-healthy-dessert-for-breakfast",
@@ -569,7 +569,7 @@ export const POSTS: BlogPost[] = [
     date: "October 1, 2015",
     isoDate: "2015-10-01",
     readTime: "2 min read",
-    featureImage: "https://www.straightchiro.com/wp-content/uploads/2015/10/coconutmilk-300x200.jpg",
+    featureImage: null,
   },
   {
     slug: "happy-birthday-bj-palmer",
@@ -579,7 +579,7 @@ export const POSTS: BlogPost[] = [
     date: "September 14, 2015",
     isoDate: "2015-09-14",
     readTime: "2 min read",
-    featureImage: "https://www.straightchiro.com/wp-content/uploads/2015/09/bj_palmer-224x300.jpg",
+    featureImage: null,
   },
   {
     slug: "will-calcium-prevent-osteoporosis",
@@ -589,7 +589,7 @@ export const POSTS: BlogPost[] = [
     date: "September 8, 2015",
     isoDate: "2015-09-08",
     readTime: "2 min read",
-    featureImage: "https://www.straightchiro.com/wp-content/uploads/2015/09/calcium-osteoporosis-chiropractic-300x169.jpg",
+    featureImage: null,
   },
   {
     slug: "why-would-you-want-to-take-fish-oil",
@@ -599,7 +599,7 @@ export const POSTS: BlogPost[] = [
     date: "August 31, 2015",
     isoDate: "2015-08-31",
     readTime: "2 min read",
-    featureImage: "https://www.straightchiro.com/wp-content/uploads/2015/08/fish-oil-chiropractic-supplement-300x290.jpg",
+    featureImage: null,
   },
   {
     slug: "do-you-need-to-take-vitamin-d-2",
@@ -629,7 +629,7 @@ export const POSTS: BlogPost[] = [
     date: "August 4, 2015",
     isoDate: "2015-08-04",
     readTime: "2 min read",
-    featureImage: "https://www.straightchiro.com/wp-content/uploads/2015/08/pills-300x127.jpg",
+    featureImage: null,
   },
   {
     slug: "get-rid-of-your-pain-2",
@@ -649,7 +649,7 @@ export const POSTS: BlogPost[] = [
     date: "July 22, 2015",
     isoDate: "2015-07-22",
     readTime: "2 min read",
-    featureImage: "https://www.straightchiro.com/wp-content/uploads/2015/07/straight-chiropractic-yellow-jersey-300x187.jpg",
+    featureImage: null,
   },
   {
     slug: "are-you-taking-vitamin-d",
@@ -659,7 +659,7 @@ export const POSTS: BlogPost[] = [
     date: "May 26, 2015",
     isoDate: "2015-05-26",
     readTime: "2 min read",
-    featureImage: "https://www.straightchiro.com/wp-content/uploads/2015/05/vitamin-d3.jpg",
+    featureImage: null,
   },
   {
     slug: "the-essential-nutrient-vitamin-d",
@@ -669,7 +669,7 @@ export const POSTS: BlogPost[] = [
     date: "March 31, 2015",
     isoDate: "2015-03-31",
     readTime: "2 min read",
-    featureImage: "https://www.straightchiro.com/wp-content/uploads/2015/03/vitamin-d.jpg",
+    featureImage: "/blog-images/legacy/vitamin-d.jpg",
   },
   {
     slug: "drug-free-chiropractic-sb376",
@@ -719,7 +719,7 @@ export const POSTS: BlogPost[] = [
     date: "July 9, 2014",
     isoDate: "2014-07-09",
     readTime: "2 min read",
-    featureImage: "https://www.straightchiro.com/wp-content/uploads/2014/07/back_pain.jpg",
+    featureImage: null,
   },
   {
     slug: "3-reasons-you-may-need-a-chiropractor-in-rio-rancho",
@@ -889,7 +889,7 @@ export const POSTS: BlogPost[] = [
     date: "2012-09-29",
     isoDate: "2018-01-01",
     readTime: "2 min read",
-    featureImage: "https://www.straightchiro.com/wp-content/uploads/2012/09/posture.jpg",
+    featureImage: null,
   },
   {
     slug: "tips-on-backpack-safety-for-kids",

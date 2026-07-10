@@ -4,8 +4,7 @@ import Link from "next/link";
 const PHONE_DISPLAY = "(505) 891-2280";
 const PHONE_TEL = "+15058912280";
 const ADDRESS = "1453 Rio Rancho Blvd-Suite 2, Rio Rancho, NM 87124";
-const LOGO_SRC =
-  "https://synergyspineandnerve.com/wp-content/uploads/2020/04/logo-80h-1_4002b319900d17494ef2eacd346a20e2.png";
+const LOGO_SRC = "/logo.png";
 
 const SITE_LINKS = [
   { label: "About Us", href: "/about-us/" },

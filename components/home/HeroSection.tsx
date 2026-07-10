@@ -3,8 +3,7 @@ import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import BookTrigger from "@/components/booking/BookTrigger";
 
-const HERO_IMAGE =
-  "https://synergyspineandnerve.com/wp-content/uploads/2020/04/AdobeStock_319143390_6e8be8e243246272480f53637761cf18.jpg";
+const HERO_IMAGE = "/hero-section-img.jpg";
 
 const HERO_STATS = [
   { value: "25+", label: "Years in Rio Rancho" },
@@ -308,10 +307,10 @@ export default function HeroSection() {
                     src={HERO_IMAGE}
                     alt="Chiropractic care at Synergy Spine and Nerve Center"
                     fill
-                    sizes="(max-width: 1024px) 100vw, 40vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 560px"
                     className="object-cover"
                     priority
-                    unoptimized
+                    quality={90}
                   />
                   <div className="absolute inset-0 bg-gradient-to-tr from-brand-navyDark/40 via-transparent to-brand-blue/20" />
 
