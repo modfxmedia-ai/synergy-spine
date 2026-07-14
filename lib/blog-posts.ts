@@ -39,17 +39,6 @@ export function categorySlug(c: BlogCategory): string {
 
 export const POSTS: BlogPost[] = [
   {
-    slug: "non-surgical-spinal-decompression-what-to-expect",
-    title: "Non-Surgical Spinal Decompression: What to Expect at Your First Visit",
-    excerpt:
-      "Living with a bulging or herniated disk doesn't have to mean surgery. Here is a plain-English walkthrough of non-surgical spinal decompression, who it helps, and what your first appointment at Synergy Spine actually looks like.",
-    category: "Chiropractic Treatment",
-    date: "July 1, 2026",
-    isoDate: "2026-07-01",
-    readTime: "5 min read",
-    featureImage: "/blog-images/non-surgical-spinal-decompression-what-to-expect.jpeg",
-  },
-  {
     slug: "5-early-warning-signs-of-peripheral-neuropathy",
     title: "5 Early Warning Signs of Peripheral Neuropathy You Shouldn't Ignore",
     excerpt:
