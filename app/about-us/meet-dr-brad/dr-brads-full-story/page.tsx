@@ -460,8 +460,8 @@ export default function DrBradsFullStoryPage() {
                     At Synergy Spine and Nerve Center, we believe that everyone
                     matters and that everyone can take their next step toward
                     better health. We take pride in discovering the cause of
-                    your problem, whether it&apos;s neck or back pain,
-                    neuropathy, or just wanting to feel your best. We illuminate
+                    your problem, whether it&apos;s neck or back pain or just
+                    wanting to feel your best. We illuminate
                     the possibilities and then liberate you from your pain.
                   </p>
                   <p>

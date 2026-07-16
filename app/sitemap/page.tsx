@@ -99,8 +99,6 @@ const PAGE_GROUPS: Group[] = [
       { label: "Common Conditions", href: "/common-conditions/", children: [
         { label: "Amyotrophic Lateral Sclerosis (ALS)", href: "/common-conditions/amyotrophic-lateral-sclerosis-als/" },
       ] },
-      { label: "Neuropathy", href: "/neuropathy/" },
-      { label: "The Truth About Neuropathy", href: "/the-truth-about-neuropathy/" },
     ],
   },
   {

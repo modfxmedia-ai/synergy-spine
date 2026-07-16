@@ -149,11 +149,11 @@ export default function MeetJessPage() {
               <Reveal delay={240}>
                 <p className="mt-5 text-lg leading-relaxed">
                   In 2019, I joined the team at Synergy concentrating on
-                  solutions to help those suffering from neuropathic conditions.
-                  I practice what I preach by being an avid mountain biker and
-                  outdoorsman, often lifting heavy objects called barbells and
-                  dumbbells, and being a foodie at heart trying to cook
-                  delicious, healthy food.
+                  solutions to help those working toward better spinal health
+                  and everyday wellness. I practice what I preach by being an
+                  avid mountain biker and outdoorsman, often lifting heavy
+                  objects called barbells and dumbbells, and being a foodie at
+                  heart trying to cook delicious, healthy food.
                 </p>
               </Reveal>
             </div>
@@ -166,22 +166,15 @@ export default function MeetJessPage() {
           <div className="relative mx-auto max-w-3xl px-6 text-center">
             <Reveal>
               <p className="section-title text-2xl md:text-3xl font-semibold leading-snug">
-                Synergy Spine and Nerve Center is the premier family
-                chiropractic and{" "}
+                Synergy Spine and Nerve Center is the premier{" "}
                 <span className="italic text-brand-gold">
-                  neuropathy treatment center
+                  family chiropractic center
                 </span>{" "}
                 in Rio Rancho, New Mexico.
               </p>
               <p className="mt-4 text-white/80">We look forward to serving you.</p>
             </Reveal>
             <Reveal delay={150} className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="/neuropathy/"
-                className="rounded-full bg-brand-gold px-7 py-3 text-sm font-bold text-brand-navyDark uppercase tracking-wide hover:bg-brand-goldSoft transition"
-              >
-                Learn About Neuropathy
-              </Link>
               <a
                 href="tel:+15058912280"
                 className="rounded-full border border-white/30 px-7 py-3 text-sm font-bold uppercase tracking-wide hover:bg-white hover:text-brand-navyDark transition"

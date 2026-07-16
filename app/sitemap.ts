@@ -50,8 +50,6 @@ const PRIORITY_0_8 = [
   "/chiropractic-history",
   "/chiropractic-research",
   "/triune-of-care",
-  "/neuropathy",
-  "/the-truth-about-neuropathy",
   "/common-conditions",
   "/common-conditions/amyotrophic-lateral-sclerosis-als",
   "/area-we-serve",

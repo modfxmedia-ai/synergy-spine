@@ -28,7 +28,7 @@ const TESTIMONIALS: Testimonial[] = [
   },
   {
     quote:
-      "I've been going to Synergy for over a year now. My neuropathy symptoms have improved dramatically. The evidence-based approach really works.",
+      "I've been going to Synergy for over a year now. My chronic back pain and posture have improved dramatically. The evidence-based approach really works.",
     name: "Sandra R.",
     location: "Bernalillo, NM",
     initials: "SR",

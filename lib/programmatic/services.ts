@@ -188,59 +188,6 @@ export const SERVICES: ServiceCopy[] = [
     related: ["spinal-decompression", "back-pain-relief", "herniated-disc-treatment"],
   },
   {
-    slug: "neuropathy-treatment",
-    name: "Neuropathy Treatment",
-    short: "neuropathy treatment",
-    category: "condition",
-    titleTemplate:
-      "Neuropathy Treatment in {city}, NM | Synergy Spine and Nerve Center",
-    descriptionTemplate:
-      "Drug-free neuropathy treatment for {city}, NM. Reduce numbness, burning, and tingling in feet and hands at Synergy Spine and Nerve Center.",
-    h1Template: "Neuropathy Treatment in {city}, NM",
-    whatItIs:
-      "Peripheral neuropathy is what happens when the small nerves in your hands and feet stop getting the blood flow, oxygen, and nerve signal they need. The result is numbness, burning, tingling, sharp shooting pain, or balance loss. Most patients are told there's nothing to be done. That's not true, for the right candidate, restoring blood flow and nerve signal can produce real, measurable change.",
-    howItWorks: [
-      "A consultation to grade your neuropathy on a 010 severity scale.",
-      "A vascular and neurologic exam to confirm whether you're a candidate.",
-      "A combined protocol: nerve re-education, blood-flow stimulation, and spinal correction.",
-      "Home protocols you do daily, this is non-negotiable for results.",
-    ],
-    helpsWith: [
-      "Burning or tingling in the feet or hands",
-      "Numbness that wakes you up at night",
-      "Sharp, electric-shock pain in the toes",
-      "Loss of balance, especially in the dark",
-      "Sensitivity to light touch (allodynia)",
-    ],
-    whoItsFor:
-      "Adults with peripheral neuropathy who haven't lost too much nerve function yet. The earlier you start, the more nerve you can save. We grade your nerve damage objectively and tell you up front whether our protocol is likely to help.",
-    expect: [
-      "A 30-minute consultation to determine candidacy",
-      "An honest yes or no, we don't take patients we can't help",
-      "Twice-weekly in-office visits paired with a daily home protocol",
-      "Re-grading at 12 weeks to measure the shift",
-    ],
-    faqs: [
-      {
-        q: "Is neuropathy reversible?",
-        a: "It depends on the cause and how long it's been progressing. If we catch it early, before nerve cells die, significant reversal is possible. Late-stage neuropathy is more about stabilizing what you have left. {city} patients should not assume it's hopeless until they've been examined.",
-      },
-      {
-        q: "Can chiropractic care help neuropathy?",
-        a: "When the neuropathy is being driven or worsened by spinal nerve root compression, yes, chiropractic care is part of the answer. When it's purely metabolic (e.g., diabetic), chiropractic supports the broader protocol of vascular work and home stimulation.",
-      },
-      {
-        q: "Do I need to stop my medications?",
-        a: "No. We coordinate with your primary care doctor and never ask you to stop a medication on our recommendation. Many {city} patients reduce medication naturally as symptoms quiet down, that's a conversation between you and your prescriber.",
-      },
-      {
-        q: "How fast will I notice change?",
-        a: "Most candidates feel a shift in burning or tingling within 46 weeks. Numbness and balance take longer because nerve regrowth is slow, 12 weeks is the realistic window to evaluate change.",
-      },
-    ],
-    related: ["chiropractor", "back-pain-relief"],
-  },
-  {
     slug: "back-pain-relief",
     name: "Back Pain Relief",
     short: "back pain relief",

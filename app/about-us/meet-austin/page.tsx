@@ -569,8 +569,7 @@ export default function MeetAustinPage() {
             <Reveal>
               <p className="text-brand-text text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
                 Synergy Spine and Nerve Center is the premier family
-                chiropractic and neuropathy treatment center in Rio Rancho, New
-                Mexico.
+                chiropractic center in Rio Rancho, New Mexico.
               </p>
             </Reveal>
             <Reveal delay={120}>

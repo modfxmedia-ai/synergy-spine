@@ -19,7 +19,7 @@ const DOCTOR = {
   credentials: [
     "Doctor of Chiropractic",
     "Family & pediatric care",
-    "Neuropathy specialist",
+    "Spinal correction specialist",
   ],
   profileUrl: "/about-us/meet-dr-brad/",
 };

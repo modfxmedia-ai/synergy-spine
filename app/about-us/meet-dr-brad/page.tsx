@@ -17,7 +17,7 @@ const PORTRAIT_IMAGE = "/team/doctor-brad-fackrell.jpg";
 export const metadata: Metadata = {
   title: "Meet Dr. Brad Synergy Spine and Nerve Center",
   description:
-    "Meet Dr. Brad Fackrell, owner, founder, and chiropractor at Synergy Spine and Nerve Center, the premier family chiropractic and neuropathy treatment center in Rio Rancho, New Mexico.",
+    "Meet Dr. Brad Fackrell, owner, founder, and chiropractor at Synergy Spine and Nerve Center, the premier family chiropractic center in Rio Rancho, New Mexico.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Meet Dr. Brad Fackrell Owner, Founder & Chiropractor",
@@ -580,8 +580,7 @@ export default function MeetDrBradPage() {
             <Reveal>
               <p className="text-brand-text text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
                 Synergy Spine and Nerve Center is the premier family
-                chiropractic and neuropathy treatment center in Rio Rancho, New
-                Mexico.
+                chiropractic center in Rio Rancho, New Mexico.
               </p>
             </Reveal>
             <Reveal delay={120}>

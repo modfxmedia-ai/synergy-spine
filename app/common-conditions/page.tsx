@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title:
     "Common Chiropractic Conditions Synergy Spine and Nerve Center",
   description:
-    "From back pain and sciatica to ALS and peripheral neuropathy, see the common conditions we evaluate at Synergy Spine and Nerve Center in Rio Rancho, NM.",
+    "From back pain and sciatica to ALS, see the common conditions we evaluate at Synergy Spine and Nerve Center in Rio Rancho, NM.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title:
@@ -69,12 +69,6 @@ const CONDITIONS: Cond[] = [
     desc:
       "We've had the privilege of supporting ALS patients with chiropractic care alongside their medical team. Read more about our experience.",
     href: "/common-conditions/amyotrophic-lateral-sclerosis-als/",
-  },
-  {
-    title: "Peripheral Neuropathy",
-    desc:
-      "Numbness, tingling, burning in hands or feet. Our four-pillar approach addresses the source, not just the symptom.",
-    href: "/neuropathy/",
   },
   {
     title: "Carpal Tunnel",

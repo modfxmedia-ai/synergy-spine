@@ -141,10 +141,9 @@ export default function MeetBertPage() {
           <div className="relative mx-auto max-w-3xl px-6 text-center">
             <Reveal>
               <p className="section-title text-2xl md:text-3xl font-semibold leading-snug">
-                Synergy Spine and Nerve Center is the premier family
-                chiropractic and{" "}
+                Synergy Spine and Nerve Center is the premier{" "}
                 <span className="italic text-brand-gold">
-                  neuropathy treatment center
+                  family chiropractic center
                 </span>{" "}
                 in Rio Rancho, New Mexico.
               </p>
