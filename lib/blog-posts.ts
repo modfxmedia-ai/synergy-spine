@@ -39,6 +39,28 @@ export function categorySlug(c: BlogCategory): string {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: "first-72-hours-after-a-car-accident-what-to-do",
+    title: "The First 72 Hours After a Car Accident: What to Do (and What Most People Get Wrong)",
+    excerpt:
+      "Most auto-injury cases we see did not feel like emergencies at the scene. Here is what to do in the first 72 hours after a collision to protect your recovery, and the mistakes that turn a minor crash into a chronic problem.",
+    category: "Chiropractic Treatment",
+    date: "June 24, 2026",
+    isoDate: "2026-06-24",
+    readTime: "5 min read",
+    featureImage: "/services/car-truck-accident-care.jpg",
+  },
+  {
+    slug: "medical-massage-vs-spa-massage-which-actually-helps-your-pain",
+    title: "Medical Massage vs. Spa Massage: Which One Actually Helps Your Pain?",
+    excerpt:
+      "Spa massage and medical massage look similar from the outside, but they are built for two very different jobs. Here is how to tell them apart, and how to choose the one that will actually move the needle on your pain.",
+    category: "Chiropractic Care",
+    date: "June 10, 2026",
+    isoDate: "2026-06-10",
+    readTime: "4 min read",
+    featureImage: "/services/massage/medical-massage.jpg",
+  },
+  {
     slug: "sitting-is-the-new-sugar-daily-movement-for-a-healthier-spine",
     title: "Sitting Is the New Sugar: Daily Movement for a Healthier Spine",
     excerpt:
