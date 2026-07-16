@@ -39,17 +39,6 @@ export function categorySlug(c: BlogCategory): string {
 
 export const POSTS: BlogPost[] = [
   {
-    slug: "5-early-warning-signs-of-peripheral-neuropathy",
-    title: "5 Early Warning Signs of Peripheral Neuropathy You Shouldn't Ignore",
-    excerpt:
-      "Numbness, tingling, or burning in your hands and feet is rarely just \"getting older.\" These five early clues can help you catch peripheral neuropathy before the nerves are permanently damaged.",
-    category: "Chiropractic Care",
-    date: "June 18, 2026",
-    isoDate: "2026-06-18",
-    readTime: "4 min read",
-    featureImage: "/blog-images/5-early-warning-signs-of-peripheral-neuropathy.jpg",
-  },
-  {
     slug: "sitting-is-the-new-sugar-daily-movement-for-a-healthier-spine",
     title: "Sitting Is the New Sugar: Daily Movement for a Healthier Spine",
     excerpt:
