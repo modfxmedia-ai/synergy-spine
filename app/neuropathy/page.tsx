@@ -27,8 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-const HERO_IMAGE =
-  "https://synergyspineandnerve.com/wp-content/uploads/2020/04/image004.png";
+const HERO_IMAGE = "/resources/peripheral-neuropathy.jpg";
 
 const SYMPTOMS = [
   ["Numbness", "Tingling", "Cramping", "Burning or electrical pain"],
@@ -150,7 +149,7 @@ export default function NeuropathyPage() {
                 <div className="relative aspect-[4/3] rounded-3xl overflow-hidden ring-1 ring-white/10 shadow-[0_30px_60px_-20px_rgba(0,0,0,0.6)]">
                   <Image
                     src={HERO_IMAGE}
-                    alt="Muscular man lifting dumbbells, showcasing physical fitness for Synergy Spine and Nerve Center wellness blog."
+                    alt="Illustration of peripheral neuropathy affecting the nerves in the hands and feet."
                     fill
                     className="object-cover"
                     sizes="(min-width: 1024px) 480px, 100vw"
