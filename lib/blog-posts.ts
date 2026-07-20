@@ -1,3 +1,6 @@
+/** Default author for all blog posts (current and upcoming). */
+export const BLOG_AUTHOR = "Dr. Brad Fackrell";
+
 export type BlogCategory =
   | "Chiropractic Approach"
   | "Chiropractic Care"

@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 import {
+  BLOG_AUTHOR,
   POSTS,
   categorySlug,
   getPostBySlug,
@@ -67,7 +68,7 @@ export default async function BlogPostPage({
     image: post.featureImage ? [post.featureImage] : undefined,
     author: {
       "@type": "Person",
-      name: "Dr. Brad Sandler",
+      name: BLOG_AUTHOR,
       affiliation: "Synergy Spine and Nerve Center",
     },
     publisher: {
@@ -128,7 +129,7 @@ export default async function BlogPostPage({
                 <span className="h-1 w-1 rounded-full bg-white/40" />
                 <span>{post.readTime}</span>
                 <span className="h-1 w-1 rounded-full bg-white/40" />
-                <span>By Dr. Brad Sandler</span>
+                <span>By {BLOG_AUTHOR}</span>
               </div>
             </div>
           </div>
@@ -178,7 +179,7 @@ export default async function BlogPostPage({
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-brand-navyDark">
-                        Dr. Brad Sandler
+                        {BLOG_AUTHOR}
                       </h3>
                       <p className="text-sm text-brand-textLight">
                         Synergy Spine and Nerve Center · Rio Rancho, NM
