@@ -40,6 +40,18 @@ export function categorySlug(c: BlogCategory): string {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: "summer-sports-injury-care-for-bernalillo-families",
+    title: "Summer Sports Injury Care for Bernalillo Families",
+    excerpt:
+      "Keep your family active and pain free with a sports injury chiropractor in Bernalillo, offering evidence-based care to restore mobility and prevent reinjury.",
+    category: "Chiropractic Treatment",
+    date: "July 21, 2026",
+    isoDate: "2026-07-21",
+    readTime: "6 min read",
+    featureImage:
+      "/blog-images/summer-sports-injury-care-for-bernalillo-families.jpg",
+  },
+  {
     slug: "first-72-hours-after-a-car-accident-what-to-do",
     title: "The First 72 Hours After a Car Accident: What to Do (and What Most People Get Wrong)",
     excerpt:
