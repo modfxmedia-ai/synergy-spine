@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
-import SpineGraphic from "@/components/motion/SpineGraphic";
 import PulseWave from "@/components/motion/PulseWave";
 
 import BookTrigger from "@/components/booking/BookTrigger";
@@ -224,15 +223,31 @@ export default function FirstVisitPage() {
             </div>
 
             <Reveal className="lg:col-span-5" delay={150} variant="fade">
-              <div className="relative mx-auto aspect-[4/5] w-full max-w-sm">
-                <div className="absolute inset-0 rounded-[36px] bg-white/5 ring-1 ring-white/10 backdrop-blur" />
-                <SpineGraphic className="absolute inset-0" />
-                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-center">
+              <div className="relative mx-auto w-full max-w-sm">
+                <div className="absolute -inset-3 rounded-[28px] bg-brand-gold/15 -rotate-2 pointer-events-none" aria-hidden="true" />
+                <div className="absolute -inset-1.5 rounded-[24px] bg-brand-blue/25 rotate-1 pointer-events-none" aria-hidden="true" />
+                <div className="relative overflow-hidden rounded-[22px] ring-1 ring-white/15 shadow-[0_30px_80px_-25px_rgba(0,0,0,0.7)] bg-black aspect-[4/5]">
+                  <video
+                    className="h-full w-full object-cover"
+                    controls
+                    playsInline
+                    preload="metadata"
+                    poster="/videos/first-visit-teleprompter-poster.jpg"
+                    aria-label="What to expect on your first visit at Synergy Spine and Nerve Center"
+                  >
+                    <source
+                      src="/videos/first-visit-teleprompter.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div className="mt-4 text-center">
                   <p className="text-[10px] uppercase tracking-[0.22em] font-bold text-brand-gold">
-                    6 simple steps
+                    Watch before you visit
                   </p>
                   <p className="section-title text-sm text-white font-semibold">
-                    From intake to insight
+                    What to expect on day one
                   </p>
                 </div>
               </div>
