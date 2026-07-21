@@ -17,6 +17,7 @@ type NavItem = {
   label: string;
   href: string;
   children?: NavChild[];
+  external?: boolean;
 };
 
 const NAV_ITEMS: NavItem[] = [
@@ -91,6 +92,11 @@ const NAV_ITEMS: NavItem[] = [
     ],
   },
   { label: "Blog", href: "/blog/" },
+  {
+    label: "Patient Portal",
+    href: "https://www.atlaschirosys.com/booking/#/login?s=13323023",
+    external: true,
+  },
 ];
 
 const PHONE_DISPLAY = "(505) 891-2280";
@@ -314,12 +320,34 @@ export default function Header() {
           </Link>
 
           <nav
-            className="hidden lg:flex items-center gap-1 ml-10 xl:ml-16"
+            className="hidden lg:flex items-center gap-0.5 xl:gap-1 ml-4 xl:ml-16"
             aria-label="Primary"
           >
             {NAV_ITEMS.map((item) => {
               const hasChildren = !!item.children?.length;
               const isOpen = openDropdown === item.label;
+
+              const linkClassName =
+                "group relative inline-flex items-center gap-1 px-2 xl:px-3 py-2 text-[13.5px] font-medium text-brand-navyDark hover:text-brand-blue transition-colors whitespace-nowrap";
+              const linkInner = (
+                <>
+                  <span className="relative">
+                    {item.label}
+                    <span
+                      className={`pointer-events-none absolute -bottom-1 left-0 h-[2px] bg-brand-blue transition-all duration-300 ease-out ${
+                        isOpen ? "w-full" : "w-0 group-hover:w-full"
+                      }`}
+                    />
+                  </span>
+                  {hasChildren && (
+                    <ChevronIcon
+                      className={`w-3.5 h-3.5 transition-transform duration-300 ${
+                        isOpen ? "rotate-180 text-brand-blue" : ""
+                      }`}
+                    />
+                  )}
+                </>
+              );
 
               return (
                 <div
@@ -328,26 +356,20 @@ export default function Header() {
                   onMouseEnter={() => hasChildren && handleEnter(item.label)}
                   onMouseLeave={() => hasChildren && handleLeave()}
                 >
-                  <Link
-                    href={item.href}
-                    className="group relative inline-flex items-center gap-1 px-3 py-2 text-[13.5px] font-medium text-brand-navyDark hover:text-brand-blue transition-colors"
-                  >
-                    <span className="relative">
-                      {item.label}
-                      <span
-                        className={`pointer-events-none absolute -bottom-1 left-0 h-[2px] bg-brand-blue transition-all duration-300 ease-out ${
-                          isOpen ? "w-full" : "w-0 group-hover:w-full"
-                        }`}
-                      />
-                    </span>
-                    {hasChildren && (
-                      <ChevronIcon
-                        className={`w-3.5 h-3.5 transition-transform duration-300 ${
-                          isOpen ? "rotate-180 text-brand-blue" : ""
-                        }`}
-                      />
-                    )}
-                  </Link>
+                  {item.external ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={linkClassName}
+                    >
+                      {linkInner}
+                    </a>
+                  ) : (
+                    <Link href={item.href} className={linkClassName}>
+                      {linkInner}
+                    </Link>
+                  )}
 
                   {hasChildren && (
                     <div
@@ -446,15 +468,16 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-4 ml-auto">
             <a
               href={`tel:${PHONE_TEL}`}
-              className="hidden xl:inline-flex items-center gap-2 text-sm font-semibold text-brand-navyDark hover:text-brand-blue transition-colors"
+              className="hidden xl:inline-flex items-center justify-center h-10 w-10 rounded-full bg-brand-blue/10 text-brand-blue hover:bg-brand-blue hover:text-white transition-colors"
+              aria-label={`Call ${PHONE_DISPLAY}`}
+              title={PHONE_DISPLAY}
             >
-              <PhoneIcon className="w-4 h-4 text-brand-blue" />
-              <span>{PHONE_DISPLAY}</span>
+              <PhoneIcon className="w-4 h-4" />
             </a>
             <button
               type="button"
               onClick={openBooking}
-              className="group/cta inline-flex items-center gap-2 bg-brand-navyDark text-white rounded-full pl-5 pr-1.5 py-1.5 text-[13.5px] font-semibold hover:bg-brand-blue transition-colors"
+              className="group/cta inline-flex items-center gap-2 bg-brand-navyDark text-white rounded-full pl-5 pr-1.5 py-1.5 text-[13.5px] font-semibold hover:bg-brand-blue transition-colors whitespace-nowrap"
             >
               <span>Book New Patient Appointment</span>
               <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand-blue group-hover/cta:bg-white group-hover/cta:text-brand-blue transition-colors">
@@ -504,13 +527,25 @@ export default function Header() {
               return (
                 <li key={item.label}>
                   <div className="flex items-center justify-between">
-                    <Link
-                      href={item.href}
-                      className="flex-1 py-3.5 text-base font-medium text-brand-navyDark hover:text-brand-blue"
-                      onClick={closeMobile}
-                    >
-                      {item.label}
-                    </Link>
+                    {item.external ? (
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 py-3.5 text-base font-medium text-brand-navyDark hover:text-brand-blue"
+                        onClick={closeMobile}
+                      >
+                        {item.label}
+                      </a>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        className="flex-1 py-3.5 text-base font-medium text-brand-navyDark hover:text-brand-blue"
+                        onClick={closeMobile}
+                      >
+                        {item.label}
+                      </Link>
+                    )}
                     {hasChildren && (
                       <button
                         type="button"

@@ -107,6 +107,86 @@ export default function BookingPage() {
             </Reveal>
           </div>
         </section>
+
+        {/* WATCH BEFORE YOU VISIT */}
+        <section className="relative bg-brand-navyDark text-white overflow-hidden py-16 lg:py-24">
+          <div
+            className="absolute inset-0 bg-gradient-to-br from-brand-navyDark via-brand-navy/95 to-brand-navyDark"
+            aria-hidden="true"
+          />
+          <div
+            className="absolute inset-0 opacity-[0.06] pointer-events-none"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle, #ffffff 1px, transparent 1px)",
+              backgroundSize: "32px 32px",
+            }}
+            aria-hidden="true"
+          />
+          <div
+            className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-brand-blue/20 blur-3xl pointer-events-none"
+            aria-hidden="true"
+          />
+
+          <div className="relative mx-auto max-w-4xl px-6 text-center">
+            <Reveal>
+              <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-gold">
+                While you wait
+              </p>
+            </Reveal>
+            <Reveal delay={120}>
+              <h2 className="section-title mt-3 text-3xl md:text-4xl font-semibold leading-[1.1] uppercase">
+                A quick note from{" "}
+                <span className="italic normal-case text-brand-gold">
+                  Dr. Brad
+                </span>
+              </h2>
+            </Reveal>
+            <Reveal delay={220}>
+              <p className="mt-5 text-white/80 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+                Now that your appointment is booked, take a minute to watch
+                this short video so you know exactly what to expect on day one.
+              </p>
+            </Reveal>
+
+            <Reveal delay={300} variant="fade">
+              <div className="relative mx-auto mt-10 w-full max-w-sm">
+                <div
+                  className="absolute -inset-3 rounded-[28px] bg-brand-gold/15 -rotate-2 pointer-events-none"
+                  aria-hidden="true"
+                />
+                <div
+                  className="absolute -inset-1.5 rounded-[24px] bg-brand-blue/25 rotate-1 pointer-events-none"
+                  aria-hidden="true"
+                />
+                <div className="relative overflow-hidden rounded-[22px] ring-1 ring-white/15 shadow-[0_30px_80px_-25px_rgba(0,0,0,0.7)] bg-black aspect-[4/5]">
+                  <video
+                    className="h-full w-full object-cover"
+                    controls
+                    playsInline
+                    preload="metadata"
+                    poster="/videos/first-visit-teleprompter-poster.jpg"
+                    aria-label="What to expect on your first visit at Synergy Spine and Nerve Center"
+                  >
+                    <source
+                      src="/videos/first-visit-teleprompter.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div className="mt-4 text-center">
+                  <p className="text-[10px] uppercase tracking-[0.22em] font-bold text-brand-gold">
+                    Watch before you visit
+                  </p>
+                  <p className="section-title text-sm text-white font-semibold">
+                    What to expect on day one
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
       </main>
       <Footer />
 
