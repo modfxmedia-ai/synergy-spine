@@ -58,7 +58,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body>
+      <body suppressHydrationWarning>
         <BookingProvider>
           {children}
           <BottomBookBar />
