@@ -52,68 +52,6 @@ export default function BookingPage() {
             className="absolute inset-0 bg-gradient-to-br from-brand-navyDark via-brand-navy/95 to-brand-navyDark"
             aria-hidden="true"
           />
-          <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-brand-blue/30 blur-3xl animate-drift" />
-          <div className="absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-brand-gold/20 blur-3xl animate-drift" />
-
-          <div className="relative mx-auto max-w-4xl px-6 py-20 lg:py-24 text-center">
-            <Reveal>
-              <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-gold">
-                Final step
-              </p>
-            </Reveal>
-            <Reveal delay={120}>
-              <h1 className="section-title mt-3 text-3xl md:text-5xl font-semibold leading-[1.1] uppercase">
-                Book your slot with{" "}
-                <span className="italic normal-case text-brand-gold">
-                  Dr. Brad
-                </span>
-              </h1>
-            </Reveal>
-            <Reveal delay={220}>
-              <p className="mt-6 text-white/85 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-                You&apos;re one click away. Pick the time that works best and
-                we&apos;ll take care of the rest. If nothing on the calendar
-                fits your schedule, give us a call at{" "}
-                <a
-                  href="tel:+15058912280"
-                  className="font-semibold text-brand-gold underline underline-offset-4 hover:text-white"
-                >
-                  (505) 891-2280
-                </a>
-                .
-              </p>
-            </Reveal>
-          </div>
-        </section>
-
-        {/* CALENDAR EMBED */}
-        <section className="bg-brand-bg py-14 lg:py-20">
-          <div className="mx-auto max-w-5xl px-4 sm:px-6">
-            <Reveal>
-              <div className="overflow-hidden rounded-3xl bg-white shadow-[0_30px_80px_-20px_rgba(13,35,64,0.25)] ring-1 ring-black/5">
-                <iframe
-                  src={CALENDAR_SRC}
-                  id={`${CALENDAR_ID}_1783362583132`}
-                  title="Synergy Spine and Nerve Center Booking Calendar"
-                  scrolling="no"
-                  style={{
-                    width: "100%",
-                    border: "none",
-                    overflow: "hidden",
-                    minHeight: "780px",
-                  }}
-                />
-              </div>
-            </Reveal>
-          </div>
-        </section>
-
-        {/* WATCH BEFORE YOU VISIT */}
-        <section className="relative bg-brand-navyDark text-white overflow-hidden py-16 lg:py-24">
-          <div
-            className="absolute inset-0 bg-gradient-to-br from-brand-navyDark via-brand-navy/95 to-brand-navyDark"
-            aria-hidden="true"
-          />
           <div
             className="absolute inset-0 opacity-[0.06] pointer-events-none"
             style={{
@@ -123,34 +61,48 @@ export default function BookingPage() {
             }}
             aria-hidden="true"
           />
-          <div
-            className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-brand-blue/20 blur-3xl pointer-events-none"
-            aria-hidden="true"
-          />
+          <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-brand-blue/30 blur-3xl animate-drift" />
+          <div className="absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-brand-gold/20 blur-3xl animate-drift" />
 
-          <div className="relative mx-auto max-w-4xl px-6 text-center">
-            <Reveal>
-              <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-gold">
-                While you wait
-              </p>
-            </Reveal>
-            <Reveal delay={120}>
-              <h2 className="section-title mt-3 text-3xl md:text-4xl font-semibold leading-[1.1] uppercase">
-                A quick note from{" "}
-                <span className="italic normal-case text-brand-gold">
-                  Dr. Brad
-                </span>
-              </h2>
-            </Reveal>
-            <Reveal delay={220}>
-              <p className="mt-5 text-white/80 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-                Now that your appointment is booked, take a minute to watch
-                this short video so you know exactly what to expect on day one.
-              </p>
-            </Reveal>
+          <div className="relative mx-auto max-w-7xl px-6 py-16 lg:py-24 grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            <div className="lg:col-span-7 text-center lg:text-left">
+              <Reveal>
+                <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-gold">
+                  Final step
+                </p>
+              </Reveal>
+              <Reveal delay={120}>
+                <h1 className="section-title mt-3 text-3xl md:text-5xl font-semibold leading-[1.1] uppercase">
+                  Book your slot with{" "}
+                  <span className="italic normal-case text-brand-gold">
+                    Dr. Brad
+                  </span>
+                </h1>
+              </Reveal>
+              <Reveal delay={220}>
+                <p className="mt-6 text-white/85 text-base md:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                  You&apos;re one click away. Pick the time that works best and
+                  we&apos;ll take care of the rest. If nothing on the calendar
+                  fits your schedule, give us a call at{" "}
+                  <a
+                    href="tel:+15058912280"
+                    className="font-semibold text-brand-gold underline underline-offset-4 hover:text-white"
+                  >
+                    (505) 891-2280
+                  </a>
+                  .
+                </p>
+              </Reveal>
+              <Reveal delay={300}>
+                <p className="mt-6 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-gold">
+                  <span className="h-1.5 w-1.5 rounded-full bg-brand-gold" />
+                  Watch this before your visit
+                </p>
+              </Reveal>
+            </div>
 
-            <Reveal delay={300} variant="fade">
-              <div className="relative mx-auto mt-10 w-full max-w-sm">
+            <Reveal className="lg:col-span-5" delay={200} variant="fade">
+              <div className="relative mx-auto w-full max-w-sm">
                 <div
                   className="absolute -inset-3 rounded-[28px] bg-brand-gold/15 -rotate-2 pointer-events-none"
                   aria-hidden="true"
@@ -183,6 +135,28 @@ export default function BookingPage() {
                     What to expect on day one
                   </p>
                 </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* CALENDAR EMBED */}
+        <section className="bg-brand-bg py-14 lg:py-20">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6">
+            <Reveal>
+              <div className="overflow-hidden rounded-3xl bg-white shadow-[0_30px_80px_-20px_rgba(13,35,64,0.25)] ring-1 ring-black/5">
+                <iframe
+                  src={CALENDAR_SRC}
+                  id={`${CALENDAR_ID}_1783362583132`}
+                  title="Synergy Spine and Nerve Center Booking Calendar"
+                  scrolling="no"
+                  style={{
+                    width: "100%",
+                    border: "none",
+                    overflow: "hidden",
+                    minHeight: "780px",
+                  }}
+                />
               </div>
             </Reveal>
           </div>
