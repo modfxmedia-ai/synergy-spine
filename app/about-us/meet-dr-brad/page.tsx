@@ -12,9 +12,9 @@ import AnimatedCounter from "@/components/motion/AnimatedCounter";
 
 import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/about-us/meet-dr-brad/";
-const PORTRAIT_IMAGE = "/office-images/chiro-dr-brad.jpg";
+const PORTRAIT_IMAGE = "/office-images/dr-brad-2.jpg";
 const SECONDARY_IMAGE = "/office-images/dr-brad-2.jpg";
-const FAMILY_IMAGE = "/team/dr-brad-family.jpg";
+const FAMILY_IMAGE = "/team/dr-brad-with-family.png";
 
 export const metadata: Metadata = {
   title: "Meet Dr. Brad Synergy Spine and Nerve Center",
@@ -313,11 +313,11 @@ export default function MeetDrBradPage() {
                   />
                   <div className="relative aspect-[4/5] rounded-[24px] overflow-hidden ring-1 ring-black/5 shadow-[0_30px_80px_-20px_rgba(13,35,64,0.45)] bg-brand-bg">
                     <Image
-                      src={PORTRAIT_IMAGE}
-                      alt="Dr. Brad Fackrell portrait"
+                      src={SECONDARY_IMAGE}
+                      alt="Dr. Brad Fackrell at Synergy Spine and Nerve Center"
                       fill
                       sizes="(max-width: 1024px) 100vw, 40vw"
-                      className="object-cover object-top"
+                      className="object-cover object-top scale-[1.35]"
                     />
                   </div>
 
@@ -394,33 +394,17 @@ export default function MeetDrBradPage() {
               </Reveal>
             </div>
 
-            {/* Photo strip: in the office + with family */}
+            {/* Photo strip: family */}
             <Reveal delay={180}>
-              <div className="mt-16 lg:mt-20 grid md:grid-cols-2 gap-6 lg:gap-8">
+              <div className="mt-16 lg:mt-20 mx-auto max-w-xl">
                 <figure className="group relative overflow-hidden rounded-[24px] ring-1 ring-black/5 shadow-[0_20px_50px_-20px_rgba(13,35,64,0.25)] bg-brand-bg">
-                  <div className="relative aspect-[4/3]">
-                    <Image
-                      src={SECONDARY_IMAGE}
-                      alt="Dr. Brad Fackrell at Synergy Spine and Nerve Center"
-                      fill
-                      sizes="(max-width: 768px) 100vw, 45vw"
-                      className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                    />
-                  </div>
-                  <figcaption className="absolute bottom-3 left-3 inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-brand-navyDark ring-1 ring-black/5">
-                    <span className="h-1.5 w-1.5 rounded-full bg-brand-blue" />
-                    <span>In the office</span>
-                  </figcaption>
-                </figure>
-
-                <figure className="group relative overflow-hidden rounded-[24px] ring-1 ring-black/5 shadow-[0_20px_50px_-20px_rgba(13,35,64,0.25)] bg-brand-bg">
-                  <div className="relative aspect-[4/3]">
+                  <div className="relative aspect-square">
                     <Image
                       src={FAMILY_IMAGE}
                       alt="Dr. Brad Fackrell with his family"
                       fill
-                      sizes="(max-width: 768px) 100vw, 45vw"
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      sizes="(max-width: 1024px) 100vw, 576px"
+                      className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>
                   <figcaption className="absolute bottom-3 left-3 inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-brand-navyDark ring-1 ring-black/5">

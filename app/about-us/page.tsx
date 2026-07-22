@@ -501,7 +501,7 @@ export default function AboutUsPage() {
                         alt={member.alt}
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                        className="object-cover object-top scale-[1.6] transition-transform duration-700 group-hover:scale-[1.7]"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-brand-navyDark/55 via-brand-navyDark/0 to-transparent" />
 
