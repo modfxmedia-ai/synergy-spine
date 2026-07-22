@@ -11,7 +11,7 @@ import AnimatedCounter from "@/components/motion/AnimatedCounter";
 
 import BookTrigger from "@/components/booking/BookTrigger";
 const CANONICAL = "https://synergyspineandnerve.com/about-us/meet-austin/";
-const PORTRAIT_IMAGE = "/team/austin-vidonn-huber.jpg";
+const PORTRAIT_IMAGE = "/office-images/dr-austin-chiro.jpg";
 
 export const metadata: Metadata = {
   title: "Meet Austin Synergy Spine and Nerve Center",

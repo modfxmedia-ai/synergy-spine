@@ -6,7 +6,7 @@ import BookTrigger from "@/components/booking/BookTrigger";
 const DOCTOR = {
   name: "Dr. Brad Fackrell",
   title: "Owner, Founder & Chiropractor",
-  photo: "/team/doctor-brad-fackrell.jpg",
+  photo: "/office-images/dr-brad-2.jpg",
   quote:
     "I became a chiropractor so others could experience the same drug-free healing I did.",
   bio:
@@ -93,14 +93,13 @@ export default function DoctorSnippet() {
 
               {/* portrait card */}
               <div className="relative overflow-hidden rounded-[36px] bg-gradient-to-br from-brand-navyDark to-brand-navy p-1.5 shadow-[0_40px_100px_-30px_rgba(13,35,64,0.45)]">
-                <div className="relative overflow-hidden rounded-[30px] bg-brand-navyDark">
+                <div className="relative overflow-hidden rounded-[30px] bg-brand-navyDark aspect-[2/3]">
                   <Image
                     src={DOCTOR.photo}
                     alt={`Portrait of ${DOCTOR.name}`}
-                    width={500}
-                    height={750}
+                    fill
                     quality={95}
-                    className="block w-full h-auto object-cover"
+                    className="object-cover object-top"
                     sizes="(min-width: 1024px) 480px, (min-width: 640px) 380px, 100vw"
                   />
                   <div

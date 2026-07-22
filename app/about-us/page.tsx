@@ -42,7 +42,7 @@ const TEAM: TeamMember[] = [
   {
     name: "DR. BRAD FACKRELL",
     role: "Owner, Founder & Chiropractor",
-    image: "/team/doctor-brad-fackrell.jpg",
+    image: "/office-images/dr-brad.jpg",
     alt: "Dr. Brad Fackrell, owner and founder of Synergy Spine and Nerve Center",
     href: "/about-us/meet-dr-brad/",
     accent: "blue",
@@ -50,7 +50,7 @@ const TEAM: TeamMember[] = [
   {
     name: "AUSTIN HUBER",
     role: "Massage Therapist since 2017",
-    image: "/team/austin-vidonn-huber.jpg",
+    image: "/office-images/dr-austin.jpg",
     alt: "Austin Huber, Massage Therapist at Synergy Spine and Nerve Center",
     href: "/about-us/meet-austin/",
     accent: "gold",
@@ -62,6 +62,17 @@ const ACCENT = {
   gold: "from-brand-gold to-brand-goldSoft",
   navy: "from-brand-navy to-brand-navyDark",
 };
+
+const OFFICE_GALLERY = [
+  { src: "/office-images/1.jpg", alt: "Synergy Spine and Nerve Center office view 1" },
+  { src: "/office-images/2.jpg", alt: "Synergy Spine and Nerve Center office view 2" },
+  { src: "/office-images/3.jpg", alt: "Synergy Spine and Nerve Center office view 3" },
+  { src: "/office-images/4.jpg", alt: "Synergy Spine and Nerve Center office view 4" },
+  { src: "/office-images/5.jpg", alt: "Synergy Spine and Nerve Center office view 5" },
+  { src: "/office-images/6.jpg", alt: "Synergy Spine and Nerve Center office view 6" },
+  { src: "/office-images/7.jpg", alt: "Synergy Spine and Nerve Center office view 7" },
+  { src: "/office-images/8.jpg", alt: "Synergy Spine and Nerve Center office view 8" },
+];
 
 const PILLARS = [
   {
@@ -546,6 +557,56 @@ export default function AboutUsPage() {
                   </Reveal>
                 );
               })}
+            </ul>
+          </div>
+        </section>
+
+        {/* ───────────── OFFICE GALLERY ───────────── */}
+        <section className="relative bg-white py-20 lg:py-24 overflow-hidden">
+          <div
+            className="absolute inset-0 opacity-[0.04] pointer-events-none"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle, #0d2340 1px, transparent 1px)",
+              backgroundSize: "32px 32px",
+            }}
+            aria-hidden="true"
+          />
+          <div className="relative mx-auto max-w-6xl px-6">
+            <Reveal>
+              <div className="text-center max-w-2xl mx-auto">
+                <div className="inline-flex items-center gap-3">
+                  <span className="h-px w-10 bg-brand-blue" />
+                  <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-blue">
+                    Inside our office
+                  </p>
+                  <span className="h-px w-10 bg-brand-blue" />
+                </div>
+                <h2 className="section-title mt-4 text-3xl md:text-4xl text-brand-navyDark font-semibold leading-tight">
+                  A peek at{" "}
+                  <span className="italic text-brand-blue">where we work</span>.
+                </h2>
+                <p className="mt-4 text-brand-text">
+                  Calm, clean, and built for healing. Take a quick tour of our
+                  Rio Rancho practice.
+                </p>
+              </div>
+            </Reveal>
+
+            <ul className="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-5">
+              {OFFICE_GALLERY.map((img, i) => (
+                <Reveal as="li" key={img.src} delay={i * 60}>
+                  <div className="group relative aspect-square overflow-hidden rounded-2xl ring-1 ring-black/5 bg-brand-bg shadow-[0_2px_10px_rgba(13,35,64,0.05)] hover:shadow-[0_20px_40px_-20px_rgba(13,35,64,0.25)] transition-shadow">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </div>
+                </Reveal>
+              ))}
             </ul>
           </div>
         </section>
