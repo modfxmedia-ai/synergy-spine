@@ -153,25 +153,25 @@ export default function MapSection() {
                   <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-brand-textLight">
                     Hours
                   </p>
-                  <ul className="mt-2 grid grid-cols-2 gap-x-6 gap-y-1">
+                  <ul className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 sm:gap-y-1">
                     {HOURS.map((h) => {
                       const closed = h.time === "Closed";
                       return (
                         <li
                           key={h.day}
-                          className={`flex items-baseline justify-between gap-4 ${
-                            h.wide ? "col-span-2" : ""
+                          className={`flex items-baseline justify-between gap-3 ${
+                            h.wide ? "sm:col-span-2" : ""
                           }`}
                         >
-                          <span className="w-12 text-[13px] font-semibold uppercase tracking-[0.1em] text-brand-navyDark">
+                          <span className="w-10 sm:w-12 text-[13px] font-semibold uppercase tracking-[0.1em] text-brand-navyDark shrink-0">
                             {h.day}
                           </span>
                           <span
-                            className="flex-1 mx-2 border-b border-dashed border-black/10 translate-y-[-3px]"
+                            className="flex-1 mx-1 sm:mx-2 border-b border-dashed border-black/10 translate-y-[-3px]"
                             aria-hidden="true"
                           />
                           <span
-                            className={`text-[13px] tabular-nums shrink-0 ${
+                            className={`text-[13px] tabular-nums shrink-0 text-right ${
                               closed
                                 ? "text-brand-textLight italic"
                                 : "text-brand-text font-medium"
