@@ -60,9 +60,11 @@ export default function BookingProvider({ children }: { children: ReactNode }) {
     document.addEventListener("keydown", onKey);
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    document.body.setAttribute("data-booking-open", "true");
     return () => {
       document.removeEventListener("keydown", onKey);
       document.body.style.overflow = prevOverflow;
+      document.body.removeAttribute("data-booking-open");
     };
   }, [isOpen, close]);
 

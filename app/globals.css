@@ -66,3 +66,18 @@ a[href*="widget.elfsight"] {
   width: 0 !important;
   pointer-events: none !important;
 }
+
+/* Hide the Knock-knock chat widget on mobile while the booking popup is
+   open so it does not overlap the form's Submit button. */
+@media (max-width: 767px) {
+  body[data-booking-open="true"] iframe[src*="knock-knock"],
+  body[data-booking-open="true"] iframe[src*="knockknock"],
+  body[data-booking-open="true"] [id*="knock-knock"]:not(script),
+  body[data-booking-open="true"] [class*="knock-knock"],
+  body[data-booking-open="true"] [id*="knockknock"]:not(script),
+  body[data-booking-open="true"] [class*="knockknock"] {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+}

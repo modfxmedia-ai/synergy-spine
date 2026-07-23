@@ -192,7 +192,7 @@ export default function HeroSection() {
             </Reveal>
 
             <Reveal delay={320}>
-              <div className="mt-9 flex flex-col sm:flex-row gap-3 sm:gap-4 sm:items-center">
+              <div className="mt-9 flex flex-col sm:flex-row gap-3 sm:gap-4 items-start sm:items-center">
                 <BookTrigger
                   className="group/cta relative inline-flex items-center gap-2 bg-brand-gold text-brand-navyDark rounded-full pl-7 pr-2 py-2 text-sm font-bold overflow-hidden hover:bg-brand-goldSoft transition-colors shadow-[0_10px_30px_-10px_rgba(245,197,24,0.6)]"
                 >
@@ -224,21 +224,20 @@ export default function HeroSection() {
                 className="group/trust mt-10 inline-flex items-center gap-4 rounded-full hover:opacity-95 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold/70 focus-visible:ring-offset-2 focus-visible:ring-offset-brand-navyDark"
               >
                 <div className="flex -space-x-2">
-                  {[0, 1, 2, 3].map((i) => (
+                  {[
+                    { initials: "JS", fg: "#ffffff", bg: "linear-gradient(135deg, #0170B9, #2a5080)" },
+                    { initials: "MK", fg: "#1a3a5c", bg: "linear-gradient(135deg, #F5C518, #FFE066)" },
+                    { initials: "AR", fg: "#ffffff", bg: "linear-gradient(135deg, #1a3a5c, #0d2340)" },
+                    { initials: "DL", fg: "#ffffff", bg: "linear-gradient(135deg, #3B9BDB, #0170B9)" },
+                  ].map((a, i) => (
                     <div
                       key={i}
-                      className="h-9 w-9 rounded-full ring-2 ring-brand-navyDark bg-gradient-to-br shadow-sm"
-                      style={{
-                        background:
-                          i === 0
-                            ? "linear-gradient(135deg, #0170B9, #2a5080)"
-                            : i === 1
-                            ? "linear-gradient(135deg, #F5C518, #FFE066)"
-                            : i === 2
-                            ? "linear-gradient(135deg, #1a3a5c, #0d2340)"
-                            : "linear-gradient(135deg, #3B9BDB, #0170B9)",
-                      }}
-                    />
+                      aria-hidden="true"
+                      className="flex h-9 w-9 items-center justify-center rounded-full ring-2 ring-brand-navyDark shadow-sm text-[10px] font-bold tracking-wide"
+                      style={{ background: a.bg, color: a.fg }}
+                    >
+                      {a.initials}
+                    </div>
                   ))}
                 </div>
                 <div className="text-left">
