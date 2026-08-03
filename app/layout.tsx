@@ -49,6 +49,10 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  // DO NOT REMOVE: Google Search Console site verification. Keep permanently.
+  verification: {
+    google: "dJ3k9kDSyULRLNB670eeUVggenhGH3OTvaZLABGgPAw",
+  },
 };
 
 export default function RootLayout({
