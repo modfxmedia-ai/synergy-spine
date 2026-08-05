@@ -40,6 +40,18 @@ export function categorySlug(c: BlogCategory): string {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: "rio-rancho-driving-tips-for-sciatica-pain-relief",
+    title: "Rio Rancho Driving Tips for Sciatica Pain Relief",
+    excerpt:
+      "Set up your car for less back and leg pain with posture, mirrors, and stretch breaks from a sciatica doctor in Rio Rancho for safer driving.",
+    category: "Chiropractic Care",
+    date: "August 4, 2026",
+    isoDate: "2026-08-04",
+    readTime: "5 min read",
+    featureImage:
+      "/blog-images/rio-rancho-driving-tips-for-sciatica-pain-relief.jpg",
+  },
+  {
     slug: "summer-sports-injury-care-for-bernalillo-families",
     title: "Summer Sports Injury Care for Bernalillo Families",
     excerpt:
