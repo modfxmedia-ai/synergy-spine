@@ -40,6 +40,18 @@ export function categorySlug(c: BlogCategory): string {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: "car-accident-recovery-guide-for-rio-rancho-drivers",
+    title: "Car Accident Recovery Guide for Rio Rancho Drivers",
+    excerpt:
+      "Track key symptoms after a crash, learn when imaging is needed, and when to visit a car accident chiropractor in Rio Rancho for care and relief.",
+    category: "Chiropractic Treatment",
+    date: "August 11, 2026",
+    isoDate: "2026-08-11",
+    readTime: "6 min read",
+    featureImage:
+      "/blog-images/car-accident-recovery-guide-for-rio-rancho-drivers.png",
+  },
+  {
     slug: "rio-rancho-driving-tips-for-sciatica-pain-relief",
     title: "Rio Rancho Driving Tips for Sciatica Pain Relief",
     excerpt:
