@@ -40,6 +40,18 @@ export function categorySlug(c: BlogCategory): string {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: "rio-rancho-migraine-red-flags-when-to-seek-er-care",
+    title: "Rio Rancho Migraine Red Flags: When to Seek ER Care",
+    excerpt:
+      "Learn urgent migraine warning signs and when to see a migraine doctor in Rio Rancho for sudden severe pain, neuro symptoms, fever, or head injury.",
+    category: "Chiropractic Care",
+    date: "August 18, 2026",
+    isoDate: "2026-08-18",
+    readTime: "5 min read",
+    featureImage:
+      "/blog-images/rio-rancho-migraine-red-flags-when-to-seek-er-care.webp",
+  },
+  {
     slug: "car-accident-recovery-guide-for-rio-rancho-drivers",
     title: "Car Accident Recovery Guide for Rio Rancho Drivers",
     excerpt:
