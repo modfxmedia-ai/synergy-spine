@@ -40,6 +40,18 @@ export function categorySlug(c: BlogCategory): string {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: "desk-ergonomics-tips-to-ease-low-back-pain-at-work",
+    title: "Desk Ergonomics Tips to Ease Low Back Pain at Work",
+    excerpt:
+      "Set up your chair, monitor, and keyboard to cut low back strain with quick self-tests and advice from a back pain doctor in Rio Rancho.",
+    category: "Chiropractic Care",
+    date: "August 25, 2026",
+    isoDate: "2026-08-25",
+    readTime: "5 min read",
+    featureImage:
+      "/blog-images/desk-ergonomics-tips-to-ease-low-back-pain-at-work.jpeg",
+  },
+  {
     slug: "rio-rancho-migraine-red-flags-when-to-seek-er-care",
     title: "Rio Rancho Migraine Red Flags: When to Seek ER Care",
     excerpt:
