@@ -31,10 +31,10 @@ export const metadata: Metadata = {
 };
 
 const HOURS = [
-  { day: "Mon", hours: "8:00 10:00 AM & 3:00 5:30 PM" },
-  { day: "Tues", hours: "3:00 5:00 PM" },
-  { day: "Wed", hours: "10:00 AM 5:30 PM" },
-  { day: "Thurs", hours: "3:00 5:30 PM" },
+  { day: "Mon", hours: "8:00 AM \u2013 5:30 PM" },
+  { day: "Tues", hours: "1:00 \u2013 5:00 PM" },
+  { day: "Wed", hours: "10:00 AM \u2013 5:30 PM" },
+  { day: "Thurs", hours: "1:00 \u2013 5:30 PM" },
   { day: "Fri Sun", hours: "Closed" },
 ];
 
@@ -74,11 +74,10 @@ const SCHEMA = {
     longitude: -106.6605,
   },
   openingHoursSpecification: [
-    { "@type": "OpeningHoursSpecification", dayOfWeek: "Monday", opens: "08:00", closes: "10:00" },
-    { "@type": "OpeningHoursSpecification", dayOfWeek: "Monday", opens: "15:00", closes: "17:30" },
-    { "@type": "OpeningHoursSpecification", dayOfWeek: "Tuesday", opens: "15:00", closes: "17:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Monday", opens: "08:00", closes: "17:30" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Tuesday", opens: "13:00", closes: "17:00" },
     { "@type": "OpeningHoursSpecification", dayOfWeek: "Wednesday", opens: "10:00", closes: "17:30" },
-    { "@type": "OpeningHoursSpecification", dayOfWeek: "Thursday", opens: "15:00", closes: "17:30" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Thursday", opens: "13:00", closes: "17:30" },
   ],
   contactPoint: {
     "@type": "ContactPoint",
