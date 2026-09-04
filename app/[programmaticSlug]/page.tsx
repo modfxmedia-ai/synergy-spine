@@ -104,9 +104,12 @@ export async function generateMetadata({
   const title = service.titleTemplate.replace(/\{city\}/g, city.name);
   const driveBit =
     city.driveMin === 0
-      ? "Rio Rancho office on Rio Rancho Blvd."
-      : `About ${city.driveMin} minutes from ${city.name} to our Rio Rancho clinic.`;
-  const description = `${service.descriptionTemplate.replace(/\{city\}/g, city.name)} ${driveBit} Serving Albuquerque, Corrales, and Bernalillo. Call (505) 891-2280.`;
+      ? "Rio Rancho office."
+      : `About ${city.driveMin} min from ${city.name}.`;
+  const baseDescription = service.descriptionTemplate
+    .replace(/\{city\}/g, city.name)
+    .replace(/\s*Call \(505\) 891-2280\.?\s*$/, "");
+  const description = `${baseDescription} ${driveBit} Call (505) 891-2280.`;
 
   return {
     title: { absolute: title },
@@ -628,8 +631,8 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
                 community, including residents near{" "}
                 {city.neighborhoods.slice(0, 3).join(", ")}. Patients tell us
                 they appreciate that we explain the why before the what, and
-                that we're upfront if chiropractic care isn't the right tool
-                for what they're dealing with.
+                that we&apos;re upfront if chiropractic care isn&apos;t the right tool
+                for what they&apos;re dealing with.
               </p>
             </Reveal>
 
@@ -841,8 +844,8 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
               <p className="mt-5 text-white/85 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
                 Synergy Spine and Nerve Center has served {city.name} and the
                 Rio Rancho metro for over 20 years. Schedule your first visit
-                online, or call us, we'll tell you straight whether we're the
-                right fit for what you're going through.
+                online, or call us, we&apos;ll tell you straight whether we&apos;re the
+                right fit for what you&apos;re going through.
               </p>
             </Reveal>
             <Reveal delay={220}>

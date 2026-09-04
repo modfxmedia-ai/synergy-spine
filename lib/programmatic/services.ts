@@ -94,7 +94,7 @@ export const SERVICES: ServiceCopy[] = [
     howItWorks: [
       "We confirm imaging or order an MRI when needed to identify the exact disc level.",
       "You lie comfortably on a decompression table, fully clothed, with a soft harness.",
-      "The table applies a precise, computer-controlled pull-and-release pattern over 2030 minutes.",
+      "The table applies a precise, computer-controlled pull-and-release pattern over 20–30 minutes.",
       "Most {city} patients pair decompression with adjustments and home spinal hygiene to lock in results.",
     ],
     helpsWith: [
@@ -532,7 +532,7 @@ export const SERVICES: ServiceCopy[] = [
     expect: [
       "A 30-minute consult with imaging review",
       "An honest yes/no on candidacy",
-      "A 610 week non-surgical protocol",
+      "A 6–10 week non-surgical protocol",
       "Coordination with your spine surgeon if needed",
     ],
     faqs: [

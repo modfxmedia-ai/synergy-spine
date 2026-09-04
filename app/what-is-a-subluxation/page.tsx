@@ -496,7 +496,7 @@ export default function WhatIsASubluxationPage() {
             <Reveal>
               <div className="text-center max-w-2xl mx-auto">
                 <p className="text-[12px] font-bold uppercase tracking-[0.22em] text-brand-blue">
-                  In Dr. Brad's words
+                  In Dr. Brad&apos;s words
                 </p>
                 <h2 className="section-title mt-3 text-2xl md:text-3xl text-brand-navyDark font-semibold leading-tight">
                   Why you are{" "}
