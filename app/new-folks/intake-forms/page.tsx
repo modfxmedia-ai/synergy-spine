@@ -7,12 +7,15 @@ import Reveal from "@/components/Reveal";
 import OrbitGraphic from "@/components/motion/OrbitGraphic";
 
 import BookTrigger from "@/components/booking/BookTrigger";
+import IntakeForm from "@/components/forms/IntakeForm";
 const CANONICAL = "https://synergyspineandnerve.com/new-folks/intake-forms/";
 
 export const metadata: Metadata = {
-  title: "Complete Your Intake Forms Synergy Spine and Nerve Center",
+  title: {
+    absolute: "New Patient Intake Forms | Rio Rancho Chiropractor",
+  },
   description:
-    "Complete your intake forms online before your first visit at Synergy Spine and Nerve Center for a fast, smooth check-in.",
+    "Complete your Synergy Spine and Nerve Center intake form online before your first Rio Rancho visit. Encrypted to our care team. Call (505) 891-2280.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "Complete Your Intake Forms Synergy Spine and Nerve Center",
@@ -269,17 +272,9 @@ export default function IntakeFormsPage() {
                 ))}
               </ul>
 
-              <Reveal delay={400} className="mt-10">
-                <BookTrigger
-                  className="group inline-flex items-center gap-2 rounded-full bg-brand-blue text-white px-6 py-3 text-sm font-semibold hover:bg-brand-navyDark transition-colors shadow-[0_10px_30px_-10px_rgba(1,112,185,0.5)]"
-                >
-                  <span>Start the New Patient Form</span>
-                  <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <line x1="5" y1="12" x2="19" y2="12" />
-                    <polyline points="12 5 19 12 12 19" />
-                  </svg>
-                </BookTrigger>
-              </Reveal>
+              <div className="mt-10">
+                <IntakeForm />
+              </div>
             </div>
 
             <Reveal className="lg:col-span-5" delay={150} variant="fade">

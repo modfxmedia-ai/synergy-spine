@@ -16,11 +16,19 @@ import {
   getNearbyCities,
   type CityCopy,
 } from "@/lib/programmatic/cities";
+import { buildEnrichedCopy } from "@/lib/programmatic/enrich";
 
 import BookTrigger from "@/components/booking/BookTrigger";
-import { SITE_ORIGIN } from "@/lib/site";
-const PHONE_DISPLAY = "(505) 891-2280";
-const PHONE_HREF = "tel:+15058912280";
+import PhoneLeadLink from "@/components/analytics/PhoneLeadLink";
+import {
+  GEO,
+  OPENING_HOURS,
+  PHONE_DISPLAY,
+  PHONE_TEL,
+  SITE_ORIGIN,
+  STREET_ADDRESS,
+} from "@/lib/site";
+const PHONE_HREF = `tel:${PHONE_TEL}`;
 
 // Slugs that already exist as static folders, skip these to avoid route collisions.
 const RESERVED_SLUGS = new Set<string>([
@@ -94,13 +102,14 @@ export async function generateMetadata({
   const { service, city } = parsed;
   const url = `${SITE_ORIGIN}/${programmaticSlug}/`;
   const title = service.titleTemplate.replace(/\{city\}/g, city.name);
-  const description = service.descriptionTemplate.replace(
-    /\{city\}/g,
-    city.name
-  );
+  const driveBit =
+    city.driveMin === 0
+      ? "Rio Rancho office on Rio Rancho Blvd."
+      : `About ${city.driveMin} minutes from ${city.name} to our Rio Rancho clinic.`;
+  const description = `${service.descriptionTemplate.replace(/\{city\}/g, city.name)} ${driveBit} Serving Albuquerque, Corrales, and Bernalillo. Call (505) 891-2280.`;
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical: url },
     openGraph: {
@@ -128,8 +137,10 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
   if (!parsed) notFound();
 
   const { service, city } = parsed;
+  const enriched = buildEnrichedCopy(service, city);
   const h1 = fillCity(service.h1Template, city.name);
-  const intro = `Looking for ${service.short} near ${city.name}, NM? Synergy Spine and Nerve Center serves ${city.name} from our Rio Rancho office, about ${city.driveMin === 0 ? "0 minutes (right next door)" : `${city.driveMin} minutes' drive`} via ${city.county === "Sandoval County" ? "I-25 and US-550" : city.county.includes("Bernalillo") ? "the Westside corridor" : "I-25 and the metro corridors"}. ${city.blurb}`;
+  const intro = enriched.intro;
+  const faqs = [...service.faqs, ...enriched.extraFaqs];
 
   const nearbyCities = getNearbyCities(city.slug, 6);
   const relatedServices = service.related
@@ -151,12 +162,23 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
         priceRange: "$$",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "1453 Rio Rancho Blvd, Suite 2",
+          streetAddress: STREET_ADDRESS,
           addressLocality: "Rio Rancho",
           addressRegion: "NM",
           postalCode: "87124",
           addressCountry: "US",
         },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: GEO.latitude,
+          longitude: GEO.longitude,
+        },
+        openingHoursSpecification: OPENING_HOURS.map((h) => ({
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: h.dayOfWeek,
+          opens: h.opens,
+          closes: h.closes,
+        })),
         areaServed: {
           "@type": "City",
           name: city.name,
@@ -176,7 +198,7 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
       {
         "@type": "FAQPage",
         "@id": `${url}#faq`,
-        mainEntity: service.faqs.map((f) => ({
+        mainEntity: faqs.map((f) => ({
           "@type": "Question",
           name: fillCity(f.q, city.name),
           acceptedAnswer: {
@@ -255,12 +277,12 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
                 >
                   Schedule a visit
                 </BookTrigger>
-                <a
+                <PhoneLeadLink
                   href={PHONE_HREF}
                   className="inline-flex items-center gap-2 rounded-full ring-1 ring-white/30 backdrop-blur px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
                 >
                   Call {PHONE_DISPLAY}
-                </a>
+                </PhoneLeadLink>
               </div>
             </Reveal>
           </div>
@@ -384,7 +406,7 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
                     Patient rating
                   </p>
                   <p className="mt-0.5 text-sm font-semibold text-brand-navyDark">
-                    5.0 ★ on Google
+                    4.9 ★ Google reviews
                   </p>
                 </div>
               </li>
@@ -404,6 +426,9 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
               </h2>
               <p className="mt-5 text-base md:text-lg text-brand-textLight leading-relaxed">
                 {service.whatItIs}
+              </p>
+              <p className="mt-4 text-base md:text-lg text-brand-text leading-relaxed">
+                {enriched.whyHere}
               </p>
             </Reveal>
           </div>
@@ -504,6 +529,90 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
           </div>
         </section>
 
+        {/* LOCAL ANGLE — unique per city × service */}
+        <section className="bg-white py-16 lg:py-20">
+          <div className="mx-auto max-w-5xl px-6 grid md:grid-cols-2 gap-8">
+            <div>
+              <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-blue">
+                Getting here from {city.name}
+              </p>
+              <h2 className="section-title mt-3 text-2xl md:text-3xl text-brand-navyDark font-semibold">
+                The drive, the roads, the hours
+              </h2>
+              <p className="mt-4 text-brand-textLight leading-relaxed">
+                {enriched.commute}
+              </p>
+              <p className="mt-3 text-brand-text leading-relaxed">
+                {enriched.lifestyle}
+              </p>
+              <p className="mt-3 text-sm text-brand-textLight leading-relaxed">
+                {enriched.directions}
+              </p>
+            </div>
+            <div>
+              <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-blue">
+                When to come in
+              </p>
+              <h2 className="section-title mt-3 text-2xl md:text-3xl text-brand-navyDark font-semibold">
+                Do not wait on these
+              </h2>
+              <ul className="mt-5 space-y-3">
+                {enriched.whenToSeek.map((item) => (
+                  <li
+                    key={item}
+                    className="flex gap-3 rounded-xl bg-brand-bg ring-1 ring-black/5 p-4 text-sm text-brand-text leading-relaxed"
+                  >
+                    <span className="mt-1 h-2 w-2 rounded-full bg-brand-gold shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* EXAM + WHY NOT A CHAIN — unique per city × service */}
+        <section className="bg-brand-bg py-16 lg:py-20">
+          <div className="mx-auto max-w-5xl px-6 grid md:grid-cols-2 gap-10">
+            <div>
+              <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-blue">
+                First visit from {city.name}
+              </p>
+              <h2 className="section-title mt-3 text-2xl md:text-3xl text-brand-navyDark font-semibold">
+                What the exam actually includes
+              </h2>
+              <p className="mt-4 text-brand-text leading-relaxed">
+                {enriched.examStory}
+              </p>
+              <ul className="mt-5 space-y-2">
+                {enriched.localSymptoms.map((item) => (
+                  <li
+                    key={item}
+                    className="flex gap-3 text-sm text-brand-textLight leading-relaxed"
+                  >
+                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-brand-blue shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-blue">
+                Local searches
+              </p>
+              <h2 className="section-title mt-3 text-2xl md:text-3xl text-brand-navyDark font-semibold">
+                Why {city.name} patients skip the walk-in mill
+              </h2>
+              <p className="mt-4 text-brand-text leading-relaxed">
+                {enriched.vsChain}
+              </p>
+              <p className="mt-4 text-sm text-brand-textLight leading-relaxed">
+                {enriched.searchIntent}
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* ABOUT THE CITY */}
         <section className="bg-white py-16 lg:py-20">
           <div className="mx-auto max-w-5xl px-6">
@@ -585,7 +694,7 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
               </h2>
             </Reveal>
             <div className="mt-10 space-y-4">
-              {service.faqs.map((f, i) => (
+              {faqs.map((f, i) => (
                 <Reveal key={i} delay={i * 60}>
                   <details className="group rounded-2xl bg-white ring-1 ring-black/5 p-5 open:ring-brand-blue/30 transition">
                     <summary className="cursor-pointer list-none flex items-start gap-4">
@@ -692,6 +801,30 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
           </div>
         </section>
 
+        {/* PEOPLE ALSO SEARCH */}
+        <section className="bg-brand-bg py-12">
+          <div className="mx-auto max-w-6xl px-6">
+            <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-blue">
+              People also search
+            </p>
+            <h2 className="section-title mt-2 text-xl md:text-2xl text-brand-navyDark font-semibold">
+              Related {city.name} searches
+            </h2>
+            <ul className="mt-5 flex flex-wrap gap-2">
+              {enriched.alsoSearch.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="inline-flex rounded-full bg-white ring-1 ring-black/5 px-4 py-2 text-xs font-semibold text-brand-navyDark hover:ring-brand-blue/40"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="relative bg-brand-navyDark text-white overflow-hidden">
           <div
@@ -719,12 +852,12 @@ export default async function ProgrammaticPage({ params }: RouteProps) {
                 >
                   Schedule a visit
                 </BookTrigger>
-                <a
+                <PhoneLeadLink
                   href={PHONE_HREF}
                   className="inline-flex items-center gap-2 rounded-full ring-1 ring-white/30 backdrop-blur px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors"
                 >
                   Call {PHONE_DISPLAY}
-                </a>
+                </PhoneLeadLink>
               </div>
             </Reveal>
           </div>

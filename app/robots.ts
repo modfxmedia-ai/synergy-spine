@@ -5,7 +5,12 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/wp-admin/", "/np-thank-you", "/rof"],
+      disallow: [
+        "/wp-admin/",
+        "/np-thank-you/",
+        "/rof/",
+        "/contact-us/thank-you/",
+      ],
     },
     sitemap: "https://synergyspineandnerve.com/sitemap.xml",
   };

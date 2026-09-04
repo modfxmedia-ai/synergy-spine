@@ -6,6 +6,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 import BookTrigger from "@/components/booking/BookTrigger";
 import { SITE_ORIGIN } from "@/lib/site";
+import { CITIES } from "@/lib/programmatic/cities";
+import { SERVICES } from "@/lib/programmatic/services";
+import { buildEnrichedCopy } from "@/lib/programmatic/enrich";
 const PHONE_DISPLAY = "(505) 891-2280";
 const PHONE_HREF = "tel:+15058912280";
 
@@ -31,7 +34,7 @@ export function buildLocalSeoMetadata({
 >): Metadata {
   const url = `${SITE_ORIGIN}/${slug}/`;
   return {
-    title: metaTitle,
+    title: { absolute: metaTitle },
     description: metaDescription,
     alternates: { canonical: url },
     openGraph: {
@@ -117,6 +120,13 @@ export default function LocalSeoPage({
   nearbyAreas,
 }: LocalSeoPageProps) {
   const pageUrl = `${SITE_ORIGIN}/${slug}/`;
+  const cityRecord = CITIES.find((c) => c.name === cityName);
+  const chiroService = SERVICES.find((s) => s.slug === "chiropractor");
+  const localStory =
+    cityRecord && chiroService
+      ? buildEnrichedCopy(chiroService, cityRecord)
+      : null;
+  const citySlug = cityRecord?.slug;
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
@@ -180,7 +190,17 @@ export default function LocalSeoPage({
     ],
   };
 
-  // metaTitle/metaDescription are kept on the schema for completeness/SEO bots.
+  const faqSchema = localStory
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: localStory.extraFaqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }
+    : null;
   void metaTitle;
   void metaDescription;
 
@@ -313,6 +333,82 @@ export default function LocalSeoPage({
             </div>
           </div>
         </section>
+
+        {localStory && (
+          <section className="bg-white py-16 lg:py-20">
+            <div className="mx-auto max-w-6xl px-6 grid lg:grid-cols-2 gap-10">
+              <div>
+                <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-blue">
+                  Local to {cityName}
+                </p>
+                <h2 className="section-title mt-3 text-2xl md:text-4xl text-brand-navyDark font-semibold">
+                  Why {cityName} patients drive to Rio Rancho
+                </h2>
+                <p className="mt-4 text-brand-textLight leading-relaxed">
+                  {localStory.commute}
+                </p>
+                <p className="mt-3 text-brand-text leading-relaxed">
+                  {localStory.lifestyle}
+                </p>
+                <p className="mt-3 text-sm text-brand-textLight leading-relaxed">
+                  {localStory.directions}
+                </p>
+              </div>
+              <div>
+                <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-blue">
+                  Services {cityName} searches for
+                </p>
+                <h2 className="section-title mt-3 text-2xl md:text-3xl text-brand-navyDark font-semibold">
+                  Condition and service pages
+                </h2>
+                <ul className="mt-5 grid sm:grid-cols-2 gap-2">
+                  {SERVICES.slice(0, 10).map((s) => {
+                    if (!citySlug) return null;
+                    const href = `/${s.slug}-${citySlug}-nm/`;
+                    return (
+                      <li key={s.slug}>
+                        <Link
+                          href={href}
+                          className="block rounded-xl bg-brand-bg ring-1 ring-black/5 px-4 py-3 text-sm font-semibold text-brand-navyDark hover:ring-brand-blue/40"
+                        >
+                          {s.name}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {localStory && (
+          <section className="bg-brand-bg py-16 lg:py-20">
+            <div className="mx-auto max-w-4xl px-6">
+              <p className="text-[12px] font-semibold uppercase tracking-[0.22em] text-brand-blue">
+                {cityName} chiropractic FAQ
+              </p>
+              <h2 className="section-title mt-3 text-2xl md:text-4xl text-brand-navyDark font-semibold">
+                What {cityName} patients ask before they drive
+              </h2>
+              <div className="mt-8 space-y-3">
+                {localStory.extraFaqs.map((f) => (
+                  <details
+                    key={f.q}
+                    className="group rounded-2xl bg-white ring-1 ring-black/5 p-5 open:ring-brand-blue/30"
+                  >
+                    <summary className="cursor-pointer list-none font-semibold text-brand-navyDark">
+                      {f.q}
+                    </summary>
+                    <p className="mt-3 text-sm md:text-base text-brand-textLight leading-relaxed">
+                      {f.a}
+                    </p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* CONDITIONS */}
         <section className="bg-brand-bg py-20 lg:py-24">
@@ -552,7 +648,14 @@ export default function LocalSeoPage({
                 <ul className="mt-8 flex flex-wrap justify-center gap-2">
                   {nearbyAreas.map((n) => (
                     <li key={n}>
-                      <span className="inline-flex items-center gap-2 rounded-full bg-white ring-1 ring-black/5 px-4 py-2 text-xs font-semibold text-brand-navyDark">
+                        <Link
+                          href={
+                            CITIES.find((c) => c.name === n)
+                              ? `/chiropractor-${CITIES.find((c) => c.name === n)!.slug}-nm/`
+                              : "/area-we-serve/"
+                          }
+                          className="inline-flex items-center gap-2 rounded-full bg-white ring-1 ring-black/5 px-4 py-2 text-xs font-semibold text-brand-navyDark hover:ring-brand-blue/40"
+                        >
                         <svg
                           className="w-3 h-3 text-brand-blue"
                           viewBox="0 0 24 24"
@@ -566,8 +669,8 @@ export default function LocalSeoPage({
                           <path d="M12 22s-7-7.58-7-12a7 7 0 0 1 14 0c0 4.42-7 12-7 12z" />
                           <circle cx="12" cy="10" r="2.5" />
                         </svg>
-                        <span>{n}</span>
-                      </span>
+                          <span>{n}</span>
+                        </Link>
                     </li>
                   ))}
                 </ul>
@@ -672,6 +775,12 @@ export default function LocalSeoPage({
           __html: JSON.stringify(localBusinessSchema),
         }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
     </>
   );
 }

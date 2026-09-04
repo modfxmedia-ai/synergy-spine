@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { useBooking } from "./booking/BookingProvider";
+import PhoneLeadLink from "./analytics/PhoneLeadLink";
 
 type NavChild = {
   label: string;
@@ -272,7 +273,7 @@ export default function Header() {
         }`}
       >
         <div className="mx-auto max-w-7xl px-6 flex items-center justify-between h-10">
-          <a
+          <PhoneLeadLink
             href={`tel:${PHONE_TEL}`}
             className="inline-flex items-center gap-2 hover:text-white transition-colors group"
           >
@@ -280,7 +281,7 @@ export default function Header() {
               <PhoneIcon className="w-3 h-3" />
             </span>
             <span className="font-medium">{PHONE_DISPLAY}</span>
-          </a>
+          </PhoneLeadLink>
           <div className="flex items-center gap-6">
             <span className="inline-flex items-center gap-2">
               <PinIcon className="w-3.5 h-3.5 text-brand-blue" />
@@ -466,14 +467,14 @@ export default function Header() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-4 ml-auto">
-            <a
+            <PhoneLeadLink
               href={`tel:${PHONE_TEL}`}
               className="hidden xl:inline-flex items-center justify-center h-10 w-10 rounded-full bg-brand-blue/10 text-brand-blue hover:bg-brand-blue hover:text-white transition-colors"
               aria-label={`Call ${PHONE_DISPLAY}`}
               title={PHONE_DISPLAY}
             >
               <PhoneIcon className="w-4 h-4" />
-            </a>
+            </PhoneLeadLink>
             <button
               type="button"
               onClick={openBooking}
@@ -509,7 +510,7 @@ export default function Header() {
         aria-hidden={!mobileOpen}
       >
         <div className="bg-white shadow-2xl pt-20 pb-8 px-6 max-h-screen overflow-y-auto">
-          <a
+          <PhoneLeadLink
             href={`tel:${PHONE_TEL}`}
             className="inline-flex items-center gap-2 mb-5 text-brand-navyDark font-semibold"
             onClick={closeMobile}
@@ -518,7 +519,7 @@ export default function Header() {
               <PhoneIcon className="w-4 h-4" />
             </span>
             <span>{PHONE_DISPLAY}</span>
-          </a>
+          </PhoneLeadLink>
 
           <ul className="divide-y divide-black/5">
             {NAV_ITEMS.map((item) => {

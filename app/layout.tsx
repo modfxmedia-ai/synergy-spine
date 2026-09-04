@@ -16,17 +16,18 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Synergy: Spine & Nerve Center - Pain Relief & Wellness",
-  description:
-    "Body Healing: Ready to empower your body's natural healing? Contact us today to discover personalized strategies for enhanced well-being and lasting health.",
-  metadataBase: new URL("https://synergyspineandnerve.com"),
-  alternates: {
-    canonical: "https://synergyspineandnerve.com/",
+  title: {
+    default:
+      "Chiropractor in Rio Rancho, NM | Synergy Spine & Nerve Center",
+    template: "%s | Synergy Spine & Nerve, Rio Rancho NM",
   },
+  description:
+    "Rio Rancho chiropractor for back pain, sciatica, disc, neuropathy, and family care. 20+ years at 1453 Rio Rancho Blvd. Serving Albuquerque, Corrales, and Bernalillo. Call (505) 891-2280.",
+  metadataBase: new URL("https://synergyspineandnerve.com"),
   openGraph: {
-    title: "Expert Chiropractic Care at Synergy Spine & Nerve",
+    title: "Chiropractor in Rio Rancho, NM | Synergy Spine & Nerve",
     description:
-      "Unlock your body's natural healing power with chiropractic care.",
+      "Evidence-based chiropractic for spine and nerve pain. Same-week visits. Rio Rancho office serving the Albuquerque metro.",
     url: "https://synergyspineandnerve.com/",
     type: "website",
     siteName: "Synergy Spine and Nerve Center",
@@ -34,9 +35,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Synergy Spine & Nerve Center",
+    title: "Chiropractor in Rio Rancho, NM | Synergy Spine & Nerve",
     description:
-      "Chiropractic care in Rio Rancho, NM. Unlock your body's natural healing power.",
+      "Chiropractic care in Rio Rancho, NM for back pain, sciatica, discs, and family care.",
   },
   robots: {
     index: true,
@@ -78,6 +79,7 @@ export default function RootLayout({
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
+          window.gtag = gtag;
           gtag('js', new Date());
           gtag('config', 'G-QPZT8FNXYE');
         `}

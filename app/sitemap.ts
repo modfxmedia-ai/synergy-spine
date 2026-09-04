@@ -53,6 +53,7 @@ const PRIORITY_0_8 = [
   "/common-conditions",
   "/common-conditions/amyotrophic-lateral-sclerosis-als",
   "/area-we-serve",
+  "/neuropathy",
 ];
 
 const PRIORITY_0_7 = [

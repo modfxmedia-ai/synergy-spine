@@ -19,6 +19,16 @@ const nextConfig: NextConfig = {
         destination: "/resources/videos/workshop-videos/",
         permanent: true,
       },
+      {
+        source: "/sitemap_index.xml",
+        destination: "/sitemap.xml",
+        permanent: true,
+      },
+      {
+        source: "/wp-sitemap.xml",
+        destination: "/sitemap.xml",
+        permanent: true,
+      },
     ];
   },
   images: {

@@ -2,6 +2,7 @@
 
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 import { useBooking } from "./BookingProvider";
+import { trackBookClick } from "@/lib/analytics";
 
 type Props = Omit<ButtonHTMLAttributes<HTMLButtonElement>, "onClick"> & {
   children: ReactNode;
@@ -10,7 +11,14 @@ type Props = Omit<ButtonHTMLAttributes<HTMLButtonElement>, "onClick"> & {
 export default function BookTrigger({ children, type = "button", ...rest }: Props) {
   const { open } = useBooking();
   return (
-    <button type={type} onClick={open} {...rest}>
+    <button
+      type={type}
+      {...rest}
+      onClick={() => {
+        trackBookClick();
+        open();
+      }}
+    >
       {children}
     </button>
   );

@@ -154,13 +154,11 @@ export default function HeroSection() {
             </Reveal>
 
             <Reveal delay={120}>
-              <h1 className="section-title mt-7 text-[44px] sm:text-6xl lg:text-[88px] leading-[0.95] text-white font-semibold tracking-tight">
-                Take your next
-                <br />
-                step toward{" "}
+              <h1 className="section-title mt-7 text-[40px] sm:text-5xl lg:text-[72px] leading-[0.95] text-white font-semibold tracking-tight">
+                Rio Rancho{" "}
                 <span className="relative inline-block">
                   <span className="relative z-10 italic text-brand-goldSoft">
-                    better
+                    chiropractor
                   </span>
                   <svg
                     className="absolute -bottom-2 left-0 w-full text-brand-gold"
@@ -177,17 +175,18 @@ export default function HeroSection() {
                       fill="none"
                     />
                   </svg>
-                </span>{" "}
-                <span className="italic text-brand-goldSoft">health.</span>
+                </span>
+                <br />
+                for spine and nerve pain.
               </h1>
             </Reveal>
 
             <Reveal delay={220}>
               <p className="mt-7 max-w-xl text-base sm:text-lg text-white/75 leading-relaxed">
-                We discover the cause of your pain, illuminate the
-                possibilities, and liberate you from discomfort, using
-                evidence-based, modern chiropractic care that gets you back to
-                living fully.
+                Evidence-based chiropractic in Rio Rancho, NM for back pain,
+                sciatica, disc herniation, neuropathy, and family care.
+                Albuquerque, Corrales, and Bernalillo patients are a short
+                drive to 1453 Rio Rancho Blvd, Suite 2.
               </p>
             </Reveal>
 

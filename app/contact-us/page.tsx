@@ -7,6 +7,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Reveal from "@/components/Reveal";
 
 import BookTrigger from "@/components/booking/BookTrigger";
+import TrackedForm from "@/components/forms/TrackedForm";
+import FormSubmitFields from "@/components/forms/FormSubmitFields";
+import PhoneLeadLink from "@/components/analytics/PhoneLeadLink";
 const CANONICAL = "https://synergyspineandnerve.com/contact-us/";
 const PHONE = "(505) 891-2280";
 const PHONE_HREF = "tel:+15058912280";
@@ -14,16 +17,16 @@ const ADDRESS_LINE1 = "1453 Rio Rancho Blvd, Suite 2";
 const ADDRESS_LINE2 = "Rio Rancho, NM 87124";
 
 export const metadata: Metadata = {
-  title:
-    "Get In Touch with Synergy Spine and Nerve Center Rio Rancho, NM",
+  title: {
+    absolute: "Contact a Rio Rancho Chiropractor | Synergy Spine & Nerve",
+  },
   description:
-    "Questions, comments, or concerns about our Rio Rancho, NM chiropractic care? Call (505) 891-2280 or send a message, we'll be in touch shortly.",
+    "Call (505) 891-2280 or message Synergy Spine and Nerve Center at 1453 Rio Rancho Blvd, Suite 2. Chiropractor in Rio Rancho serving Albuquerque, Corrales, and Bernalillo.",
   alternates: { canonical: CANONICAL },
   openGraph: {
-    title:
-      "Get In Touch with Synergy Spine and Nerve Center Rio Rancho, NM",
+    title: "Contact a Rio Rancho Chiropractor | Synergy Spine & Nerve",
     description:
-      "Reach Dr. Brad and Austin at Synergy Spine and Nerve Center, call, message, or stop by 1453 Rio Rancho Blvd-Suite 2.",
+      "Call (505) 891-2280 or message the Rio Rancho clinic at 1453 Rio Rancho Blvd, Suite 2. Serving Albuquerque, Corrales, and Bernalillo.",
     url: CANONICAL,
     type: "website",
     siteName: "Synergy Spine and Nerve Center",
@@ -228,9 +231,9 @@ export default function ContactUsPage() {
 
               {/* Form column */}
               <Reveal delay={150}>
-                <form
+                <TrackedForm
                   action="https://formsubmit.co/info@synergyspineandnerve.com"
-                  method="POST"
+                  label="contact_form"
                   className="rounded-3xl bg-white ring-1 ring-black/5 p-8 lg:p-10 shadow-[0_2px_10px_rgba(13,35,64,0.04)]"
                 >
                   <div className="inline-flex items-center gap-3">
@@ -299,8 +302,10 @@ export default function ContactUsPage() {
                     />
                   </label>
 
-                  <input type="hidden" name="_subject" value="New contact form submission Synergy Spine and Nerve Center" />
-                  <input type="hidden" name="_template" value="table" />
+                  <FormSubmitFields
+                    subject="New contact form submission Synergy Spine and Nerve Center"
+                    nextPath="/contact-us/thank-you/"
+                  />
 
                   <button
                     type="submit"
@@ -318,12 +323,12 @@ export default function ContactUsPage() {
                   <p className="mt-5 text-xs text-brand-textLight">
                     We&apos;ll never share your information. If you need
                     immediate help, please call{" "}
-                    <a href={PHONE_HREF} className="text-brand-blue font-semibold hover:underline underline-offset-4">
+                    <PhoneLeadLink href={PHONE_HREF} className="text-brand-blue font-semibold hover:underline underline-offset-4">
                       {PHONE}
-                    </a>
+                    </PhoneLeadLink>
                     .
                   </p>
-                </form>
+                </TrackedForm>
               </Reveal>
             </div>
           </div>

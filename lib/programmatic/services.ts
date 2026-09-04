@@ -54,7 +54,7 @@ export const SERVICES: ServiceCopy[] = [
     whoItsFor:
       "Anyone who wants to take care of their spine the same way they take care of their teeth, proactively. We treat children through retirees, athletes through office workers, and post-injury patients who never want a recurrence.",
     expect: [
-      "About 4560 minutes for your first visit",
+      "About 45–60 minutes for your first visit",
       "An honest conversation about whether chiropractic is the right fit",
       "No surprise upsells, no pre-paid bundles, no contracts",
       "A written report-of-findings before any care begins",
@@ -62,7 +62,7 @@ export const SERVICES: ServiceCopy[] = [
     faqs: [
       {
         q: "How do I find the best chiropractor near {city}, NM?",
-        a: "Look for a chiropractor with measurable, objective metrics, not just feel-good adjustments. Ask whether they perform a Spinal Health Assessment, whether they teach you home spinal hygiene, and whether they're willing to refer you out if you're not the right fit. Synergy Spine and Nerve Center serves {city} from our Rio Rancho office and grades every spine on a 0100 scale so you know exactly what's improving.",
+        a: "Look for a chiropractor with measurable, objective metrics, not just feel-good adjustments. Ask whether they perform a Spinal Health Assessment, whether they teach you home spinal hygiene, and whether they're willing to refer you out if you're not the right fit. Synergy Spine and Nerve Center serves {city} from our Rio Rancho office and grades every spine on a 0–100 scale so you know exactly what's improving.",
       },
       {
         q: "Is chiropractic care safe?",
@@ -70,7 +70,7 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "How many visits will I need?",
-        a: "It depends on how long the issue has been there and how your body responds in the first two weeks. Most {city} patients see meaningful change within 48 visits, with a maintenance schedule from there. We re-exam regularly so you're not on care longer than needed.",
+        a: "It depends on how long the issue has been there and how your body responds in the first two weeks. Most {city} patients see meaningful change within 4–8 visits, with a maintenance schedule from there. We re-exam regularly so you're not on care longer than needed.",
       },
       {
         q: "Do you accept insurance?",
@@ -110,7 +110,7 @@ export const SERVICES: ServiceCopy[] = [
       "Adults with imaging-confirmed disc problems, chronic low back pain that hasn't responded to typical care, or sciatica that flares with sitting and driving. We screen carefully, decompression isn't for everyone, and we'll tell you up front if you're not a candidate.",
     expect: [
       "30-minute sessions, fully clothed, no needles or medication",
-      "A schedule of 35 visits a week tapering down as you improve",
+      "A schedule of 3–5 visits a week tapering down as you improve",
       "Home stretches and core stability work between sessions",
       "Clear progress checkpoints, we measure, we don't guess",
     ],
@@ -125,7 +125,7 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "How many decompression sessions will I need?",
-        a: "Most cases respond within 20 sessions over 68 weeks, then taper. We re-exam every 12 visits and stop care the moment we hit a plateau or the goal.",
+        a: "Most cases respond within 20 sessions over 6–8 weeks, then taper. We re-exam every 12 visits and stop care the moment we hit a plateau or the goal.",
       },
       {
         q: "How is this different from regular traction or an inversion table?",
@@ -165,12 +165,12 @@ export const SERVICES: ServiceCopy[] = [
       "A clear answer on whether your leg pain is true sciatica",
       "An honest referral if surgery is the right call",
       "A care plan focused on the cause, not just the symptom",
-      "Most patients see leg-pain reduction within 13 weeks",
+      "Most patients see leg-pain reduction within 1–3 weeks"
     ],
     faqs: [
       {
         q: "How long does it take to fix sciatica with chiropractic care in {city}?",
-        a: "Most {city} patients see meaningful improvement within 13 weeks once the cause is identified. Long-standing or disc-driven sciatica may need 68 weeks of combined adjustments, decompression, and rehab. We re-exam regularly so you can see the change in objective terms.",
+        a: "Most {city} patients see meaningful improvement within 1–3 weeks once the cause is identified. Long-standing or disc-driven sciatica may need 6–8 weeks of combined adjustments, decompression, and rehab. We re-exam regularly so you can see the change in objective terms.",
       },
       {
         q: "Will I need an MRI before treatment?",
@@ -216,18 +216,18 @@ export const SERVICES: ServiceCopy[] = [
       "Anyone in {city} who is tired of chasing back pain with painkillers. Office workers, contractors, healthcare workers, parents, and retirees all benefit from getting an actual answer instead of another prescription.",
     expect: [
       "A clear explanation of what's actually causing your pain",
-      "Most acute cases respond within 24 visits",
+      "Most acute cases respond within 2–4 visits",
       "Chronic cases take longer but with measurable checkpoints",
       "A maintenance plan only if it's genuinely needed",
     ],
     faqs: [
       {
         q: "When should I see a chiropractor for back pain instead of toughing it out?",
-        a: "If pain is interrupting sleep, lasting more than 35 days, or radiating into a leg, see a chiropractor. Catching it early in {city} makes the fix faster, cheaper, and far less likely to recur.",
+        a: "If pain is interrupting sleep, lasting more than 3–5 days, or radiating into a leg, see a chiropractor. Catching it early in {city} makes the fix faster, cheaper, and far less likely to recur.",
       },
       {
         q: "Will an adjustment make my back pain worse?",
-        a: "A correctly applied adjustment shouldn't increase pain. Some patients notice 2448 hours of mild soreness as the body re-adapts, like the day after a good workout. We modify the approach for sensitive cases.",
+        a: "A correctly applied adjustment shouldn't increase pain. Some patients notice 24–48 hours of mild soreness as the body re-adapts, like the day after a good workout. We modify the approach for sensitive cases.",
       },
       {
         q: "What's the difference between back pain from a muscle vs. a disc?",
@@ -265,7 +265,7 @@ export const SERVICES: ServiceCopy[] = [
       "Anyone in {city} who works at a screen, drives a lot, sleeps poorly, or has a history of whiplash. Teens with phone posture and adults with desk-driven stiffness both benefit.",
     expect: [
       "A gentle approach, adjustments matched to your comfort level",
-      "Most acute cases resolve in 46 visits",
+      "Most acute cases resolve in 4–6 visits",
       "A pillow and ergonomic recommendation customized to you",
       "A clear plan to keep the pain from coming back",
     ],
@@ -284,7 +284,7 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "How fast will my neck feel better?",
-        a: "Most {city} patients feel a shift after 13 visits. Lasting change takes a full care plan plus home posture work, most cases resolve within 48 weeks.",
+        a: "Most {city} patients feel a shift after 1–3 visits. Lasting change takes a full care plan plus home posture work; most cases resolve within 4–8 weeks.",
       },
     ],
     related: ["headache-migraine-relief", "auto-accident-chiropractor", "posture-correction"],
@@ -330,7 +330,7 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "How long until my headaches improve?",
-        a: "Most cervicogenic and tension headache patients in {city} feel meaningful change within 24 weeks. Migraine patterns shift more slowly, we evaluate at week 8.",
+        a: "Most cervicogenic and tension headache patients in {city} feel meaningful change within 2–4 weeks. Migraine patterns shift more slowly; we evaluate at week 8.",
       },
       {
         q: "Do I have to come forever?",
@@ -354,7 +354,7 @@ export const SERVICES: ServiceCopy[] = [
       "After a car accident in {city}, NM, fast chiropractic evaluation matters. Whiplash, neck pain, headaches, call Synergy Spine at (505) 891-2280.",
     h1Template: "Auto Accident & Whiplash Chiropractor in {city}, NM",
     whatItIs:
-      "Whiplash is a soft-tissue and joint injury caused by a rapid back-and-forth motion of the head, most commonly in a rear-end collision. The classic mistake is to skip evaluation because 'nothing feels broken.' Whiplash symptoms often appear 2472 hours later, and untreated whiplash is the single biggest predictor of chronic neck pain a decade later.",
+      "Whiplash is a soft-tissue and joint injury caused by a rapid back-and-forth motion of the head, most commonly in a rear-end collision. The classic mistake is to skip evaluation because 'nothing feels broken.' Whiplash symptoms often appear 24–72 hours later, and untreated whiplash is the single biggest predictor of chronic neck pain a decade later.",
     howItWorks: [
       "A prompt post-accident exam.",
       "Imaging when warranted (or referral if findings suggest it).",
@@ -409,8 +409,8 @@ export const SERVICES: ServiceCopy[] = [
       "Softwave is a focused acoustic-wave technology that triggers the body's own repair process. Unlike laser, ultrasound, or steroid injections, Softwave activates resident stem cells and restarts healing in tissues the body had given up on. It's non-invasive, drug-free, and supported by a growing body of clinical evidence.",
     howItWorks: [
       "We map the painful and reflexive zones, Softwave often treats areas that don't hurt locally but refer to the area that does.",
-      "A 1020 minute applicator session over the target tissue.",
-      "Most plans run 48 sessions, twice a week, then taper.",
+      "A 10–20 minute applicator session over the target tissue.",
+      "Most plans run 4–8 sessions, twice a week, then taper.",
       "Combine with adjustments and soft-tissue work for the best result.",
     ],
     helpsWith: [
@@ -426,7 +426,7 @@ export const SERVICES: ServiceCopy[] = [
     expect: [
       "Sessions feel like a strong tapping, not painful",
       "First-visit candidacy screen, not everyone is a fit",
-      "A typical course runs 48 weeks",
+      "A typical course runs 4–8 weeks",
       "Pricing transparent up front, no contracts",
     ],
     faqs: [
@@ -436,7 +436,7 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "Will I need a series or just one session?",
-        a: "Most chronic conditions need 48 sessions to produce a durable change. One session can shift acute pain but rarely solves chronic tissue dysfunction.",
+        a: "Most chronic conditions need 4–8 sessions to produce a durable change. One session can shift acute pain but rarely solves chronic tissue dysfunction.",
       },
       {
         q: "Is Softwave covered by insurance in {city}?",
@@ -489,7 +489,7 @@ export const SERVICES: ServiceCopy[] = [
       },
       {
         q: "How long until I see a posture change?",
-        a: "Most patients see visible change in posture photos within 812 weeks of consistent care plus home work.",
+        a: "Most patients see visible change in posture photos within 8–12 weeks of consistent care plus home work.",
       },
       {
         q: "Is posture correction the same as a posture brace?",
@@ -644,7 +644,7 @@ export const SERVICES: ServiceCopy[] = [
     faqs: [
       {
         q: "How fast can I get back to my sport?",
-        a: "It depends on the tissue and the sport. Most acute strains in {city} athletes return in 24 weeks; chronic tendinopathy responds in 48 weeks with the right protocol.",
+        a: "It depends on the tissue and the sport. Most acute strains in {city} athletes return in 2–4 weeks; chronic tendinopathy responds in 4–8 weeks with the right protocol.",
       },
       {
         q: "Should I see a chiropractor or a physical therapist?",

@@ -12,32 +12,25 @@ import TestimonialsSection from "@/components/home/TestimonialsSection";
 import LatestBlogSection from "@/components/home/LatestBlogSection";
 import MapSection from "@/components/home/MapSection";
 import CTASection from "@/components/home/CTASection";
+import HomeLocalIntent from "@/components/home/HomeLocalIntent";
+import HomeFaq from "@/components/home/HomeFaq";
+import { organizationSchema, SITE_ORIGIN } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Synergy: Spine & Nerve Center - Pain Relief & Wellness",
+  title: {
+    absolute: "Chiropractor in Rio Rancho, NM | Synergy Spine & Nerve Center",
+  },
   description:
-    "Body Healing: Ready to empower your body's natural healing? Contact us today to discover personalized strategies for enhanced well-being and lasting health.",
+    "Looking for a chiropractor in Rio Rancho, NM? Synergy Spine and Nerve Center treats back pain, sciatica, disc herniation, neuropathy, and family care. 20+ years. Call (505) 891-2280.",
   alternates: {
-    canonical: "https://synergyspineandnerve.com/",
+    canonical: `${SITE_ORIGIN}/`,
   },
-};
-
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  name: "Synergy Spine and Nerve Center",
-  url: "https://synergyspineandnerve.com/",
-  telephone: "+1-505-891-2280",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "1453 Rio Rancho Blvd-Suite 2",
-    addressLocality: "Rio Rancho",
-    addressRegion: "NM",
-    postalCode: "87124",
-    addressCountry: "US",
+  openGraph: {
+    title: "Chiropractor in Rio Rancho, NM | Synergy Spine & Nerve",
+    description:
+      "Evidence-based chiropractic in Rio Rancho. Serving Albuquerque, Corrales, Bernalillo, and the East Mountains.",
+    url: `${SITE_ORIGIN}/`,
   },
-  priceRange: "$$",
-  image: "https://synergyspineandnerve.com/logo.png",
 };
 
 export default function Home() {
@@ -46,7 +39,7 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(localBusinessSchema),
+          __html: JSON.stringify(organizationSchema(`${SITE_ORIGIN}/`)),
         }}
       />
       <AnnouncementBar />
@@ -56,9 +49,11 @@ export default function Home() {
         <PrinciplesSection />
         <FeaturesBar />
         <DoctorSnippet />
+        <HomeLocalIntent />
         <VideoSection />
         <HealCTASection />
         <TestimonialsSection />
+        <HomeFaq />
         <LatestBlogSection />
         <CTASection />
         <MapSection />
